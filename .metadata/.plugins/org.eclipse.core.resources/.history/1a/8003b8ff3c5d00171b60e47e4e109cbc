@@ -1,0 +1,177 @@
+import sys
+from time import sleep
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QStandardItemModel, QStandardItem
+from PyQt5.QtWidgets import QMainWindow, QDialog, QApplication, QMessageBox, QAction
+
+from Client.client_socket import *
+from Client.gui_Room import guiRoom
+from Client.gui_Room_Create import guiRoomCreate
+from Util.Message import MSGTYPE
+from WebServer.manager import *      
+
+
+sys.path.append("D:/Users/Ariel/workspace/Socket_ver_2_0")
+
+
+class guiMain(QMainWindow):
+    
+    roomGui = ''
+    
+    def __init__(self , userInfo):
+        super().__init__()
+        self.initUI()
+        
+        self.socketTh = Socket('localhost', 1234, userInfo)
+        self.socketTh.startThread(self)
+        
+        sleep(2)
+        self.showRoomList()
+                             
+    def initUI(self):      
+
+        self.setObjectName("MainWindow")
+        self.resize(838, 563)
+        self.centralwidget = QtWidgets.QWidget(self)
+        self.centralwidget.setObjectName("centralwidget")
+        self.roomList = QtWidgets.QListView(self.centralwidget)
+        self.roomList.setGeometry(QtCore.QRect(40, 50, 471, 411))
+        self.roomList.setObjectName("roomList")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(40, 30, 71, 16))
+        self.label.setObjectName("label")
+        self.roomMemberList = QtWidgets.QListView(self.centralwidget)
+        self.roomMemberList.setGeometry(QtCore.QRect(530, 50, 256, 181))
+        self.roomMemberList.setObjectName("roomMemberList")
+        self.WaitingMemberList = QtWidgets.QListView(self.centralwidget)
+        self.WaitingMemberList.setGeometry(QtCore.QRect(530, 270, 256, 192))
+        self.WaitingMemberList.setObjectName("WaitingMemberList")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(530, 30, 101, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(530, 250, 101, 16))
+        self.label_3.setObjectName("label_3")
+        self.RoomCreateBtn = QtWidgets.QPushButton(self.centralwidget)
+        self.RoomCreateBtn.setGeometry(QtCore.QRect(40, 470, 151, 41))
+        self.RoomCreateBtn.setObjectName("RoomCreate")
+        self.ExitBtn = QtWidgets.QPushButton(self.centralwidget)
+        self.ExitBtn.setGeometry(QtCore.QRect(640, 470, 151, 41))
+        self.ExitBtn.setObjectName("Exit")
+        self.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(self)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 838, 21))
+        self.menubar.setObjectName("menubar")
+        self.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(self)
+        self.statusbar.setObjectName("statusbar")
+        self.setStatusBar(self.statusbar)
+
+        self.roomModel = QStandardItemModel()
+        self.roomList.setModel(self.roomModel)
+        self.roomList.doubleClicked.connect(self.roomEntered)
+        self.roomList.clicked.connect(self.showMembers)
+
+        self.memberModel = QStandardItemModel()
+        self.roomMemberList.setModel(self.memberModel)
+        
+        self.waitmemberModel = QStandardItemModel()
+        self.WaitingMemberList.setModel(self.waitmemberModel)
+
+        # Room Create
+        self.ExitBtn.clicked.connect(self.ExitBtnClicked)
+        self.RoomCreateBtn.clicked.connect(self.RoomCreateClicked)
+
+
+        self.retranslateUi(self)
+        QtCore.QMetaObject.connectSlotsByName(self)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "Room List"))
+        self.label_2.setText(_translate("MainWindow", "Room Member"))
+        self.label_3.setText(_translate("MainWindow", "Waiting List"))
+        self.RoomCreateBtn.setText(_translate("MainWindow", "Room Create"))
+        self.ExitBtn.setText(_translate("MainWindow", "Exit"))  
+                                  
+                                      
+    def keyPressEvent(self, e):        
+        if e.key() == Qt.Key_Escape:
+            self.close()
+            
+        else:
+            super().keyPressEvent(e)
+        
+        
+    def closeEvent(self, event):
+        close = QMessageBox()
+        close.setText("Are You sure exit?")
+        close.setStandardButtons(QMessageBox.Yes | QMessageBox.Cancel)
+        close = close.exec()
+
+        if close == QMessageBox.Yes:
+            self.socketTh.sockClose()
+            self.socketTh.stopThread()
+            event.accept()
+        else:
+            event.ignore()
+            
+    def ExitBtnClicked(self):
+        self.hide()
+        mainProgram = guiRoom(self.socketTh, 1, self)
+        mainProgram.exec_()
+        
+    def updateRoomList(self, roomList):
+
+        self.roomModel.clear()        
+        for room in roomList:
+            item = QStandardItem(room)
+            self.roomModel.appendRow(item)
+                        
+    def RoomCreateClicked(self):
+        roomCreate = guiRoomCreate(self.socketTh, self)
+        
+        if roomCreate.exec_() == QDialog.Accepted:
+            roomName = roomCreate.getNewRoomInfo()
+            self.roomGui = guiRoom(self.socketTh, roomName, self )
+            self.hide()
+            self.roomGui.exec_()
+        
+    def roomEntered(self, index):
+        row = index.row()
+        col = index.column()
+        
+        roomName = self.roomModel.itemFromIndex(index).text() 
+        print('selected -  row : %d , col %d' % (row, col))
+        
+        sndMsg = roomName + "#" + self.socketTh.getUserId()
+        
+        self.socketTh.sendToServer(sndMsg, MSGTYPE.ROOM_ENTER)
+        
+        self.roomGui = guiRoom(self.socketTh, roomName, self )
+        self.hide()           
+        self.roomGui.exec_()
+
+        
+    def showMembers(self, index):
+        roomName = self.roomModel.itemFromIndex(index).text() 
+        self.socketTh.sendToServer(roomName, MSGTYPE.SHOW_MEMBER_LIST)
+        
+    def showRoomList(self):
+        self.socketTh.sendToServer('', MSGTYPE.SHOW_ROOM_LIST)
+        
+    def updateMemberList(self, memberList):
+        self.memberModel.clear()
+        for member in memberList:
+            item =  QStandardItem(member)
+            self.memberModel.appendRow(item)
+            
+    def getRoomGUI(self):
+        return self.roomGui
+    
+    def updateWaitingMemberList(self, memberList):
+        self.waitmemberModel.clear()
+        

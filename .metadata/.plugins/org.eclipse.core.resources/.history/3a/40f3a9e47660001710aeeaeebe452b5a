@@ -1,0 +1,41 @@
+import os
+from bs4 import BeautifulSoup
+
+
+class parsingXML():
+    
+    initXml = ''
+    def __init(self):
+        f = open("D:/Users/Ariel/workspace/PythonFileReading/parsing.txt", 'r')
+        while True:
+            
+            line = f.readline()
+            
+            self.initXml += line
+            if not line:
+                break
+            
+        f.close()
+        
+    def getXml(self):
+        return self.initXml
+
+xml = parsingXML()
+print(xml.getXml())
+
+'''
+soup = BeautifulSoup(xmlData, "html.parser")
+
+trData = soup.find("table")
+
+for node in trData:
+    print (node.string)
+    
+if not trData:
+    print ('No Data(trData)')
+'''
+
+
+
+
+

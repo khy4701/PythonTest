@@ -1,0 +1,72 @@
+# -*- coding:utf-8 -*-
+import os
+from bs4 import BeautifulSoup
+
+
+f = open("D:/Users/Ariel/workspace/PythonFileReading/parsing.txt", 'r')
+
+initXml =''
+mainXml =''
+endXml =''
+
+initFlag = 1
+endFlag = 0
+
+count =0
+while True:
+    line = f.readline()
+
+    if '<tr height="25">' in line:
+        initFlag = 0
+
+    if initFlag == 0 and '<tr height="30">' in line:
+        endFlag = 1
+    
+    if not line:
+        break
+
+    if initFlag == 1:
+        initXml += line
+        continue
+    
+    if endFlag == 1:
+        endXml += line
+        continue
+    
+f.close()
+
+
+f = open("D:/Users/Ariel/workspace/PythonFileReading/Init.txt", 'w')
+    
+f.write(initXml)
+f.close()
+
+f = open("D:/Users/Ariel/workspace/PythonFileReading/End.txt", 'w')
+    
+f.write(endXml)
+f.close()
+
+
+#print( initXml)
+
+
+'''
+soup = BeautifulSoup(initXml, "html.parser")
+
+replaceString="%s"
+#trData = soup.findAll("tr",{"height":"30"})
+trData = soup.findAll("tbody")
+
+for node in trData:
+    #if node.attrs['height'] == "30":
+    
+    print (node)        
+    
+if not trData:
+    print ('No Data(trData)')
+
+'''
+
+
+
+

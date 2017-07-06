@@ -1,0 +1,101 @@
+import sys
+
+sys.path.append("D:/Users/Ariel/workspace/Socket_ver_2_0")
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QStandardItemModel, QStandardItem
+from PyQt5.QtWidgets import QDialog, QApplication, QMessageBox, QAction
+
+from Client.client_socket import *
+from Util.Message import MSGTYPE
+from WebServer.manager import *      
+
+
+
+
+class guiRoom(QDialog):
+    
+    def __init__(self , socketTh, roomNum, mainWindow):
+        super().__init__()
+        self.initUI() 
+        self.socketTh = socketTh      
+        self.mainWindow = mainWindow
+        
+        # send to Server ( Room Connected ) 
+        #self.socketTh.sendToServer()
+                     
+    def initUI(self):      
+
+        self.setObjectName("Dialog")
+        self.resize(400, 300)
+        self.buttonBox = QtWidgets.QDialogButtonBox(self)
+        self.buttonBox.setGeometry(QtCore.QRect(50, 270, 341, 32))
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName("buttonBox")
+        self.textBrowser = QtWidgets.QTextBrowser(self)
+        self.textBrowser.setGeometry(QtCore.QRect(110, 20, 271, 201))
+        self.textBrowser.setObjectName("textBrowser")
+        self.listView = QtWidgets.QListView(self)
+        self.listView.setGeometry(QtCore.QRect(10, 20, 91, 201))
+        self.listView.setObjectName("listView")
+        self.lineEdit = QtWidgets.QLineEdit(self)
+        self.lineEdit.setGeometry(QtCore.QRect(10, 240, 371, 21))
+        self.lineEdit.setObjectName("lineEdit")
+        quit = QAction("Quit", self)
+        quit.triggered.connect(self.close)
+
+        self.model = QStandardItemModel()
+        self.listView.setModel(self.model)
+
+        self.setWindowModality(QtCore.Qt.NonModal)
+
+        self.retranslateUi(self)
+        QtCore.QMetaObject.connectSlotsByName(self)
+            
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+   
+                    
+    def keyPressEvent(self, e):        
+        if e.key() == Qt.Key_Escape:
+            self.close()
+            
+        if e.key() == QtCore.Qt.Key_Return:
+            print (self.lineEdit.text())
+            self.send(self.lineEdit.text())
+        else:
+            super().keyPressEvent(e)
+            
+    def send(self, text):
+        self.lineEdit.setText('')
+        self.printBoard("<ME> : "+text)
+            
+        self.socketTh.sendToServer(text, MSGTYPE.STRING_MSG)
+            
+    def printBoard(self, text):
+        self.textBrowser.append(text)
+        self.textBrowser.update()
+        
+    def updateList(self, userList):
+
+        self.model.clear()        
+        for userId in userList:
+            item = QStandardItem(userId)
+            self.model.appendRow(item)
+            item.setCheckable(False)
+        
+    def closeEvent(self, event):
+        close = QMessageBox()
+        close.setText("Are You sure room exit?")
+        close.setStandardButtons(QMessageBox.Yes | QMessageBox.Cancel)
+        close = close.exec()
+                
+        if close == QMessageBox.Yes:
+            self.socketTh.sendToServer(self.socketTh.getUserId(), MSGTYPE.ROOM_EXIT )    
+            self.sendToServer('', MSGTYPE.DISCONNECT)        
+            self.mainWindow.show()
+        else:
+            event.ignore()

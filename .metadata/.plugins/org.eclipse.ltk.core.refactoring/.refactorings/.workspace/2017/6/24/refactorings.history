@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Socket_ver_2_0/Server/connManager&apos;" deleteContents="false" description="Delete resource &apos;Socket_ver_2_0/Server/connManager&apos;" element1="/Socket_ver_2_0/Server/connManager" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1497500879659"/>&#x0A;<refactoring comment="Delete resource &apos;Socket_ver_2_0/DataBase&apos;" deleteContents="false" description="Delete resource &apos;Socket_ver_2_0/DataBase&apos;" element1="/Socket_ver_2_0/DataBase" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1497505759622"/>
+</session>

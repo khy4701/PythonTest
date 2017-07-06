@@ -1,0 +1,37 @@
+from bs4 import BeautifulSoup
+from selenium import webdriver
+
+
+driver = webdriver.Chrome('C:/Users/Ariel/Downloads/chromedriver_win32/chromedriver')
+driver.implicitly_wait(3)
+driver.get('https://translate.google.com/?hl=ko')
+
+
+html = driver.page_source
+soup = BeautifulSoup(html, "lxml")
+
+#print (soup.title.parent.name)
+#div = soup.find('div', id = 'cke_1_contents')
+
+#value = soup.findAll("textarea", {"id":"source"})
+value = soup.find("textarea", {"id":"source"})
+
+value.insert(0, "value")
+
+for val in value:
+    print(val.text)
+    
+
+#for paragraph in soup.find_all('p'):
+    #print(paragraph.string)
+    
+'''    
+print(str(paragraph.text))
+#notices = soup.select("body > div.wrap > div.container.content > div.post > p:nth-type(11)")
+'''
+
+'''
+for n in notices:
+    print(n.text.strip()) 
+''' 
+    

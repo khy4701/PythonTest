@@ -1,0 +1,18 @@
+import sys
+
+from main.webParser import webParser
+from main.webDriver import webDriver
+
+
+if __name__ == '__main__':
+    
+    
+    driver = webDriver()
+    
+    driver.chooseMenu()    
+    driver.getValue()
+    
+    
+    parser = webParser()
+    
+    parser.makeData()

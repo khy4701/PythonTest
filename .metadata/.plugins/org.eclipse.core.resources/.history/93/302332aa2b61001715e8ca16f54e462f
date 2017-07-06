@@ -1,0 +1,75 @@
+from _io import StringIO
+
+
+class XMLMaker():
+    
+    initXml = ''
+    mainXml = ''
+    endXml  = ''
+    
+    totalNum = 0
+    
+    def __init__(self):
+        
+        f = open("D:/Users/Ariel/workspace/PythonFileReading/Init.txt", 'r')
+        while True:
+            
+            line = f.readline()
+            self.initXml += line
+            if not line:
+                break
+            
+        f.close()
+                
+    def makeResultFile(self):
+        
+        f = open("D:/Users/Ariel/workspace/PythonFileReading/Result.txt", 'w')
+        
+        print ("[initXml] : %s" %self.initXml)
+        print ("[mainXml] : %s" %self.mainXml)
+        print ("[endXml] : %s" %self.endXml)
+        
+        self.totalXml = self.initXml + self.mainXml + self.endXml
+        
+        for i in self.totalXml:
+            f.write(i)
+        f.close()
+        
+    
+    def makeMainXml(self, col):
+        
+        print(col)
+
+        readline =''
+        f = open("D:/Users/Ariel/workspace/PythonFileReading/Main.txt", 'r')
+        while True:
+            
+            line = f.readline()
+            readline += line
+            if not line:
+                break        
+        
+        self.mainXml += readline #% (col[0],col[1],col[2],col[3],col[4],col[5])
+        
+        self.totalNum += int(col[5])
+        #print(self.mainXml)
+        f.close()
+        
+        
+    def makeEndXml(self):
+                
+        readline = ''
+        f = open("D:/Users/Ariel/workspace/PythonFileReading/End.txt", 'r')
+        while True:
+            
+            line = f.readline()
+            readline += line
+            if not line:
+                break
+            
+        self.endXml += readline #% self.totalNum
+        f.close()
+
+
+        
+        

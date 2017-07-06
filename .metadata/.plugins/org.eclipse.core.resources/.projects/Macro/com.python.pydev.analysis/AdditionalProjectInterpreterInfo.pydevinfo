@@ -1,0 +1,30 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\Users\Ariel\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Macro\com.python.pydev.analysis\v2_indexcache
+GetFormat|1499135953720810000|D:\Users\Ariel\workspace\Macro\GetFormat.py
+Naver|1499059500828000000|D:\Users\Ariel\workspace\Macro\Naver.py
+parsing|1499220366057900000|D:\Users\Ariel\workspace\Macro\parsing.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+3=GetFormat
+2=Naver
+1=parsing
+-- END DICTIONARY
+-- START TREE 1
+11
+cha|1|changeStr!11@
+dri|2|driver!19@driver!27@
+ele|1|element!27@
+end|2|endFlag!11@endXml!11@
+f|2|f!27@f!11@
+ini|2|initXml!11@initFlag!11@
+lin|1|line!11@
+mai|1|mainXml!11@
+sou|1|soup!11@
+trd|1|trData!11@
+wri|1|writeStr!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,5 @@
+from selenium import webdriver
+
+driver = webdriver.Chrome('C:/Users/Ariel/Downloads/chromedriver_win32/chromedriver')
+driver.implicitly_wait(3)
+driver.get('https://wkdtjsgur100.github.io/blog/2017/03/05/selenium-xpath/')

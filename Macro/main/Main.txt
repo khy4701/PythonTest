@@ -1,0 +1,8 @@
+<tr height="25">
+<td align="center" style="border: 1px solid #000; font-family : ¸¼Àº °íµñ">%s</td>
+<td align="center" style="border: 1px solid #000; font-family : ¸¼Àº °íµñ">%s</td>
+<td align="left" style="border: 1px solid #000; font-family : ¸¼Àº °íµñ">%s</td>
+<td align="left" style="border: 1px solid #000; font-family : ¸¼Àº °íµñ">%s</td>
+<td align="center" style="border: 1px solid #000; font-family : ¸¼Àº °íµñ">%s</td>
+<td align="right" style="border: 1px solid #000; font-family : ¸¼Àº °íµñ; padding-right : 2pt">%s</td>
+</tr>

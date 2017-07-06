@@ -1,0 +1,49 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\Users\Ariel\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Socket_ver_1_0\com.python.pydev.analysis\v2_indexcache
+Server|1497500650080000000|D:\Users\Ariel\workspace\Socket_ver_1_0\Server.py
+Client|1497495778205000000|D:\Users\Ariel\workspace\Socket_ver_1_0\Client.py
+-- END DISKCACHE
+-- START DICTIONARY
+10
+6=clientMain.__init__
+5=connManager
+2=Server
+9=servThread.run
+3=clientMain
+4=servThread
+8=connManager.run
+1=Client
+10=servThread.setMessage
+7=servThread.__init__
+-- END DICTIONARY
+-- START TREE 1
+11
+add|2|ADDR!11@ADDR!19@
+buf|2|BUFSIZE!19@BUFSIZE!11@
+byt|1|byteData!11@
+cli|3|client!11@clientSocket!11@clientMain!9@
+con|2|connectList!19@connManager!17@
+dat|1|data!11@
+hos|2|HOST!19@HOST!11@
+new|1|newClient!19@
+por|2|PORT!11@PORT!19@
+ser|3|servThread!17@serverSocket!19@serv!19@
+use|2|userId!19@userNum!19@
+-- END TREE
+-- START TREE 2
+13
+__i|3|__init__!3&10@__init__!4&18@__init__!5&18@
+cli|1|clientSock!6&11@
+get|2|getUserId!4&18@getMessage!4&18@
+ip|1|ip!7&19@
+isc|2|isConnected!4&19@isConnected!8&19@
+mes|3|message!4&19@message!9&19@message!10&19@
+por|1|port!7&19@
+pri|1|printSoc!4&18@
+run|3|run!3&10@run!4&18@run!5&18@
+sen|2|sendToClient!4&18@sendAllMessage!5&18@
+set|1|setMessage!4&18@
+soc|2|socket!7&19@sockClose!4&18@
+use|1|userId!7&19@
+-- END TREE

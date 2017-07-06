@@ -1,0 +1,25 @@
+import sys
+from time import sleep
+
+from main.webDriver import webDriver
+from main.webParser import webParser
+from main.MakeXml import MakeXml
+
+
+if __name__ == '__main__':
+    
+    
+    driver = webDriver()
+    
+    driver.chooseMenu()    
+    driver.getValue()
+    
+    sleep(3)
+    
+    parser = webParser()
+    
+    parser.makeData()
+    
+    makeParser = MakeXml()
+    
+    

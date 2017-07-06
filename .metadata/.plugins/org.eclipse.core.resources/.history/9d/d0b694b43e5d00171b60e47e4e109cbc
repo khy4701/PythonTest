@@ -1,0 +1,238 @@
+import threading
+import time
+
+from Server.server_thread import servThread
+from Util.Message import MSGTYPE
+from Util.Room import room
+
+
+class connectManager(threading.Thread):
+            
+    roomIdx = 0
+    def __init__(self, connList ,roomList):
+        self.connectList = connList
+        self.roomList    = roomList
+        self.memberList  = []
+        super(connectManager, self).__init__()
+
+    def run(self):
+        
+        cnt = 0
+        self.isConnected = 1
+        while True:
+            time.sleep(0.1)
+                                                
+            if not self.connectList:
+                continue
+                        
+            if cnt == 10:
+                self.checkConnection()
+                self.sendWaitingMemberList()
+                #self.sendConnectList()
+                cnt = 0                
+            cnt+=1
+
+            try:
+                for conSock in self.connectList:
+                    
+                    userId = conSock.getUserId()
+                    getMsg = conSock.getMessage()                                
+                    
+                    if not getMsg:
+                        continue
+                    
+                    print ( servThread.userNum )
+                        
+                    if servThread.userNum == 1:
+                        conSock.setMessage()
+                        break
+                        
+                    for otherSock in self.connectList:
+                        if userId == otherSock.getUserId():
+                            continue
+                        
+                        if conSock.getEnteredRoom() != otherSock.getEnteredRoom():
+                            continue 
+                        
+                        strMsg = userId + "> " + getMsg
+                        otherSock.sendToClient(strMsg, MSGTYPE.STRING_MSG)
+                        conSock.setMessage()
+                        
+            except Exception as e:
+                print(e)
+                print ("Can't send to Client")
+                
+
+    def sendBroadCasting(self, message, msgType, roomNum = -2):
+        
+        print('SEND BROADCAST MSGTYPE[%s] ROOMNUM[%s]' % (msgType, roomNum) )
+
+        try :
+            for user in self.connectList:
+                if user.getEnteredRoom() == roomNum or roomNum == -2 :
+                    user.sendToClient(message, msgType)
+        except Exception as e:
+            self.deleteDeadUser(user)
+            
+                        
+    def deleteDeadUser(self, conSock):        
+        self.connectList.remove(conSock)
+        conSock.stopThread()
+        servThread.userNum -= 1
+
+    def checkConnection(self):
+        
+        for conSock in self.connectList:
+            if conSock.getStatus() == "DEAD":
+                conSock.sendToClient("DEAD?", 1)
+                self.deleteDeadUser(conSock)
+                
+    def sendConnectList(self):
+        try:
+            userList = []
+            
+            if not self.connectList:
+                return 1
+            
+            for conSock in self.connectList:
+                userList.append(conSock.getUserId())     
+            
+            self.sendBroadCasting(userList, MSGTYPE.SHOW_MEMBER_LIST)       
+            
+        except Exception as e:
+            print(e) 
+            
+    def addRoomList(self, msg):
+        
+        self.roomIdx += 1
+        roomMsg = msg.split("#")
+        roomInfo = room(self.roomIdx, roomMsg[0], roomMsg[1], roomMsg[2])
+        
+        self.roomEntered(roomMsg[1], roomMsg[0])        
+        self.roomList.append(roomInfo)
+        
+    def sendRoomList(self):
+        
+        try:
+            roomList = []
+                        
+            if not self.connectList:
+                print ('There are No Connect list')
+                return 1
+        
+            for roomInfo in self.roomList:
+                roomList.append(roomInfo.getRoomName())
+            
+            self.sendBroadCasting(roomList, MSGTYPE.SHOW_ROOM_LIST)   
+        except Exception as e:
+            print(e)
+
+    def sendMemberList(self, roomName):
+        try:
+            memberList = []
+                        
+            if not self.connectList:
+                print ('There are No Connect list')
+                return 1
+        
+            for user in self.connectList:
+                if user.getEnteredRoom() == roomName :
+                    memberList.append(user.getUserId())
+            
+            self.sendBroadCasting(memberList, MSGTYPE.SHOW_MEMBER_LIST)   
+        except Exception as e:
+            print(e)
+        #self.memberList.append()
+        
+    def roomEntered(self, userId, roomNum):
+        
+        # roomName --> roomNum으로 바꿔야함.
+        # 지금은 roomNum에 roomName이 들어가있는 형태.
+        for user in self.connectList:
+            if user.getUserId() == userId:
+                print ('Entered UserId[%s] to RoomName[%s]' %(userId, roomNum))
+                self.sendBroadCasting("[Entered] %s..." % userId, MSGTYPE.STRING_MSG , roomNum)
+                user.setEnteredRoom(roomNum)
+                
+        for room in self.roomList:
+            if room.getRoomName() == roomNum:
+                room.increaseTotalNum()
+                
+    def displayRoomUser(self, roomNum):
+        
+        userList = []        
+        for user in self.connectList:
+            if user.getEnteredRoom() == roomNum:
+                userList.append(user)
+                
+        return userList
+    
+    
+    def roomExit(self, userId):
+        
+        chkRoomName = ""
+        
+        for user in self.connectList:
+            if userId == user.getUserId():
+                
+                chkRoomName = user.getEnteredRoom()
+
+                user.setEnteredRoom("ROBY")
+                self.sendBroadCasting('[Exit] %s ..' %userId, MSGTYPE.STRING_MSG , chkRoomName)
+                break
+                
+        if not chkRoomName:
+            print ('Not Exist Room Name..')
+            return 
+            
+        if not self.roomList:
+            print ('Not Exist Room List..')
+            return 
+            
+            
+        for room in self.roomList:
+            if chkRoomName == room.getRoomName():                
+                if room.getTotalNum() == 1:
+                    self.roomDelete(room.getRoomName())
+                    return 
+                
+                room.decreaseTotalNum()
+                
+                print( 'Room[%s] Number' %room.getRoomName() )
+        
+                
+    def roomDelete(self, roomName):
+        
+        for room in self.roomList:
+            
+            if room.getRoomName() == roomName:
+                self.roomList.remove(room)                
+                self.sendRoomList()             
+
+                return        
+            
+            
+    def sendWaitingMemberList(self):     
+        
+        
+        try:
+            waitingList = []
+                        
+            if not self.connectList:
+                print ('There are No Connect list')
+                return 1
+        
+            for user in self.connectList:
+                if user.getEnteredRoom() == "ROBY":
+                    waitingList.append(user.getUserId())
+            
+            self.sendBroadCasting(waitingList, MSGTYPE.SHOW_WAITING_LIST)   
+        except Exception as e:
+            print(e)
+        
+        
+        for user in self.co.nectList:
+                
+                
+                
+                

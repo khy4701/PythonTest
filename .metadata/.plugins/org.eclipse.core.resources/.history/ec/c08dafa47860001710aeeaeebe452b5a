@@ -1,0 +1,33 @@
+import os
+from bs4 import BeautifulSoup
+
+
+f = open("D:/Users/Ariel/workspace/PythonFileReading/parsing.txt", 'r')
+
+initXml =''
+
+while True:
+    line = f.readline()
+    initXml += line
+    
+    if not line:
+        break
+
+f.close()
+
+soup = BeautifulSoup(initXml, "html.parser")
+
+trData = soup.findAll("tr")
+
+for node in trData:
+    if node.attrs['height'] == 25:
+        
+        
+if not trData:
+    print ('No Data(trData)')
+
+
+
+
+
+

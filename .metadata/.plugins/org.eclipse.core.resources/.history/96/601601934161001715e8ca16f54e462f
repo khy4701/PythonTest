@@ -1,0 +1,11 @@
+
+
+from datetime import datetime
+excel_date_str = "42139"
+
+execeint(excel_date)
+dt = datetime.fromordinal(datetime(1900, 1, 1).toordinal() + excel_date - 2)
+tt = dt.timetuple()
+print (dt)
+print (tt)
+

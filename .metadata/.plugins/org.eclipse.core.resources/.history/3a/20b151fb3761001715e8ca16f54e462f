@@ -1,0 +1,40 @@
+import sys
+from time import sleep
+
+from main.webDriver import webDriver
+from main.webParser import webParser
+
+
+if __name__ == '__main__':
+    
+    
+    driver = webDriver()
+    
+    driver.chooseMenu()    
+    driver.getValue()
+    
+    sleep(3)
+    
+    parser = webParser()
+    parser.makeData()
+    parser.makeResultFile()
+    
+        
+    wb = open_workbook('sample.xlsx')
+for s in wb.sheets():
+    #print 'Sheet:',s.name
+    values = []
+    for row in range(s.nrows):
+        
+        if row == 0 : continue
+        
+        col_value = []
+        for col in range(s.ncols):
+            value  = (s.cell(row,col).value)
+            try : value = str(int(value))
+            except : pass
+            col_value.append(value)
+                    
+        xmlMaker.makeMainXml(col_value)    
+    
+    print ("Make Result Success")

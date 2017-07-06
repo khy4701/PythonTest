@@ -1,0 +1,30 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\Users\Ariel\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\PythonFileReading\com.python.pydev.analysis\v2_indexcache
+MakeXml|1499239619671006000|D:\Users\Ariel\workspace\PythonFileReading\MakeXml.py
+GetFormat|1499135953720000000|D:\Users\Ariel\workspace\PythonFileReading\GetFormat.py
+ExelReading|1499239532686006000|D:\Users\Ariel\workspace\PythonFileReading\ExelReading.py
+-- END DISKCACHE
+-- START DICTIONARY
+5
+3=MakeXml
+2=GetFormat
+5=XMLMaker.makeResultFile
+1=ExelReading
+4=XMLMaker
+-- END DICTIONARY
+-- START TREE 1
+7
+col|1|col_value!11@
+dri|1|driver!19@
+ele|1|element!19@
+f|1|f!19@
+val|2|values!11@value!11@
+wb|1|wb!11@
+xml|2|xmlMaker!11@XMLMaker!25@
+-- END TREE
+-- START TREE 2
+2
+mak|3|makeResultFile!4&26@makeEndXml!4&26@makeMainXml!4&26@
+tot|1|totalXml!5&27@
+-- END TREE

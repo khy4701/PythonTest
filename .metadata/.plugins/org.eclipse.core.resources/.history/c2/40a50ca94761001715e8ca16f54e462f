@@ -1,0 +1,83 @@
+
+from bs4 import BeautifulSoup
+from selenium import webdriver
+
+
+class webDriver():
+    
+    mainUrl    = ''
+    driver_Loc = 'C:/Users/Ariel/Downloads/chromedriver_win32/chromedriver'
+    loginUrl   = 'http://1.231.29.235/Account/LogOn'
+    id         = 'khy4701'
+    pw         = 'ghdud159753'
+    formUrl    = ''
+    saveLoc    = ''
+    
+    def __init__(self, mainUrl):
+        print("Web Driver Initialized..")
+        self.mainUrl = mainUrl
+        self.saveLoc = mainUrl + "/parsing.txt"
+
+    def login(self):
+        
+        self.driver = webdriver.Chrome(self.driver_Loc)
+        self.driver.implicitly_wait(3)
+        
+        self.driver.get(self.loginUrl)
+
+        self.driver.find_element_by_name('UserName').send_keys(self.id)
+        self.driver.find_element_by_name('Password').send_keys(self.pw)
+        
+    def chooseMenu(self):
+        
+        defaultUrl = "http://1.231.29.235/Ea/EADocPop/EAAppDocPop/?form_id="
+                
+        menu = input(" 1. 시내 출장비 신청서    2. 심야 교통비 지출 결의서   3. 식대 지출 결의서  ")
+        
+        num = 0
+        if menu == "1":
+            num = 29
+        elif menu == "2":
+            num = 31
+        elif menu == "3":
+            num = 32
+            
+        self.formUrl = defaultUrl+str(num)
+        
+        print(self.formUrl)
+        self.login()
+
+    
+    def getValue(self):
+        
+        element = self.driver.find_element_by_xpath("//a[contains(@href,'fnSubmit')]")
+        element.click()
+        
+        self.driver.implicitly_wait(3)
+        
+        self.driver.get(self.formUrl)
+        
+        self.driver.implicitly_wait(6)
+        #element = self.driver.find_element_by_xpath("//span[@id='cke_32_label']")
+        try:
+            element = self.driver.find_element_by_xpath('//*[@id="cke_32"]')
+            if not element:
+                element = self.driver.find_element_by_xpath('//*[@id="cke_32_label"]')
+
+            element.click()
+        except:
+            print('Element Not Founded (source find)')
+            element = self.driver.find_element_by_xpath('//*[@id="cke_32_label"]')
+            element.click()
+        
+        self.driver.implicitly_wait(5)
+        
+        element = self.driver.find_element_by_xpath("//*[@id='cke_1_contents']/textarea")
+        #print (element.get_attribute("value"))
+        
+        f = open(self.saveLoc, 'w')
+        f.write(element.get_attribute("value"))
+        
+        print ('Get Success')
+        f.close()
+        

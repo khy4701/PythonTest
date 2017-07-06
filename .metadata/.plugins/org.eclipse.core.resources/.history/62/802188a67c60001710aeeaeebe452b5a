@@ -1,0 +1,34 @@
+# -*- coding:utf-8 -*-
+import os
+from bs4 import BeautifulSoup
+
+
+f = open("D:/Users/Ariel/workspace/PythonFileReading/parsing.txt", 'r')
+
+initXml =''
+
+while True:
+    line = f.readline()
+    initXml += line
+    
+    if not line:
+        break
+
+f.close()
+
+soup = BeautifulSoup(initXml, "html.parser")
+
+trData = soup.findAll("tr",{"height":"30"}).replace()
+
+for node in trData:
+    #if node.attrs['height'] == "30":
+    print (node)        
+    
+if not trData:
+    print ('No Data(trData)')
+
+
+
+
+
+

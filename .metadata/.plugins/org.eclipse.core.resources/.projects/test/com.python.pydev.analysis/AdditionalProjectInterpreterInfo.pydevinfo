@@ -1,0 +1,40 @@
+-- VERSION_4
+-- START DISKCACHE_2
+D:\Users\Ariel\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\test\com.python.pydev.analysis\v2_indexcache
+server|1498025528777929000|D:\Users\Ariel\workspace\test\server.py
+test|1499233550817506000|D:\Users\Ariel\workspace\test\test.py
+pickle|1497963750786000000|D:\Users\Ariel\workspace\test\pickle.py
+-- END DISKCACHE
+-- START DICTIONARY
+7
+2=server
+3=test
+4=Message
+6=Message.__init__
+7=Message.setMessageData
+5=window
+1=pickle
+-- END DICTIONARY
+-- START TREE 1
+7
+dat|1|data_string!11@
+mai|1|main!19@
+mes|1|Message!9@
+msg|1|msg!11@
+my_|1|my_time!27@
+win|2|window!19@window!17@
+x|1|x!27@
+-- END TREE
+-- START TREE 2
+10
+__i|2|__init__!4&10@__init__!5&18@
+clo|1|closeEvent!5&18@
+con|2|converByteToString!4&10@converStringToByte!4&10@
+cre|1|createUI!5&18@
+des|2|destUser!4&11@destUser!6&11@
+get|2|getMessageData!4&10@getUserInfo!4&10@
+isg|1|isGetMessage!4&10@
+msg|3|msgData!4&11@msgData!6&11@msgData!7&11@
+sen|1|sendUser!4&11@
+set|1|setMessageData!4&10@
+-- END TREE

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PythonFileReading/ExelReading&apos; to &apos;ExelReading.py&apos;" description="Rename resource &apos;ExelReading&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ExelReading" name="ExelReading.py" stamp="1498799772071" updateReferences="true"/>
+</session>

@@ -1,0 +1,5 @@
+from datetime import time
+
+x = excel_time # a float
+x = int(x * 24 * 3600) # convert to number of seconds
+my_time = time(x//3600, (x%3600)//60, x%60) # hours, minutes, seconds

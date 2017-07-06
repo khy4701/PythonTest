@@ -1,0 +1,28 @@
+from bs4 import BeautifulSoup
+from selenium import webdriver
+
+
+driver = webdriver.Chrome('C:/Users/Ariel/Downloads/chromedriver_win32/chromedriver')
+driver.implicitly_wait(3)
+driver.get('https://wkdtjsgur100.github.io/blog/2017/03/05/selenium-xpath/')
+
+
+html = driver.page_source
+soup = BeautifulSoup(html, "lxml")
+'''
+for paragraph in soup.find_all('p'):
+    #print(paragraph.string)
+    print(str(paragraph.text))
+'''
+   
+#notices = soup.select("body > div.wrap > div.container.content > div.post > p:nth-child(11)")
+
+idName = "selenium에서-특정-element-가져오기".decode("selenium에서-특정-element-가져오기"
+notices = soup.find(id=)
+print(notices)
+
+'''
+for n in notices:
+    print(n.text.strip()) 
+''' 
+    

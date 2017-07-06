@@ -1,0 +1,26 @@
+import sys
+from time import sleep
+
+from main.webDriver import webDriver
+from main.webParser import webParser
+
+
+if __name__ == '__main__':
+    
+    
+    driver = webDriver()
+    
+    driver.chooseMenu()    
+    driver.getValue()
+    
+    sleep(3)
+    
+    parser = webParser()
+    
+    parser.makeData()
+    
+    parser.makeResultFile()
+    
+    
+    
+    print ("Make Result Success")

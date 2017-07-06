@@ -433,7 +433,7 @@ class Shape(object):
 
         
     def rotateLeft(self):
-        
+        :while
         if self.pieceShape == Tetrominoe.SquareShape:
             return self
 

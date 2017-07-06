@@ -1,0 +1,8 @@
+from selenium import webdriver
+
+driver = webdriver.Chrome('/Users/beomi/Downloads/chromedriver')
+driver.implicitly_wait(3)
+driver.get('https://nid.naver.com/nidlogin.login')
+# 아이디/비밀번호를 입력해준다.
+driver.find_element_by_name('id').send_keys('naver_id')
+driver.find_element_by_name('pw').send_keys('mypassword1234')

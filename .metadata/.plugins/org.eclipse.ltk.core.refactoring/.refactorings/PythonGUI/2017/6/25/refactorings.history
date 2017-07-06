@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;PythonGUI/Widget/fldr_obj.png&apos; to &apos;redrock.png&apos;" description="Rename resource &apos;fldr_obj.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Widget/fldr_obj.png" name="redrock.png" stamp="1497849266755" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;PythonGUI/DragAndDrop/simpleDragAndDrop&apos; to &apos;simpleDragAndDrop.py&apos;" description="Rename resource &apos;simpleDragAndDrop&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DragAndDrop/simpleDragAndDrop" name="simpleDragAndDrop.py" stamp="1497849526437" updateReferences="true"/>
+</session>
