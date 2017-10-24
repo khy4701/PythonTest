@@ -1,13 +1,15 @@
-from Receiver import Receiver
-from logManager import logManager
 
 
-class PLTEManager(Receiver):
+from LogManager import LogManager
+from Manager import Manager
+
+
+class PLTEManager(Manager):
     
     __instance = None
-    logger = logManager.getInstance().get_logger()
+    logger = LogManager.getInstance().get_logger()
 
-    
+
     @staticmethod
     def getInstance():
         """ Static access method. """
@@ -21,7 +23,6 @@ class PLTEManager(Receiver):
 
         pass
     
-    def receiveMessage(self):
-        
-        print 'Receive Message'
+    def msgProcessing(self):        
+        self.logger.debug('Message Processing')
         pass

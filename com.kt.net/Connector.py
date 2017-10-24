@@ -3,12 +3,12 @@
 from abc import ABCMeta, abstractmethod
 import threading
 
-from logManager import logManager
+from LogManager import LogManager
 
 
 class Connector(threading.Thread):
     __metaclass__ = ABCMeta
-    logger = logManager.getInstance().get_logger()
+    logger = LogManager.getInstance().get_logger()
 
     def __init__(self, receiver):
         super(Connector,self).__init__()
@@ -23,10 +23,18 @@ class Connector(threading.Thread):
     @abstractmethod    
     def sendMessage(self):
         pass
-        
-    def run(self):
-        if ( self.reader == self ):
-            self.logger.debug("Threading Start")
-            
     
+    @abstractmethod    
+    def readMessage(self):
+        pass
         
+    def run(self):      
+        '''  
+        while self.reader == self:
+            try:                                
+                self.readMessage()
+            except Exception as e:
+                self.logger.error(e)
+        '''
+        self.readMessage()
+                           

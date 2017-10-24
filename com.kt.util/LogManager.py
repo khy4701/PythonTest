@@ -3,18 +3,18 @@ import logging.handlers
 
 #from desginPattern import SingletonType
 
-class logManager:
+class LogManager:
           
     __instance = None
     logger = None
-    LOG_PATH = 'D:/logs/python/my.log'
+    LOG_PATH = '/home/e2e/hykim/src/logs/my.log' #'D:/logs/python/my.log'
     
     @staticmethod
     def getInstance():
         """ Static access method. """
-        if logManager.__instance == None:
-            logManager.__instance = logManager()
-        return logManager.__instance 
+        if LogManager.__instance == None:
+            LogManager.__instance = LogManager()
+        return LogManager.__instance 
     
     
     def __init__(self):

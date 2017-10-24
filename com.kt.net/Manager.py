@@ -1,11 +1,11 @@
 from abc import abstractmethod
  
  
-class Receiver():
+class Manager():
      
     def __init_(self):
         return
      
     @abstractmethod
-    def receiveMessage(self):
+    def msgProcessing(self):
         pass
