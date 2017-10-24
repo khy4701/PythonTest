@@ -4,6 +4,8 @@ import time
 from flask import request
 from flask.json import jsonify
 from flask_restful import Resource
+from ApiDefine import ApiDefine
+from PLTEConnector import PLTEConnector
 
 class Departments_Meta(Resource):
     
@@ -16,7 +18,7 @@ class Departments_Meta(Resource):
 
 
     # Json Example ( Parameter & Json Data )             
-    def post(self,department_name,abc):
+    def post(self, department_name, abc):
     # Query the result and get cursor.Dumping that data to a JSON is looked by extension
 
         content = request.get_json(force=True)
@@ -24,7 +26,10 @@ class Departments_Meta(Resource):
         name = content['name']
         age = content['age']
 
-        return jsonify(name=name , age = age)
+
+        PLTEConnector.getInstance().sendMessage(ApiDefine.API_NUM1, abc)
+
+        return jsonify( d_name=department_name, abc=abc, name=name , age = age)
         
     # {
     #   "age": 123, 

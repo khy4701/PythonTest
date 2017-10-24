@@ -60,8 +60,8 @@ class PLTEConnector(Connector):
         self.logger.debug('Send Message')
 
         pMsg =  provMsg()
-        pMsg.id = 555
-        pMsg.ce = "Hello"
+        pMsg.id = jobNo
+        pMsg.ce = command
         pMsg.syms = 3
 
         pData = ctypes.cast(ctypes.byref(pMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(pMsg)))
@@ -72,16 +72,14 @@ class PLTEConnector(Connector):
                     self.queue.send( pData.contents.raw, True)
 
         except Exception as e:
+            self.logger.error("sendMessage Error! %s" % e)
 
-            self.logger.info("===============================================");
-            self.logger.info("[EXT_API] -> RESTIF")
-            self.logger.info("===============================================");
-
-                
-            self.logger.info("===============================================");
-            self.logger.info("COMMAND : " + command)
-            self.logger.info("JOBNO   : " + jobNo)
-            self.logger.info("===============================================");
+        self.logger.info("===============================================");
+        self.logger.info("[EXT_API] -> RESTIF")
+        self.logger.info("===============================================");
+        self.logger.info("COMMAND : %s" % command)
+        self.logger.info("JOBNO   : %d" % jobNo)
+        self.logger.info("===============================================");
         
 
 

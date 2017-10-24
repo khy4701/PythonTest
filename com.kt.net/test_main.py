@@ -10,7 +10,7 @@ app = Flask(__name__)
 api = Api(app)
 
 PLTEConnector.getInstance()
-PLTEConnector.getInstance().sendMessage("Command",2)
+#PLTEConnector.getInstance().sendMessage("Command",2)
 
  
 api.add_resource(Departmental_Salary, '/dept/<string:department_name>')
@@ -25,4 +25,4 @@ api.add_resource(Departments_Meta2,'/departments/')
 #     app.error_handler_spec[None][error] = http_error_handler
 
 if __name__ == '__main__':
-    app.run(threaded=True)
+    app.run(threaded=True, host='0.0.0.0')
