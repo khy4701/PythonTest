@@ -23,20 +23,27 @@ class PLTEConnector(Connector):
         Connector.__init__(self, PLTEManager.getInstance())
         
         #self.queue = sysv_ipc.MessageQueue(self.queueId , sysv_ipc.IPC_CREX, mode=0666 )
-        self.queue = sysv_ipc.MessageQueue(self.queueId )
-                    
+        try :
+                self.queue = sysv_ipc.MessageQueue(self.queueId )
+        except Exception as e:
+                self.logger.error("msgQueue Connection Failed.. QUEUE_ID[%d]" % self.queueId)
+
     def readMessage(self):
         self.logger.debug('Read Message')
 
         try:
                 s = "Hi Python To C"
-                self.queue.send( s.decode(), True)
-        
-                print 'Message Send Success'
+                if self.queue is not None :
+                        self.queue.send( s.decode(), True)
+
+                self.logger.info("===============================================");
+                self.logger.info("[EXT_API] -> RESTIF")
+#                self.logger.info("COMMAND : " + command)
+#                self.logger.info("JOBNO   : " + jobNo)
+                self.logger.info("===============================================");
         
         except sysv_ipc.ExistentialError:
                 print "ERROR: message queue creation failed"
-        
                
         print (self.queueId)
 
@@ -46,8 +53,8 @@ class PLTEConnector(Connector):
         self.logger.debug('Send Message')
                 
         self.logger.info("===============================================");
-        self.logger.info("COMMAND : " + command);
-        self.logger.info("JOBNO   : " + jobNo);
+        self.logger.info("COMMAND : " + command)
+        self.logger.info("JOBNO   : " + jobNo)
         self.logger.info("===============================================");
         
 
