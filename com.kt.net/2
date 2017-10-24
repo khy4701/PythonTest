@@ -108,7 +108,7 @@ class PLTEConnector(Connector):
         header.length = 4
         header.encoding = '5'        
                 
-        #httpMsg.mtype = 2
+        httpMsg.mtype = 2
         httpMsg.tot_len = 100
         httpMsg.msgId = 200
         httpMsg.ehttpf_idx = 71
@@ -116,12 +116,16 @@ class PLTEConnector(Connector):
         httpMsg.srcSysId = '1'
         httpMsg.http_hdr = header
         httpMsg.jsonBody = "Testing to.."
+        
+        self.logger.info("provMSG Size : %d " %ctypes.sizeof(p));
+        self.logger.info("CTYPES Size : %d " %ctypes.sizeof(httpMsg));
 
         pData = ctypes.cast(ctypes.byref(httpMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpMsg)))
 
         try:
             if self.queue is not None :
-                    self.queue.send( pData.contents.raw, True, HttpReq.MTYPE_RESTIF_TO_APP_REQ )
+                    #self.queue.send( s.decode(), True)
+                    self.queue.send( pData.contents.raw, 2)
 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
