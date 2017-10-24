@@ -36,6 +36,7 @@ class PLTEConnector(Connector):
                 if self.queue is not None :
                         self.queue.send( s.decode(), True)
 
+                print 'test'
                 self.logger.info("===============================================");
                 self.logger.info("[EXT_API] -> RESTIF")
 #                self.logger.info("COMMAND : " + command)
