@@ -5,7 +5,7 @@ import sys
 from ConfigManager import ConfManager
 from Connector import *
 from PLTEManager import PLTEManager
-from provMsg import provMsg, HttpReq, HttpHeader
+from provMsg import provMsg, HttpReq,HttpRes, HttpHeader
 import sysv_ipc, time, signal
 
 
@@ -13,7 +13,8 @@ class PLTEConnector(Connector):
     
     __instance = None
     
-    queueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))    
+    myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF" ))    
+    plteQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))    
     logger = LogManager.getInstance().get_logger()
 
     @staticmethod
@@ -27,71 +28,68 @@ class PLTEConnector(Connector):
         self.logger.debug('PLTEConnector Init')
         Connector.__init__(self, PLTEManager.getInstance())
         
-        #self.queue = sysv_ipc.MessageQueue(self.queueId , sysv_ipc.IPC_CREX, mode=0666 )
+        #self.myQueue = sysv_ipc.MessageQueue(self.plteQueId , sysv_ipc.IPC_CREX, mode=0666 )
         try :
-                self.queue = sysv_ipc.MessageQueue(self.queueId)
+                #IPC_CREAT : create or return key if it is allocated.
+                #IPC_CREX  : IPC_CREAT | IPC_EXCL 
+                #IPC_EXCL  : return -1 if there is already allocated.
+                self.myQueue = sysv_ipc.MessageQueue(self.myQueId, sysv_ipc.IPC_CREAT, mode=0666 )
         except Exception as e:
-                self.logger.error("msgQueue Connection Failed.. QUEUE_ID[%d]" % self.queueId)
+                self.logger.error("msgQueue Connection Failed.. RESTIF QUEUE_ID[%d]" % self.myQueId)
+
+        try :
+                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId)
+        except Exception as e:
+                self.logger.error("msgQueue Connection Failed.. PLTE QUEUE_ID[%d]" % self.plteQueId)
 
     def readMessage(self):
         self.logger.debug('Read Message')
 
         try:
-                receiveMsg =  provMsg()
-                message = self.queue.receive(ctypes.sizeof(receiveMsg))
+                resMsg = HttpRes()
 
-                mydata = ctypes.create_string_buffer( message[0] )
+                if self.myQueue is None:
+                    try :
+                            self.myQueue = sysv_ipc.MessageQueue(self.myQueId, sysv_ipc.IPC_CREAT, mode=0777 )
+                    except Exception as e:
+                            self.logger.error("msgQueue Connection Failed.. RESTIF QUEUE_ID[%d]" % self.myQueId)
+
                 
-                ctypes.memmove(ctypes.pointer(receiveMsg), mydata ,ctypes.sizeof(receiveMsg))
+                self.logger.info("read Start..");
+                (message, msgType) = self.myQueue.receive(ctypes.sizeof(resMsg))
 
-                print (receiveMsg.id , receiveMsg.ce, receiveMsg.syms )
+                mydata = ctypes.create_string_buffer( message )
+                
+                ctypes.memmove(ctypes.pointer(resMsg), mydata ,ctypes.sizeof(resMsg))
+
                 time.sleep(1)
 
                 self.logger.info("===============================================");
                 self.logger.info("PLTEIB -> RESTIF")
                 self.logger.info("===============================================");
-                self.logger.info("ID : %d" %receiveMsg.id )
-                self.logger.info("CE : %s" %receiveMsg.ce )
-                self.logger.info("SYMS : %d" %receiveMsg.syms )
+                self.logger.info("msgType: %d" %msgType )
+                self.logger.info("tot_len : %s" %resMsg.tot_len )
+                self.logger.info("msgId : %d" %resMsg.msgId )
+                self.logger.info("ehttp_idx : %d" %resMsg.ehttpf_idx )
+                self.logger.info("srcQid : %d" %resMsg.srcQid )
+                self.logger.info("srcSysId : %c" %resMsg.srcSysId )
+                self.logger.info("nResult : %d" %resMsg.nResult )
+#                self.logger.info("jsonBody: %s" %resMsg.jsonBody )
+#                self.logger.info("===============================================");
+#                self.logger.info("method: %d" %resMsg.method )
+#                self.logger.info("api_type: %d" %resMsg.api_type )
+#                self.logger.info("op_type: %d" %resMsg.op_type )
+#                self.logger.info("length: %d" %resMsg.length )
+#                self.logger.info("encoding: %c" %resMsg.encoding )
         
         except Exception as e :
-                self.logger.error("Msgrcv Failed..  ")
+                self.logger.error("Msgrcv Failed..  %s" %e)
                 time.sleep(1)
         
 
     def sendMessage(self, command, jobNo):
         
         self.logger.debug('Send Message')
-
-#         pMsg =  provMsg()
-#         pMsg.id = jobNo
-#         pMsg.ce = command
-#         pMsg.syms = 3
-# 
-#         pData = ctypes.cast(ctypes.byref(pMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(pMsg)))
-# 
-#         try:
-#             if self.queue is not None :
-#                     #self.queue.send( s.decode(), True)
-#                     self.queue.send( pData.contents.raw, True)
-
-# class HttpHeader(Structure):
-#     _fields = [("method", c_int),
-#                ("api_type", c_int),
-#                ("op_type", c_int),
-#                ("length", c_int),
-#                ("encoding", c_char ) ]
-# 
-# 
-# class HttpReq(Structure):
-#     _fields = [("mtype", c_long),
-#                ("tot_len", c_int),
-#                ("msgId", c_int),
-#                ("ehttpf_idx", c_short),
-#                ("srcQid", c_int),
-#                ("srcSysId", c_char ),
-#                ("http_hdr", HttpHeader),
-#                ("jsonBody", c_char * HTTPF_MSG_BUFSIZE ) ]
 
         p = provMsg()
         p.id = 1
@@ -120,8 +118,8 @@ class PLTEConnector(Connector):
         pData = ctypes.cast(ctypes.byref(httpMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpMsg)))
 
         try:
-            if self.queue is not None :
-                    self.queue.send( pData.contents.raw, True, HttpReq.MTYPE_RESTIF_TO_APP_REQ )
+            if self.plteQueue is not None :
+                    self.plteQueue.send( pData.contents.raw, True, HttpReq.MTYPE_RESTIF_TO_APP_REQ )
 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
