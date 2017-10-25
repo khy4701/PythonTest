@@ -1,10 +1,6 @@
-
-
 from LogManager import LogManager
 from Manager import Manager
-from PLTEConnector import PLTEConnector
 from SenderInfo import SenderInfo
-
 
 class PLTEManager(Manager):
     
@@ -33,7 +29,7 @@ class PLTEManager(Manager):
         
         for member in PLTEManager.plteMembers:
             
-            if member.getClientReqId() == reqId:
+            if member.getCliReqId() == reqId:
                 # Service Manager
                 source = member.getSource()
                 
@@ -52,13 +48,14 @@ class PLTEManager(Manager):
     
     @staticmethod
     def sendCommand(command, source, reqId, msg):
+        from PLTEConnector import PLTEConnector
         
         senderInfo = SenderInfo(source, reqId)
         
         # Transcation List Add
         PLTEManager.plteMembers.append(senderInfo)
                 
-        if PLTEConnector.getInstance().sendMessage(command, reqId, msg):
+        if not PLTEConnector.getInstance().sendMessage(command, reqId, msg):
             # Transcation List Remove
             PLTEManager.plteMembers.remove(senderInfo)
         

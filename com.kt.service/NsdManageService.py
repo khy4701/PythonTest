@@ -4,7 +4,7 @@ from flask_restful import Resource
 
 from ConfigManager import ConfManager
 from LogManager import LogManager
-import ServiceManager.TransacManager
+from ServiceManager import ServiceManager
 
 
 class NsdOnboarding(Resource, ServiceManager):

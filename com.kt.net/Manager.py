@@ -12,3 +12,4 @@ class Manager:
     
     @abstractmethod
     def sendCommand(self, command, source, reqId, msg):
+        pass

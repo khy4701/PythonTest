@@ -73,7 +73,7 @@ class PLTEConnector(Connector):
                 self.logger.info("length: %d" %headerMsg.length )
                 self.logger.info("encoding: %c" %headerMsg.encoding )
                 
-                self.receiver.receiveHandling(resMsg.nResult, resMsg.msgId, resMsg.jsonBody )
+                self.manager.receiveHandling(resMsg.nResult, resMsg.msgId, resMsg.jsonBody )
                 
         
         except Exception as e :
@@ -96,7 +96,7 @@ class PLTEConnector(Connector):
         header.encoding = '5'        
                  
         httpMsg.tot_len = 100
-        httpMsg.msgId = 200
+        httpMsg.msgId = reqId
         httpMsg.ehttpf_idx = 71
         httpMsg.srcQid = 300
         httpMsg.srcSysId = '1'

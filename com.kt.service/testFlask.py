@@ -41,14 +41,15 @@ class ttt(Resource, ServiceManager):
         #resMsg = self.setResMessage(data)
         
         # [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
-        self.clientID = PLTEManager.getInstance().getClientReqId()
+        self.clientId = PLTEManager.getInstance().getClientReqId()
         
-        self.logger.info("Client ID : " + str(self.clientID));
+        self.logger.info("Client ID : " + str(self.clientId));
         
         PLTEManager.getInstance().sendCommand(ApiDefine.NSD_ON_BOARDING, self, self.clientId, resMsg)
                                         
         # WAIT                
-        while self.clientID != self.receiveReqId:
+        self.receiveReqId = -1
+        while self.clientId != self.receiveReqId:
             try:
                 time.sleep(1)
             except Exception as e:
@@ -61,12 +62,13 @@ class ttt(Resource, ServiceManager):
                 self.logger.info("RESTIF -> [WEB]")
                 self.logger.info("===============================================");
                 self.logger.info("TID : " + str(self.receiveReqId))
-                self.logger.info("RESCODE : " + int(self.rspCode))
-                self.logger.info("BODY : "  + str(self.body))
+                self.logger.info("RESCODE : " + str(self.rspCode))
+#                self.logger.info("BODY : "  + str(self.body))
                 self.logger.info("===============================================");
         
         
         # [RESTIF->WEB] SEND RESPONSE
+        
         name = content['name']
         age = content['age']
 

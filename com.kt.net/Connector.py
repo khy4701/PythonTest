@@ -37,10 +37,10 @@ class Connector(threading.Thread):
         return None
             
 
-    def __init__(self, receiver):
+    def __init__(self, manager):
         super(Connector,self).__init__()
         self.logger.debug("Connector Init")
-        self.receiver = receiver
+        self.manager = manager
         
 #       signal.signal(signal.SIGINT, self.signal_handler)
 #        try :
