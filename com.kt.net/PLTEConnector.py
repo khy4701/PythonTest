@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import Connector
 import ctypes
 import sys
 
@@ -13,7 +14,6 @@ class PLTEConnector(Connector):
     
     __instance = None
     
-    myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF" ))    
     plteQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))    
     logger = LogManager.getInstance().get_logger()
 
@@ -27,16 +27,8 @@ class PLTEConnector(Connector):
     def __init__(self):
         self.logger.debug('PLTEConnector Init')
         Connector.__init__(self, PLTEManager.getInstance())
-        
-        #self.myQueue = sysv_ipc.MessageQueue(self.plteQueId , sysv_ipc.IPC_CREX, mode=0666 )
-        try :
-                #IPC_CREAT : create or return key if it is allocated.
-                #IPC_CREX  : IPC_CREAT | IPC_EXCL 
-                #IPC_EXCL  : return -1 if there is already allocated.
-                self.myQueue = sysv_ipc.MessageQueue(self.myQueId, sysv_ipc.IPC_CREAT, mode=0666 )
-        except Exception as e:
-                self.logger.error("msgQueue Connection Failed.. RESTIF QUEUE_ID[%d]" % self.myQueId)
 
+        self.myQueue = Connector.getMyQueue()
         try :
                 self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId)
         except Exception as e:
@@ -49,13 +41,11 @@ class PLTEConnector(Connector):
                 resMsg = HttpRes()
 
                 if self.myQueue is None:
-                    try :
-                            self.myQueue = sysv_ipc.MessageQueue(self.myQueId, sysv_ipc.IPC_CREAT, mode=0777 )
-                    except Exception as e:
-                            self.logger.error("msgQueue Connection Failed.. RESTIF QUEUE_ID[%d]" % self.myQueId)
+                    self.myQueue = Connector.getMyQueue()
+                    if self.myQueue is None:
+                        self.logger.error("msgQueue Get Failed...")
+                        return 
 
-                
-                self.logger.info("read Start..");
                 (message, msgType) = self.myQueue.receive(ctypes.sizeof(resMsg))
 
                 mydata = ctypes.create_string_buffer( message )
