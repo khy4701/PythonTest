@@ -1,11 +1,25 @@
 
 class Service:
+    
+    # NSD Management
     NSD_ON_BOARDING = "/ns_descriptors"
+    NSD_ENABLE      = "/ns_descriptors/{nsdInfoId}"
+    NSD_DISABLE     = "/ns_descriptors/{nsdInfoId}"
+    NSD_UPDATE      = "/ns_descriptors/{nsdInfoId}/update"
+    NSD_DELETE      = "/ns_descriptors/{nsdInfoId}"
+    NSD_QUERY       = "/ns_descriptors/{nsdInfoId}"
+    
+    # NS Lifecycle management
+    NS_ID_CREATE     = "/ns_instances"
+    NS_ID_DELETE     = "/ns_descriptors/{nsdInfoId}"
+    NS_INSTANTIATION = "/ns_instances/{nsInstanceId}/instantiate"
+    NS_TERMINATION   = "/ns_instances/{nsInstanceId}/terminate"
+    NS_UPDATE        = "/ns_instances/{nsInstanceId}/update"
+    NS_SCALE_OUT     = "/ns_lcm_op_ops/{nsLcmOpOccId}/<<Task>>"
+    NS_SCALE_IN      = "/ns_lcm_op_ops/{nsLcmOpOccId}/<<Task>>"
 
     def __init__(self):
             pass
-
-
 
 # # NS Management
 # api.add_resource(,'/ns_descriptors')
