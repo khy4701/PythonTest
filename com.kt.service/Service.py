@@ -1,6 +1,6 @@
 
 class Service:
-    NSD_ON_BOARDING('/ns_descriptors')
+    NSD_ON_BOARDING = "/ns_descriptors"
 
     def __init__(self):
             pass
