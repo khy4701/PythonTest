@@ -1,9 +1,11 @@
 from flask import Flask
 from flask_restful import Api
 
+from Service import Service
 from PLTEConnector import PLTEConnector
 from ServiceClass import Departments_Meta, Departments_Meta2
 from ServiceClass2 import Departmental_Salary
+from NsdManageService import NsdOnboarding
 
 #Create a engine for connecting to SQLite3.
 app = Flask(__name__)
@@ -16,6 +18,9 @@ PLTEConnector.getInstance()
 api.add_resource(Departmental_Salary, '/dept/<string:department_name>')
 api.add_resource(Departments_Meta, '/departments/<string:department_name>/<int:abc>')
 api.add_resource(Departments_Meta2,'/departments/')
+
+
+api.add_resource(NsdOnboarding, Service.NSD_ON_BOARDING )
 
 # def http_error_handler(error):
 #     #return flask.render_template('error.html', error=error), error.code

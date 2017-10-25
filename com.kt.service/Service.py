@@ -1,4 +1,11 @@
 
+class Service:
+    NSD_ON_BOARDING('/ns_descriptors')
+
+    def __init__(self):
+            pass
+
+
 
 # # NS Management
 # api.add_resource(,'/ns_descriptors')
