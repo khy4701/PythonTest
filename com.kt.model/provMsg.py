@@ -52,7 +52,7 @@ class HttpRes(Structure):
                 ("ehttpf_idx", c_short), # 2
                 ("srcQid", c_int),       # 4
                 ("srcSysId", c_char ),   # 1
-                ("nResult", c_int)]       # 4
-#                ("http_hdr", HttpHeader),  # 17
-#                ("jsonBody", c_char * HTTPF_MSG_BUFSIZE ) ]  # 1024
+                ("nResult", c_int),       # 4
+                ("http_hdr", HttpHeader),  # 17
+                ("jsonBody", c_char * HTTPF_MSG_BUFSIZE ) ]  # 1024
 

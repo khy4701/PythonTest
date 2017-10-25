@@ -64,6 +64,8 @@ class PLTEConnector(Connector):
 
                 time.sleep(1)
 
+                headerMsg = resMsg.http_hdr
+
                 self.logger.info("===============================================");
                 self.logger.info("PLTEIB -> RESTIF")
                 self.logger.info("===============================================");
@@ -74,13 +76,13 @@ class PLTEConnector(Connector):
                 self.logger.info("srcQid : %d" %resMsg.srcQid )
                 self.logger.info("srcSysId : %c" %resMsg.srcSysId )
                 self.logger.info("nResult : %d" %resMsg.nResult )
-#                self.logger.info("jsonBody: %s" %resMsg.jsonBody )
-#                self.logger.info("===============================================");
-#                self.logger.info("method: %d" %resMsg.method )
-#                self.logger.info("api_type: %d" %resMsg.api_type )
-#                self.logger.info("op_type: %d" %resMsg.op_type )
-#                self.logger.info("length: %d" %resMsg.length )
-#                self.logger.info("encoding: %c" %resMsg.encoding )
+                self.logger.info("jsonBody: %s" %resMsg.jsonBody )
+                self.logger.info("===============================================");
+                self.logger.info("method: %d" %headerMsg.method )
+                self.logger.info("api_type: %d" %headerMsg.api_type )
+                self.logger.info("op_type: %d" %headerMsg.op_type )
+                self.logger.info("length: %d" %headerMsg.length )
+                self.logger.info("encoding: %c" %headerMsg.encoding )
         
         except Exception as e :
                 self.logger.error("Msgrcv Failed..  %s" %e)
