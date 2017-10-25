@@ -48,6 +48,7 @@ class PLTEManager(Manager):
     
     @staticmethod
     def sendCommand(command, source, reqId, msg):
+        # To avoid circular dependencies --> import under Function.
         from PLTEConnector import PLTEConnector
         
         senderInfo = SenderInfo(source, reqId)
