@@ -6,7 +6,7 @@ import sys
 from ConfigManager import ConfManager
 from Connector import *
 from PLTEManager import PLTEManager
-from provMsg import provMsg, HttpReq,HttpRes, HttpHeader
+from ProvMsg import HttpReq, HttpRes, HttpHeader
 import sysv_ipc, time, signal
 
 
@@ -34,12 +34,11 @@ class PLTEConnector(Connector):
         except Exception as e:
                 self.logger.error("msgQueue Connection Failed.. PLTE QUEUE_ID[%d]" % self.plteQueId)
 
-    def readMessage(self):
-        self.logger.debug('Read Message')
 
+    def readMessage(self):
         try:
                 resMsg = HttpRes()
-
+                
                 if self.myQueue is None:
                     self.myQueue = Connector.getMyQueue()
                     if self.myQueue is None:
@@ -49,13 +48,13 @@ class PLTEConnector(Connector):
                 (message, msgType) = self.myQueue.receive(ctypes.sizeof(resMsg))
 
                 mydata = ctypes.create_string_buffer( message )
-                
                 ctypes.memmove(ctypes.pointer(resMsg), mydata ,ctypes.sizeof(resMsg))
 
                 time.sleep(1)
 
                 headerMsg = resMsg.http_hdr
 
+                # Receive Message Logging
                 self.logger.info("===============================================");
                 self.logger.info("PLTEIB -> RESTIF")
                 self.logger.info("===============================================");
@@ -73,39 +72,36 @@ class PLTEConnector(Connector):
                 self.logger.info("op_type: %d" %headerMsg.op_type )
                 self.logger.info("length: %d" %headerMsg.length )
                 self.logger.info("encoding: %c" %headerMsg.encoding )
+                
+                self.receiver.receiveHandling(resMsg.nResult, resMsg.msgId, resMsg.jsonBody )
+                
         
         except Exception as e :
                 self.logger.error("Msgrcv Failed..  %s" %e)
                 time.sleep(1)
         
 
-    def sendMessage(self, command, jobNo):
+    def sendMessage(self, apiName, reqId, receiveMsg):
         
         self.logger.debug('Send Message')
-
-        p = provMsg()
-        p.id = 1
-        p.ce = '11'
-        p.syms = 3
-
+        
 
         httpMsg =  HttpReq()
         header = HttpHeader()
-        
+         
         header.method = 1
         header.api_type = 2
         header.op_type = 3
         header.length = 4
         header.encoding = '5'        
-                
-        #httpMsg.mtype = 2
+                 
         httpMsg.tot_len = 100
         httpMsg.msgId = 200
         httpMsg.ehttpf_idx = 71
         httpMsg.srcQid = 300
         httpMsg.srcSysId = '1'
         httpMsg.http_hdr = header
-        httpMsg.jsonBody = "Testing to.."
+        httpMsg.jsonBody = receiveMsg
 
         pData = ctypes.cast(ctypes.byref(httpMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpMsg)))
 
@@ -115,14 +111,17 @@ class PLTEConnector(Connector):
 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
+            return False
 
         self.logger.info("===============================================");
         self.logger.info("[EXT_API] -> RESTIF")
         self.logger.info("===============================================");
-        self.logger.info("COMMAND : %s" % command)
-        self.logger.info("JOBNO   : %d" % jobNo)
+        self.logger.info("API_NAME : " + str(apiName))
+        self.logger.info("PID   : "+ str(reqId))
+        self.logger.info("BODY   : " + str(receiveMsg))
         self.logger.info("===============================================");
         
+        return True
 
 
     

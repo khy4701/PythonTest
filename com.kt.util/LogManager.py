@@ -2,12 +2,12 @@ import logging
 import logging.handlers
 
 #from desginPattern import SingletonType
-
 class LogManager:
           
     __instance = None
     logger = None
-    LOG_PATH = '/home/e2e/hykim/src/logs/my.log' #'D:/logs/python/my.log'
+    #LOG_PATH = '/home/e2e/hykim/src/logs/my.log'
+    LOG_PATH = 'D:/logs/python/my.log'
     
     @staticmethod
     def getInstance():
@@ -42,12 +42,16 @@ class LogManager:
         # Handler logging 
         self.logger.addHandler(self.fileHandler) 
         self.logger.addHandler(self.streamHandler)
-           
+    
 #         # logging logger.debug("debug")
 #         self.logger.info("info") 
 #         self.logger.warning("warning") 
 #         self.logger.error("error") 
 #         self.logger.critical("critical")
+
              
     def get_logger(self):        
         return self.logger
+    
+        
+        

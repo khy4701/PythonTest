@@ -1,28 +1,34 @@
-import ApiDefine
-import PLTEConnector
-import datetime
-import time
-
 from flask import request
 from flask.json import jsonify
 from flask_restful import Resource
-from ApiDefine import ApiDefine
-from PLTEConnector import PLTEConnector
 
-class NsdOnboarding:
+from ConfigManager import ConfManager
+from LogManager import LogManager
+import ServiceManager.TransacManager
 
-    def post(self, department_name, abc):
-     # Query the result and get cursor.Dumping that data to a JSON is looked by extension
 
+class NsdOnboarding(Resource, ServiceManager):
+
+    logger = LogManager.getInstance().get_logger()
+    
+    def post(self):
+
+        # force = True --> Need!
         content = request.get_json(force=True)
 
+        if ConfManager.getInstance().getLogFlag():
+                self.logger.info("===============================================");
+                self.logger.info("[WEB] -> RESTIF")
+                self.logger.info("===============================================");
+                self.logger.info("REQUEST URL : " + request.url)
+                self.logger.info("===============================================");
+         
+        print(content.keys())
+                
         name = content['name']
         age = content['age']
 
 
-        PLTEConnector.getInstance().sendMessage(ApiDefine.API_NUM1, abc)
+        #PLTEConnector.getInstance().sendMessage(ApiDefine.API_NUM1, abc)
 
-        return jsonify( d_name=department_name, abc=abc, name=name , age = age)
-
-
-
+        return jsonify( name=name , age = age)

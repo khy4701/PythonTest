@@ -1,11 +1,14 @@
 from abc import abstractmethod
- 
- 
-class Manager():
+
+
+class Manager:
      
     def __init_(self):
-        return
+        pass
      
     @abstractmethod
-    def msgProcessing(self):
+    def receiveHandling(self, rspCode, reqId, msg):
         pass
+    
+    @abstractmethod
+    def sendCommand(self, command, source, reqId, msg):

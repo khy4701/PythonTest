@@ -35,6 +35,10 @@ class ConfManager:
             # append(index, value)
             self.dictList[each_section] = dictionary
         
+        
+        self.logFlag =  self.getConfigData("LOG_INFO", "LOG_FLAG")
+        self.logFlag = self.logFlag.upper()
+
         '''
         for key in self.dictList.keys():
             print "[%s]" % key
@@ -57,6 +61,12 @@ class ConfManager:
         self.logger.error("Can't not found SECTION[%s] KEY[%s] " % (section, confKey))
         return None
         
+    def getLogFlag(self):
+        if self.logFlag == "ON":
+            return True
+        
+        return False
+    
 if __name__== '__main__':
 
     # example 1
