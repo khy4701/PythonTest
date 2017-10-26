@@ -25,10 +25,13 @@ class PLTEManager(Manager):
         pass
     
     def receiveHandling(self, rspCode, reqId, rcvMsg):        
-        self.logger.debug('receive Handling')
+        self.logger.debug('receive Handling, rspCode[' + str(rspCode) + '], reqId['+str(reqId)+']')
         
+        if not PLTEManager.plteMembers:
+            self.logger.info("error..!")
+
         for member in PLTEManager.plteMembers:
-            
+            self.logger.info( "member get ID [%d], reqId[%d]" %(member.getCliReqId(), reqId) )
             if member.getCliReqId() == reqId:
                 # Service Manager
                 source = member.getSource()
@@ -36,8 +39,8 @@ class PLTEManager(Manager):
                 # Service setComplete 
                 source.setComplete(rspCode, reqId, rcvMsg)
                 PLTEManager.plteMembers.remove(member)
-                    
     
+
     def getClientReqId(self):
         self.clientReqId += 1
         
@@ -54,10 +57,11 @@ class PLTEManager(Manager):
         senderInfo = SenderInfo(source, reqId)
         
         # Transcation List Add
+        
         PLTEManager.plteMembers.append(senderInfo)
+
                 
         if not PLTEConnector.getInstance().sendMessage(command, reqId, msg):
             # Transcation List Remove
             PLTEManager.plteMembers.remove(senderInfo)
-        
         

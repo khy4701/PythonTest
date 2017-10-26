@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import Connector
+import PLTEConnector
 import ctypes
 import sys
 
@@ -14,7 +15,6 @@ class PLTEConnector(Connector):
     
     __instance = None
     
-    plteQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))    
     logger = LogManager.getInstance().get_logger()
 
     @staticmethod
@@ -28,6 +28,7 @@ class PLTEConnector(Connector):
         self.logger.debug('PLTEConnector Init')
         Connector.__init__(self, PLTEManager.getInstance())
 
+        self.plteQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))
         self.myQueue = Connector.getMyQueue()
         try :
                 self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId)
@@ -41,12 +42,14 @@ class PLTEConnector(Connector):
                 
                 if self.myQueue is None:
                     self.myQueue = Connector.getMyQueue()
+                    self.logger.error("tttttttttttttttttt..")
+
                     if self.myQueue is None:
-                        self.logger.error("msgQueue Get Failed...")
+                        self.logger.error("msgQueue[MYQUEUE] Get Failed...")
                         return 
 
                 (message, msgType) = self.myQueue.receive(ctypes.sizeof(resMsg))
-
+                
                 mydata = ctypes.create_string_buffer( message )
                 ctypes.memmove(ctypes.pointer(resMsg), mydata ,ctypes.sizeof(resMsg))
 
@@ -114,7 +117,7 @@ class PLTEConnector(Connector):
             return False
 
         self.logger.info("===============================================");
-        self.logger.info("[EXT_API] -> RESTIF")
+        self.logger.info("RESTIF -> PLTEIB")
         self.logger.info("===============================================");
         self.logger.info("API_NAME : " + str(apiName))
         self.logger.info("PID   : "+ str(reqId))

@@ -6,7 +6,6 @@ from PLTEConnector import PLTEConnector
 from ServiceClass import Departments_Meta, Departments_Meta2
 from ServiceClass2 import Departmental_Salary
 from NsdManageService import NsdOnboarding
-#from testFlask import ttt
 
 #Create a engine for connecting to SQLite3.
 app = Flask(__name__)

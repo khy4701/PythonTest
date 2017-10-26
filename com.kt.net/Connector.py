@@ -28,7 +28,7 @@ class Connector(threading.Thread):
                     #IPC_CREX  : IPC_CREAT | IPC_EXCL 
                     #IPC_EXCL  : return -1 if there is already allocated.
                     myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF" ))    
-                    myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0666 )
+                    myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777 )
             
             return myQueue
         except Exception as e:
@@ -69,6 +69,7 @@ class Connector(threading.Thread):
         try:                                
             while self.reader == self:
                 self.readMessage()
+                
         except Exception as e:
             self.logger.error(e)
 #       self.readMessage()
