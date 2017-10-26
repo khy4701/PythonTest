@@ -1,23 +1,43 @@
-from test import t1
 
-class t2:
+
+class stTest:
     
-    def __init__(self):
-        print 'init t2'
-        return 
+    lval = []
     
-    def testFunc(self):
-        t1.s_method()
-    
-    @staticmethod
-    def testFunc2():
-        print 'testFunc2'
+    def test(self):
+        self.lval = [5,4,3]
+        
+    @classmethod
+    def test2(self):
+        stTest.lval.append(4)
+        
+    def tPrint(self):
+        
+        print (self.lval)
+        print (stTest.lval)
+        
+c1 = stTest()
+c3 = stTest()
 
-if __name__=='__main__':
-    test2 = t2()
-
-    print '1111'
-    test1 = t1(test2)
 
 
-    test2.testFunc()
+c1.test()
+c1.test2()
+
+
+c2 = stTest()
+c2.test()
+c2.test2()
+
+
+c1.tPrint()
+print '----------'
+
+c2.tPrint()
+
+print '----------'
+
+c3.tPrint()
+ 
+        
+

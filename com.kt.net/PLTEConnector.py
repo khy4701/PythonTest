@@ -58,24 +58,25 @@ class PLTEConnector(Connector):
                 headerMsg = resMsg.http_hdr
 
                 # Receive Message Logging
-                self.logger.info("===============================================");
-                self.logger.info("PLTEIB -> RESTIF")
-                self.logger.info("===============================================");
-                self.logger.info("msgType: %d" %msgType )
-                self.logger.info("tot_len : %s" %resMsg.tot_len )
-                self.logger.info("msgId : %d" %resMsg.msgId )
-                self.logger.info("ehttp_idx : %d" %resMsg.ehttpf_idx )
-                self.logger.info("srcQid : %d" %resMsg.srcQid )
-                self.logger.info("srcSysId : %c" %resMsg.srcSysId )
-                self.logger.info("nResult : %d" %resMsg.nResult )
-                self.logger.info("jsonBody: %s" %resMsg.jsonBody )
-                self.logger.info("===============================================");
-                self.logger.info("method: %d" %headerMsg.method )
-                self.logger.info("api_type: %d" %headerMsg.api_type )
-                self.logger.info("op_type: %d" %headerMsg.op_type )
-                self.logger.info("length: %d" %headerMsg.length )
-                self.logger.info("encoding: %c" %headerMsg.encoding )
-                
+                if ConfManager.getInstance().getLogFlag():
+                    self.logger.info("===============================================");
+                    self.logger.info("PLTEIB -> RESTIF")
+                    self.logger.info("===============================================");
+                    self.logger.info("msgType: %d" %msgType )
+                    self.logger.info("tot_len : %s" %resMsg.tot_len )
+                    self.logger.info("msgId : %d" %resMsg.msgId )
+                    self.logger.info("ehttp_idx : %d" %resMsg.ehttpf_idx )
+                    self.logger.info("srcQid : %d" %resMsg.srcQid )
+                    self.logger.info("srcSysId : %c" %resMsg.srcSysId )
+                    self.logger.info("nResult : %d" %resMsg.nResult )
+                    self.logger.info("jsonBody: %s" %resMsg.jsonBody )
+                    self.logger.info("===============================================");
+                    self.logger.info("method: %d" %headerMsg.method )
+                    self.logger.info("api_type: %d" %headerMsg.api_type )
+                    self.logger.info("op_type: %d" %headerMsg.op_type )
+                    self.logger.info("length: %d" %headerMsg.length )
+                    self.logger.info("encoding: %c" %headerMsg.encoding )
+                    
                 self.manager.receiveHandling(resMsg.nResult, resMsg.msgId, resMsg.jsonBody )
                 
         
@@ -116,14 +117,15 @@ class PLTEConnector(Connector):
             self.logger.error("sendMessage Error! %s" % e)
             return False
 
-        self.logger.info("===============================================");
-        self.logger.info("RESTIF -> PLTEIB")
-        self.logger.info("===============================================");
-        self.logger.info("API_NAME : " + str(apiName))
-        self.logger.info("PID   : "+ str(reqId))
-        self.logger.info("BODY   : " + str(receiveMsg))
-        self.logger.info("===============================================");
-        
+        if ConfManager.getInstance().getLogFlag():
+            self.logger.info("===============================================");
+            self.logger.info("RESTIF -> PLTEIB")
+            self.logger.info("===============================================");
+            self.logger.info("API_NAME : " + str(apiName))
+            self.logger.info("PID   : "+ str(reqId))
+            self.logger.info("BODY   : " + str(receiveMsg))
+            self.logger.info("===============================================");
+            
         return True
 
 
