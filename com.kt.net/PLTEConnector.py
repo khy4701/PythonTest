@@ -42,7 +42,6 @@ class PLTEConnector(Connector):
                 
                 if self.myQueue is None:
                     self.myQueue = Connector.getMyQueue()
-                    self.logger.error("tttttttttttttttttt..")
 
                     if self.myQueue is None:
                         self.logger.error("msgQueue[MYQUEUE] Get Failed...")
@@ -87,9 +86,6 @@ class PLTEConnector(Connector):
 
     def sendMessage(self, apiName, reqId, receiveMsg):
         
-        self.logger.debug('Send Message')
-        
-
         httpMsg =  HttpReq()
         header = HttpHeader()
          

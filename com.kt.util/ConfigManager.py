@@ -22,7 +22,7 @@ class ConfManager:
     
     def __init__(self):
         self.config = ConfigParser.ConfigParser()
-        self.config.read('../test.conf')
+        self.config.read('e2e.conf')
                 
         for each_section in self.config.sections():
             dictionary = dict()

@@ -41,8 +41,6 @@ class NsdOnboarding(Resource, ServiceManager):
         # [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         self.clientId = PLTEManager.getInstance().getClientReqId()
         
-        self.logger.info("Client ID : " + str(self.clientId));
-        
         PLTEManager.getInstance().sendCommand(ApiDefine.NSD_ON_BOARDING, self, self.clientId, resMsg)
                                         
         # WAIT                
@@ -52,7 +50,6 @@ class NsdOnboarding(Resource, ServiceManager):
                 time.sleep(1)
             except Exception as e:
                 self.logger.error(e)
-        
         
         # [RESTIF->WEB] SEND LOGGING
         if ConfManager.getInstance().getLogFlag():

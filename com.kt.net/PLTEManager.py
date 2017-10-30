@@ -25,13 +25,8 @@ class PLTEManager(Manager):
         pass
     
     def receiveHandling(self, rspCode, reqId, rcvMsg):        
-        self.logger.debug('receive Handling, rspCode[' + str(rspCode) + '], reqId['+str(reqId)+']')
-        
-        if not PLTEManager.plteMembers:
-            self.logger.info("error..!")
 
         for member in PLTEManager.plteMembers:
-            self.logger.info( "member get ID [%d], reqId[%d]" %(member.getCliReqId(), reqId) )
             if member.getCliReqId() == reqId:
                 # Service Manager
                 source = member.getSource()
