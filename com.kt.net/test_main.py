@@ -1,16 +1,19 @@
 from flask import Flask
 from flask_restful import Api
 
-from Service import Service
+from NsdManageService import NsdOnboarding
 from PLTEConnector import PLTEConnector
+from QueueReceiver import Receiver
+from Service import Service
 from ServiceClass import Departments_Meta, Departments_Meta2
 from ServiceClass2 import Departmental_Salary
-from NsdManageService import NsdOnboarding
+
 
 #Create a engine for connecting to SQLite3.
 app = Flask(__name__)
 api = Api(app)
 
+Receiver.getInstance()
 PLTEConnector.getInstance()
 #PLTEConnector.getInstance().sendMessage("Command",2)
 
