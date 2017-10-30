@@ -43,9 +43,9 @@ class Connector():
     def sendMessage(self):
         pass
     
-    @abstractmethod    
-    def readMessage(self):
-        pass
+#    @abstractmethod    
+#    def readMessage(self):
+#        pass
         
 #     def run(self):      
 # 

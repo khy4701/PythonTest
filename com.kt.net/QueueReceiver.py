@@ -7,6 +7,7 @@ from Connector import Connector
 from LogManager import LogManager
 from PLTEManager import PLTEManager
 from ProvMsg import HttpRes
+import sysv_ipc
 
 usleep = lambda x: time.sleep(x/1000000.0)
 
@@ -26,6 +27,7 @@ class Receiver(threading.Thread):
         
     
     def __init__(self):
+        super(Receiver,self).__init__()
 
         try :
             myQueId = 0
@@ -36,7 +38,9 @@ class Receiver(threading.Thread):
                     myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF" ))    
                     Receiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777 )
                     
-                    self.start()
+                    self.receiver = self
+                    self.receiver.start()
+
             
         except Exception as e:
                 Receiver.logger.error("msgQueue Connection Failed.. RESTIF QUEUE_ID[%d] %s" % (myQueId, e))
@@ -97,7 +101,7 @@ class Receiver(threading.Thread):
     def run(self):      
  
         try:                                
-            while self.reader == self:
+            while self.receiver == self:
                 usleep(100)
                 self.readMessage()
                  
