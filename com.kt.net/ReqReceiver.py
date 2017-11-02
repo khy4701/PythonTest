@@ -31,7 +31,8 @@ class ReqReceiver(Receiver):
     
     def __init__(self):
         Receiver.__init__(self)
-        
+        ReqReceiver.logger.error("ReqReceiver Init")
+
         try :
             myQueId = 0
             if ReqReceiver.myQueue is None:

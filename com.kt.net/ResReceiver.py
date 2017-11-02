@@ -30,7 +30,8 @@ class ResReceiver(Receiver):
     
     def __init__(self):
         Receiver.__init__(self)
-
+        ResReceiver.logger.info("ResReceiver Init")
+        
         try :
 
             myQueId = 0
