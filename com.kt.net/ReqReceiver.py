@@ -79,7 +79,6 @@ class ReqReceiver(Receiver):
                     self.logger.info("ehttp_idx : %d" %reqMsg.ehttpf_idx )
                     self.logger.info("srcQid : %d" %reqMsg.srcQid )
                     self.logger.info("srcSysId : %c" %reqMsg.srcSysId )
-                    self.logger.info("nResult : %d" %reqMsg.nResult )
                     self.logger.info("jsonBody: %s" %reqMsg.jsonBody )
                     self.logger.info("===============================================")
                     self.logger.info("method: %d" %headerMsg.method )
