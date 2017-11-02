@@ -20,9 +20,9 @@ class ClientService(threading.Thread):
     
     def run(self):
         
-		#self.tid =  self.reqMsg.msgId
+        self.tid =  self.reqMsg.msgId
         # payload = httpMsg.body....
-
+        
         payload = "{'name':'Hoyoung', 'age': 123 }"
         url='http://localhost:5555/departments/abc/123'
         head = {'Content-type':'application/json', 'Accept':'application/json'} 
@@ -66,15 +66,15 @@ class ClientService(threading.Thread):
         # 5. [RESTIF->APP] INPUT RESPONSE MESSAGE ( REST API -> httpRes )
 
         resMsg = HttpRes()
-		resMsg.tot_len = 1
-		resMsg.msgId = self.tid
-		resMsg.ehttpf_idx = 1
-		resMsg.srcQid = 1
-		resMsg.srcSysId = 1
-		resMsg.nResult = restAPI.status_code
+        resMsg.tot_len = 1
+        resMsg.msgId = self.tid
+        resMsg.ehttpf_idx = 1
+        resMsg.srcQid = 1
+        resMsg.srcSysId = 1
+        resMsg.nResult = restAPI.status_code
         resMsg.jsonBody = restAPI.text
-
-		resMsg.http_hdr = self.reqMsg.http_hdr
+        
+        resMsg.http_hdr = self.reqMsg.http_hdr
                 
         # 6. [RESTIF->APP] SEND AND LOGGING
         PLTEManager.getInstance().sendResMessage(resMsg)
