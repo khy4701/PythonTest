@@ -7,7 +7,7 @@ from flask_restful import Resource
 
 class Departments_Meta(Resource):
     
-    def get(self):
+    def get(self, department_name, abc):
         #Perform query and return JSON data
                
         start = datetime.datetime.now()
@@ -18,10 +18,13 @@ class Departments_Meta(Resource):
     # Json Example ( Parameter & Json Data )             
     def post(self, department_name, abc):
 
+#        content = request.get_json(force=False)
+
+        # Json Payload ( Don't input data with json decoding )
         content = request.get_json(force=True)
         
-        print content
-        
+#        name = content[0]
+#        age = content[1]
         name = content['name']
         age = content['age']
 

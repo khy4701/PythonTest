@@ -25,6 +25,7 @@ class ClientService(threading.Thread):
         
         url='http://localhost:5555/departments/abc/123'
         #head = {'Content-type':'application/json', 'Accept':'application/json'} 
+        #head = {'Content-type':'application/json'} 
         head = {'Content-type':'application/x-www-form-urlencoded', 'Accept':'application/json'} 
 
         # 1. [RESTIF->EXT] INPUT REQUSET MESSAGE ( httpReq -> REST API )
@@ -45,59 +46,45 @@ class ClientService(threading.Thread):
         # 3. [RESTIF->EXT] SEND DATA
         try:
             payld = json.dumps(payload)
-            restAPI = requests.post(url,headers=head,data=payld)
+            #restAPI = requests.post(url,headers=head,data=payld)
+            restAPI = requests.post(url,headers=head,data=payload)
         except Exception as e:
-            self.logger.info(e);
-           
-        
-        # 4. [EXT->RESTIF] RECEIVE LOGGING        
-        if ConfManager.getInstance().getLogFlag():
-            self.logger.info("===============================================");
-            self.logger.info("[EXT] -> RESTIF")
-            self.logger.info("===============================================");
-            self.logger.info("URL : " + str(restAPI.url))
-            self.logger.info("TID : " + str(self.tid)) # TID
-            self.logger.info("RESULT : " + str(restAPI.status_code))
-            self.logger.info("HEADER : "  + str(restAPI.headers))                   # resData.headers['Content-Length']
-            self.logger.info("BODY : "  + str(restAPI.text))
-            self.logger.info("===============================================");
+            self.logger.info(e)
             
-        
-        # 5. [RESTIF->APP] INPUT RESPONSE MESSAGE ( REST API -> httpRes )
-
-        resMsg = HttpRes()
-        resMsg.tot_len = 1
-        resMsg.msgId = self.tid
-        resMsg.ehttpf_idx = 1
-        resMsg.srcQid = 1
-        resMsg.srcSysId = '1'
-        resMsg.nResult = restAPI.status_code
-        resMsg.jsonBody = restAPI.text
-        
-        resMsg.http_hdr = self.reqMsg.http_hdr
-                                
-                                
-        self.logger.info("===============================================")
-        self.logger.info("TEST")
-        self.logger.info("===============================================")
-        self.logger.info("tot_len : %s" %resMsg.tot_len )
-        self.logger.info("msgId : %d" %resMsg.msgId )
-        self.logger.info("ehttp_idx : %d" %resMsg.ehttpf_idx )
-        self.logger.info("srcQid : %d" %resMsg.srcQid )
-        self.logger.info("srcSysId : %c" %resMsg.srcSysId )
-        self.logger.info("jsonBody: %s" %resMsg.jsonBody )
-        self.logger.info("===============================================")
-        self.logger.info("method: %d" %resMsg.http_hdr.method )
-        self.logger.info("api_type: %d" %resMsg.http_hdr.api_type )
-        self.logger.info("op_type: %d" %resMsg.http_hdr.op_type )
-        self.logger.info("length: %d" %resMsg.http_hdr.length )
-        self.logger.info("encoding: %c" %resMsg.http_hdr.encoding )
-        self.logger.info("===============================================")
-
-                                
+        try:
+            # 4. [EXT->RESTIF] RECEIVE LOGGING        
+            if ConfManager.getInstance().getLogFlag():
+                self.logger.info("===============================================");
+                self.logger.info("[EXT] -> RESTIF")
+                self.logger.info("===============================================");
+                self.logger.info("URL : " + str(restAPI.url))
+                self.logger.info("TID : " + str(self.tid)) # TID
+                self.logger.info("RESULT : " + str(restAPI.status_code))
+                self.logger.info("HEADER : "  + str(restAPI.headers))                   # resData.headers['Content-Length']
+                self.logger.info("BODY : "  + str(restAPI.text))
+                self.logger.info("===============================================");
                 
-        # 6. [RESTIF->APP] SEND AND LOGGING
-        # temp -> resAPI.url 
-        PLTEManager.getInstance().sendResCommand( restAPI.url, resMsg )
+            
+            # 5. [RESTIF->APP] INPUT RESPONSE MESSAGE ( REST API -> httpRes )
+            resMsg = HttpRes()
+            resMsg.tot_len = 1
+            resMsg.msgId = self.tid
+            resMsg.ehttpf_idx = 1
+            resMsg.srcQid = 1
+            resMsg.srcSysId = '1'
+            resMsg.nResult = restAPI.status_code
+            resMsg.jsonBody = restAPI.text
+            
+            resMsg.http_hdr = self.reqMsg.http_hdr
+                    
+        except Exception as e :
+            # Error Exception -> if External Server is not connected..
+            self.logger.info(e)
+            resCode = 500
+            #  make resMsg..[[]] 
+
+            # 6. [RESTIF->APP] SEND AND LOGGING
+        PLTEManager.getInstance().sendResCommand( "temp", resMsg )
+
 
 

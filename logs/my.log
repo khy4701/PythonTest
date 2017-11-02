@@ -977,3 +977,1582 @@
 [2017-11-02 16:25:25,574|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
 
 [2017-11-02 16:25:25,574|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 16:28:50,446|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 16:28:50,448|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 16:28:50,449|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 16:28:50,449|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 16:28:50,449|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 16:28:54,987|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:28:54,987|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:28:54,987|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:28:54,987|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:28:54,987|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:28:54,988|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:28:54,988|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:28:54,988|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:28:54,988|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:28:54,988|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:28:54,988|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:28:54,988|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:28:54,988|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:28:54,988|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:28:54,988|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:28:54,989|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 16:28:54,989|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:28:54,989|ClientService.py:35][INFO] > ===============================================
+[2017-11-02 16:28:54,989|ClientService.py:36][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:28:54,989|ClientService.py:37][INFO] > ===============================================
+[2017-11-02 16:28:54,989|ClientService.py:38][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:28:54,990|ClientService.py:39][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 16:28:54,990|ClientService.py:40][INFO] > TID : 200
+[2017-11-02 16:28:54,990|ClientService.py:41][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:28:54,990|ClientService.py:42][INFO] > ===============================================
+[2017-11-02 16:28:55,012|ClientService.py:55][INFO] > ===============================================
+[2017-11-02 16:28:55,012|ClientService.py:56][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:28:55,012|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 16:28:55,012|ClientService.py:58][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:28:55,012|ClientService.py:59][INFO] > TID : 200
+[2017-11-02 16:28:55,013|ClientService.py:60][INFO] > RESULT : 500
+[2017-11-02 16:28:55,013|ClientService.py:61][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:28:55 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:28:55,018|ClientService.py:62][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:28:55,019|ClientService.py:63][INFO] > ===============================================
+[2017-11-02 16:28:55,019|ClientService.py:80][INFO] > ===============================================
+[2017-11-02 16:28:55,019|ClientService.py:81][INFO] > TEST
+[2017-11-02 16:28:55,019|ClientService.py:82][INFO] > ===============================================
+[2017-11-02 16:28:55,019|ClientService.py:83][INFO] > tot_len : 1
+[2017-11-02 16:28:55,019|ClientService.py:84][INFO] > msgId : 200
+[2017-11-02 16:28:55,019|ClientService.py:85][INFO] > ehttp_idx : 1
+[2017-11-02 16:28:55,019|ClientService.py:86][INFO] > srcQid : 1
+[2017-11-02 16:28:55,019|ClientService.py:87][INFO] > srcSysId : 1
+[2017-11-02 16:28:55,019|ClientService.py:88][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 16:28:55,020|ClientService.py:89][INFO] > ===============================================
+[2017-11-02 16:28:55,020|ClientService.py:90][INFO] > method: 1
+[2017-11-02 16:28:55,020|ClientService.py:91][INFO] > api_type: 2
+[2017-11-02 16:28:55,020|ClientService.py:92][INFO] > op_type: 3
+[2017-11-02 16:28:55,020|ClientService.py:93][INFO] > length: 4
+[2017-11-02 16:28:55,020|ClientService.py:94][INFO] > encoding: 5
+[2017-11-02 16:28:55,020|ClientService.py:95][INFO] > ===============================================
+[2017-11-02 16:28:55,020|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 16:28:55,020|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 16:28:55,021|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 16:28:55,021|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 16:28:55,021|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 16:28:55,021|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 16:28:55,021|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 16:28:55,021|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 16:38:26,349|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 16:38:26,351|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 16:38:26,352|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 16:38:26,352|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 16:38:26,352|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 16:38:36,648|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:38:36,649|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:38:36,649|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:38:36,649|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:38:36,649|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:38:36,649|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:38:36,649|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:38:36,649|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:38:36,649|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:38:36,649|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:38:36,649|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:38:36,649|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:38:36,650|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:38:36,650|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:38:36,650|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:38:36,650|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 16:38:36,650|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:38:36,650|ClientService.py:35][INFO] > ===============================================
+[2017-11-02 16:38:36,651|ClientService.py:36][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:38:36,651|ClientService.py:37][INFO] > ===============================================
+[2017-11-02 16:38:36,651|ClientService.py:38][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:38:36,651|ClientService.py:39][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 16:38:36,651|ClientService.py:40][INFO] > TID : 200
+[2017-11-02 16:38:36,651|ClientService.py:41][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:38:36,651|ClientService.py:42][INFO] > ===============================================
+[2017-11-02 16:38:36,676|ClientService.py:55][INFO] > ===============================================
+[2017-11-02 16:38:36,677|ClientService.py:56][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:38:36,677|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 16:38:36,677|ClientService.py:58][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:38:36,677|ClientService.py:59][INFO] > TID : 200
+[2017-11-02 16:38:36,677|ClientService.py:60][INFO] > RESULT : 500
+[2017-11-02 16:38:36,677|ClientService.py:61][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:38:36 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:38:36,683|ClientService.py:62][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:38:36,684|ClientService.py:63][INFO] > ===============================================
+[2017-11-02 16:38:36,684|ClientService.py:80][INFO] > ===============================================
+[2017-11-02 16:38:36,684|ClientService.py:81][INFO] > TEST
+[2017-11-02 16:38:36,684|ClientService.py:82][INFO] > ===============================================
+[2017-11-02 16:38:36,684|ClientService.py:83][INFO] > tot_len : 1
+[2017-11-02 16:38:36,684|ClientService.py:84][INFO] > msgId : 200
+[2017-11-02 16:38:36,684|ClientService.py:85][INFO] > ehttp_idx : 1
+[2017-11-02 16:38:36,684|ClientService.py:86][INFO] > srcQid : 1
+[2017-11-02 16:38:36,684|ClientService.py:87][INFO] > srcSysId : 1
+[2017-11-02 16:38:36,684|ClientService.py:88][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 16:38:36,685|ClientService.py:89][INFO] > ===============================================
+[2017-11-02 16:38:36,685|ClientService.py:90][INFO] > method: 1
+[2017-11-02 16:38:36,685|ClientService.py:91][INFO] > api_type: 2
+[2017-11-02 16:38:36,685|ClientService.py:92][INFO] > op_type: 3
+[2017-11-02 16:38:36,685|ClientService.py:93][INFO] > length: 4
+[2017-11-02 16:38:36,685|ClientService.py:94][INFO] > encoding: 5
+[2017-11-02 16:38:36,685|ClientService.py:95][INFO] > ===============================================
+[2017-11-02 16:38:36,686|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 16:38:36,686|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 16:38:36,686|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 16:38:36,686|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 16:38:36,687|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 16:38:36,687|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 16:38:36,687|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 16:38:36,687|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:08:22,347|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:08:22,349|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:08:22,349|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:08:22,350|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:08:22,350|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:08:27,549|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:08:27,550|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:08:27,550|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:08:27,550|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:08:27,550|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:08:27,550|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:08:27,550|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:08:27,550|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:08:27,550|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:08:27,550|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:08:27,551|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:08:27,551|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:08:27,551|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:08:27,551|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:08:27,551|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:08:27,551|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:08:27,551|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:08:27,551|ClientService.py:35][INFO] > ===============================================
+[2017-11-02 17:08:27,552|ClientService.py:36][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:08:27,552|ClientService.py:37][INFO] > ===============================================
+[2017-11-02 17:08:27,552|ClientService.py:38][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:08:27,552|ClientService.py:39][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:08:27,552|ClientService.py:40][INFO] > TID : 200
+[2017-11-02 17:08:27,552|ClientService.py:41][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:08:27,552|ClientService.py:42][INFO] > ===============================================
+[2017-11-02 17:08:27,577|ClientService.py:55][INFO] > ===============================================
+[2017-11-02 17:08:27,578|ClientService.py:56][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:08:27,578|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:08:27,578|ClientService.py:58][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:08:27,578|ClientService.py:59][INFO] > TID : 200
+[2017-11-02 17:08:27,578|ClientService.py:60][INFO] > RESULT : 500
+[2017-11-02 17:08:27,578|ClientService.py:61][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:08:27 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:08:27,585|ClientService.py:62][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:08:27,585|ClientService.py:63][INFO] > ===============================================
+[2017-11-02 17:08:27,585|ClientService.py:80][INFO] > ===============================================
+[2017-11-02 17:08:27,585|ClientService.py:81][INFO] > TEST
+[2017-11-02 17:08:27,585|ClientService.py:82][INFO] > ===============================================
+[2017-11-02 17:08:27,585|ClientService.py:83][INFO] > tot_len : 1
+[2017-11-02 17:08:27,585|ClientService.py:84][INFO] > msgId : 200
+[2017-11-02 17:08:27,585|ClientService.py:85][INFO] > ehttp_idx : 1
+[2017-11-02 17:08:27,585|ClientService.py:86][INFO] > srcQid : 1
+[2017-11-02 17:08:27,586|ClientService.py:87][INFO] > srcSysId : 1
+[2017-11-02 17:08:27,586|ClientService.py:88][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:08:27,586|ClientService.py:89][INFO] > ===============================================
+[2017-11-02 17:08:27,586|ClientService.py:90][INFO] > method: 1
+[2017-11-02 17:08:27,586|ClientService.py:91][INFO] > api_type: 2
+[2017-11-02 17:08:27,586|ClientService.py:92][INFO] > op_type: 3
+[2017-11-02 17:08:27,586|ClientService.py:93][INFO] > length: 4
+[2017-11-02 17:08:27,586|ClientService.py:94][INFO] > encoding: 5
+[2017-11-02 17:08:27,586|ClientService.py:95][INFO] > ===============================================
+[2017-11-02 17:08:27,587|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:08:27,587|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:08:27,587|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:08:27,587|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:08:27,587|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:08:27,587|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:08:27,587|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:08:27,587|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:10:12,708|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:10:12,709|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:10:12,709|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:10:12,709|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:10:12,709|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:10:18,836|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:10:18,836|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:10:18,836|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:10:18,836|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:10:18,836|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:10:18,836|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:10:18,836|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:10:18,836|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:10:18,837|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:10:18,837|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:10:18,837|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:10:18,837|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:10:18,837|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:10:18,837|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:10:18,837|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:10:18,837|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:10:18,837|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:10:18,838|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:10:18,838|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:10:18,838|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:10:18,838|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:10:18,838|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/json'}
+[2017-11-02 17:10:18,838|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:10:18,839|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:10:18,839|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:10:18,863|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 17:10:18,863|ClientService.py:57][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:10:18,864|ClientService.py:58][INFO] > ===============================================
+[2017-11-02 17:10:18,864|ClientService.py:59][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:10:18,864|ClientService.py:60][INFO] > TID : 200
+[2017-11-02 17:10:18,864|ClientService.py:61][INFO] > RESULT : 500
+[2017-11-02 17:10:18,864|ClientService.py:62][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:10:18 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:10:18,870|ClientService.py:63][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:10:18,871|ClientService.py:64][INFO] > ===============================================
+[2017-11-02 17:10:18,871|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 17:10:18,871|ClientService.py:82][INFO] > TEST
+[2017-11-02 17:10:18,871|ClientService.py:83][INFO] > ===============================================
+[2017-11-02 17:10:18,871|ClientService.py:84][INFO] > tot_len : 1
+[2017-11-02 17:10:18,871|ClientService.py:85][INFO] > msgId : 200
+[2017-11-02 17:10:18,871|ClientService.py:86][INFO] > ehttp_idx : 1
+[2017-11-02 17:10:18,871|ClientService.py:87][INFO] > srcQid : 1
+[2017-11-02 17:10:18,872|ClientService.py:88][INFO] > srcSysId : 1
+[2017-11-02 17:10:18,872|ClientService.py:89][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:10:18,872|ClientService.py:90][INFO] > ===============================================
+[2017-11-02 17:10:18,872|ClientService.py:91][INFO] > method: 1
+[2017-11-02 17:10:18,872|ClientService.py:92][INFO] > api_type: 2
+[2017-11-02 17:10:18,872|ClientService.py:93][INFO] > op_type: 3
+[2017-11-02 17:10:18,872|ClientService.py:94][INFO] > length: 4
+[2017-11-02 17:10:18,872|ClientService.py:95][INFO] > encoding: 5
+[2017-11-02 17:10:18,872|ClientService.py:96][INFO] > ===============================================
+[2017-11-02 17:10:18,872|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:10:18,873|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:10:18,873|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:10:18,873|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:10:18,873|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:10:18,873|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:10:18,873|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:10:18,873|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:29:33,932|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:29:33,934|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:29:33,934|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:29:33,935|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:29:33,935|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:30:13,952|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:30:13,952|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:30:13,952|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:30:13,952|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:30:13,952|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:30:13,953|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:30:13,953|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:30:13,953|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:30:13,953|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:30:13,953|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:30:13,953|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:30:13,953|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:30:13,953|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:30:13,953|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:30:13,953|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:30:13,953|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:30:13,954|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:30:13,954|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:30:13,954|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:30:13,955|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:30:13,955|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:30:13,955|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/json'}
+[2017-11-02 17:30:13,955|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:30:13,955|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:30:13,955|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:30:13,955|ClientService.py:49][INFO] > BODY PAYLOAD : "{\"name\":\"Hoyoung\", \"age\": 123 }"
+[2017-11-02 17:30:13,984|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:30:13,984|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:30:13,984|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:30:13,984|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:30:13,984|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:30:13,985|ClientService.py:62][INFO] > RESULT : 500
+[2017-11-02 17:30:13,985|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:30:13 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:30:13,991|ClientService.py:64][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:30:13,992|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:30:13,992|ClientService.py:82][INFO] > ===============================================
+[2017-11-02 17:30:13,992|ClientService.py:83][INFO] > TEST
+[2017-11-02 17:30:13,992|ClientService.py:84][INFO] > ===============================================
+[2017-11-02 17:30:13,992|ClientService.py:85][INFO] > tot_len : 1
+[2017-11-02 17:30:13,992|ClientService.py:86][INFO] > msgId : 200
+[2017-11-02 17:30:13,992|ClientService.py:87][INFO] > ehttp_idx : 1
+[2017-11-02 17:30:13,992|ClientService.py:88][INFO] > srcQid : 1
+[2017-11-02 17:30:13,993|ClientService.py:89][INFO] > srcSysId : 1
+[2017-11-02 17:30:13,993|ClientService.py:90][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:30:13,993|ClientService.py:91][INFO] > ===============================================
+[2017-11-02 17:30:13,993|ClientService.py:92][INFO] > method: 1
+[2017-11-02 17:30:13,993|ClientService.py:93][INFO] > api_type: 2
+[2017-11-02 17:30:13,993|ClientService.py:94][INFO] > op_type: 3
+[2017-11-02 17:30:13,993|ClientService.py:95][INFO] > length: 4
+[2017-11-02 17:30:13,993|ClientService.py:96][INFO] > encoding: 5
+[2017-11-02 17:30:13,993|ClientService.py:97][INFO] > ===============================================
+[2017-11-02 17:30:13,994|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:30:13,994|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:30:13,995|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:30:13,995|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:30:13,995|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:30:13,995|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:30:13,995|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:30:13,995|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:32:53,701|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:32:53,702|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:32:53,702|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:32:53,702|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:32:53,703|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:32:56,540|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:32:56,540|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:32:56,540|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:32:56,540|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:32:56,540|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:32:56,540|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:32:56,540|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:32:56,540|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:32:56,540|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:32:56,541|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:32:56,541|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:32:56,541|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:32:56,541|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:32:56,541|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:32:56,541|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:32:56,541|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:32:56,541|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:33:25,354|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:33:25,355|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:33:25,356|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:33:25,356|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:33:25,356|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:33:28,182|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:33:28,182|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:33:28,182|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:33:28,182|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:33:28,182|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:33:28,183|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:33:28,183|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:33:28,183|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:33:28,183|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:33:28,183|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:33:28,183|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:33:28,183|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:33:28,183|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:33:28,183|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:33:28,183|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:33:28,183|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:33:28,183|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:33:28,185|ClientService.py:37][INFO] > ===============================================
+[2017-11-02 17:33:28,185|ClientService.py:38][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:33:28,185|ClientService.py:39][INFO] > ===============================================
+[2017-11-02 17:33:28,185|ClientService.py:40][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:33:28,185|ClientService.py:41][INFO] > HEADER : {'Content-Length': 39, 'Content-type': 'application/json'}
+[2017-11-02 17:33:28,185|ClientService.py:42][INFO] > TID : 200
+[2017-11-02 17:33:28,185|ClientService.py:43][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:33:28,186|ClientService.py:44][INFO] > ===============================================
+[2017-11-02 17:33:28,186|ClientService.py:49][INFO] > BODY PAYLOAD : "{\"name\":\"Hoyoung\", \"age\": 123 }"
+[2017-11-02 17:33:28,210|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:33:28,210|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:33:28,210|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:33:28,210|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:33:28,210|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:33:28,210|ClientService.py:62][INFO] > RESULT : 500
+[2017-11-02 17:33:28,211|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:33:28 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:33:28,217|ClientService.py:64][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:33:28,217|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:33:28,217|ClientService.py:82][INFO] > ===============================================
+[2017-11-02 17:33:28,217|ClientService.py:83][INFO] > TEST
+[2017-11-02 17:33:28,217|ClientService.py:84][INFO] > ===============================================
+[2017-11-02 17:33:28,218|ClientService.py:85][INFO] > tot_len : 1
+[2017-11-02 17:33:28,218|ClientService.py:86][INFO] > msgId : 200
+[2017-11-02 17:33:28,218|ClientService.py:87][INFO] > ehttp_idx : 1
+[2017-11-02 17:33:28,218|ClientService.py:88][INFO] > srcQid : 1
+[2017-11-02 17:33:28,218|ClientService.py:89][INFO] > srcSysId : 1
+[2017-11-02 17:33:28,218|ClientService.py:90][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:33:28,218|ClientService.py:91][INFO] > ===============================================
+[2017-11-02 17:33:28,218|ClientService.py:92][INFO] > method: 1
+[2017-11-02 17:33:28,218|ClientService.py:93][INFO] > api_type: 2
+[2017-11-02 17:33:28,218|ClientService.py:94][INFO] > op_type: 3
+[2017-11-02 17:33:28,218|ClientService.py:95][INFO] > length: 4
+[2017-11-02 17:33:28,219|ClientService.py:96][INFO] > encoding: 5
+[2017-11-02 17:33:28,219|ClientService.py:97][INFO] > ===============================================
+[2017-11-02 17:33:28,219|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:33:28,219|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:33:28,219|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:33:28,219|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:33:28,219|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:33:28,219|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:33:28,220|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:33:28,220|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:34:45,754|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:34:45,755|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:34:45,755|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:34:45,755|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:34:45,755|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:34:47,667|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:34:47,667|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:34:47,667|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:34:47,667|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:34:47,667|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:34:47,667|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:34:47,667|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:34:47,667|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:34:47,667|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:34:47,668|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:34:47,668|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:34:47,668|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:34:47,668|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:34:47,668|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:34:47,668|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:34:47,668|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:34:47,668|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:34:47,669|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:34:47,669|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:34:47,669|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:34:47,669|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:34:47,669|ClientService.py:40][INFO] > HEADER : {'Content-Length': 38, 'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:34:47,669|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:34:47,669|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:34:47,670|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:34:47,692|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 17:34:47,693|ClientService.py:57][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:34:47,693|ClientService.py:58][INFO] > ===============================================
+[2017-11-02 17:34:47,693|ClientService.py:59][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:34:47,693|ClientService.py:60][INFO] > TID : 200
+[2017-11-02 17:34:47,693|ClientService.py:61][INFO] > RESULT : 500
+[2017-11-02 17:34:47,693|ClientService.py:62][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:34:47 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:34:47,700|ClientService.py:63][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:34:47,700|ClientService.py:64][INFO] > ===============================================
+[2017-11-02 17:34:47,700|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 17:34:47,700|ClientService.py:82][INFO] > TEST
+[2017-11-02 17:34:47,701|ClientService.py:83][INFO] > ===============================================
+[2017-11-02 17:34:47,701|ClientService.py:84][INFO] > tot_len : 1
+[2017-11-02 17:34:47,701|ClientService.py:85][INFO] > msgId : 200
+[2017-11-02 17:34:47,701|ClientService.py:86][INFO] > ehttp_idx : 1
+[2017-11-02 17:34:47,701|ClientService.py:87][INFO] > srcQid : 1
+[2017-11-02 17:34:47,701|ClientService.py:88][INFO] > srcSysId : 1
+[2017-11-02 17:34:47,701|ClientService.py:89][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:34:47,701|ClientService.py:90][INFO] > ===============================================
+[2017-11-02 17:34:47,701|ClientService.py:91][INFO] > method: 1
+[2017-11-02 17:34:47,701|ClientService.py:92][INFO] > api_type: 2
+[2017-11-02 17:34:47,702|ClientService.py:93][INFO] > op_type: 3
+[2017-11-02 17:34:47,702|ClientService.py:94][INFO] > length: 4
+[2017-11-02 17:34:47,702|ClientService.py:95][INFO] > encoding: 5
+[2017-11-02 17:34:47,702|ClientService.py:96][INFO] > ===============================================
+[2017-11-02 17:34:47,703|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:34:47,703|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:34:47,703|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:34:47,703|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:34:47,703|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:34:47,703|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:34:47,704|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:34:47,704|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:36:05,502|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:36:05,503|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:36:05,504|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:36:05,504|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:36:05,504|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:36:20,052|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:36:20,053|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:36:20,053|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:36:20,053|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:36:20,053|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:36:20,053|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:36:20,053|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:36:20,053|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:36:20,053|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:36:20,053|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:36:20,053|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:36:20,053|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:36:20,054|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:36:20,054|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:36:20,054|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:36:20,054|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:36:20,054|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:36:20,054|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:36:20,055|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:36:20,055|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:36:20,055|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:20,055|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:36:20,055|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:36:20,055|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:36:20,055|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:36:20,081|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 17:36:20,081|ClientService.py:57][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:36:20,082|ClientService.py:58][INFO] > ===============================================
+[2017-11-02 17:36:20,082|ClientService.py:59][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:20,082|ClientService.py:60][INFO] > TID : 200
+[2017-11-02 17:36:20,082|ClientService.py:61][INFO] > RESULT : 500
+[2017-11-02 17:36:20,082|ClientService.py:62][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:36:20 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:36:20,089|ClientService.py:63][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:36:20,089|ClientService.py:64][INFO] > ===============================================
+[2017-11-02 17:36:20,089|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 17:36:20,089|ClientService.py:82][INFO] > TEST
+[2017-11-02 17:36:20,089|ClientService.py:83][INFO] > ===============================================
+[2017-11-02 17:36:20,090|ClientService.py:84][INFO] > tot_len : 1
+[2017-11-02 17:36:20,090|ClientService.py:85][INFO] > msgId : 200
+[2017-11-02 17:36:20,090|ClientService.py:86][INFO] > ehttp_idx : 1
+[2017-11-02 17:36:20,090|ClientService.py:87][INFO] > srcQid : 1
+[2017-11-02 17:36:20,090|ClientService.py:88][INFO] > srcSysId : 1
+[2017-11-02 17:36:20,090|ClientService.py:89][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:36:20,090|ClientService.py:90][INFO] > ===============================================
+[2017-11-02 17:36:20,090|ClientService.py:91][INFO] > method: 1
+[2017-11-02 17:36:20,090|ClientService.py:92][INFO] > api_type: 2
+[2017-11-02 17:36:20,090|ClientService.py:93][INFO] > op_type: 3
+[2017-11-02 17:36:20,090|ClientService.py:94][INFO] > length: 4
+[2017-11-02 17:36:20,091|ClientService.py:95][INFO] > encoding: 5
+[2017-11-02 17:36:20,091|ClientService.py:96][INFO] > ===============================================
+[2017-11-02 17:36:20,091|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:36:20,091|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:36:20,091|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:36:20,091|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:20,091|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:36:20,091|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:36:20,091|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:36:20,092|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:36:32,956|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:36:32,956|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:36:32,957|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:36:32,957|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:36:32,957|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:36:32,957|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:36:32,957|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:36:32,957|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:36:32,957|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:36:32,957|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:36:32,957|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:36:32,957|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:36:32,957|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:36:32,957|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:36:32,958|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:36:32,958|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:36:32,958|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:36:32,958|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:36:32,958|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:36:32,959|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:36:32,959|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:32,959|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:36:32,959|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:36:32,959|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:36:32,959|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:36:32,967|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 17:36:32,967|ClientService.py:57][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:36:32,967|ClientService.py:58][INFO] > ===============================================
+[2017-11-02 17:36:32,967|ClientService.py:59][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:32,967|ClientService.py:60][INFO] > TID : 200
+[2017-11-02 17:36:32,967|ClientService.py:61][INFO] > RESULT : 500
+[2017-11-02 17:36:32,967|ClientService.py:62][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:36:32 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:36:32,968|ClientService.py:63][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:36:32,968|ClientService.py:64][INFO] > ===============================================
+[2017-11-02 17:36:32,968|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 17:36:32,968|ClientService.py:82][INFO] > TEST
+[2017-11-02 17:36:32,968|ClientService.py:83][INFO] > ===============================================
+[2017-11-02 17:36:32,968|ClientService.py:84][INFO] > tot_len : 1
+[2017-11-02 17:36:32,968|ClientService.py:85][INFO] > msgId : 200
+[2017-11-02 17:36:32,968|ClientService.py:86][INFO] > ehttp_idx : 1
+[2017-11-02 17:36:32,968|ClientService.py:87][INFO] > srcQid : 1
+[2017-11-02 17:36:32,969|ClientService.py:88][INFO] > srcSysId : 1
+[2017-11-02 17:36:32,969|ClientService.py:89][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:36:32,969|ClientService.py:90][INFO] > ===============================================
+[2017-11-02 17:36:32,969|ClientService.py:91][INFO] > method: 1
+[2017-11-02 17:36:32,969|ClientService.py:92][INFO] > api_type: 2
+[2017-11-02 17:36:32,969|ClientService.py:93][INFO] > op_type: 3
+[2017-11-02 17:36:32,969|ClientService.py:94][INFO] > length: 4
+[2017-11-02 17:36:32,969|ClientService.py:95][INFO] > encoding: 5
+[2017-11-02 17:36:32,969|ClientService.py:96][INFO] > ===============================================
+[2017-11-02 17:36:32,969|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:36:32,970|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:36:32,970|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:36:32,970|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:32,970|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:36:32,970|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:36:32,970|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:36:32,970|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:36:59,287|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:36:59,287|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:36:59,287|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:36:59,288|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:36:59,288|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:36:59,288|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:36:59,288|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:36:59,288|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:36:59,288|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:36:59,288|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:36:59,288|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:36:59,288|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:36:59,288|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:36:59,288|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:36:59,288|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:36:59,289|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:36:59,289|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:36:59,289|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:36:59,289|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:36:59,289|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:36:59,289|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:59,290|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:36:59,290|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:36:59,290|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:36:59,290|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:36:59,295|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 17:36:59,295|ClientService.py:57][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:36:59,295|ClientService.py:58][INFO] > ===============================================
+[2017-11-02 17:36:59,295|ClientService.py:59][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:59,295|ClientService.py:60][INFO] > TID : 200
+[2017-11-02 17:36:59,296|ClientService.py:61][INFO] > RESULT : 200
+[2017-11-02 17:36:59,296|ClientService.py:62][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:36:59 GMT', 'content-length': '69', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:36:59,296|ClientService.py:63][INFO] > BODY : {
+  "abc": 123, 
+  "age": "\"", 
+  "d_name": "abc", 
+  "name": "{"
+}
+
+[2017-11-02 17:36:59,296|ClientService.py:64][INFO] > ===============================================
+[2017-11-02 17:36:59,296|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 17:36:59,296|ClientService.py:82][INFO] > TEST
+[2017-11-02 17:36:59,296|ClientService.py:83][INFO] > ===============================================
+[2017-11-02 17:36:59,296|ClientService.py:84][INFO] > tot_len : 1
+[2017-11-02 17:36:59,297|ClientService.py:85][INFO] > msgId : 200
+[2017-11-02 17:36:59,297|ClientService.py:86][INFO] > ehttp_idx : 1
+[2017-11-02 17:36:59,297|ClientService.py:87][INFO] > srcQid : 1
+[2017-11-02 17:36:59,297|ClientService.py:88][INFO] > srcSysId : 1
+[2017-11-02 17:36:59,297|ClientService.py:89][INFO] > jsonBody: {
+  "abc": 123, 
+  "age": "\"", 
+  "d_name": "abc", 
+  "name": "{"
+}
+
+[2017-11-02 17:36:59,297|ClientService.py:90][INFO] > ===============================================
+[2017-11-02 17:36:59,297|ClientService.py:91][INFO] > method: 1
+[2017-11-02 17:36:59,297|ClientService.py:92][INFO] > api_type: 2
+[2017-11-02 17:36:59,297|ClientService.py:93][INFO] > op_type: 3
+[2017-11-02 17:36:59,297|ClientService.py:94][INFO] > length: 4
+[2017-11-02 17:36:59,298|ClientService.py:95][INFO] > encoding: 5
+[2017-11-02 17:36:59,298|ClientService.py:96][INFO] > ===============================================
+[2017-11-02 17:36:59,298|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:36:59,298|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:36:59,298|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:36:59,298|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:36:59,298|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:36:59,298|PLTEConnector.py:98][INFO] > RESTCODE : 200
+[2017-11-02 17:36:59,298|PLTEConnector.py:99][INFO] > BODY   : {
+  "abc": 123, 
+  "age": "\"", 
+  "d_name": "abc", 
+  "name": "{"
+}
+
+[2017-11-02 17:36:59,298|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:37:09,636|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:37:09,636|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:37:09,637|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:37:09,637|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:37:09,637|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:37:09,637|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:37:09,637|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:37:09,637|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:37:09,637|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:37:09,637|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:37:09,637|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:37:09,637|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:37:09,637|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:37:09,637|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:37:09,638|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:37:09,638|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:37:09,638|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:37:09,638|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:37:09,638|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:37:09,638|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:37:09,638|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:37:09,639|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:37:09,639|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:37:09,639|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:37:09,639|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:37:09,642|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 17:37:09,642|ClientService.py:57][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:37:09,642|ClientService.py:58][INFO] > ===============================================
+[2017-11-02 17:37:09,642|ClientService.py:59][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:37:09,643|ClientService.py:60][INFO] > TID : 200
+[2017-11-02 17:37:09,643|ClientService.py:61][INFO] > RESULT : 200
+[2017-11-02 17:37:09,643|ClientService.py:62][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:37:09 GMT', 'content-length': '69', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:37:09,643|ClientService.py:63][INFO] > BODY : {
+  "abc": 123, 
+  "age": "\"", 
+  "d_name": "abc", 
+  "name": "{"
+}
+
+[2017-11-02 17:37:09,643|ClientService.py:64][INFO] > ===============================================
+[2017-11-02 17:37:09,643|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 17:37:09,643|ClientService.py:82][INFO] > TEST
+[2017-11-02 17:37:09,643|ClientService.py:83][INFO] > ===============================================
+[2017-11-02 17:37:09,644|ClientService.py:84][INFO] > tot_len : 1
+[2017-11-02 17:37:09,644|ClientService.py:85][INFO] > msgId : 200
+[2017-11-02 17:37:09,644|ClientService.py:86][INFO] > ehttp_idx : 1
+[2017-11-02 17:37:09,644|ClientService.py:87][INFO] > srcQid : 1
+[2017-11-02 17:37:09,644|ClientService.py:88][INFO] > srcSysId : 1
+[2017-11-02 17:37:09,644|ClientService.py:89][INFO] > jsonBody: {
+  "abc": 123, 
+  "age": "\"", 
+  "d_name": "abc", 
+  "name": "{"
+}
+
+[2017-11-02 17:37:09,644|ClientService.py:90][INFO] > ===============================================
+[2017-11-02 17:37:09,644|ClientService.py:91][INFO] > method: 1
+[2017-11-02 17:37:09,644|ClientService.py:92][INFO] > api_type: 2
+[2017-11-02 17:37:09,644|ClientService.py:93][INFO] > op_type: 3
+[2017-11-02 17:37:09,645|ClientService.py:94][INFO] > length: 4
+[2017-11-02 17:37:09,645|ClientService.py:95][INFO] > encoding: 5
+[2017-11-02 17:37:09,645|ClientService.py:96][INFO] > ===============================================
+[2017-11-02 17:37:09,645|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:37:09,645|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:37:09,645|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:37:09,645|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:37:09,645|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:37:09,645|PLTEConnector.py:98][INFO] > RESTCODE : 200
+[2017-11-02 17:37:09,646|PLTEConnector.py:99][INFO] > BODY   : {
+  "abc": 123, 
+  "age": "\"", 
+  "d_name": "abc", 
+  "name": "{"
+}
+
+[2017-11-02 17:37:09,646|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:38:57,868|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:38:57,868|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:38:57,868|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:38:57,868|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:38:57,868|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:38:57,868|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:38:57,869|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:38:57,869|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:38:57,869|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:38:57,869|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:38:57,869|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:38:57,869|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:38:57,869|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:38:57,869|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:38:57,869|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:38:57,869|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:38:57,869|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:38:57,870|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:38:57,870|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:38:57,870|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:38:57,870|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:38:57,870|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:38:57,871|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:38:57,871|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:38:57,871|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:38:57,878|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 17:38:57,878|ClientService.py:57][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:38:57,878|ClientService.py:58][INFO] > ===============================================
+[2017-11-02 17:38:57,879|ClientService.py:59][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:38:57,879|ClientService.py:60][INFO] > TID : 200
+[2017-11-02 17:38:57,879|ClientService.py:61][INFO] > RESULT : 500
+[2017-11-02 17:38:57,879|ClientService.py:62][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:38:57 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:38:57,879|ClientService.py:63][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:38:57,879|ClientService.py:64][INFO] > ===============================================
+[2017-11-02 17:38:57,879|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 17:38:57,879|ClientService.py:82][INFO] > TEST
+[2017-11-02 17:38:57,880|ClientService.py:83][INFO] > ===============================================
+[2017-11-02 17:38:57,880|ClientService.py:84][INFO] > tot_len : 1
+[2017-11-02 17:38:57,880|ClientService.py:85][INFO] > msgId : 200
+[2017-11-02 17:38:57,880|ClientService.py:86][INFO] > ehttp_idx : 1
+[2017-11-02 17:38:57,880|ClientService.py:87][INFO] > srcQid : 1
+[2017-11-02 17:38:57,880|ClientService.py:88][INFO] > srcSysId : 1
+[2017-11-02 17:38:57,880|ClientService.py:89][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:38:57,880|ClientService.py:90][INFO] > ===============================================
+[2017-11-02 17:38:57,880|ClientService.py:91][INFO] > method: 1
+[2017-11-02 17:38:57,880|ClientService.py:92][INFO] > api_type: 2
+[2017-11-02 17:38:57,880|ClientService.py:93][INFO] > op_type: 3
+[2017-11-02 17:38:57,881|ClientService.py:94][INFO] > length: 4
+[2017-11-02 17:38:57,881|ClientService.py:95][INFO] > encoding: 5
+[2017-11-02 17:38:57,881|ClientService.py:96][INFO] > ===============================================
+[2017-11-02 17:38:57,881|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:38:57,881|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:38:57,881|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:38:57,881|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:38:57,881|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:38:57,881|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:38:57,881|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:38:57,882|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:39:31,479|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:39:31,479|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:39:31,479|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:39:31,479|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:39:31,479|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:39:31,479|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:39:31,480|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:39:31,480|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:39:31,480|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:39:31,480|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:39:31,480|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:39:31,480|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:39:31,480|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:39:31,480|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:39:31,480|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:39:31,480|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:39:31,480|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:39:31,481|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:39:31,481|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:39:31,481|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:39:31,481|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:39:31,482|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:39:31,482|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:39:31,482|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:39:31,482|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:39:31,490|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 17:39:31,490|ClientService.py:57][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:39:31,490|ClientService.py:58][INFO] > ===============================================
+[2017-11-02 17:39:31,490|ClientService.py:59][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:39:31,490|ClientService.py:60][INFO] > TID : 200
+[2017-11-02 17:39:31,490|ClientService.py:61][INFO] > RESULT : 500
+[2017-11-02 17:39:31,490|ClientService.py:62][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:39:31 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:39:31,490|ClientService.py:63][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 17:39:31,491|ClientService.py:64][INFO] > ===============================================
+[2017-11-02 17:39:31,491|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 17:39:31,491|ClientService.py:82][INFO] > TEST
+[2017-11-02 17:39:31,491|ClientService.py:83][INFO] > ===============================================
+[2017-11-02 17:39:31,491|ClientService.py:84][INFO] > tot_len : 1
+[2017-11-02 17:39:31,491|ClientService.py:85][INFO] > msgId : 200
+[2017-11-02 17:39:31,491|ClientService.py:86][INFO] > ehttp_idx : 1
+[2017-11-02 17:39:31,491|ClientService.py:87][INFO] > srcQid : 1
+[2017-11-02 17:39:31,491|ClientService.py:88][INFO] > srcSysId : 1
+[2017-11-02 17:39:31,491|ClientService.py:89][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 17:39:31,492|ClientService.py:90][INFO] > ===============================================
+[2017-11-02 17:39:31,492|ClientService.py:91][INFO] > method: 1
+[2017-11-02 17:39:31,492|ClientService.py:92][INFO] > api_type: 2
+[2017-11-02 17:39:31,492|ClientService.py:93][INFO] > op_type: 3
+[2017-11-02 17:39:31,492|ClientService.py:94][INFO] > length: 4
+[2017-11-02 17:39:31,492|ClientService.py:95][INFO] > encoding: 5
+[2017-11-02 17:39:31,492|ClientService.py:96][INFO] > ===============================================
+[2017-11-02 17:39:31,492|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:39:31,492|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:39:31,493|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:39:31,493|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:39:31,493|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:39:31,493|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 17:39:31,493|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 17:39:31,493|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:40:28,014|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:40:28,015|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:40:28,015|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:40:28,015|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:40:28,015|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:40:43,332|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:40:43,333|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:40:43,333|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:40:43,333|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:40:43,333|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:40:43,333|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:40:43,333|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:40:43,333|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:40:43,333|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:40:43,334|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:40:43,334|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:40:43,334|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:40:43,334|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:40:43,334|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:40:43,334|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:40:43,334|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:40:43,334|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:40:43,335|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:40:43,335|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:40:43,335|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:40:43,335|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:40:43,335|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:40:43,335|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:40:43,335|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:40:43,336|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:40:43,359|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:40:43,359|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:40:43,359|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:40:43,359|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:40:43,359|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:40:43,360|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:40:43,360|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:40:43 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:40:43,366|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:40:43,366|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:40:43,366|ClientService.py:82][INFO] > ===============================================
+[2017-11-02 17:40:43,366|ClientService.py:83][INFO] > TEST
+[2017-11-02 17:40:43,367|ClientService.py:84][INFO] > ===============================================
+[2017-11-02 17:40:43,367|ClientService.py:85][INFO] > tot_len : 1
+[2017-11-02 17:40:43,367|ClientService.py:86][INFO] > msgId : 200
+[2017-11-02 17:40:43,367|ClientService.py:87][INFO] > ehttp_idx : 1
+[2017-11-02 17:40:43,367|ClientService.py:88][INFO] > srcQid : 1
+[2017-11-02 17:40:43,367|ClientService.py:89][INFO] > srcSysId : 1
+[2017-11-02 17:40:43,367|ClientService.py:90][INFO] > jsonBody: {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:40:43,367|ClientService.py:91][INFO] > ===============================================
+[2017-11-02 17:40:43,367|ClientService.py:92][INFO] > method: 1
+[2017-11-02 17:40:43,367|ClientService.py:93][INFO] > api_type: 2
+[2017-11-02 17:40:43,368|ClientService.py:94][INFO] > op_type: 3
+[2017-11-02 17:40:43,368|ClientService.py:95][INFO] > length: 4
+[2017-11-02 17:40:43,368|ClientService.py:96][INFO] > encoding: 5
+[2017-11-02 17:40:43,368|ClientService.py:97][INFO] > ===============================================
+[2017-11-02 17:40:43,368|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:40:43,369|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:40:43,369|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:40:43,369|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:40:43,369|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:40:43,369|PLTEConnector.py:98][INFO] > RESTCODE : 200
+[2017-11-02 17:40:43,369|PLTEConnector.py:99][INFO] > BODY   : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:40:43,370|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:40:46,604|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:40:46,605|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:40:46,605|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:40:46,605|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:40:46,605|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:40:46,605|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:40:46,605|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:40:46,605|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:40:46,605|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:40:46,605|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:40:46,605|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:40:46,605|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:40:46,605|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:40:46,606|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:40:46,606|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:40:46,606|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:40:46,606|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:40:46,606|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:40:46,607|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:40:46,607|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:40:46,607|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:40:46,607|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:40:46,607|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:40:46,607|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:40:46,607|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:40:46,611|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:40:46,611|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:40:46,611|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:40:46,611|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:40:46,611|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:40:46,611|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:40:46,611|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:40:46 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:40:46,612|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:40:46,612|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:40:46,612|ClientService.py:82][INFO] > ===============================================
+[2017-11-02 17:40:46,612|ClientService.py:83][INFO] > TEST
+[2017-11-02 17:40:46,612|ClientService.py:84][INFO] > ===============================================
+[2017-11-02 17:40:46,612|ClientService.py:85][INFO] > tot_len : 1
+[2017-11-02 17:40:46,612|ClientService.py:86][INFO] > msgId : 200
+[2017-11-02 17:40:46,612|ClientService.py:87][INFO] > ehttp_idx : 1
+[2017-11-02 17:40:46,612|ClientService.py:88][INFO] > srcQid : 1
+[2017-11-02 17:40:46,613|ClientService.py:89][INFO] > srcSysId : 1
+[2017-11-02 17:40:46,613|ClientService.py:90][INFO] > jsonBody: {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:40:46,613|ClientService.py:91][INFO] > ===============================================
+[2017-11-02 17:40:46,613|ClientService.py:92][INFO] > method: 1
+[2017-11-02 17:40:46,613|ClientService.py:93][INFO] > api_type: 2
+[2017-11-02 17:40:46,613|ClientService.py:94][INFO] > op_type: 3
+[2017-11-02 17:40:46,613|ClientService.py:95][INFO] > length: 4
+[2017-11-02 17:40:46,613|ClientService.py:96][INFO] > encoding: 5
+[2017-11-02 17:40:46,613|ClientService.py:97][INFO] > ===============================================
+[2017-11-02 17:40:46,613|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:40:46,614|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:40:46,614|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:40:46,614|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:40:46,614|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:40:46,614|PLTEConnector.py:98][INFO] > RESTCODE : 200
+[2017-11-02 17:40:46,614|PLTEConnector.py:99][INFO] > BODY   : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:40:46,614|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:42:22,091|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:42:22,092|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:42:22,092|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:42:22,092|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:42:22,093|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:42:28,444|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:42:28,444|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:42:28,445|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:42:28,445|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:42:28,445|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:42:28,445|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:42:28,445|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:42:28,445|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:42:28,445|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:42:28,445|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:42:28,445|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:42:28,445|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:42:28,445|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:42:28,446|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:42:28,446|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:42:28,446|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:42:28,446|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:42:28,446|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:42:28,447|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:42:28,447|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:42:28,447|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:42:28,447|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:42:28,447|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:42:28,447|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:42:28,447|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:42:28,471|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:42:28,471|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:42:28,471|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:42:28,471|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:42:28,471|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:42:28,471|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:42:28,471|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:42:28 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:42:28,478|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:42:28,478|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:42:28,478|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:42:28,479|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:42:28,479|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:42:28,479|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:42:28,479|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:42:28,479|PLTEConnector.py:98][INFO] > RESTCODE : 200
+[2017-11-02 17:42:28,479|PLTEConnector.py:99][INFO] > BODY   : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:42:28,479|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:42:44,286|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:42:44,286|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:42:44,287|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:42:44,287|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:42:44,287|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:42:44,287|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 17:42:54,232|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:42:54,233|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:42:54,233|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:42:54,233|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:42:54,233|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:42:54,233|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:42:54,233|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:42:54,233|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:42:54,233|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:42:54,233|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:42:54,234|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:42:54,234|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:42:54,234|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:42:54,234|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:42:54,234|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:42:54,234|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:42:54,234|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:42:54,234|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:42:54,235|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:42:54,235|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:42:54,235|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:42:54,235|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:42:54,235|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:42:54,235|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:42:54,236|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:42:54,259|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:42:54,260|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:42:54,260|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:42:54,260|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:42:54,260|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:42:54,260|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:42:54,260|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:42:54 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:42:54,267|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:42:54,267|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:42:54,268|PLTEConnector.py:89][ERROR] > sendMessage Error! 'PLTEConnector' object has no attribute 'plteQueue'
+[2017-11-02 17:43:19,480|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:43:19,481|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:43:19,481|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:43:19,481|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:43:19,481|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:43:19,481|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 17:43:21,228|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:43:21,228|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:43:21,228|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:43:21,228|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:43:21,228|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:43:21,229|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:43:21,229|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:43:21,229|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:43:21,229|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:43:21,229|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:43:21,229|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:43:21,229|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:43:21,229|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:43:21,229|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:43:21,229|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:43:21,230|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:43:21,230|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:43:21,230|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:43:21,230|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:43:21,231|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:43:21,231|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:43:21,231|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:43:21,231|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:43:21,231|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:43:21,231|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:43:21,250|ClientService.py:52][INFO] > ('Connection aborted.', error(111, 'Connection refused'))
+[2017-11-02 17:43:21,250|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:43:21,250|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:43:21,250|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:43:52,346|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:43:52,347|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:43:52,347|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:43:52,348|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:43:52,348|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:43:52,348|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:43:52,348|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:43:52,348|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:43:52,349|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:43:52,350|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:43:52,350|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:43:52,350|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:43:52,351|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:43:52,351|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:43:52,351|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:43:52,351|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:43:52,357|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:43:52,359|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:43:52,361|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:43:52,361|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:43:52,361|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:43:52,361|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:43:52,363|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:43:52,363|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:43:52,363|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:43:52,364|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:43:52,364|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:43:52,364|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:43:52,364|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:43:52,364|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:43:52,380|ClientService.py:52][INFO] > ('Connection aborted.', error(111, 'Connection refused'))
+[2017-11-02 17:43:52,381|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:43:52,381|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:43:52,381|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:43:56,889|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:43:56,889|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:43:56,890|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:43:56,890|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:43:56,890|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:44:05,197|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:44:05,198|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:44:05,198|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:44:05,198|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:44:05,198|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:44:05,198|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:44:05,198|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:44:05,198|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:44:05,198|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:44:05,198|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:44:05,198|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:44:05,198|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:44:05,199|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:44:05,199|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:44:05,199|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:44:05,199|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:44:05,199|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:44:05,200|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:44:05,200|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:44:05,200|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:44:05,201|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:44:05,201|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:44:05,201|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:44:05,201|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:44:05,201|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:44:05,226|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:44:05,226|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:44:05,226|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:44:05,227|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:44:05,227|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:44:05,227|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:44:05,227|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:44:05 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:44:05,233|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:44:05,234|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:44:05,234|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:44:05,234|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:44:05,234|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:44:05,234|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 17:44:05,234|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:44:05,235|PLTEConnector.py:98][INFO] > RESTCODE : 200
+[2017-11-02 17:44:05,235|PLTEConnector.py:99][INFO] > BODY   : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:44:05,235|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 17:44:11,675|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:44:11,675|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:44:11,676|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:44:11,676|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:44:11,676|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:44:14,956|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:44:14,957|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:44:14,957|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:44:14,957|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:44:14,957|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:44:14,957|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:44:14,957|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:44:14,957|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:44:14,957|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:44:14,957|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:44:14,957|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:44:14,958|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:44:14,958|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:44:14,958|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:44:14,958|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:44:14,958|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:44:14,958|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:44:14,958|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:44:14,959|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:44:14,959|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:44:14,959|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:44:14,959|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:44:14,959|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:44:14,959|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:44:14,959|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:44:14,978|ClientService.py:52][INFO] > ('Connection aborted.', error(111, 'Connection refused'))
+[2017-11-02 17:44:14,979|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:44:14,979|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:44:14,979|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:45:23,438|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:45:23,439|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:45:23,439|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:45:23,439|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:45:23,440|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:45:30,707|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:45:30,708|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:45:30,709|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:45:30,709|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:45:30,709|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:45:30,709|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 17:45:32,052|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:45:32,052|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:45:32,052|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:45:32,052|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:45:32,052|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:45:32,052|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:45:32,052|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:45:32,052|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:45:32,052|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:45:32,053|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:45:32,053|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:45:32,053|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:45:32,053|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:45:32,053|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:45:32,053|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:45:32,053|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:45:32,053|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:45:32,054|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:45:32,054|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:45:32,054|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:45:32,054|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:45:32,054|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:45:32,054|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:45:32,054|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:45:32,055|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:45:32,074|ClientService.py:52][INFO] > ('Connection aborted.', error(111, 'Connection refused'))
+[2017-11-02 17:46:44,144|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:46:44,145|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:46:44,145|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:46:44,145|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:46:44,145|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:46:48,334|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:46:48,334|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:46:48,334|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:46:48,334|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:46:48,334|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:46:48,334|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:46:48,335|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:46:48,335|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:46:48,335|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:46:48,335|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:46:48,335|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:46:48,335|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:46:48,335|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:46:48,335|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:46:48,335|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:46:48,335|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:46:48,335|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:46:48,336|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:46:48,336|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:46:48,336|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:46:48,336|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:46:48,337|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:46:48,337|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:46:48,337|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:46:48,337|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:46:48,356|ClientService.py:52][INFO] > ('Connection aborted.', error(111, 'Connection refused'))
+[2017-11-02 17:46:48,356|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:46:48,356|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:46:48,357|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:46:48,357|ClientService.py:86][INFO] > local variable 'restAPI' referenced before assignment
+[2017-11-02 17:54:50,108|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:54:50,110|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:54:50,110|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:54:50,110|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:54:50,110|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:55:27,912|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:55:27,913|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:55:27,913|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:55:27,913|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:55:27,913|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:55:27,913|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:55:27,913|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:55:27,913|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:55:27,913|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:55:27,914|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:55:27,914|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:55:27,914|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:55:27,914|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:55:27,914|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:55:27,914|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:55:27,914|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:55:27,914|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:55:27,915|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:55:27,916|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:55:27,916|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:55:27,916|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:55:27,916|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:55:27,916|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:55:27,916|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:55:27,916|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:55:27,942|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:55:27,942|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:55:27,942|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:55:27,943|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:55:27,943|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:55:27,943|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:55:27,943|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:55:27 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:55:27,949|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:55:27,950|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:56:55,726|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:56:55,727|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:56:55,727|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:56:55,727|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:56:55,727|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:56:58,936|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:56:58,936|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:56:58,936|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:56:58,936|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:56:58,936|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:56:58,937|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:56:58,937|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:56:58,937|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:56:58,937|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:56:58,937|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:56:58,937|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:56:58,937|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:56:58,937|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:56:58,937|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:56:58,937|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:56:58,937|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:56:58,937|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:56:58,939|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:56:58,939|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:56:58,939|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:56:58,939|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:56:58,939|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:56:58,939|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:56:58,939|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:56:58,939|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:56:58,962|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:56:58,962|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:56:58,963|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:56:58,963|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:56:58,963|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:56:58,963|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:56:58,963|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:56:58 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:56:58,969|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:56:58,969|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:58:12,670|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:58:12,672|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:58:12,672|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:58:12,672|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:58:12,672|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:58:12,672|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 17:58:14,736|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:58:14,736|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:58:14,736|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:58:14,737|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:58:14,737|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:58:14,737|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:58:14,737|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:58:14,737|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:58:14,737|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:58:14,737|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:58:14,737|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:58:14,737|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:58:14,737|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:58:14,737|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:58:14,738|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:58:14,738|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:58:14,738|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:58:14,738|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:58:14,738|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:58:14,739|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:58:14,739|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:58:14,739|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:58:14,739|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:58:14,739|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:58:14,739|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:58:14,763|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:58:14,764|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:58:14,764|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:58:14,764|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:58:14,764|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:58:14,764|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:58:14,764|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:58:14 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:58:14,771|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:58:14,771|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:59:00,523|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 17:59:00,524|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 17:59:00,525|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 17:59:00,525|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 17:59:00,525|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 17:59:08,891|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 17:59:08,892|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 17:59:08,892|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 17:59:08,892|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 17:59:08,892|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 17:59:08,892|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 17:59:08,892|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 17:59:08,892|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 17:59:08,892|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 17:59:08,892|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:59:08,893|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 17:59:08,893|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 17:59:08,893|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 17:59:08,893|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 17:59:08,893|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 17:59:08,893|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 17:59:08,893|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 17:59:08,893|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 17:59:08,894|ClientService.py:37][INFO] > RESTIF -> [EXT]
+[2017-11-02 17:59:08,894|ClientService.py:38][INFO] > ===============================================
+[2017-11-02 17:59:08,894|ClientService.py:39][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:59:08,894|ClientService.py:40][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 17:59:08,894|ClientService.py:41][INFO] > TID : 200
+[2017-11-02 17:59:08,894|ClientService.py:42][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 17:59:08,895|ClientService.py:43][INFO] > ===============================================
+[2017-11-02 17:59:08,917|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 17:59:08,917|ClientService.py:58][INFO] > [EXT] -> RESTIF
+[2017-11-02 17:59:08,917|ClientService.py:59][INFO] > ===============================================
+[2017-11-02 17:59:08,917|ClientService.py:60][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 17:59:08,918|ClientService.py:61][INFO] > TID : 200
+[2017-11-02 17:59:08,918|ClientService.py:62][INFO] > RESULT : 200
+[2017-11-02 17:59:08,918|ClientService.py:63][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 08:59:08 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 17:59:08,924|ClientService.py:64][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:59:08,924|ClientService.py:65][INFO] > ===============================================
+[2017-11-02 17:59:08,924|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 17:59:08,924|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 17:59:08,925|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 17:59:08,925|PLTEConnector.py:96][INFO] > API_NAME : temp
+[2017-11-02 17:59:08,925|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 17:59:08,925|PLTEConnector.py:98][INFO] > RESTCODE : 200
+[2017-11-02 17:59:08,925|PLTEConnector.py:99][INFO] > BODY   : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 17:59:08,925|PLTEConnector.py:100][INFO] > ===============================================
