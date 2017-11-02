@@ -29,7 +29,8 @@ class ResReceiver(Receiver):
         
     
     def __init__(self):
-        super(self).__init__()
+		Receiver.__init__(self)
+        #super(self).__init__()
 
         try :
             myQueId = 0

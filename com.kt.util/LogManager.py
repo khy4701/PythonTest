@@ -6,7 +6,8 @@ class LogManager:
           
     __instance = None
     logger = None
-    LOG_PATH = '/home/e2e/hykim/src/logs/my.log'
+    #LOG_PATH = '/home/e2e/hykim/src/logs/my.log'
+    LOG_PATH = '/home/e2e/PKG/T1.0.0/MP/src/RESTIF/logs/my.log'
     #LOG_PATH = 'D:/logs/python/my.log'
     
     @staticmethod

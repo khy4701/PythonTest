@@ -1,6 +1,5 @@
-from ctypes.test.test_errno import threading
 import json
-
+import threading
 import requests
 
 from ConfigManager import ConfManager
@@ -9,7 +8,7 @@ from PLTEManager import PLTEManager
 from ProvMsg import HttpRes
 
 
-class ClientService(threading.thread):
+class ClientService(threading.Thread):
     
     __instance = None
     

@@ -3,7 +3,8 @@ from flask_restful import Api
 
 from NsdManageService import NsdOnboarding
 from PLTEConnector import PLTEConnector
-from ReqReceiver import Receiver
+from ReqReceiver import ReqReceiver
+from ResReceiver import ResReceiver
 from Service import Service
 from ServiceClass import Departments_Meta, Departments_Meta2
 from ServiceClass2 import Departmental_Salary
@@ -13,7 +14,8 @@ from ServiceClass2 import Departmental_Salary
 app = Flask(__name__)
 api = Api(app)
 
-Receiver.getInstance()
+ReqReceiver.getInstance()
+ResReceiver.getInstance()
 PLTEConnector.getInstance()
 #PLTEConnector.getInstance().sendMessage("Command",2)
 
