@@ -1,0 +1,375 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABCMeta	com.kt.net/Connector.py	/^from abc import ABCMeta, abstractmethod$/;"	i
+API_NUM1	com.kt.model/ApiDefine.py	/^    API_NUM1 = "departmentAPI"$/;"	v	class:ApiDefine
+Api	EXT_SERVER/test_main.py	/^from flask_restful import Api$/;"	i
+Api	com.kt.net/test_main.py	/^from flask_restful import Api$/;"	i
+Api	com.kt.service/testFlask.py	/^from flask_restful import Resource, Api$/;"	i
+ApiDefine	com.kt.model/ApiDefine.py	/^class ApiDefine():$/;"	c
+ApiDefine	com.kt.service/NsdManageService.py	/^from ApiDefine import ApiDefine$/;"	i
+ApiDefine	com.kt.service/ServiceClass.py	/^from ApiDefine import ApiDefine$/;"	i
+ApiDefine	com.kt.service/testFlask.py	/^from ApiDefine import ApiDefine$/;"	i
+ClientService	com.kt.net/ReqReceiver.py	/^from ClientService import ClientService$/;"	i
+ClientService	com.kt.service/ClientService.py	/^class ClientService(threading.Thread):$/;"	c
+ConfManager	com.kt.net/Connector.py	/^from ConfigManager import ConfManager$/;"	i
+ConfManager	com.kt.net/PLTEConnector.py	/^from ConfigManager import ConfManager$/;"	i
+ConfManager	com.kt.net/ReqReceiver.py	/^from ConfigManager import ConfManager$/;"	i
+ConfManager	com.kt.net/ResReceiver.py	/^from ConfigManager import ConfManager$/;"	i
+ConfManager	com.kt.service/ClientService.py	/^from ConfigManager import ConfManager$/;"	i
+ConfManager	com.kt.service/NsdManageService.py	/^from ConfigManager import ConfManager$/;"	i
+ConfManager	com.kt.service/testFlask.py	/^from ConfigManager import ConfManager$/;"	i
+ConfManager	com.kt.util/ConfigManager.py	/^class ConfManager:$/;"	c
+ConfigParser	com.kt.util/ConfigManager.py	/^import ConfigParser$/;"	i
+Connector	com.kt.net/Connector.py	/^class Connector():$/;"	c
+Connector	com.kt.net/PLTEConnector.py	/^import Connector$/;"	i
+Connector	com.kt.net/ReqReceiver.py	/^from Connector import Connector$/;"	i
+Connector	com.kt.net/ResReceiver.py	/^from Connector import Connector$/;"	i
+Departmental_Salary	com.kt.net/test_main.py	/^from ServiceClass2 import Departmental_Salary$/;"	i
+Departmental_Salary	com.kt.service/ServiceClass2.py	/^class Departmental_Salary(Resource):$/;"	c
+Departments_Meta	EXT_SERVER/ServiceClass.py	/^class Departments_Meta(Resource):$/;"	c
+Departments_Meta	EXT_SERVER/test_main.py	/^from ServiceClass import Departments_Meta$/;"	i
+Departments_Meta	com.kt.net/test_main.py	/^from ServiceClass import Departments_Meta, Departments_Meta2$/;"	i
+Departments_Meta	com.kt.service/ServiceClass.py	/^class Departments_Meta(Resource):$/;"	c
+Departments_Meta2	EXT_SERVER/ServiceClass.py	/^class Departments_Meta2(Resource):$/;"	c
+Departments_Meta2	com.kt.net/test_main.py	/^from ServiceClass import Departments_Meta, Departments_Meta2$/;"	i
+Departments_Meta2	com.kt.service/ServiceClass.py	/^class Departments_Meta2(Resource):$/;"	c
+Flask	EXT_SERVER/test_main.py	/^from flask import Flask$/;"	i
+Flask	com.kt.net/test_main.py	/^from flask import Flask$/;"	i
+Flask	com.kt.service/testFlask.py	/^from flask.app import Flask$/;"	i
+HTTPF_MSG_BUFSIZE	IPCTEST_PTOC/http_app.h	4;"	d
+HTTPF_MSG_BUFSIZE	com.kt.model/ProvMsg.py	/^HTTPF_MSG_BUFSIZE = 1024$/;"	v
+HTTPF_RES_MSG_SIZE	IPCTEST_PTOC/http_app.h	20;"	d
+HttpHeader	com.kt.model/ProvMsg.py	/^class HttpHeader(Structure):$/;"	c
+HttpHeader	com.kt.net/PLTEConnector.py	/^from ProvMsg import HttpReq, HttpRes, HttpHeader$/;"	i
+HttpReq	com.kt.model/ProvMsg.py	/^class HttpReq(Structure):$/;"	c
+HttpReq	com.kt.net/PLTEConnector.py	/^from ProvMsg import HttpReq, HttpRes, HttpHeader$/;"	i
+HttpReq	com.kt.net/ReqReceiver.py	/^from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE$/;"	i
+HttpReq	com.kt.net/ResReceiver.py	/^from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE$/;"	i
+HttpRes	com.kt.model/ProvMsg.py	/^class HttpRes(Structure):$/;"	c
+HttpRes	com.kt.net/PLTEConnector.py	/^from ProvMsg import HttpReq, HttpRes, HttpHeader$/;"	i
+HttpRes	com.kt.net/ReqReceiver.py	/^from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE$/;"	i
+HttpRes	com.kt.net/ResReceiver.py	/^from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE$/;"	i
+HttpRes	com.kt.service/ClientService.py	/^from ProvMsg import HttpRes$/;"	i
+HttpRes	com.kt.service/NsdManageService.py	/^from ProvMsg import HttpRes$/;"	i
+HttpRes	com.kt.service/testFlask.py	/^from ProvMsg import HttpRes$/;"	i
+INCLUDES	IPCTEST_PTOC/Makefile	/^INCLUDES	= http_app.h$/;"	m
+LOG_INFO	com.kt.util/ConfigManager.py	/^    LOG_INFO   = "LOG_INFO"$/;"	v	class:ConfManager
+LOG_PATH	com.kt.util/LogManager.py	/^    LOG_PATH = '\/home\/e2e\/PKG\/T1.0.0\/MP\/src\/RESTIF\/logs\/my.log'$/;"	v	class:LogManager
+LogManager	com.kt.net/Connector.py	/^from LogManager import LogManager$/;"	i
+LogManager	com.kt.net/PLTEManager.py	/^from LogManager import LogManager$/;"	i
+LogManager	com.kt.net/ReqReceiver.py	/^from LogManager import LogManager$/;"	i
+LogManager	com.kt.net/ResReceiver.py	/^from LogManager import LogManager$/;"	i
+LogManager	com.kt.service/ClientService.py	/^from LogManager import LogManager$/;"	i
+LogManager	com.kt.service/NsdManageService.py	/^from LogManager import LogManager$/;"	i
+LogManager	com.kt.service/testFlask.py	/^from LogManager import LogManager$/;"	i
+LogManager	com.kt.util/ConfigManager.py	/^from LogManager import LogManager$/;"	i
+LogManager	com.kt.util/LogManager.py	/^class LogManager:$/;"	c
+MAXSIZE	IPCTEST_PTOC/cclient.c	12;"	d	file:
+MAXSIZE	IPCTEST_PTOC/sclient.c	12;"	d	file:
+MSGQUEUE_INFO	com.kt.util/ConfigManager.py	/^    MSGQUEUE_INFO = "MSGQUEUE_INFO"$/;"	v	class:ConfManager
+MTYPE_APP_TO_RESTIF_REQ	IPCTEST_PTOC/http_app.h	22;"	d
+MTYPE_APP_TO_RESTIF_REQ	com.kt.model/ProvMsg.py	/^    MTYPE_APP_TO_RESTIF_REQ = 100   $/;"	v	class:HttpReq
+MTYPE_APP_TO_RESTIF_RES	IPCTEST_PTOC/http_app.h	36;"	d
+MTYPE_APP_TO_RESTIF_RES	com.kt.model/ProvMsg.py	/^    MTYPE_APP_TO_RESTIF_RES = 102$/;"	v	class:HttpRes
+MTYPE_CLIENT_MODE	IPCTEST_PTOC/http_app.h	7;"	d
+MTYPE_CLIENT_MODE	com.kt.model/ProvMsg.py	/^MTYPE_CLIENT_MODE = 500$/;"	v
+MTYPE_CLIENT_MODE	com.kt.net/ReqReceiver.py	/^from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE$/;"	i
+MTYPE_CLIENT_MODE	com.kt.net/ResReceiver.py	/^from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE$/;"	i
+MTYPE_RESTIF_TO_APP_REQ	IPCTEST_PTOC/http_app.h	23;"	d
+MTYPE_RESTIF_TO_APP_REQ	com.kt.model/ProvMsg.py	/^    MTYPE_RESTIF_TO_APP_REQ = 101$/;"	v	class:HttpReq
+MTYPE_RESTIF_TO_APP_RES	IPCTEST_PTOC/http_app.h	37;"	d
+MTYPE_RESTIF_TO_APP_RES	com.kt.model/ProvMsg.py	/^    MTYPE_RESTIF_TO_APP_RES = 103$/;"	v	class:HttpRes
+MTYPE_SERVER_MODE	IPCTEST_PTOC/http_app.h	8;"	d
+MTYPE_SERVER_MODE	com.kt.model/ProvMsg.py	/^MTYPE_SERVER_MODE = 600$/;"	v
+MTYPE_SERVER_MODE	com.kt.net/ResReceiver.py	/^from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE$/;"	i
+Manager	com.kt.net/Manager.py	/^class Manager:$/;"	c
+Manager	com.kt.net/PLTEManager.py	/^from Manager import Manager$/;"	i
+NSD_DELETE	com.kt.service/Service.py	/^    NSD_DELETE      = "\/ns_descriptors\/{nsdInfoId}"$/;"	v	class:Service
+NSD_DISABLE	com.kt.service/Service.py	/^    NSD_DISABLE     = "\/ns_descriptors\/{nsdInfoId}"$/;"	v	class:Service
+NSD_ENABLE	com.kt.service/Service.py	/^    NSD_ENABLE      = "\/ns_descriptors\/{nsdInfoId}"$/;"	v	class:Service
+NSD_ON_BOARDING	com.kt.model/ApiDefine.py	/^    NSD_ON_BOARDING = "nsd-on-boarding"$/;"	v	class:ApiDefine
+NSD_ON_BOARDING	com.kt.service/Service.py	/^    NSD_ON_BOARDING = "\/ns_descriptors"$/;"	v	class:Service
+NSD_QUERY	com.kt.service/Service.py	/^    NSD_QUERY       = "\/ns_descriptors\/{nsdInfoId}"$/;"	v	class:Service
+NSD_UPDATE	com.kt.service/Service.py	/^    NSD_UPDATE      = "\/ns_descriptors\/{nsdInfoId}\/update"$/;"	v	class:Service
+NS_ID_CREATE	com.kt.service/Service.py	/^    NS_ID_CREATE     = "\/ns_instances"$/;"	v	class:Service
+NS_ID_DELETE	com.kt.service/Service.py	/^    NS_ID_DELETE     = "\/ns_descriptors\/{nsdInfoId}"$/;"	v	class:Service
+NS_INSTANTIATION	com.kt.service/Service.py	/^    NS_INSTANTIATION = "\/ns_instances\/{nsInstanceId}\/instantiate"$/;"	v	class:Service
+NS_SCALE_IN	com.kt.service/Service.py	/^    NS_SCALE_IN      = "\/ns_lcm_op_ops\/{nsLcmOpOccId}\/<<Task>>"$/;"	v	class:Service
+NS_SCALE_OUT	com.kt.service/Service.py	/^    NS_SCALE_OUT     = "\/ns_lcm_op_ops\/{nsLcmOpOccId}\/<<Task>>"$/;"	v	class:Service
+NS_TERMINATION	com.kt.service/Service.py	/^    NS_TERMINATION   = "\/ns_instances\/{nsInstanceId}\/terminate"$/;"	v	class:Service
+NS_UPDATE	com.kt.service/Service.py	/^    NS_UPDATE        = "\/ns_instances\/{nsInstanceId}\/update"$/;"	v	class:Service
+NsdOnboarding	com.kt.net/test_main.py	/^from NsdManageService import NsdOnboarding$/;"	i
+NsdOnboarding	com.kt.service/NsdManageService.py	/^class NsdOnboarding(Resource, ServiceManager):$/;"	c
+OBJS	IPCTEST_PTOC/Makefile	/^OBJS        = $(SRCS:.c=.o)$/;"	m
+PLTEConnector	com.kt.net/PLTEConnector.py	/^class PLTEConnector(Connector):$/;"	c
+PLTEConnector	com.kt.net/PLTEConnector.py	/^import PLTEConnector$/;"	i
+PLTEConnector	com.kt.net/PLTEManager.py	/^        from PLTEConnector import PLTEConnector$/;"	i
+PLTEConnector	com.kt.net/test_main.py	/^from PLTEConnector import PLTEConnector$/;"	i
+PLTEConnector	com.kt.service/ServiceClass.py	/^from PLTEConnector import PLTEConnector$/;"	i
+PLTEConnector	com.kt.service/testFlask.py	/^from PLTEConnector import PLTEConnector$/;"	i
+PLTEManager	com.kt.net/PLTEConnector.py	/^from PLTEManager import PLTEManager$/;"	i
+PLTEManager	com.kt.net/PLTEManager.py	/^class PLTEManager(Manager):$/;"	c
+PLTEManager	com.kt.net/ReqReceiver.py	/^from PLTEManager import PLTEManager$/;"	i
+PLTEManager	com.kt.net/ResReceiver.py	/^from PLTEManager import PLTEManager$/;"	i
+PLTEManager	com.kt.service/ClientService.py	/^from PLTEManager import PLTEManager$/;"	i
+PLTEManager	com.kt.service/NsdManageService.py	/^from PLTEManager import PLTEManager$/;"	i
+PLTEManager	com.kt.service/testFlask.py	/^from PLTEManager import PLTEManager$/;"	i
+PROG1	IPCTEST_PTOC/Makefile	/^PROG1       = cclient$/;"	m
+Packet	IPCTEST_PTOC/msgPython.py	/^class Packet(Structure):$/;"	c
+QUEUE	IPCTEST_PTOC/cclient.c	/^}QUEUE;$/;"	t	typeref:struct:msgbuf	file:
+QueueKey	IPCTEST_PTOC/cclient.c	/^int QueueKey = 12345;$/;"	v
+QueueKey	IPCTEST_PTOC/msgPython.py	/^QueueKey=12345$/;"	v
+QueueKey	IPCTEST_PTOC/sclient.c	/^int QueueKey = 12345;$/;"	v
+Receiver	com.kt.net/Receiver.py	/^class Receiver(threading.Thread):$/;"	c
+Receiver	com.kt.net/ReqReceiver.py	/^from Receiver import Receiver$/;"	i
+Receiver	com.kt.net/ResReceiver.py	/^from Receiver import Receiver$/;"	i
+ReqReceiver	com.kt.net/ReqReceiver.py	/^class ReqReceiver(Receiver):$/;"	c
+ReqReceiver	com.kt.net/test_main.py	/^from ReqReceiver import ReqReceiver$/;"	i
+ResReceiver	com.kt.net/ResReceiver.py	/^class ResReceiver(Receiver):$/;"	c
+ResReceiver	com.kt.net/test_main.py	/^from ResReceiver import ResReceiver$/;"	i
+Resource	EXT_SERVER/ServiceClass.py	/^from flask_restful import Resource$/;"	i
+Resource	com.kt.service/NsdManageService.py	/^from flask_restful import Resource$/;"	i
+Resource	com.kt.service/ServiceClass.py	/^from flask_restful import Resource$/;"	i
+Resource	com.kt.service/ServiceClass2.py	/^from flask_restful import Resource, reqparse$/;"	i
+Resource	com.kt.service/testFlask.py	/^from flask_restful import Resource, Api$/;"	i
+RestKey	IPCTEST_PTOC/cclient.c	/^int RestKey = 54322;$/;"	v
+RestKey	IPCTEST_PTOC/sclient.c	/^int RestKey = 54323;$/;"	v
+SRCS	IPCTEST_PTOC/Makefile	/^SRCS        = cclient.c$/;"	m
+SendInfo	com.kt.net/test_structure.py	/^class SendInfo:$/;"	c
+SenderInfo	com.kt.net/PLTEManager.py	/^from SenderInfo import SenderInfo$/;"	i
+SenderInfo	com.kt.net/SenderInfo.py	/^class SenderInfo:$/;"	c
+Service	com.kt.net/test_main.py	/^from Service import Service$/;"	i
+Service	com.kt.service/Service.py	/^class Service:$/;"	c
+ServiceManager	com.kt.net/ServiceManager.py	/^class ServiceManager:$/;"	c
+ServiceManager	com.kt.service/NsdManageService.py	/^from ServiceManager import ServiceManager$/;"	i
+ServiceManager	com.kt.service/testFlask.py	/^from ServiceManager import ServiceManager$/;"	i
+Singleton	com.kt.util/desginPattern.py	/^class Singleton:$/;"	c
+Structure	IPCTEST_PTOC/msgPython.py	/^from _ctypes import Structure$/;"	i
+Structure	com.kt.model/ProvMsg.py	/^from _ctypes import Structure$/;"	i
+__HTTPF_APP_H__	IPCTEST_PTOC/http_app.h	2;"	d
+__init_	com.kt.net/Manager.py	/^    def __init_(self):$/;"	m	class:Manager	file:
+__init__	IPCTEST_PTOC/msgPython.py	/^    def __init__(self, header, body):$/;"	m	class:testFunc
+__init__	com.kt.net/Connector.py	/^    def __init__(self, manager):$/;"	m	class:Connector
+__init__	com.kt.net/PLTEConnector.py	/^    def __init__(self):$/;"	m	class:PLTEConnector
+__init__	com.kt.net/PLTEManager.py	/^    def __init__(self):$/;"	m	class:PLTEManager
+__init__	com.kt.net/Receiver.py	/^    def __init__(self):$/;"	m	class:Receiver
+__init__	com.kt.net/ReqReceiver.py	/^    def __init__(self):$/;"	m	class:ReqReceiver
+__init__	com.kt.net/ResReceiver.py	/^    def __init__(self):$/;"	m	class:ResReceiver
+__init__	com.kt.net/SenderInfo.py	/^    def __init__(self, source, cliReqId ):$/;"	m	class:SenderInfo
+__init__	com.kt.net/test.py	/^    def __init__(self, tes):$/;"	m	class:t1
+__init__	com.kt.net/test_structure.py	/^    def __init__(self, a,b):$/;"	m	class:SendInfo
+__init__	com.kt.service/ClientService.py	/^    def __init__(self, httpMsg):$/;"	m	class:ClientService
+__init__	com.kt.service/Service.py	/^    def __init__(self):$/;"	m	class:Service
+__init__	com.kt.util/ConfigManager.py	/^    def __init__(self):$/;"	m	class:ConfManager
+__init__	com.kt.util/LogManager.py	/^    def __init__(self):$/;"	m	class:LogManager
+__init__	com.kt.util/desginPattern.py	/^    def __init__(self):$/;"	m	class:Singleton
+__instance	com.kt.net/PLTEConnector.py	/^    __instance = None$/;"	v	class:PLTEConnector
+__instance	com.kt.net/PLTEManager.py	/^    __instance = None$/;"	v	class:PLTEManager
+__instance	com.kt.net/ReqReceiver.py	/^    __instance = None$/;"	v	class:ReqReceiver
+__instance	com.kt.net/ResReceiver.py	/^    __instance = None$/;"	v	class:ResReceiver
+__instance	com.kt.service/ClientService.py	/^    __instance = None$/;"	v	class:ClientService
+__instance	com.kt.util/ConfigManager.py	/^    __instance = None$/;"	v	class:ConfManager
+__instance	com.kt.util/LogManager.py	/^    __instance = None$/;"	v	class:LogManager
+__instance	com.kt.util/desginPattern.py	/^    __instance = None$/;"	v	class:Singleton
+__metaclass__	com.kt.net/Connector.py	/^    __metaclass__ = ABCMeta$/;"	v	class:Connector
+_fields_	IPCTEST_PTOC/msgPython.py	/^    _fields_ = [("id", c_int),$/;"	v	class:Packet
+_fields_	com.kt.model/ProvMsg.py	/^    _fields_ =  [("id", c_int),$/;"	v	class:provMsg
+_fields_	com.kt.model/ProvMsg.py	/^    _fields_ = [("method", c_int),$/;"	v	class:HttpHeader
+_fields_	com.kt.model/ProvMsg.py	/^    _fields_ = [("tot_len", c_int),      # 4$/;"	v	class:HttpReq
+_fields_	com.kt.model/ProvMsg.py	/^    _fields_ = [("tot_len", c_int),      # 4$/;"	v	class:HttpRes
+_http_header	IPCTEST_PTOC/http_app.h	/^typedef struct _http_header {$/;"	s
+abstractmethod	com.kt.net/Connector.py	/^from abc import ABCMeta, abstractmethod$/;"	i
+abstractmethod	com.kt.net/Manager.py	/^from abc import abstractmethod$/;"	i
+abstractmethod	com.kt.net/Receiver.py	/^from abc import abstractmethod$/;"	i
+abstractmethod	com.kt.net/ServiceManager.py	/^from abc import abstractmethod$/;"	i
+api	EXT_SERVER/test_main.py	/^api = Api(app)$/;"	v
+api	com.kt.net/test_main.py	/^api = Api(app)$/;"	v
+api	com.kt.service/testFlask.py	/^    api = Api(app)$/;"	v	class:ttt
+api_type	IPCTEST_PTOC/http_app.h	/^	int         api_type;$/;"	m	struct:_http_header
+app	E2E.py	/^from test_main import app$/;"	i
+app	EXT_SERVER/test_main.py	/^app = Flask(__name__)$/;"	v
+app	com.kt.net/test_main.py	/^app = Flask(__name__)$/;"	v
+app	com.kt.service/testFlask.py	/^    app = Flask(__name__)$/;"	v	class:ttt
+body	IPCTEST_PTOC/cclient.c	/^	char body[MAXSIZE];$/;"	m	struct:msgbuf	file:
+c1	com.kt.net/test2.py	/^c1 = stTest()$/;"	v
+c2	com.kt.net/test2.py	/^c2 = stTest()$/;"	v
+c3	com.kt.net/test2.py	/^c3 = stTest()$/;"	v
+c_char	IPCTEST_PTOC/msgPython.py	/^from ctypes import c_int, c_ubyte, c_char$/;"	i
+c_char	com.kt.model/ProvMsg.py	/^from ctypes import c_int, c_ubyte, c_char, c_short, c_long$/;"	i
+c_int	IPCTEST_PTOC/msgPython.py	/^from ctypes import c_int, c_ubyte, c_char$/;"	i
+c_int	com.kt.model/ProvMsg.py	/^from ctypes import c_int, c_ubyte, c_char, c_short, c_long$/;"	i
+c_long	com.kt.model/ProvMsg.py	/^from ctypes import c_int, c_ubyte, c_char, c_short, c_long$/;"	i
+c_short	com.kt.model/ProvMsg.py	/^from ctypes import c_int, c_ubyte, c_char, c_short, c_long$/;"	i
+c_ubyte	IPCTEST_PTOC/msgPython.py	/^from ctypes import c_int, c_ubyte, c_char$/;"	i
+c_ubyte	com.kt.model/ProvMsg.py	/^from ctypes import c_int, c_ubyte, c_char, c_short, c_long$/;"	i
+ctypes	IPCTEST_PTOC/msgPython.py	/^import ctypes, time$/;"	i
+ctypes	com.kt.net/PLTEConnector.py	/^import ctypes$/;"	i
+ctypes	com.kt.net/ReqReceiver.py	/^import ctypes$/;"	i
+ctypes	com.kt.net/ResReceiver.py	/^import ctypes$/;"	i
+datetime	EXT_SERVER/ServiceClass.py	/^import datetime$/;"	i
+datetime	com.kt.service/ServiceClass.py	/^import datetime$/;"	i
+dictList	com.kt.util/ConfigManager.py	/^    dictList = dict()$/;"	v	class:ConfManager
+done	IPCTEST_PTOC/thread.h	/^int done[5];$/;"	v
+ehttpf_idx	IPCTEST_PTOC/http_app.h	/^	short       ehttpf_idx;     \/* 2011.08.17: ehttpf_thread_index *\/$/;"	m	struct:__anon1
+ehttpf_idx	IPCTEST_PTOC/http_app.h	/^	short       ehttpf_idx;     \/* 2011.08.17: ehttpf_thread_index *\/$/;"	m	struct:__anon2
+encoding	IPCTEST_PTOC/http_app.h	/^	char        encoding;$/;"	m	struct:_http_header
+get	EXT_SERVER/ServiceClass.py	/^    def get(self):$/;"	m	class:Departments_Meta
+get	com.kt.service/ServiceClass.py	/^    def get(self):$/;"	m	class:Departments_Meta
+get	com.kt.service/ServiceClass2.py	/^    def get(self, department_name):$/;"	m	class:Departmental_Salary
+getA	com.kt.net/test_structure.py	/^    def getA(self):$/;"	m	class:SendInfo
+getCliReqId	com.kt.net/SenderInfo.py	/^    def getCliReqId(self):$/;"	m	class:SenderInfo
+getClientReqId	com.kt.net/PLTEManager.py	/^    def getClientReqId(self):$/;"	m	class:PLTEManager
+getConfigData	com.kt.util/ConfigManager.py	/^    def getConfigData(self, section, confKey):$/;"	m	class:ConfManager
+getInstance	com.kt.net/PLTEConnector.py	/^    def getInstance():$/;"	m	class:PLTEConnector
+getInstance	com.kt.net/PLTEManager.py	/^    def getInstance():$/;"	m	class:PLTEManager
+getInstance	com.kt.net/ReqReceiver.py	/^    def getInstance():$/;"	m	class:ReqReceiver
+getInstance	com.kt.net/ResReceiver.py	/^    def getInstance():$/;"	m	class:ResReceiver
+getInstance	com.kt.util/ConfigManager.py	/^    def getInstance():$/;"	m	class:ConfManager
+getInstance	com.kt.util/LogManager.py	/^    def getInstance():$/;"	m	class:LogManager
+getInstance	com.kt.util/desginPattern.py	/^    def getInstance():$/;"	m	class:Singleton
+getLogFlag	com.kt.util/ConfigManager.py	/^    def getLogFlag(self):$/;"	m	class:ConfManager
+getSource	com.kt.net/SenderInfo.py	/^    def getSource(self):$/;"	m	class:SenderInfo
+get_logger	com.kt.util/LogManager.py	/^    def get_logger(self):        $/;"	m	class:LogManager
+getter	IPCTEST_PTOC/msgPython.py	/^    def getter(self):$/;"	m	class:testFunc
+handlers	com.kt.util/LogManager.py	/^import logging.handlers$/;"	i
+httpReq	IPCTEST_PTOC/http_app.h	/^} httpReq;$/;"	t	typeref:struct:__anon1
+httpRes	IPCTEST_PTOC/http_app.h	/^} httpRes;$/;"	t	typeref:struct:__anon2
+http_hdr	IPCTEST_PTOC/http_app.h	/^	http_header http_hdr;       \/\/http_hdr.length 가 jsonBody의 길이$/;"	m	struct:__anon1
+http_hdr	IPCTEST_PTOC/http_app.h	/^	http_header http_hdr;       \/\/http_hdr.length 가 jsonBody의 길이$/;"	m	struct:__anon2
+http_header	IPCTEST_PTOC/http_app.h	/^} http_header;$/;"	t	typeref:struct:_http_header
+json	com.kt.service/ClientService.py	/^import json$/;"	i
+jsonBody	IPCTEST_PTOC/http_app.h	/^	char        jsonBody[HTTPF_MSG_BUFSIZE];$/;"	m	struct:__anon1
+jsonBody	IPCTEST_PTOC/http_app.h	/^	char        jsonBody[HTTPF_MSG_BUFSIZE];$/;"	m	struct:__anon2
+jsonify	EXT_SERVER/ServiceClass.py	/^from flask.json import jsonify$/;"	i
+jsonify	com.kt.service/NsdManageService.py	/^from flask.json import jsonify$/;"	i
+jsonify	com.kt.service/ServiceClass.py	/^from flask.json import jsonify$/;"	i
+jsonify	com.kt.service/ServiceClass2.py	/^from flask.json import jsonify$/;"	i
+jsonify	com.kt.service/testFlask.py	/^from flask.json import jsonify$/;"	i
+length	IPCTEST_PTOC/http_app.h	/^	int         length;$/;"	m	struct:_http_header
+logger	com.kt.net/Connector.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:Connector
+logger	com.kt.net/PLTEConnector.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:PLTEConnector
+logger	com.kt.net/PLTEManager.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:PLTEManager
+logger	com.kt.net/ReqReceiver.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:ReqReceiver
+logger	com.kt.net/ResReceiver.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:ResReceiver
+logger	com.kt.service/ClientService.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:ClientService
+logger	com.kt.service/NsdManageService.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:NsdOnboarding
+logger	com.kt.service/testFlask.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:ttt
+logger	com.kt.util/ConfigManager.py	/^    logger = LogManager.getInstance().get_logger()$/;"	v	class:ConfManager
+logger	com.kt.util/LogManager.py	/^    logger = None$/;"	v	class:LogManager
+logging	com.kt.util/LogManager.py	/^import logging$/;"	i
+logging	com.kt.util/LogManager.py	/^import logging.handlers$/;"	i
+lval	com.kt.net/test2.py	/^    lval = []$/;"	v	class:stTest
+main	IPCTEST_PTOC/cclient.c	/^int main(){$/;"	f
+main	IPCTEST_PTOC/sclient.c	/^int main(){$/;"	f
+main	IPCTEST_PTOC/thread.h	/^int main(void)$/;"	f
+method	IPCTEST_PTOC/http_app.h	/^	int         method;$/;"	m	struct:_http_header
+mq	IPCTEST_PTOC/msgPython.py	/^        mq = sysv_ipc.MessageQueue(QueueKey, sysv_ipc.IPC_CREAT, mode= 0777, max_message_size = 32)$/;"	v
+msgId	IPCTEST_PTOC/http_app.h	/^	int         msgId;          \/* httpf상에서 사용하는 fd table index *\/$/;"	m	struct:__anon1
+msgId	IPCTEST_PTOC/http_app.h	/^	int         msgId;          \/* httpf상에서 사용하는 fd table index *\/$/;"	m	struct:__anon2
+msgbuf	IPCTEST_PTOC/cclient.c	/^typedef struct msgbuf {$/;"	s	file:
+mtype	IPCTEST_PTOC/cclient.c	/^	long mtype;       \/* message type, must be > 0 *\/$/;"	m	struct:msgbuf	file:
+mtype	IPCTEST_PTOC/http_app.h	/^	long        mtype;$/;"	m	struct:__anon1
+mtype	IPCTEST_PTOC/http_app.h	/^	long        mtype;$/;"	m	struct:__anon2
+myQueue	com.kt.net/Connector.py	/^    myQueue = None $/;"	v	class:Connector
+myQueue	com.kt.net/ReqReceiver.py	/^    myQueue = None   $/;"	v	class:ReqReceiver
+myQueue	com.kt.net/ResReceiver.py	/^    myQueue = None   $/;"	v	class:ResReceiver
+mydata	IPCTEST_PTOC/msgPython.py	/^            mydata = ctypes.create_string_buffer( message )$/;"	v
+nResult	IPCTEST_PTOC/http_app.h	/^	int         nResult;        \/* 2011.09.11. int -> short *\/$/;"	m	struct:__anon2
+op_type	IPCTEST_PTOC/http_app.h	/^	int         op_type;$/;"	m	struct:_http_header
+p	IPCTEST_PTOC/msgPython.py	/^    p = Packet()$/;"	v
+p2	IPCTEST_PTOC/msgPython.py	/^        p2 = Packet()$/;"	v
+pList	com.kt.net/test_structure.py	/^pList = []$/;"	v
+patch	EXT_SERVER/ServiceClass.py	/^    def patch(self,department_name,abc):$/;"	m	class:Departments_Meta
+patch	com.kt.service/ServiceClass.py	/^    def patch(self,department_name,abc):$/;"	m	class:Departments_Meta
+plteMembers	com.kt.net/PLTEManager.py	/^    plteMembers = []$/;"	v	class:PLTEManager
+post	EXT_SERVER/ServiceClass.py	/^    def post(self):$/;"	m	class:Departments_Meta2
+post	EXT_SERVER/ServiceClass.py	/^    def post(self, department_name, abc):$/;"	m	class:Departments_Meta
+post	com.kt.service/NsdManageService.py	/^    def post(self):$/;"	m	class:NsdOnboarding
+post	com.kt.service/ServiceClass.py	/^    def post(self):$/;"	m	class:Departments_Meta2
+post	com.kt.service/ServiceClass.py	/^    def post(self, department_name, abc):$/;"	m	class:Departments_Meta
+post	com.kt.service/testFlask.py	/^    def post(self):$/;"	m	class:ttt
+provMsg	com.kt.model/ProvMsg.py	/^class provMsg(Structure):$/;"	c
+readMessage	com.kt.net/Receiver.py	/^    def readMessage(self):$/;"	m	class:Receiver
+readMessage	com.kt.net/ReqReceiver.py	/^    def readMessage(self):$/;"	m	class:ReqReceiver
+readMessage	com.kt.net/ResReceiver.py	/^    def readMessage(self):$/;"	m	class:ResReceiver
+receiveHandling	com.kt.net/Manager.py	/^    def receiveHandling(self, rspCode, reqId, msg):$/;"	m	class:Manager
+receiveHandling	com.kt.net/PLTEManager.py	/^    def receiveHandling(self, rspCode, reqId, rcvMsg):        $/;"	m	class:PLTEManager
+reqparse	com.kt.service/ServiceClass2.py	/^from flask_restful import Resource, reqparse$/;"	i
+request	EXT_SERVER/ServiceClass.py	/^from flask import request$/;"	i
+request	com.kt.service/NsdManageService.py	/^from flask import request$/;"	i
+request	com.kt.service/ServiceClass.py	/^from flask import request$/;"	i
+request	com.kt.service/testFlask.py	/^from flask import request$/;"	i
+requests	com.kt.service/ClientService.py	/^import requests$/;"	i
+run	com.kt.net/Receiver.py	/^    def run(self):$/;"	m	class:Receiver
+run	com.kt.net/ReqReceiver.py	/^    def run(self):      $/;"	m	class:ReqReceiver
+run	com.kt.net/ResReceiver.py	/^    def run(self):      $/;"	m	class:ResReceiver
+run	com.kt.service/ClientService.py	/^    def run(self):$/;"	m	class:ClientService
+s	com.kt.util/desginPattern.py	/^s = Singleton() # Ok$/;"	v
+s	com.kt.util/desginPattern.py	/^s = Singleton.getInstance()$/;"	v
+s_method	com.kt.net/test.py	/^    def s_method():$/;"	m	class:t1
+sendCommand	com.kt.net/Manager.py	/^    def sendCommand(self, command, source, reqId, msg):$/;"	m	class:Manager
+sendCommand	com.kt.net/PLTEManager.py	/^    def sendCommand(command, source, reqId, msg):$/;"	m	class:PLTEManager
+sendMessage	com.kt.net/Connector.py	/^    def sendMessage(self):$/;"	m	class:Connector
+sendMessage	com.kt.net/PLTEConnector.py	/^    def sendMessage(self, apiName, reqId, receiveMsg):$/;"	m	class:PLTEConnector
+sendResCommand	com.kt.net/PLTEManager.py	/^    def sendResCommand(command, resMsg):$/;"	m	class:PLTEManager
+sendResMessage	com.kt.net/PLTEConnector.py	/^    def sendResMessage(self, resMsg):$/;"	m	class:PLTEConnector
+sender1	com.kt.net/test_structure.py	/^sender1 = SendInfo(1,2)$/;"	v
+sender2	com.kt.net/test_structure.py	/^sender2 = SendInfo(2,3)$/;"	v
+sender3	com.kt.net/test_structure.py	/^sender3 = SendInfo(3,4)$/;"	v
+sender4	com.kt.net/test_structure.py	/^sender4 = SendInfo(4,5)$/;"	v
+setComplete	com.kt.net/ServiceManager.py	/^    def setComplete(self, rspCode, reqId, rcvMsg):$/;"	m	class:ServiceManager
+setComplete	com.kt.service/NsdManageService.py	/^    def setComplete(self, rspCode, reqId, rcvMsg):$/;"	m	class:NsdOnboarding
+setComplete	com.kt.service/testFlask.py	/^    def setComplete(self, rspCode, reqId, rcvMsg):$/;"	m	class:ttt
+setResMessage	com.kt.net/ServiceManager.py	/^    def setResMessage(self, data):$/;"	m	class:ServiceManager
+setResMessage	com.kt.service/NsdManageService.py	/^    def setResMessage(self, data):$/;"	m	class:NsdOnboarding
+setResMessage	com.kt.service/testFlask.py	/^    def setResMessage(self, data):$/;"	m	class:ttt
+signal	com.kt.net/Connector.py	/^import sys, signal$/;"	i
+signal	com.kt.net/PLTEConnector.py	/^import sysv_ipc, time, signal$/;"	i
+signal	com.kt.net/test_handler.py	/^import signal$/;"	i
+signal_handler	com.kt.net/test_handler.py	/^def signal_handler(signal, frame):$/;"	f
+srcQid	IPCTEST_PTOC/http_app.h	/^	int         srcQid;         \/* slee Qid *\/$/;"	m	struct:__anon1
+srcQid	IPCTEST_PTOC/http_app.h	/^	int         srcQid;         \/* slee Qid *\/$/;"	m	struct:__anon2
+srcSysId	IPCTEST_PTOC/http_app.h	/^	char        srcSysId;       \/* 1 ~ 8 *\/$/;"	m	struct:__anon1
+srcSysId	IPCTEST_PTOC/http_app.h	/^	char        srcSysId;       \/* 1 ~ 8 *\/$/;"	m	struct:__anon2
+stTest	com.kt.net/test2.py	/^class stTest:$/;"	c
+sys	com.kt.net/Connector.py	/^import sys, signal$/;"	i
+sys	com.kt.net/PLTEConnector.py	/^import sys$/;"	i
+sys	com.kt.net/test_handler.py	/^import sys$/;"	i
+sys	com.kt.util/ConfigManager.py	/^import sys$/;"	i
+sysv_ipc	IPCTEST_PTOC/msgPython.py	/^import sysv_ipc$/;"	i
+sysv_ipc	com.kt.net/Connector.py	/^import sysv_ipc$/;"	i
+sysv_ipc	com.kt.net/PLTEConnector.py	/^import sysv_ipc, time, signal$/;"	i
+sysv_ipc	com.kt.net/ReqReceiver.py	/^import sysv_ipc$/;"	i
+sysv_ipc	com.kt.net/ResReceiver.py	/^import sysv_ipc$/;"	i
+t1	com.kt.net/test.py	/^class t1:$/;"	c
+t2	com.kt.net/test.py	/^        from test2 import t2$/;"	i
+tPrint	com.kt.net/test2.py	/^    def tPrint(self):$/;"	m	class:stTest
+test	com.kt.net/test2.py	/^    def test(self):$/;"	m	class:stTest
+test2	com.kt.net/test2.py	/^    def test2(self):$/;"	m	class:stTest
+testFunc	IPCTEST_PTOC/msgPython.py	/^class testFunc:$/;"	c
+thread_main	IPCTEST_PTOC/thread.h	/^void *thread_main(void *arg)$/;"	f
+threading	com.kt.net/Connector.py	/^import threading$/;"	i
+threading	com.kt.net/Receiver.py	/^import threading$/;"	i
+threading	com.kt.net/ReqReceiver.py	/^import threading$/;"	i
+threading	com.kt.net/ResReceiver.py	/^import threading$/;"	i
+threading	com.kt.service/ClientService.py	/^import threading$/;"	i
+threads	IPCTEST_PTOC/thread.h	/^pthread_t threads[5];$/;"	v
+time	EXT_SERVER/ServiceClass.py	/^import time$/;"	i
+time	IPCTEST_PTOC/msgPython.py	/^import ctypes, time$/;"	i
+time	com.kt.net/Connector.py	/^import time$/;"	i
+time	com.kt.net/PLTEConnector.py	/^import sysv_ipc, time, signal$/;"	i
+time	com.kt.net/ReqReceiver.py	/^import time$/;"	i
+time	com.kt.net/ResReceiver.py	/^import time$/;"	i
+time	com.kt.net/test_handler.py	/^import time$/;"	i
+time	com.kt.service/NsdManageService.py	/^import time$/;"	i
+time	com.kt.service/ServiceClass.py	/^import time$/;"	i
+time	com.kt.service/testFlask.py	/^import time$/;"	i
+tot_len	IPCTEST_PTOC/http_app.h	/^	int         tot_len;        \/\/ from msgId to end ~ $/;"	m	struct:__anon2
+tot_len	IPCTEST_PTOC/http_app.h	/^	int         tot_len;$/;"	m	struct:__anon1
+ttt	com.kt.service/testFlask.py	/^class ttt(Resource, ServiceManager):$/;"	c
+usleep	com.kt.net/ReqReceiver.py	/^usleep = lambda x: time.sleep(x\/1000000.0)$/;"	v
+usleep	com.kt.net/ResReceiver.py	/^usleep = lambda x: time.sleep(x\/1000000.0)$/;"	v

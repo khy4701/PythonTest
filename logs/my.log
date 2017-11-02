@@ -202,3 +202,58 @@
 [2017-11-02 14:10:51,501|NsdManageService.py:59][INFO] > TID : 1
 [2017-11-02 14:10:51,501|NsdManageService.py:60][INFO] > RESCODE : 200
 [2017-11-02 14:10:51,501|NsdManageService.py:62][INFO] > ===============================================
+[2017-11-02 14:41:44,221|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 14:41:44,223|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 14:41:44,223|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 14:41:44,223|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 14:41:44,224|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 14:42:07,343|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 14:42:07,343|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 14:42:07,344|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 14:42:07,344|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 14:42:07,344|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 14:42:07,344|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 14:42:45,933|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 14:42:45,934|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 14:42:45,934|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 14:42:45,934|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 14:42:45,935|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 14:42:45,935|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 14:48:36,074|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 14:48:36,075|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 14:48:36,075|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 14:48:36,075|ClientService.py:37][INFO] > URL : http://localhost:5000/departments/abc/123
+[2017-11-02 14:48:36,075|ClientService.py:38][INFO] > TID : tid
+[2017-11-02 14:48:50,675|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 14:48:50,675|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 14:48:50,675|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 14:48:50,676|ClientService.py:37][INFO] > URL : http://localhost:5000/departments/abc/123
+[2017-11-02 14:48:50,676|ClientService.py:38][INFO] > TID : tid
+[2017-11-02 14:55:46,726|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 14:55:46,727|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 14:55:46,728|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 14:55:46,728|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 14:55:46,728|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 14:55:52,634|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 14:55:52,634|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 14:55:52,634|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 14:55:52,634|ClientService.py:37][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 14:55:52,635|ClientService.py:38][INFO] > TID : tid
+[2017-11-02 14:55:52,635|ClientService.py:39][INFO] > HEADER : {'Content-type': 'application/json', 'Accept': 'application/json'}
+[2017-11-02 14:55:52,635|ClientService.py:40][INFO] > BODY : {'age': 123, 'name': 'Hoyoung'}
+[2017-11-02 14:55:52,635|ClientService.py:41][INFO] > ===============================================
+[2017-11-02 14:55:52,660|ClientService.py:54][INFO] > ===============================================
+[2017-11-02 14:55:52,660|ClientService.py:55][INFO] > [EXT] -> RESTIF
+[2017-11-02 14:55:52,660|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 14:55:52,660|ClientService.py:57][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 14:55:52,660|ClientService.py:58][INFO] > TID : tid
+[2017-11-02 14:55:52,660|ClientService.py:59][INFO] > RESULT : 200
+[2017-11-02 14:55:52,661|ClientService.py:60][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 05:55:52 GMT', 'content-length': '74', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 14:55:52,730|ClientService.py:61][INFO] > BODY : {
+  "abc": 123, 
+  "age": 123, 
+  "d_name": "abc", 
+  "name": "Hoyoung"
+}
+
+[2017-11-02 14:55:52,730|ClientService.py:62][INFO] > ===============================================

@@ -93,9 +93,9 @@ class PLTEConnector(Connector):
             self.logger.info("===============================================");
             self.logger.info("RESTIF -> PLTEIB")
             self.logger.info("===============================================");
-#             self.logger.info("API_NAME : " + str(apiName))
-#             self.logger.info("PID   : "+ str(reqId))
-#             self.logger.info("BODY   : " + str(receiveMsg))
+            self.logger.info("RESTCODE : " + str(resMsg.nResult) )
+#            self.logger.info("PID   : "+ str(reqId))
+            self.logger.info("BODY   : " + resMsg.jsonBody)
             self.logger.info("===============================================");
             
         return True

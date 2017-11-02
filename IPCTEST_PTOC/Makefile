@@ -2,8 +2,8 @@
 
 INCLUDES	= http_app.h
 
-SRCS        = msgC.c
-PROG1       = msgC
+SRCS        = cclient.c
+PROG1       = cclient
 
 OBJS        = $(SRCS:.c=.o)
 
@@ -11,7 +11,7 @@ OBJS        = $(SRCS:.c=.o)
 	$(CC) $(iNCLUDES) -c $<
 
 $(PROG1): $(OBJS)
-	$(CC) $(INCLUDES) -o msgC $(OBJS)
+	$(CC) $(INCLUDES) -o cclient $(OBJS)
 
 clean:
 	/bin/rm -f *.o $(PROG1) core*

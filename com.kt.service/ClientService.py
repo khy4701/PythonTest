@@ -18,14 +18,15 @@ class ClientService(threading.Thread):
         super(ClientService, self).__init__()
         self.reqMsg = httpMsg
     
-    
     def run(self):
         
+		#self.tid =  self.reqMsg.msgId
         # payload = httpMsg.body....
-        payload = {'name':'Hoyoung', 'age': 123 }
-        url='http://localhost:5000/departments/abc/123'
-        head = {'Content-type':'application/json', 'Accept':'application/json'}
-        
+
+        payload = "{'name':'Hoyoung', 'age': 123 }"
+        url='http://localhost:5555/departments/abc/123'
+        head = {'Content-type':'application/json', 'Accept':'application/json'} 
+
         # 1. [RESTIF->EXT] INPUT REQUSET MESSAGE ( httpReq -> REST API )
         #payload = self.reqMsg.body
         
@@ -35,8 +36,8 @@ class ClientService(threading.Thread):
             self.logger.info("RESTIF -> [EXT]")
             self.logger.info("===============================================");
             self.logger.info("URL : " + url)
-            self.logger.info("TID : " + "tid") # TID
-            self.logger.info("HEADER : " + head)
+            self.logger.info("TID : " + self.tid) # TID
+            self.logger.info("HEADER : " + str(head))
             self.logger.info("BODY : "  + str(payload))
             self.logger.info("===============================================");
             
@@ -55,7 +56,7 @@ class ClientService(threading.Thread):
             self.logger.info("[EXT] -> RESTIF")
             self.logger.info("===============================================");
             self.logger.info("URL : " + str(restAPI.url))
-            self.logger.info("TID : " + "tid") # TID
+            self.logger.info("TID : " + self.tid) # TID
             self.logger.info("RESULT : " + str(restAPI.status_code))
             self.logger.info("HEADER : "  + str(restAPI.headers))                   # resData.headers['Content-Length']
             self.logger.info("BODY : "  + str(restAPI.text))
@@ -63,23 +64,19 @@ class ClientService(threading.Thread):
             
         
         # 5. [RESTIF->APP] INPUT RESPONSE MESSAGE ( REST API -> httpRes )
-        
-        self.resMsg.jsonBody = restAPI.text
-        
-#         self.resMsg.tot_len = 1
-#         self.resMsg.msgId = 1
-#         self.resMsg.ehttpf_idx = 1
-#         self.resMsg.srcQid = 1
-#         self.resMsg.srcSysId = 1
-#         self.resMsg.nResult = 2
-#         #self.resMsg.http_hdr = 4
-#         self.resMsg.jsonBody = "1231"
+
+        resMsg = HttpRes()
+		resMsg.tot_len = 1
+		resMsg.msgId = self.tid
+		resMsg.ehttpf_idx = 1
+		resMsg.srcQid = 1
+		resMsg.srcSysId = 1
+		resMsg.nResult = restAPI.status_code
+        resMsg.jsonBody = restAPI.text
+
+		resMsg.http_hdr = self.reqMsg.http_hdr
                 
         # 6. [RESTIF->APP] SEND AND LOGGING
-        PLTEManager.getInstance().sendResMessage(self.resMsg)
-        
-        
-        
-        
-            
-        
+        PLTEManager.getInstance().sendResMessage(resMsg)
+
+

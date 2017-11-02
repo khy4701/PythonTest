@@ -43,7 +43,6 @@ class HttpReq(Structure):
                 ("http_hdr", HttpHeader),  # 17
                 ("jsonBody", c_char * HTTPF_MSG_BUFSIZE ) ]  # 1024
 
-
 class HttpRes(Structure):
 
     MTYPE_APP_TO_RESTIF_RES = 102
