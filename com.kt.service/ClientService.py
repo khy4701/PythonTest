@@ -74,9 +74,29 @@ class ClientService(threading.Thread):
         resMsg.jsonBody = restAPI.text
         
         resMsg.http_hdr = self.reqMsg.http_hdr
+                                
+                                
+        self.logger.info("===============================================")
+        self.logger.info("TEST")
+        self.logger.info("===============================================")
+        self.logger.info("tot_len : %s" %resMsg.tot_len )
+        self.logger.info("msgId : %d" %resMsg.msgId )
+        self.logger.info("ehttp_idx : %d" %resMsg.ehttpf_idx )
+        self.logger.info("srcQid : %d" %resMsg.srcQid )
+        self.logger.info("srcSysId : %c" %resMsg.srcSysId )
+        self.logger.info("jsonBody: %s" %resMsg.jsonBody )
+        self.logger.info("===============================================")
+        self.logger.info("method: %d" %resMsg.http_hdr.method )
+        self.logger.info("api_type: %d" %resMsg.http_hdr.api_type )
+        self.logger.info("op_type: %d" %resMsg.http_hdr.op_type )
+        self.logger.info("length: %d" %resMsg.http_hdr.length )
+        self.logger.info("encoding: %c" %resMsg.http_hdr.encoding )
+        self.logger.info("===============================================")
+
+                                
                 
         # 6. [RESTIF->APP] SEND AND LOGGING
-		# temp -> resAPI.url 
-        PLTEManager.getInstance().sendResCommand( restAPI.url, resMsg)
+        # temp -> resAPI.url 
+        PLTEManager.getInstance().sendResCommand( restAPI.url, resMsg )
 
 
