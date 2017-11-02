@@ -18,7 +18,6 @@ ReqReceiver.getInstance()
 ResReceiver.getInstance()
 PLTEConnector.getInstance()
 #PLTEConnector.getInstance().sendMessage("Command",2)
-
  
 api.add_resource(Departmental_Salary, '/dept/<string:department_name>')
 api.add_resource(Departments_Meta, '/departments/<string:department_name>/<int:abc>')

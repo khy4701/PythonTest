@@ -1,0 +1,35 @@
+[2017-11-02 11:02:10,646|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 11:02:10,646|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 11:02:10,647|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 11:02:10,647|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 11:53:22,620|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 11:53:22,620|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 11:53:22,620|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 11:55:53,309|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 11:55:53,310|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 11:55:53,310|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 11:56:57,405|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 11:56:57,406|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 11:56:57,406|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:04:46,171|ResReceiver.py:48][ERROR] > msgQueue Connection Failed.. RESTIF_S QUEUE_ID[54322] Permission denied
+[2017-11-02 12:04:46,171|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:04:46,172|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:04:46,172|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:07:18,623|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:07:18,624|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:07:18,624|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:07:53,957|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:07:53,957|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:07:53,957|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:11:15,251|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:11:15,251|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:11:15,251|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:14:47,389|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:14:47,389|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:14:47,389|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:15:27,221|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:15:27,221|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:15:27,221|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:17:07,910|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:17:07,910|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:17:07,910|Connector.py:25][DEBUG] > Connector Init
