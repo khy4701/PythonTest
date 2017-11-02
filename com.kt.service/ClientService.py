@@ -24,7 +24,8 @@ class ClientService(threading.Thread):
         # payload = httpMsg.body....
         
         url='http://localhost:5555/departments/abc/123'
-        head = {'Content-type':'application/json', 'Accept':'application/json'} 
+        #head = {'Content-type':'application/json', 'Accept':'application/json'} 
+        head = {'Content-type':'application/x-www-form-urlencoded', 'Accept':'application/json'} 
 
         # 1. [RESTIF->EXT] INPUT REQUSET MESSAGE ( httpReq -> REST API )
         payload = self.reqMsg.jsonBody

@@ -54,7 +54,7 @@ int main(){
 	header->api_type = 2;
 	header->op_type =3;
 	header->length = 4;
-	header->encoding =5;
+	header->encoding = '5';
 
 	sprintf(reqMsg.jsonBody, "%s", "{\"name\":\"Hoyoung\", \"age\": 123 }");
 

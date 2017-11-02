@@ -19,6 +19,8 @@ class Departments_Meta(Resource):
     def post(self, department_name, abc):
 
         content = request.get_json(force=True)
+
+		print content
         
         name = content['name']
         age = content['age']

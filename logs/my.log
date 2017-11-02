@@ -556,3 +556,424 @@
 
 [2017-11-02 16:00:52,345|ClientService.py:62][INFO] > ===============================================
 [2017-11-02 16:00:52,346|PLTEConnector.py:89][ERROR] > sendMessage Error! 'PLTEConnector' object has no attribute 'plteQueue'
+[2017-11-02 16:18:44,646|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 16:18:44,648|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 16:18:44,649|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 16:18:44,649|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 16:18:44,649|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 16:18:56,922|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:18:56,923|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:18:56,923|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:18:56,923|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:18:56,923|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:18:56,923|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:18:56,923|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:18:56,923|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:18:56,923|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:18:56,924|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:18:56,924|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:18:56,924|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:18:56,924|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:18:56,924|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:18:56,924|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:18:56,924|ReqReceiver.py:88][INFO] > encoding: 
+[2017-11-02 16:18:56,924|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:18:56,925|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 16:18:56,925|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:18:56,925|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 16:18:56,925|ClientService.py:37][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:18:56,925|ClientService.py:38][INFO] > HEADER : {'Content-type': 'application/json', 'Accept': 'application/json'}
+[2017-11-02 16:18:56,925|ClientService.py:39][INFO] > TID : 200
+[2017-11-02 16:18:56,925|ClientService.py:40][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:18:56,926|ClientService.py:41][INFO] > ===============================================
+[2017-11-02 16:18:56,951|ClientService.py:54][INFO] > ===============================================
+[2017-11-02 16:18:56,952|ClientService.py:55][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:18:56,952|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 16:18:56,952|ClientService.py:57][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:18:56,952|ClientService.py:58][INFO] > TID : 200
+[2017-11-02 16:18:56,952|ClientService.py:59][INFO] > RESULT : 500
+[2017-11-02 16:18:56,952|ClientService.py:60][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:18:56 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:18:56,959|ClientService.py:61][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:18:56,959|ClientService.py:62][INFO] > ===============================================
+[2017-11-02 16:18:56,959|ClientService.py:79][INFO] > ===============================================
+[2017-11-02 16:18:56,959|ClientService.py:80][INFO] > TEST
+[2017-11-02 16:18:56,960|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 16:18:56,960|ClientService.py:82][INFO] > tot_len : 1
+[2017-11-02 16:18:56,960|ClientService.py:83][INFO] > msgId : 200
+[2017-11-02 16:18:56,960|ClientService.py:84][INFO] > ehttp_idx : 1
+[2017-11-02 16:18:56,960|ClientService.py:85][INFO] > srcQid : 1
+[2017-11-02 16:18:56,960|ClientService.py:86][INFO] > srcSysId : 1
+[2017-11-02 16:18:56,960|ClientService.py:87][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 16:18:56,960|ClientService.py:88][INFO] > ===============================================
+[2017-11-02 16:18:56,960|ClientService.py:89][INFO] > method: 1
+[2017-11-02 16:18:56,961|ClientService.py:90][INFO] > api_type: 2
+[2017-11-02 16:18:56,961|ClientService.py:91][INFO] > op_type: 3
+[2017-11-02 16:18:56,961|ClientService.py:92][INFO] > length: 4
+[2017-11-02 16:18:56,961|ClientService.py:93][INFO] > encoding: 
+[2017-11-02 16:18:56,961|ClientService.py:94][INFO] > ===============================================
+[2017-11-02 16:18:56,961|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 16:18:56,961|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 16:18:56,962|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 16:18:56,962|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 16:18:56,962|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 16:18:56,962|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 16:18:56,962|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 16:18:56,962|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 16:19:53,404|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:19:53,404|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:19:53,404|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:19:53,404|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:19:53,404|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:19:53,404|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:19:53,404|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:19:53,404|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:19:53,404|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:19:53,405|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:19:53,405|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:19:53,405|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:19:53,405|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:19:53,405|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:19:53,405|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:19:53,405|ReqReceiver.py:88][INFO] > encoding: 
+[2017-11-02 16:19:53,405|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:19:53,406|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 16:19:53,406|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:19:53,406|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 16:19:53,406|ClientService.py:37][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:19:53,406|ClientService.py:38][INFO] > HEADER : {'Content-type': 'application/json', 'Accept': 'application/json'}
+[2017-11-02 16:19:53,406|ClientService.py:39][INFO] > TID : 200
+[2017-11-02 16:19:53,407|ClientService.py:40][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:19:53,407|ClientService.py:41][INFO] > ===============================================
+[2017-11-02 16:19:53,412|ClientService.py:54][INFO] > ===============================================
+[2017-11-02 16:19:53,413|ClientService.py:55][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:19:53,413|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 16:19:53,413|ClientService.py:57][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:19:53,413|ClientService.py:58][INFO] > TID : 200
+[2017-11-02 16:19:53,413|ClientService.py:59][INFO] > RESULT : 500
+[2017-11-02 16:19:53,413|ClientService.py:60][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:19:53 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:19:53,414|ClientService.py:61][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:19:53,414|ClientService.py:62][INFO] > ===============================================
+[2017-11-02 16:19:53,414|ClientService.py:79][INFO] > ===============================================
+[2017-11-02 16:19:53,414|ClientService.py:80][INFO] > TEST
+[2017-11-02 16:19:53,414|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 16:19:53,414|ClientService.py:82][INFO] > tot_len : 1
+[2017-11-02 16:19:53,414|ClientService.py:83][INFO] > msgId : 200
+[2017-11-02 16:19:53,414|ClientService.py:84][INFO] > ehttp_idx : 1
+[2017-11-02 16:19:53,415|ClientService.py:85][INFO] > srcQid : 1
+[2017-11-02 16:19:53,415|ClientService.py:86][INFO] > srcSysId : 1
+[2017-11-02 16:19:53,415|ClientService.py:87][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 16:19:53,415|ClientService.py:88][INFO] > ===============================================
+[2017-11-02 16:19:53,415|ClientService.py:89][INFO] > method: 1
+[2017-11-02 16:19:53,415|ClientService.py:90][INFO] > api_type: 2
+[2017-11-02 16:19:53,415|ClientService.py:91][INFO] > op_type: 3
+[2017-11-02 16:19:53,415|ClientService.py:92][INFO] > length: 4
+[2017-11-02 16:19:53,415|ClientService.py:93][INFO] > encoding: 
+[2017-11-02 16:19:53,416|ClientService.py:94][INFO] > ===============================================
+[2017-11-02 16:19:53,416|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 16:19:53,416|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 16:19:53,416|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 16:19:53,416|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 16:19:53,416|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 16:19:53,416|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 16:19:53,416|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 16:19:53,417|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 16:20:20,951|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 16:20:20,953|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 16:20:20,953|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 16:20:20,953|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 16:20:20,953|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 16:20:23,949|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:20:23,949|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:20:23,949|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:20:23,949|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:20:23,949|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:20:23,949|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:20:23,950|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:20:23,950|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:20:23,950|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:20:23,950|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:20:23,950|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:20:23,950|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:20:23,950|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:20:23,950|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:20:23,950|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:20:23,950|ReqReceiver.py:88][INFO] > encoding: 
+[2017-11-02 16:20:23,950|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:20:23,951|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 16:20:23,951|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:20:23,951|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 16:20:23,951|ClientService.py:37][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:20:23,951|ClientService.py:38][INFO] > HEADER : {'Content-type': 'application/json', 'Accept': 'application/json'}
+[2017-11-02 16:20:23,952|ClientService.py:39][INFO] > TID : 200
+[2017-11-02 16:20:23,952|ClientService.py:40][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:20:23,952|ClientService.py:41][INFO] > ===============================================
+[2017-11-02 16:20:23,976|ClientService.py:54][INFO] > ===============================================
+[2017-11-02 16:20:23,976|ClientService.py:55][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:20:23,977|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 16:20:23,977|ClientService.py:57][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:20:23,977|ClientService.py:58][INFO] > TID : 200
+[2017-11-02 16:20:23,977|ClientService.py:59][INFO] > RESULT : 500
+[2017-11-02 16:20:23,977|ClientService.py:60][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:20:23 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:20:23,984|ClientService.py:61][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:20:23,984|ClientService.py:62][INFO] > ===============================================
+[2017-11-02 16:20:23,984|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 16:20:23,984|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 16:20:23,985|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 16:20:23,985|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 16:20:23,985|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 16:20:23,985|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 16:20:23,985|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 16:20:23,985|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-02 16:21:29,161|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 16:21:29,162|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 16:21:29,162|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 16:21:29,162|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 16:21:29,162|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 16:21:29,162|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 16:21:30,263|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:21:30,263|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:21:30,263|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:21:30,263|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:21:30,263|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:21:30,263|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:21:30,263|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:21:30,263|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:21:30,263|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:21:30,264|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:21:30,264|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:21:30,264|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:21:30,264|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:21:30,264|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:21:30,264|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:21:30,264|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 16:21:30,264|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:21:30,265|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 16:21:30,265|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:21:30,265|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 16:21:30,265|ClientService.py:37][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:21:30,265|ClientService.py:38][INFO] > HEADER : {'Content-type': 'application/json', 'Accept': 'application/json'}
+[2017-11-02 16:21:30,265|ClientService.py:39][INFO] > TID : 200
+[2017-11-02 16:21:30,265|ClientService.py:40][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:21:30,266|ClientService.py:41][INFO] > ===============================================
+[2017-11-02 16:21:30,288|ClientService.py:54][INFO] > ===============================================
+[2017-11-02 16:21:30,288|ClientService.py:55][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:21:30,288|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 16:21:30,288|ClientService.py:57][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:21:30,288|ClientService.py:58][INFO] > TID : 200
+[2017-11-02 16:21:30,288|ClientService.py:59][INFO] > RESULT : 500
+[2017-11-02 16:21:30,288|ClientService.py:60][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:21:30 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:21:30,295|ClientService.py:61][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:21:30,295|ClientService.py:62][INFO] > ===============================================
+[2017-11-02 16:21:30,295|PLTEConnector.py:89][ERROR] > sendMessage Error! 'PLTEConnector' object has no attribute 'plteQueue'
+[2017-11-02 16:21:36,175|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:21:36,175|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:21:36,175|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:21:36,176|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:21:36,176|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:21:36,176|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:21:36,176|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:21:36,176|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:21:36,176|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:21:36,176|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:21:36,176|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:21:36,176|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:21:36,176|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:21:36,177|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:21:36,177|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:21:36,177|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 16:21:36,177|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:21:36,177|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 16:21:36,177|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:21:36,178|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 16:21:36,178|ClientService.py:37][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:21:36,178|ClientService.py:38][INFO] > HEADER : {'Content-type': 'application/json', 'Accept': 'application/json'}
+[2017-11-02 16:21:36,178|ClientService.py:39][INFO] > TID : 200
+[2017-11-02 16:21:36,178|ClientService.py:40][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:21:36,178|ClientService.py:41][INFO] > ===============================================
+[2017-11-02 16:21:36,183|ClientService.py:54][INFO] > ===============================================
+[2017-11-02 16:21:36,184|ClientService.py:55][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:21:36,184|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 16:21:36,184|ClientService.py:57][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:21:36,184|ClientService.py:58][INFO] > TID : 200
+[2017-11-02 16:21:36,184|ClientService.py:59][INFO] > RESULT : 500
+[2017-11-02 16:21:36,184|ClientService.py:60][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:21:36 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:21:36,184|ClientService.py:61][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:21:36,185|ClientService.py:62][INFO] > ===============================================
+[2017-11-02 16:21:36,185|PLTEConnector.py:89][ERROR] > sendMessage Error! 'PLTEConnector' object has no attribute 'plteQueue'
+[2017-11-02 16:21:49,245|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:21:49,246|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:21:49,246|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:21:49,246|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:21:49,246|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:21:49,246|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:21:49,246|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:21:49,246|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:21:49,246|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:21:49,246|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:21:49,247|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:21:49,247|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:21:49,247|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:21:49,247|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:21:49,247|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:21:49,247|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 16:21:49,247|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:21:49,247|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 16:21:49,248|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:21:49,248|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 16:21:49,248|ClientService.py:37][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:21:49,248|ClientService.py:38][INFO] > HEADER : {'Content-type': 'application/json', 'Accept': 'application/json'}
+[2017-11-02 16:21:49,248|ClientService.py:39][INFO] > TID : 200
+[2017-11-02 16:21:49,248|ClientService.py:40][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:21:49,248|ClientService.py:41][INFO] > ===============================================
+[2017-11-02 16:21:49,252|ClientService.py:54][INFO] > ===============================================
+[2017-11-02 16:21:49,252|ClientService.py:55][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:21:49,253|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 16:21:49,253|ClientService.py:57][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:21:49,253|ClientService.py:58][INFO] > TID : 200
+[2017-11-02 16:21:49,253|ClientService.py:59][INFO] > RESULT : 500
+[2017-11-02 16:21:49,253|ClientService.py:60][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:21:49 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:21:49,253|ClientService.py:61][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:21:49,253|ClientService.py:62][INFO] > ===============================================
+[2017-11-02 16:21:49,253|PLTEConnector.py:89][ERROR] > sendMessage Error! 'PLTEConnector' object has no attribute 'plteQueue'
+[2017-11-02 16:22:11,930|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 16:22:11,930|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 16:22:11,931|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 16:22:11,931|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 16:22:11,931|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 16:22:11,931|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 16:22:19,300|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 16:22:19,301|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 16:22:19,301|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 16:22:19,301|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 16:22:19,301|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 16:22:19,301|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 16:22:22,033|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:22:22,033|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:22:22,034|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:22:22,034|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:22:22,034|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:22:22,034|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:22:22,034|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:22:22,034|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:22:22,034|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:22:22,034|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:22:22,034|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:22:22,034|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:22:22,034|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:22:22,035|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:22:22,035|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:22:22,035|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 16:22:22,035|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:22:22,035|ClientService.py:34][INFO] > ===============================================
+[2017-11-02 16:22:22,036|ClientService.py:35][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:22:22,036|ClientService.py:36][INFO] > ===============================================
+[2017-11-02 16:22:22,036|ClientService.py:37][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:22:22,036|ClientService.py:38][INFO] > HEADER : {'Content-type': 'application/json', 'Accept': 'application/json'}
+[2017-11-02 16:22:22,036|ClientService.py:39][INFO] > TID : 200
+[2017-11-02 16:22:22,036|ClientService.py:40][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:22:22,036|ClientService.py:41][INFO] > ===============================================
+[2017-11-02 16:22:22,059|ClientService.py:54][INFO] > ===============================================
+[2017-11-02 16:22:22,059|ClientService.py:55][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:22:22,059|ClientService.py:56][INFO] > ===============================================
+[2017-11-02 16:22:22,059|ClientService.py:57][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:22:22,060|ClientService.py:58][INFO] > TID : 200
+[2017-11-02 16:22:22,060|ClientService.py:59][INFO] > RESULT : 500
+[2017-11-02 16:22:22,060|ClientService.py:60][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:22:22 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:22:22,066|ClientService.py:61][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:22:22,066|ClientService.py:62][INFO] > ===============================================
+[2017-11-02 16:22:22,067|ClientService.py:79][INFO] > ===============================================
+[2017-11-02 16:22:22,067|ClientService.py:80][INFO] > TEST
+[2017-11-02 16:22:22,067|ClientService.py:81][INFO] > ===============================================
+[2017-11-02 16:22:22,067|ClientService.py:82][INFO] > tot_len : 1
+[2017-11-02 16:22:22,067|ClientService.py:83][INFO] > msgId : 200
+[2017-11-02 16:22:22,067|ClientService.py:84][INFO] > ehttp_idx : 1
+[2017-11-02 16:22:22,067|ClientService.py:85][INFO] > srcQid : 1
+[2017-11-02 16:22:22,067|ClientService.py:86][INFO] > srcSysId : 1
+[2017-11-02 16:22:22,068|ClientService.py:87][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 16:22:22,068|ClientService.py:88][INFO] > ===============================================
+[2017-11-02 16:22:22,068|ClientService.py:89][INFO] > method: 1
+[2017-11-02 16:22:22,068|ClientService.py:90][INFO] > api_type: 2
+[2017-11-02 16:22:22,068|ClientService.py:91][INFO] > op_type: 3
+[2017-11-02 16:22:22,068|ClientService.py:92][INFO] > length: 4
+[2017-11-02 16:22:22,068|ClientService.py:93][INFO] > encoding: 5
+[2017-11-02 16:22:22,068|ClientService.py:94][INFO] > ===============================================
+[2017-11-02 16:22:22,068|PLTEConnector.py:89][ERROR] > sendMessage Error! 'PLTEConnector' object has no attribute 'plteQueue'
+[2017-11-02 16:25:10,848|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 16:25:10,849|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 16:25:10,850|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 16:25:10,850|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 16:25:10,850|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 16:25:25,535|ReqReceiver.py:73][INFO] > ===============================================
+[2017-11-02 16:25:25,535|ReqReceiver.py:74][INFO] > [APP] -> RESTIF
+[2017-11-02 16:25:25,536|ReqReceiver.py:75][INFO] > ===============================================
+[2017-11-02 16:25:25,536|ReqReceiver.py:76][INFO] > msgType: 500
+[2017-11-02 16:25:25,536|ReqReceiver.py:77][INFO] > tot_len : 100
+[2017-11-02 16:25:25,536|ReqReceiver.py:78][INFO] > msgId : 200
+[2017-11-02 16:25:25,536|ReqReceiver.py:79][INFO] > ehttp_idx : 300
+[2017-11-02 16:25:25,536|ReqReceiver.py:80][INFO] > srcQid : 400
+[2017-11-02 16:25:25,536|ReqReceiver.py:81][INFO] > srcSysId : 5
+[2017-11-02 16:25:25,536|ReqReceiver.py:82][INFO] > jsonBody: {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:25:25,536|ReqReceiver.py:83][INFO] > ===============================================
+[2017-11-02 16:25:25,536|ReqReceiver.py:84][INFO] > method: 1
+[2017-11-02 16:25:25,536|ReqReceiver.py:85][INFO] > api_type: 2
+[2017-11-02 16:25:25,537|ReqReceiver.py:86][INFO] > op_type: 3
+[2017-11-02 16:25:25,537|ReqReceiver.py:87][INFO] > length: 4
+[2017-11-02 16:25:25,537|ReqReceiver.py:88][INFO] > encoding: 5
+[2017-11-02 16:25:25,537|ReqReceiver.py:89][INFO] > ===============================================
+[2017-11-02 16:25:25,537|ClientService.py:35][INFO] > ===============================================
+[2017-11-02 16:25:25,537|ClientService.py:36][INFO] > RESTIF -> [EXT]
+[2017-11-02 16:25:25,538|ClientService.py:37][INFO] > ===============================================
+[2017-11-02 16:25:25,538|ClientService.py:38][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:25:25,538|ClientService.py:39][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-02 16:25:25,538|ClientService.py:40][INFO] > TID : 200
+[2017-11-02 16:25:25,538|ClientService.py:41][INFO] > BODY : {"name":"Hoyoung", "age": 123 }
+[2017-11-02 16:25:25,538|ClientService.py:42][INFO] > ===============================================
+[2017-11-02 16:25:25,563|ClientService.py:55][INFO] > ===============================================
+[2017-11-02 16:25:25,563|ClientService.py:56][INFO] > [EXT] -> RESTIF
+[2017-11-02 16:25:25,564|ClientService.py:57][INFO] > ===============================================
+[2017-11-02 16:25:25,564|ClientService.py:58][INFO] > URL : http://localhost:5555/departments/abc/123
+[2017-11-02 16:25:25,564|ClientService.py:59][INFO] > TID : 200
+[2017-11-02 16:25:25,564|ClientService.py:60][INFO] > RESULT : 500
+[2017-11-02 16:25:25,564|ClientService.py:61][INFO] > HEADER : {'date': 'Thu, 02 Nov 2017 07:25:25 GMT', 'content-length': '37', 'content-type': 'application/json', 'server': 'Werkzeug/0.12.2 Python/2.7.5'}
+[2017-11-02 16:25:25,570|ClientService.py:62][INFO] > BODY : {"message": "Internal Server Error"}
+
+[2017-11-02 16:25:25,570|ClientService.py:63][INFO] > ===============================================
+[2017-11-02 16:25:25,571|ClientService.py:80][INFO] > ===============================================
+[2017-11-02 16:25:25,571|ClientService.py:81][INFO] > TEST
+[2017-11-02 16:25:25,571|ClientService.py:82][INFO] > ===============================================
+[2017-11-02 16:25:25,571|ClientService.py:83][INFO] > tot_len : 1
+[2017-11-02 16:25:25,571|ClientService.py:84][INFO] > msgId : 200
+[2017-11-02 16:25:25,571|ClientService.py:85][INFO] > ehttp_idx : 1
+[2017-11-02 16:25:25,571|ClientService.py:86][INFO] > srcQid : 1
+[2017-11-02 16:25:25,571|ClientService.py:87][INFO] > srcSysId : 1
+[2017-11-02 16:25:25,571|ClientService.py:88][INFO] > jsonBody: {"message": "Internal Server Error"}
+
+[2017-11-02 16:25:25,571|ClientService.py:89][INFO] > ===============================================
+[2017-11-02 16:25:25,572|ClientService.py:90][INFO] > method: 1
+[2017-11-02 16:25:25,572|ClientService.py:91][INFO] > api_type: 2
+[2017-11-02 16:25:25,572|ClientService.py:92][INFO] > op_type: 3
+[2017-11-02 16:25:25,572|ClientService.py:93][INFO] > length: 4
+[2017-11-02 16:25:25,572|ClientService.py:94][INFO] > encoding: 5
+[2017-11-02 16:25:25,572|ClientService.py:95][INFO] > ===============================================
+[2017-11-02 16:25:25,573|PLTEConnector.py:93][INFO] > ===============================================
+[2017-11-02 16:25:25,573|PLTEConnector.py:94][INFO] > RESTIF -> [APP]
+[2017-11-02 16:25:25,573|PLTEConnector.py:95][INFO] > ===============================================
+[2017-11-02 16:25:25,573|PLTEConnector.py:96][INFO] > API_NAME : http://localhost:5555/departments/abc/123
+[2017-11-02 16:25:25,573|PLTEConnector.py:97][INFO] > PID   : 200
+[2017-11-02 16:25:25,574|PLTEConnector.py:98][INFO] > RESTCODE : 500
+[2017-11-02 16:25:25,574|PLTEConnector.py:99][INFO] > BODY   : {"message": "Internal Server Error"}
+
+[2017-11-02 16:25:25,574|PLTEConnector.py:100][INFO] > ===============================================
