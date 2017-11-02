@@ -69,7 +69,7 @@ class ReqReceiver(Receiver):
                             
                 # Receive Message Logging
                 if ConfManager.getInstance().getLogFlag():
-					headerMsg = reqMsg.http_hdr
+                    headerMsg = reqMsg.http_hdr                    
                     self.logger.info("===============================================")
                     self.logger.info("[APP] -> RESTIF")
                     self.logger.info("===============================================")
