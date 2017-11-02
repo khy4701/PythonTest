@@ -29,10 +29,10 @@ class ResReceiver(Receiver):
         
     
     def __init__(self):
-		Receiver.__init__(self)
-        #super(self).__init__()
+        Receiver.__init__(self)
 
         try :
+
             myQueId = 0
             if ResReceiver.myQueue is None:
                     #IPC_CREAT : create or return key if it is allocated.
