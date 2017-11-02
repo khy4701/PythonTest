@@ -56,7 +56,7 @@ int main(){
 	header->length = 4;
 	header->encoding =5;
 
-	sprintf(resMsg.jsonBody, "%s", "TEST CLIENT MODE");
+	sprintf(resMsg.jsonBody, "%s", "{'name':'Hoyoung', 'age': 123 }");
 
 	int ret = msgsnd(restQid, &reqMsg, sizeof(httpReq)-1, 1);
 	printf(" RET [%d] %d\n", ret, errno);

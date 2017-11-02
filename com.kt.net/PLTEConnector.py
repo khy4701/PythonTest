@@ -65,18 +65,18 @@ class PLTEConnector(Connector):
             return False
 
         if ConfManager.getInstance().getLogFlag():
-            self.logger.info("===============================================");
+            self.logger.info("===============================================")
             self.logger.info("RESTIF -> PLTEIB")
-            self.logger.info("===============================================");
+            self.logger.info("===============================================")
             self.logger.info("API_NAME : " + str(apiName))
             self.logger.info("PID   : "+ str(reqId))
             self.logger.info("BODY   : " + str(receiveMsg))
-            self.logger.info("===============================================");
+            self.logger.info("===============================================")
             
         return True
 
 
-    def sendResMessage(self, resMsg):
+    def sendResMessage(self, command, resMsg):
                 
         pData = ctypes.cast(ctypes.byref(resMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(resMsg)))
         try:
@@ -90,13 +90,14 @@ class PLTEConnector(Connector):
             return False
 
         if ConfManager.getInstance().getLogFlag():
-            self.logger.info("===============================================");
-            self.logger.info("RESTIF -> PLTEIB")
-            self.logger.info("===============================================");
+            self.logger.info("===============================================")
+            self.logger.info("RESTIF -> [APP]")
+            self.logger.info("===============================================")
+            self.logger.info("API_NAME : " + str(command))
+            self.logger.info("PID   : "+ str(resMsg.msgId))
             self.logger.info("RESTCODE : " + str(resMsg.nResult) )
-#            self.logger.info("PID   : "+ str(reqId))
             self.logger.info("BODY   : " + resMsg.jsonBody)
-            self.logger.info("===============================================");
+            self.logger.info("===============================================")
             
         return True
 

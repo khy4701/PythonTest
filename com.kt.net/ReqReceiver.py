@@ -67,6 +67,28 @@ class ReqReceiver(Receiver):
                 
                 ctypes.memmove(ctypes.pointer(reqMsg), mydata ,ctypes.sizeof(reqMsg))
                             
+                # Receive Message Logging
+                if ConfManager.getInstance().getLogFlag():
+					headerMsg = reqMsg.http_hdr
+                    self.logger.info("===============================================")
+                    self.logger.info("[APP] -> RESTIF")
+                    self.logger.info("===============================================")
+                    self.logger.info("msgType: %d" %msgType )
+                    self.logger.info("tot_len : %s" %reqMsg.tot_len )
+                    self.logger.info("msgId : %d" %reqMsg.msgId )
+                    self.logger.info("ehttp_idx : %d" %reqMsg.ehttpf_idx )
+                    self.logger.info("srcQid : %d" %reqMsg.srcQid )
+                    self.logger.info("srcSysId : %c" %reqMsg.srcSysId )
+                    self.logger.info("nResult : %d" %reqMsg.nResult )
+                    self.logger.info("jsonBody: %s" %reqMsg.jsonBody )
+                    self.logger.info("===============================================")
+                    self.logger.info("method: %d" %headerMsg.method )
+                    self.logger.info("api_type: %d" %headerMsg.api_type )
+                    self.logger.info("op_type: %d" %headerMsg.op_type )
+                    self.logger.info("length: %d" %headerMsg.length )
+                    self.logger.info("encoding: %c" %headerMsg.encoding )
+                    self.logger.info("===============================================")
+
                 clientReq = ClientService(reqMsg)
                 clientReq.start()
                 return 

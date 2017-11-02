@@ -23,12 +23,11 @@ class ClientService(threading.Thread):
         self.tid =  self.reqMsg.msgId
         # payload = httpMsg.body....
         
-        payload = "{'name':'Hoyoung', 'age': 123 }"
         url='http://localhost:5555/departments/abc/123'
         head = {'Content-type':'application/json', 'Accept':'application/json'} 
 
         # 1. [RESTIF->EXT] INPUT REQUSET MESSAGE ( httpReq -> REST API )
-        #payload = self.reqMsg.body
+        payload = self.reqMsg.jsonBody
         
         # 2. [RESTIF->EXT] CLIENT SEND LOGGING        
         if ConfManager.getInstance().getLogFlag():
@@ -36,8 +35,8 @@ class ClientService(threading.Thread):
             self.logger.info("RESTIF -> [EXT]")
             self.logger.info("===============================================");
             self.logger.info("URL : " + url)
-            self.logger.info("TID : " + self.tid) # TID
             self.logger.info("HEADER : " + str(head))
+            self.logger.info("TID : " + str(self.tid)) # TID
             self.logger.info("BODY : "  + str(payload))
             self.logger.info("===============================================");
             
@@ -56,7 +55,7 @@ class ClientService(threading.Thread):
             self.logger.info("[EXT] -> RESTIF")
             self.logger.info("===============================================");
             self.logger.info("URL : " + str(restAPI.url))
-            self.logger.info("TID : " + self.tid) # TID
+            self.logger.info("TID : " + str(self.tid)) # TID
             self.logger.info("RESULT : " + str(restAPI.status_code))
             self.logger.info("HEADER : "  + str(restAPI.headers))                   # resData.headers['Content-Length']
             self.logger.info("BODY : "  + str(restAPI.text))
@@ -70,13 +69,14 @@ class ClientService(threading.Thread):
         resMsg.msgId = self.tid
         resMsg.ehttpf_idx = 1
         resMsg.srcQid = 1
-        resMsg.srcSysId = 1
+        resMsg.srcSysId = '1'
         resMsg.nResult = restAPI.status_code
         resMsg.jsonBody = restAPI.text
         
         resMsg.http_hdr = self.reqMsg.http_hdr
                 
         # 6. [RESTIF->APP] SEND AND LOGGING
-        PLTEManager.getInstance().sendResMessage(resMsg)
+		# temp -> resAPI.url 
+        PLTEManager.getInstance().sendResCommand( restAPI.url, resMsg)
 
 
