@@ -9,7 +9,7 @@
 #include "http_app.h"
 //#include <pthread.h>
 
-#define MAXSIZE 512
+#define MAXSIZE 1100
 
 int QueueKey = 12345;
 int RestKey = 54322;
@@ -72,11 +72,9 @@ int main(){
 		printf("jsonBody : %s\n", reqMsg.jsonBody);
 		printf("===============================\n");
 
-
-
 		//sprintf( queBuf.body, "%s" , "12345678901234567890");
 
-		resMsg.mtype = 1;
+		resMsg.mtype = MTYPE_SERVER_MODE;
 		memcpy(&resMsg.http_hdr, &reqMsg.http_hdr, sizeof(http_header));
 
 		resMsg.tot_len = reqMsg.tot_len;

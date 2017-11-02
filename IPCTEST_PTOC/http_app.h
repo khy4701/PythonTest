@@ -1,11 +1,11 @@
 #ifndef __HTTPF_APP_H__
 #define __HTTPF_APP_H__
 
-#define HTTPF_MSG_BUFSIZE                   	128
+#define HTTPF_MSG_BUFSIZE                   	1100
 
 
-#define MTYPE_CLIENT_MODE = 500
-#define MTYPE_SERVER_MODE = 600
+#define MTYPE_CLIENT_MODE  500
+#define MTYPE_SERVER_MODE  600
 
 
 typedef struct _http_header {

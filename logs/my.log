@@ -33,3 +33,172 @@
 [2017-11-02 12:17:07,910|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
 [2017-11-02 12:17:07,910|PLTEManager.py:22][DEBUG] > PLTE Manager Init
 [2017-11-02 12:17:07,910|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:24:38,335|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:24:38,336|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:24:38,336|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:24:38,336|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:24:38,336|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:27:49,166|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:27:49,168|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:27:49,168|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:27:49,168|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:27:49,168|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:30:29,010|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:30:29,012|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:30:29,013|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:30:29,013|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:30:29,013|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:31:48,896|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:31:48,897|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:31:48,898|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:31:48,898|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:31:48,898|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:34:31,245|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:34:31,245|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:34:31,246|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:34:31,246|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:34:31,246|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:34:31,246|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 12:36:35,508|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:36:35,510|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:36:35,511|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:36:35,511|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:36:35,511|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:36:35,511|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-02 12:36:47,178|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:36:47,179|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:36:47,179|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:36:47,179|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:36:47,179|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:46:06,373|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:46:06,375|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:46:06,376|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:46:06,376|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:46:06,376|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:46:12,953|NsdManageService.py:30][INFO] > ===============================================
+[2017-11-02 12:46:12,953|NsdManageService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-02 12:46:12,953|NsdManageService.py:32][INFO] > ===============================================
+[2017-11-02 12:46:12,958|NsdManageService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/ns_descriptors
+[2017-11-02 12:46:12,958|NsdManageService.py:34][INFO] > BODY : {u'age': 123, u'name': u'hoho'}
+[2017-11-02 12:46:12,958|NsdManageService.py:35][INFO] > ===============================================
+[2017-11-02 12:46:12,961|PLTEConnector.py:68][INFO] > ===============================================
+[2017-11-02 12:46:12,961|PLTEConnector.py:69][INFO] > RESTIF -> PLTEIB
+[2017-11-02 12:46:12,961|PLTEConnector.py:70][INFO] > ===============================================
+[2017-11-02 12:46:12,962|PLTEConnector.py:71][INFO] > API_NAME : nsd-on-boarding
+[2017-11-02 12:46:12,962|PLTEConnector.py:72][INFO] > PID   : 1
+[2017-11-02 12:46:12,962|PLTEConnector.py:73][INFO] > BODY   : temp
+[2017-11-02 12:46:12,962|PLTEConnector.py:74][INFO] > ===============================================
+[2017-11-02 12:49:13,430|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 12:49:13,431|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 12:49:13,431|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 12:49:13,431|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 12:49:13,431|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 12:49:18,781|NsdManageService.py:30][INFO] > ===============================================
+[2017-11-02 12:49:18,781|NsdManageService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-02 12:49:18,781|NsdManageService.py:32][INFO] > ===============================================
+[2017-11-02 12:49:18,786|NsdManageService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/ns_descriptors
+[2017-11-02 12:49:18,787|NsdManageService.py:34][INFO] > BODY : {u'age': 123, u'name': u'hoho'}
+[2017-11-02 12:49:18,787|NsdManageService.py:35][INFO] > ===============================================
+[2017-11-02 12:49:18,787|PLTEConnector.py:68][INFO] > ===============================================
+[2017-11-02 12:49:18,787|PLTEConnector.py:69][INFO] > RESTIF -> PLTEIB
+[2017-11-02 12:49:18,787|PLTEConnector.py:70][INFO] > ===============================================
+[2017-11-02 12:49:18,787|PLTEConnector.py:71][INFO] > API_NAME : nsd-on-boarding
+[2017-11-02 12:49:18,788|PLTEConnector.py:72][INFO] > PID   : 1
+[2017-11-02 12:49:18,788|PLTEConnector.py:73][INFO] > BODY   : temp
+[2017-11-02 12:49:18,788|PLTEConnector.py:74][INFO] > ===============================================
+[2017-11-02 13:47:42,313|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 13:47:42,315|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 13:47:42,315|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 13:47:42,315|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 13:47:42,316|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 13:47:45,017|NsdManageService.py:30][INFO] > ===============================================
+[2017-11-02 13:47:45,017|NsdManageService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-02 13:47:45,017|NsdManageService.py:32][INFO] > ===============================================
+[2017-11-02 13:47:45,022|NsdManageService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/ns_descriptors
+[2017-11-02 13:47:45,022|NsdManageService.py:34][INFO] > BODY : {u'age': 123, u'name': u'hoho'}
+[2017-11-02 13:47:45,022|NsdManageService.py:35][INFO] > ===============================================
+[2017-11-02 13:47:45,024|PLTEConnector.py:68][INFO] > ===============================================
+[2017-11-02 13:47:45,024|PLTEConnector.py:69][INFO] > RESTIF -> PLTEIB
+[2017-11-02 13:47:45,024|PLTEConnector.py:70][INFO] > ===============================================
+[2017-11-02 13:47:45,025|PLTEConnector.py:71][INFO] > API_NAME : nsd-on-boarding
+[2017-11-02 13:47:45,025|PLTEConnector.py:72][INFO] > PID   : 1
+[2017-11-02 13:47:45,025|PLTEConnector.py:73][INFO] > BODY   : temp
+[2017-11-02 13:47:45,025|PLTEConnector.py:74][INFO] > ===============================================
+[2017-11-02 14:04:16,550|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 14:04:16,551|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 14:04:16,551|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 14:04:16,551|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 14:04:16,551|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 14:04:21,102|NsdManageService.py:30][INFO] > ===============================================
+[2017-11-02 14:04:21,102|NsdManageService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-02 14:04:21,102|NsdManageService.py:32][INFO] > ===============================================
+[2017-11-02 14:04:21,107|NsdManageService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/ns_descriptors
+[2017-11-02 14:04:21,107|NsdManageService.py:34][INFO] > BODY : {u'age': 123, u'name': u'hoho'}
+[2017-11-02 14:04:21,108|NsdManageService.py:35][INFO] > ===============================================
+[2017-11-02 14:04:21,110|PLTEConnector.py:68][INFO] > ===============================================
+[2017-11-02 14:04:21,110|PLTEConnector.py:69][INFO] > RESTIF -> PLTEIB
+[2017-11-02 14:04:21,110|PLTEConnector.py:70][INFO] > ===============================================
+[2017-11-02 14:04:21,110|PLTEConnector.py:71][INFO] > API_NAME : nsd-on-boarding
+[2017-11-02 14:04:21,110|PLTEConnector.py:72][INFO] > PID   : 1
+[2017-11-02 14:04:21,110|PLTEConnector.py:73][INFO] > BODY   : temp
+[2017-11-02 14:04:21,110|PLTEConnector.py:74][INFO] > ===============================================
+[2017-11-02 14:05:21,099|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 14:05:21,100|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 14:05:21,100|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 14:05:21,100|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 14:05:21,100|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 14:05:23,448|NsdManageService.py:30][INFO] > ===============================================
+[2017-11-02 14:05:23,448|NsdManageService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-02 14:05:23,448|NsdManageService.py:32][INFO] > ===============================================
+[2017-11-02 14:05:23,453|NsdManageService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/ns_descriptors
+[2017-11-02 14:05:23,453|NsdManageService.py:34][INFO] > BODY : {u'age': 123, u'name': u'hoho'}
+[2017-11-02 14:05:23,453|NsdManageService.py:35][INFO] > ===============================================
+[2017-11-02 14:05:23,454|PLTEConnector.py:68][INFO] > ===============================================
+[2017-11-02 14:05:23,454|PLTEConnector.py:69][INFO] > RESTIF -> PLTEIB
+[2017-11-02 14:05:23,454|PLTEConnector.py:70][INFO] > ===============================================
+[2017-11-02 14:05:23,454|PLTEConnector.py:71][INFO] > API_NAME : nsd-on-boarding
+[2017-11-02 14:05:23,455|PLTEConnector.py:72][INFO] > PID   : 1
+[2017-11-02 14:05:23,455|PLTEConnector.py:73][INFO] > BODY   : temp
+[2017-11-02 14:05:23,455|PLTEConnector.py:74][INFO] > ===============================================
+[2017-11-02 14:10:45,468|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-02 14:10:45,469|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-02 14:10:45,469|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-02 14:10:45,469|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-02 14:10:45,469|Connector.py:25][DEBUG] > Connector Init
+[2017-11-02 14:10:49,488|NsdManageService.py:30][INFO] > ===============================================
+[2017-11-02 14:10:49,488|NsdManageService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-02 14:10:49,488|NsdManageService.py:32][INFO] > ===============================================
+[2017-11-02 14:10:49,493|NsdManageService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/ns_descriptors
+[2017-11-02 14:10:49,493|NsdManageService.py:34][INFO] > BODY : {u'age': 123, u'name': u'hoho'}
+[2017-11-02 14:10:49,494|NsdManageService.py:35][INFO] > ===============================================
+[2017-11-02 14:10:49,497|PLTEConnector.py:68][INFO] > ===============================================
+[2017-11-02 14:10:49,498|PLTEConnector.py:69][INFO] > RESTIF -> PLTEIB
+[2017-11-02 14:10:49,498|PLTEConnector.py:70][INFO] > ===============================================
+[2017-11-02 14:10:49,498|PLTEConnector.py:71][INFO] > API_NAME : nsd-on-boarding
+[2017-11-02 14:10:49,498|PLTEConnector.py:72][INFO] > PID   : 1
+[2017-11-02 14:10:49,498|PLTEConnector.py:73][INFO] > BODY   : temp
+[2017-11-02 14:10:49,498|PLTEConnector.py:74][INFO] > ===============================================
+[2017-11-02 14:10:50,499|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-02 14:10:50,499|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-02 14:10:50,499|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-02 14:10:50,500|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-02 14:10:50,500|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-02 14:10:50,500|ResReceiver.py:82][INFO] > msgId : 1
+[2017-11-02 14:10:50,500|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-02 14:10:50,500|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-02 14:10:50,500|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-02 14:10:50,500|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-02 14:10:50,500|ResReceiver.py:87][INFO] > jsonBody: temp
+[2017-11-02 14:10:50,500|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-02 14:10:50,500|ResReceiver.py:89][INFO] > method: 1
+[2017-11-02 14:10:50,501|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-02 14:10:50,501|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-02 14:10:50,501|ResReceiver.py:92][INFO] > length: 4
+[2017-11-02 14:10:50,501|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-02 14:10:50,501|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-02 14:10:51,500|NsdManageService.py:56][INFO] > ===============================================
+[2017-11-02 14:10:51,501|NsdManageService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-02 14:10:51,501|NsdManageService.py:58][INFO] > ===============================================
+[2017-11-02 14:10:51,501|NsdManageService.py:59][INFO] > TID : 1
+[2017-11-02 14:10:51,501|NsdManageService.py:60][INFO] > RESCODE : 200
+[2017-11-02 14:10:51,501|NsdManageService.py:62][INFO] > ===============================================
