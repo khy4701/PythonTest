@@ -3,7 +3,7 @@ from flask_restful import Api
 
 from NsdManageService import NsdOnboarding
 from PLTEConnector import PLTEConnector
-from QueueReceiver import Receiver
+from ReqReceiver import Receiver
 from Service import Service
 from ServiceClass import Departments_Meta, Departments_Meta2
 from ServiceClass2 import Departmental_Salary

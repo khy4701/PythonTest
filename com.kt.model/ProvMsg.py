@@ -4,6 +4,9 @@ from ctypes import c_int, c_ubyte, c_char, c_short, c_long
 
 HTTPF_MSG_BUFSIZE = 1024
 
+MTYPE_CLIENT_MODE = 500
+MTYPE_SERVER_MODE = 600
+
 class provMsg(Structure):
     
     _fields_ =  [("id", c_int),
@@ -28,7 +31,7 @@ class HttpHeader(Structure):
 # 1024 + 8 + 4*5 + 20 =  1072
 class HttpReq(Structure):
 
-    MTYPE_APP_TO_RESTIF_REQ = 100
+    MTYPE_APP_TO_RESTIF_REQ = 100   
     MTYPE_RESTIF_TO_APP_REQ = 101
     # Serialization ( if don't put this field, it'll calculate 4 byte each other )
 #    _pack_ = 1

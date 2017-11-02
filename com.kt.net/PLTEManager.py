@@ -60,3 +60,10 @@ class PLTEManager(Manager):
             # Transcation List Remove
             PLTEManager.plteMembers.remove(senderInfo)
         
+    @staticmethod
+    # resMsg ==> httpRes Type.
+    def sendResCommand(command, resMsg):
+        from PLTEConnector import PLTEConnector
+
+        PLTEConnector.getInstance().sendResMessage(command, resMsg)
+        

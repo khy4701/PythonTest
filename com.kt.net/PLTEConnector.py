@@ -76,6 +76,30 @@ class PLTEConnector(Connector):
         return True
 
 
+    def sendResMessage(self, resMsg):
+                
+        pData = ctypes.cast(ctypes.byref(resMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(resMsg)))
+        try:
+            if self.plteQueue is not None :
+                
+                # MSG TYPE Check!
+                self.plteQueue.send( pData.contents.raw, True, HttpRes.MTYPE_RESTIF_TO_APP_RES )
+                
+        except Exception as e:
+            self.logger.error("sendMessage Error! %s" % e)
+            return False
+
+        if ConfManager.getInstance().getLogFlag():
+            self.logger.info("===============================================");
+            self.logger.info("RESTIF -> PLTEIB")
+            self.logger.info("===============================================");
+#             self.logger.info("API_NAME : " + str(apiName))
+#             self.logger.info("PID   : "+ str(reqId))
+#             self.logger.info("BODY   : " + str(receiveMsg))
+            self.logger.info("===============================================");
+            
+        return True
+
     
 # if __name__ == '__main__':
 #       
