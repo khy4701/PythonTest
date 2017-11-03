@@ -22,13 +22,15 @@ class NsIdCreation(Resource, ServiceManager):
         # [WEB->RESTIF] RECEIVE PROCESS
         content = request.get_json(force=True)
    
+        data = json.dumps(content)
+   
         # [WEB->RESTIF] RECEIVE LOGGING       
         if ConfManager.getInstance().getLogFlag():
                 self.logger.info("===============================================");
                 self.logger.info("[WEB] -> RESTIF")
                 self.logger.info("===============================================");
                 self.logger.info("REQUEST URL : " + request.url)
-                self.logger.info("BODY : "  + str(content))
+                self.logger.info("BODY : "  + data)
                 self.logger.info("===============================================");
                         
 
@@ -37,7 +39,7 @@ class NsIdCreation(Resource, ServiceManager):
         self.clientId = PLTEManager.getInstance().getClientReqId()
         #resMsg = 'temp'
         self.logger.info("[RESTIF->APP] SEND QUEUE MESSAGE(RELAY)");
-        reqMsg = self.setReqMessage( str(content), self.clientId)
+        reqMsg = self.setReqMessage(data, self.clientId)
         
         # [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         self.logger.info("[RESTIF->APP] SEND QUEUE MESSAGE(RELAY)");
@@ -65,7 +67,7 @@ class NsIdCreation(Resource, ServiceManager):
         # [RESTIF->WEB] SEND RESPONSE
         
         return flask.Response(
-            json.dumps(self.resMsg.jsonBody),
+            self.resMsg.jsonBody,
                        # mimetype=content_type,
             status=self.rspCode
         )
