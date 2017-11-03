@@ -2556,3 +2556,591 @@
 }
 
 [2017-11-02 17:59:08,925|PLTEConnector.py:100][INFO] > ===============================================
+[2017-11-03 13:03:39,382|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:03:39,384|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:03:39,384|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:03:39,384|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:03:39,384|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:03:39,384|PLTEConnector.py:35][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345]
+[2017-11-03 13:05:24,849|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:05:24,850|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:05:24,850|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:05:24,851|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:05:24,851|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:05:29,559|NsLifeCycleMService.py:30][INFO] > ===============================================
+[2017-11-03 13:05:29,559|NsLifeCycleMService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:05:29,559|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:05:29,564|NsLifeCycleMService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:05:29,564|NsLifeCycleMService.py:34][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:05:29,564|NsLifeCycleMService.py:35][INFO] > ===============================================
+[2017-11-03 13:07:43,682|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:07:43,683|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:07:43,683|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:07:43,683|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:07:43,683|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:07:54,303|NsLifeCycleMService.py:30][INFO] > ===============================================
+[2017-11-03 13:07:54,303|NsLifeCycleMService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:07:54,303|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:07:54,308|NsLifeCycleMService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:07:54,309|NsLifeCycleMService.py:34][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:07:54,309|NsLifeCycleMService.py:35][INFO] > ===============================================
+[2017-11-03 13:11:41,581|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:11:41,582|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:11:41,583|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:11:41,583|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:11:41,583|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:12:00,770|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:12:00,771|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:12:00,771|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:12:00,771|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:12:00,771|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:12:04,722|NsLifeCycleMService.py:30][INFO] > ===============================================
+[2017-11-03 13:12:04,722|NsLifeCycleMService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:12:04,722|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:12:04,727|NsLifeCycleMService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:12:04,727|NsLifeCycleMService.py:34][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:12:04,727|NsLifeCycleMService.py:35][INFO] > ===============================================
+[2017-11-03 13:14:26,875|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:14:26,877|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:14:26,877|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:14:26,877|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:14:26,877|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:14:32,855|NsLifeCycleMService.py:30][INFO] > ===============================================
+[2017-11-03 13:14:32,856|NsLifeCycleMService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:14:32,856|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:14:32,861|NsLifeCycleMService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:14:32,861|NsLifeCycleMService.py:34][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:14:32,861|NsLifeCycleMService.py:35][INFO] > ===============================================
+[2017-11-03 13:16:21,074|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:16:21,075|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:16:21,075|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:16:21,075|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:16:21,075|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:16:24,731|NsLifeCycleMService.py:30][INFO] > ===============================================
+[2017-11-03 13:16:24,732|NsLifeCycleMService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:16:24,732|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:16:24,737|NsLifeCycleMService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:16:24,737|NsLifeCycleMService.py:34][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:16:24,737|NsLifeCycleMService.py:35][INFO] > ===============================================
+[2017-11-03 13:16:24,737|NsLifeCycleMService.py:38][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:16:24,737|NsLifeCycleMService.py:42][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:18:02,282|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:18:02,282|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:18:02,283|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:18:02,283|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:18:02,283|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:18:06,132|NsLifeCycleMService.py:30][INFO] > ===============================================
+[2017-11-03 13:18:06,132|NsLifeCycleMService.py:31][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:18:06,132|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:18:06,137|NsLifeCycleMService.py:33][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:18:06,137|NsLifeCycleMService.py:34][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:18:06,137|NsLifeCycleMService.py:35][INFO] > ===============================================
+[2017-11-03 13:18:06,138|NsLifeCycleMService.py:38][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:18:06,138|NsLifeCycleMService.py:42][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:20:55,098|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:20:55,099|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:20:55,100|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:20:55,100|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:20:55,100|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:21:02,595|NsLifeCycleMService.py:26][INFO] > ===============================================
+[2017-11-03 13:21:02,595|NsLifeCycleMService.py:27][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:21:02,595|NsLifeCycleMService.py:28][INFO] > ===============================================
+[2017-11-03 13:21:02,600|NsLifeCycleMService.py:29][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:21:02,601|NsLifeCycleMService.py:30][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:21:02,601|NsLifeCycleMService.py:31][INFO] > ===============================================
+[2017-11-03 13:21:02,601|NsLifeCycleMService.py:34][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:21:02,601|NsLifeCycleMService.py:38][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:21:02,601|NsLifeCycleMService.py:42][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:21:02,601|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:22:16,323|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:22:16,324|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:22:16,324|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:22:16,325|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:22:16,325|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:22:19,018|NsLifeCycleMService.py:26][INFO] > ===============================================
+[2017-11-03 13:22:19,018|NsLifeCycleMService.py:27][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:22:19,018|NsLifeCycleMService.py:28][INFO] > ===============================================
+[2017-11-03 13:22:19,023|NsLifeCycleMService.py:29][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:22:19,023|NsLifeCycleMService.py:30][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:22:19,023|NsLifeCycleMService.py:31][INFO] > ===============================================
+[2017-11-03 13:22:19,023|NsLifeCycleMService.py:34][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:22:19,023|NsLifeCycleMService.py:38][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:22:19,024|NsLifeCycleMService.py:42][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:22:19,024|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:22:19,027|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:22:19,027|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:22:19,027|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:22:19,028|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:22:19,028|PLTEConnector.py:58][INFO] > PID   : 1
+[2017-11-03 13:22:19,028|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:22:19,028|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:22:20,028|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:22:20,029|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:22:20,029|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:22:20,029|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:22:20,029|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:22:20,029|ResReceiver.py:82][INFO] > msgId : 1
+[2017-11-03 13:22:20,029|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:22:20,029|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:22:20,029|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:22:20,030|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:22:20,030|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:22:20,030|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:22:20,030|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:22:20,030|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:22:20,030|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:22:20,030|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:22:20,030|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:22:20,030|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:22:21,030|NsLifeCycleMService.py:55][INFO] > ===============================================
+[2017-11-03 13:22:21,030|NsLifeCycleMService.py:56][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:22:21,030|NsLifeCycleMService.py:57][INFO] > ===============================================
+[2017-11-03 13:22:21,031|NsLifeCycleMService.py:58][INFO] > TID : 1
+[2017-11-03 13:22:21,031|NsLifeCycleMService.py:59][INFO] > RESCODE : 200
+[2017-11-03 13:22:21,031|NsLifeCycleMService.py:61][INFO] > ===============================================
+[2017-11-03 13:22:32,089|NsLifeCycleMService.py:26][INFO] > ===============================================
+[2017-11-03 13:22:32,090|NsLifeCycleMService.py:27][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:22:32,090|NsLifeCycleMService.py:28][INFO] > ===============================================
+[2017-11-03 13:22:32,090|NsLifeCycleMService.py:29][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:22:32,090|NsLifeCycleMService.py:30][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:22:32,090|NsLifeCycleMService.py:31][INFO] > ===============================================
+[2017-11-03 13:22:32,090|NsLifeCycleMService.py:34][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:22:32,090|NsLifeCycleMService.py:38][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:22:32,090|NsLifeCycleMService.py:42][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:22:32,091|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:22:32,091|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:22:32,091|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:22:32,091|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:22:32,091|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:22:32,091|PLTEConnector.py:58][INFO] > PID   : 2
+[2017-11-03 13:22:32,091|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:22:32,091|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:22:42,515|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:22:42,516|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:22:42,516|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:22:42,516|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:22:42,516|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:22:42,516|ResReceiver.py:82][INFO] > msgId : 2
+[2017-11-03 13:22:42,516|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:22:42,516|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:22:42,516|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:22:42,516|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:22:42,517|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:22:42,517|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:22:42,517|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:22:42,517|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:22:42,517|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:22:42,517|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:22:42,517|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:22:42,517|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:22:43,102|NsLifeCycleMService.py:55][INFO] > ===============================================
+[2017-11-03 13:22:43,103|NsLifeCycleMService.py:56][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:22:43,103|NsLifeCycleMService.py:57][INFO] > ===============================================
+[2017-11-03 13:22:43,103|NsLifeCycleMService.py:58][INFO] > TID : 2
+[2017-11-03 13:22:43,103|NsLifeCycleMService.py:59][INFO] > RESCODE : 200
+[2017-11-03 13:22:43,103|NsLifeCycleMService.py:61][INFO] > ===============================================
+[2017-11-03 13:23:22,276|NsLifeCycleMService.py:26][INFO] > ===============================================
+[2017-11-03 13:23:22,276|NsLifeCycleMService.py:27][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:23:22,276|NsLifeCycleMService.py:28][INFO] > ===============================================
+[2017-11-03 13:23:22,277|NsLifeCycleMService.py:29][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:23:22,277|NsLifeCycleMService.py:30][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:23:22,277|NsLifeCycleMService.py:31][INFO] > ===============================================
+[2017-11-03 13:23:22,277|NsLifeCycleMService.py:34][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:23:22,277|NsLifeCycleMService.py:38][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:23:22,277|NsLifeCycleMService.py:42][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:23:22,277|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:23:22,278|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:23:22,278|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:23:22,278|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:23:22,278|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:23:22,278|PLTEConnector.py:58][INFO] > PID   : 3
+[2017-11-03 13:23:22,278|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:23:22,278|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:23:23,279|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:23:23,279|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:23:23,279|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:23:23,280|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:23:23,280|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:23:23,280|ResReceiver.py:82][INFO] > msgId : 3
+[2017-11-03 13:23:23,280|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:23:23,280|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:23:23,280|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:23:23,280|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:23:23,280|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:23:23,280|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:23:23,280|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:23:23,281|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:23:23,281|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:23:23,281|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:23:23,281|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:23:23,281|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:23:24,280|NsLifeCycleMService.py:55][INFO] > ===============================================
+[2017-11-03 13:23:24,281|NsLifeCycleMService.py:56][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:23:24,281|NsLifeCycleMService.py:57][INFO] > ===============================================
+[2017-11-03 13:23:24,281|NsLifeCycleMService.py:58][INFO] > TID : 3
+[2017-11-03 13:23:24,281|NsLifeCycleMService.py:59][INFO] > RESCODE : 200
+[2017-11-03 13:23:24,281|NsLifeCycleMService.py:61][INFO] > ===============================================
+[2017-11-03 13:25:19,991|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:25:19,992|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:25:19,992|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:25:19,992|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:25:19,992|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:25:23,311|NsLifeCycleMService.py:27][INFO] > ===============================================
+[2017-11-03 13:25:23,311|NsLifeCycleMService.py:28][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:25:23,311|NsLifeCycleMService.py:29][INFO] > ===============================================
+[2017-11-03 13:25:23,316|NsLifeCycleMService.py:30][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:25:23,317|NsLifeCycleMService.py:31][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:25:23,317|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:25:23,317|NsLifeCycleMService.py:35][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:25:23,317|NsLifeCycleMService.py:39][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:25:23,317|NsLifeCycleMService.py:43][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:25:23,317|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:25:23,318|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:25:23,318|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:25:23,318|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:25:23,318|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:25:23,318|PLTEConnector.py:58][INFO] > PID   : 1
+[2017-11-03 13:25:23,318|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:25:23,318|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:25:24,319|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:25:24,319|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:25:24,319|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:25:24,320|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:25:24,320|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:25:24,320|ResReceiver.py:82][INFO] > msgId : 1
+[2017-11-03 13:25:24,320|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:25:24,320|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:25:24,320|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:25:24,320|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:25:24,320|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:25:24,320|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:25:24,321|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:25:24,321|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:25:24,321|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:25:24,321|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:25:24,321|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:25:24,321|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:25:25,321|NsLifeCycleMService.py:56][INFO] > ===============================================
+[2017-11-03 13:25:25,321|NsLifeCycleMService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:25:25,321|NsLifeCycleMService.py:58][INFO] > ===============================================
+[2017-11-03 13:25:25,321|NsLifeCycleMService.py:59][INFO] > TID : 1
+[2017-11-03 13:25:25,321|NsLifeCycleMService.py:60][INFO] > RESCODE : 200
+[2017-11-03 13:25:25,322|NsLifeCycleMService.py:62][INFO] > ===============================================
+[2017-11-03 13:26:39,571|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:26:39,572|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:26:39,572|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:26:39,572|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:26:39,573|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:26:46,204|NsLifeCycleMService.py:27][INFO] > ===============================================
+[2017-11-03 13:26:46,204|NsLifeCycleMService.py:28][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:26:46,205|NsLifeCycleMService.py:29][INFO] > ===============================================
+[2017-11-03 13:26:46,209|NsLifeCycleMService.py:30][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:26:46,210|NsLifeCycleMService.py:31][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:26:46,210|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:26:46,210|NsLifeCycleMService.py:35][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:26:46,210|NsLifeCycleMService.py:39][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:26:46,210|NsLifeCycleMService.py:43][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:26:46,210|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:26:46,210|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:26:46,210|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:26:46,210|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:26:46,211|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:26:46,211|PLTEConnector.py:58][INFO] > PID   : 1
+[2017-11-03 13:26:46,211|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:26:46,211|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:26:47,212|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:26:47,212|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:26:47,212|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:26:47,213|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:26:47,213|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:26:47,213|ResReceiver.py:82][INFO] > msgId : 1
+[2017-11-03 13:26:47,213|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:26:47,213|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:26:47,213|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:26:47,213|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:26:47,213|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:26:47,213|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:26:47,213|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:26:47,214|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:26:47,214|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:26:47,214|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:26:47,214|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:26:47,214|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:26:48,213|NsLifeCycleMService.py:56][INFO] > ===============================================
+[2017-11-03 13:26:48,214|NsLifeCycleMService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:26:48,214|NsLifeCycleMService.py:58][INFO] > ===============================================
+[2017-11-03 13:26:48,214|NsLifeCycleMService.py:59][INFO] > TID : 1
+[2017-11-03 13:26:48,214|NsLifeCycleMService.py:60][INFO] > RESCODE : 200
+[2017-11-03 13:26:48,214|NsLifeCycleMService.py:62][INFO] > ===============================================
+[2017-11-03 13:29:54,438|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:29:54,440|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:29:54,440|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:29:54,440|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:29:54,440|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:30:00,287|NsLifeCycleMService.py:27][INFO] > ===============================================
+[2017-11-03 13:30:00,287|NsLifeCycleMService.py:28][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:30:00,287|NsLifeCycleMService.py:29][INFO] > ===============================================
+[2017-11-03 13:30:00,292|NsLifeCycleMService.py:30][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:30:00,292|NsLifeCycleMService.py:31][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:00,292|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:30:00,292|NsLifeCycleMService.py:35][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:30:00,292|NsLifeCycleMService.py:39][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:30:00,292|NsLifeCycleMService.py:43][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:30:00,292|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:30:00,295|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:30:00,295|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:30:00,296|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:30:00,296|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:30:00,296|PLTEConnector.py:58][INFO] > PID   : 1
+[2017-11-03 13:30:00,296|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:00,296|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:30:01,297|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:30:01,297|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:30:01,297|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:30:01,297|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:30:01,297|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:30:01,297|ResReceiver.py:82][INFO] > msgId : 1
+[2017-11-03 13:30:01,298|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:30:01,298|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:30:01,298|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:30:01,298|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:30:01,298|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:01,298|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:30:01,298|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:30:01,298|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:30:01,298|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:30:01,298|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:30:01,298|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:30:01,298|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:30:02,298|NsLifeCycleMService.py:56][INFO] > ===============================================
+[2017-11-03 13:30:02,299|NsLifeCycleMService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:30:02,299|NsLifeCycleMService.py:58][INFO] > ===============================================
+[2017-11-03 13:30:02,299|NsLifeCycleMService.py:59][INFO] > TID : 1
+[2017-11-03 13:30:02,299|NsLifeCycleMService.py:60][INFO] > RESCODE : 200
+[2017-11-03 13:30:02,299|NsLifeCycleMService.py:61][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:02,299|NsLifeCycleMService.py:62][INFO] > ===============================================
+[2017-11-03 13:30:40,801|NsLifeCycleMService.py:27][INFO] > ===============================================
+[2017-11-03 13:30:40,801|NsLifeCycleMService.py:28][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:30:40,801|NsLifeCycleMService.py:29][INFO] > ===============================================
+[2017-11-03 13:30:40,802|NsLifeCycleMService.py:30][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:30:40,802|NsLifeCycleMService.py:31][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:40,802|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:30:40,802|NsLifeCycleMService.py:35][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:30:40,802|NsLifeCycleMService.py:39][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:30:40,802|NsLifeCycleMService.py:43][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:30:40,802|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:30:40,805|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:30:40,805|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:30:40,806|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:30:40,806|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:30:40,806|PLTEConnector.py:58][INFO] > PID   : 2
+[2017-11-03 13:30:40,806|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:40,806|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:30:49,689|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:30:49,689|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:30:49,690|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:30:49,690|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:30:49,690|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:30:49,690|ResReceiver.py:82][INFO] > msgId : 2
+[2017-11-03 13:30:49,690|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:30:49,690|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:30:49,690|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:30:49,690|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:30:49,690|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:49,690|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:30:49,690|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:30:49,691|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:30:49,691|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:30:49,691|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:30:49,691|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:30:49,691|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:30:49,815|NsLifeCycleMService.py:56][INFO] > ===============================================
+[2017-11-03 13:30:49,815|NsLifeCycleMService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:30:49,815|NsLifeCycleMService.py:58][INFO] > ===============================================
+[2017-11-03 13:30:49,816|NsLifeCycleMService.py:59][INFO] > TID : 2
+[2017-11-03 13:30:49,816|NsLifeCycleMService.py:60][INFO] > RESCODE : 200
+[2017-11-03 13:30:49,816|NsLifeCycleMService.py:61][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:49,816|NsLifeCycleMService.py:62][INFO] > ===============================================
+[2017-11-03 13:30:56,508|NsLifeCycleMService.py:27][INFO] > ===============================================
+[2017-11-03 13:30:56,508|NsLifeCycleMService.py:28][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:30:56,508|NsLifeCycleMService.py:29][INFO] > ===============================================
+[2017-11-03 13:30:56,508|NsLifeCycleMService.py:30][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:30:56,508|NsLifeCycleMService.py:31][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:56,509|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:30:56,509|NsLifeCycleMService.py:35][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:30:56,509|NsLifeCycleMService.py:39][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:30:56,509|NsLifeCycleMService.py:43][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:30:56,509|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:30:56,509|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:30:56,509|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:30:56,509|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:30:56,510|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:30:56,510|PLTEConnector.py:58][INFO] > PID   : 3
+[2017-11-03 13:30:56,510|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:56,510|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:30:57,511|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:30:57,511|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:30:57,511|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:30:57,511|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:30:57,511|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:30:57,511|ResReceiver.py:82][INFO] > msgId : 3
+[2017-11-03 13:30:57,511|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:30:57,512|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:30:57,512|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:30:57,512|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:30:57,512|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:57,512|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:30:57,512|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:30:57,512|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:30:57,512|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:30:57,512|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:30:57,512|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:30:57,512|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:30:58,512|NsLifeCycleMService.py:56][INFO] > ===============================================
+[2017-11-03 13:30:58,512|NsLifeCycleMService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:30:58,513|NsLifeCycleMService.py:58][INFO] > ===============================================
+[2017-11-03 13:30:58,513|NsLifeCycleMService.py:59][INFO] > TID : 3
+[2017-11-03 13:30:58,513|NsLifeCycleMService.py:60][INFO] > RESCODE : 200
+[2017-11-03 13:30:58,513|NsLifeCycleMService.py:61][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:30:58,513|NsLifeCycleMService.py:62][INFO] > ===============================================
+[2017-11-03 13:33:09,849|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:33:09,849|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:33:09,850|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:33:09,850|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:33:09,851|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:33:14,109|NsLifeCycleMService.py:27][INFO] > ===============================================
+[2017-11-03 13:33:14,109|NsLifeCycleMService.py:28][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:33:14,109|NsLifeCycleMService.py:29][INFO] > ===============================================
+[2017-11-03 13:33:14,114|NsLifeCycleMService.py:30][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:33:14,114|NsLifeCycleMService.py:31][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:33:14,115|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:33:14,115|NsLifeCycleMService.py:35][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:33:14,115|NsLifeCycleMService.py:39][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:33:14,115|NsLifeCycleMService.py:43][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:33:14,115|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:33:14,115|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:33:14,115|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:33:14,116|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:33:14,116|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:33:14,116|PLTEConnector.py:58][INFO] > PID   : 1
+[2017-11-03 13:33:14,116|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:33:14,116|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:33:15,117|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:33:15,117|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:33:15,117|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:33:15,117|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:33:15,118|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:33:15,118|ResReceiver.py:82][INFO] > msgId : 1
+[2017-11-03 13:33:15,118|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:33:15,118|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:33:15,118|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:33:15,118|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:33:15,118|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:33:15,118|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:33:15,118|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:33:15,118|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:33:15,119|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:33:15,119|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:33:15,119|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:33:15,119|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:33:16,118|NsLifeCycleMService.py:56][INFO] > ===============================================
+[2017-11-03 13:33:16,119|NsLifeCycleMService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:33:16,119|NsLifeCycleMService.py:58][INFO] > ===============================================
+[2017-11-03 13:33:16,119|NsLifeCycleMService.py:59][INFO] > TID : 1
+[2017-11-03 13:33:16,119|NsLifeCycleMService.py:60][INFO] > RESCODE : 200
+[2017-11-03 13:33:16,119|NsLifeCycleMService.py:61][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:33:16,119|NsLifeCycleMService.py:62][INFO] > ===============================================
+[2017-11-03 13:35:07,519|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:35:07,520|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:35:07,521|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:35:07,521|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:35:07,521|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:35:10,954|NsLifeCycleMService.py:27][INFO] > ===============================================
+[2017-11-03 13:35:10,955|NsLifeCycleMService.py:28][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:35:10,955|NsLifeCycleMService.py:29][INFO] > ===============================================
+[2017-11-03 13:35:10,960|NsLifeCycleMService.py:30][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:35:10,960|NsLifeCycleMService.py:31][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:35:10,960|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:35:10,960|NsLifeCycleMService.py:35][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:35:10,960|NsLifeCycleMService.py:39][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:35:10,960|NsLifeCycleMService.py:43][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:35:10,960|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:35:10,960|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:35:10,961|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:35:10,961|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:35:10,961|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:35:10,961|PLTEConnector.py:58][INFO] > PID   : 1
+[2017-11-03 13:35:10,961|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:35:10,961|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:35:11,962|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:35:11,962|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:35:11,962|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:35:11,963|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:35:11,963|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:35:11,963|ResReceiver.py:82][INFO] > msgId : 1
+[2017-11-03 13:35:11,963|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:35:11,963|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:35:11,963|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:35:11,963|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:35:11,963|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:35:11,963|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:35:11,964|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:35:11,964|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:35:11,964|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:35:11,964|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:35:11,964|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:35:11,964|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:35:12,964|NsLifeCycleMService.py:56][INFO] > ===============================================
+[2017-11-03 13:35:12,964|NsLifeCycleMService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:35:12,964|NsLifeCycleMService.py:58][INFO] > ===============================================
+[2017-11-03 13:35:12,964|NsLifeCycleMService.py:59][INFO] > TID : 1
+[2017-11-03 13:35:12,964|NsLifeCycleMService.py:60][INFO] > RESCODE : 200
+[2017-11-03 13:35:12,964|NsLifeCycleMService.py:61][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:35:12,964|NsLifeCycleMService.py:62][INFO] > ===============================================
+[2017-11-03 13:36:08,978|ReqReceiver.py:34][ERROR] > ReqReceiver Init
+[2017-11-03 13:36:08,978|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-03 13:36:08,979|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-03 13:36:08,979|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-03 13:36:08,979|Connector.py:25][DEBUG] > Connector Init
+[2017-11-03 13:36:13,638|NsLifeCycleMService.py:27][INFO] > ===============================================
+[2017-11-03 13:36:13,638|NsLifeCycleMService.py:28][INFO] > [WEB] -> RESTIF
+[2017-11-03 13:36:13,638|NsLifeCycleMService.py:29][INFO] > ===============================================
+[2017-11-03 13:36:13,643|NsLifeCycleMService.py:30][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-03 13:36:13,643|NsLifeCycleMService.py:31][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:36:13,643|NsLifeCycleMService.py:32][INFO] > ===============================================
+[2017-11-03 13:36:13,644|NsLifeCycleMService.py:35][INFO] > MAKE SEND STRUCT
+[2017-11-03 13:36:13,644|NsLifeCycleMService.py:39][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:36:13,644|NsLifeCycleMService.py:43][INFO] > [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
+[2017-11-03 13:36:13,644|PLTEConnector.py:40][INFO] > Send Message..!
+[2017-11-03 13:36:13,644|PLTEConnector.py:54][INFO] > ===============================================
+[2017-11-03 13:36:13,644|PLTEConnector.py:55][INFO] > RESTIF -> PLTEIB
+[2017-11-03 13:36:13,644|PLTEConnector.py:56][INFO] > ===============================================
+[2017-11-03 13:36:13,645|PLTEConnector.py:57][INFO] > API_NAME : ns-identifier-create
+[2017-11-03 13:36:13,645|PLTEConnector.py:58][INFO] > PID   : 1
+[2017-11-03 13:36:13,645|PLTEConnector.py:59][INFO] > BODY   : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:36:13,645|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-03 13:36:14,646|ResReceiver.py:77][INFO] > ===============================================
+[2017-11-03 13:36:14,646|ResReceiver.py:78][INFO] > [APP] -> RESTIF
+[2017-11-03 13:36:14,647|ResReceiver.py:79][INFO] > ===============================================
+[2017-11-03 13:36:14,647|ResReceiver.py:80][INFO] > msgType: 600
+[2017-11-03 13:36:14,647|ResReceiver.py:81][INFO] > tot_len : 100
+[2017-11-03 13:36:14,647|ResReceiver.py:82][INFO] > msgId : 1
+[2017-11-03 13:36:14,647|ResReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-03 13:36:14,647|ResReceiver.py:84][INFO] > srcQid : 300
+[2017-11-03 13:36:14,647|ResReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-03 13:36:14,647|ResReceiver.py:86][INFO] > nResult : 200
+[2017-11-03 13:36:14,647|ResReceiver.py:87][INFO] > jsonBody: {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:36:14,647|ResReceiver.py:88][INFO] > ===============================================
+[2017-11-03 13:36:14,648|ResReceiver.py:89][INFO] > method: 1
+[2017-11-03 13:36:14,648|ResReceiver.py:90][INFO] > api_type: 2
+[2017-11-03 13:36:14,648|ResReceiver.py:91][INFO] > op_type: 3
+[2017-11-03 13:36:14,648|ResReceiver.py:92][INFO] > length: 4
+[2017-11-03 13:36:14,648|ResReceiver.py:93][INFO] > encoding: 5
+[2017-11-03 13:36:14,648|ResReceiver.py:94][INFO] > ===============================================
+[2017-11-03 13:36:15,647|NsLifeCycleMService.py:56][INFO] > ===============================================
+[2017-11-03 13:36:15,648|NsLifeCycleMService.py:57][INFO] > RESTIF -> [WEB]
+[2017-11-03 13:36:15,648|NsLifeCycleMService.py:58][INFO] > ===============================================
+[2017-11-03 13:36:15,648|NsLifeCycleMService.py:59][INFO] > TID : 1
+[2017-11-03 13:36:15,648|NsLifeCycleMService.py:60][INFO] > RESCODE : 200
+[2017-11-03 13:36:15,648|NsLifeCycleMService.py:61][INFO] > BODY : {u'nsdId': u'26bb4cc5-b04b-4b6d-8fad-f15a39db97ce', u'nsName': u'NS-5G-PYEONGCHANG'}
+[2017-11-03 13:36:15,648|NsLifeCycleMService.py:62][INFO] > ===============================================
