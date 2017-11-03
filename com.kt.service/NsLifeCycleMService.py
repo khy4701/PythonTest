@@ -58,7 +58,7 @@ class NsIdCreation(Resource, ServiceManager):
                 self.logger.info("===============================================");
                 self.logger.info("TID : " + str(self.receiveReqId))
                 self.logger.info("RESCODE : " + str(self.rspCode))
-#                self.logger.info("BODY : "  + str(self.body))
+                self.logger.info("BODY : "  + str(self.resMsg.jsonBody))
                 self.logger.info("===============================================");
         
         

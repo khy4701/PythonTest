@@ -24,7 +24,7 @@ class PLTEManager(Manager):
         self.clientReqId = 0
         pass
     
-    def receiveHandling(self, rspCode, reqId, rcvMsg):        
+    def receiveHandling(self, rspCode, reqId, httpRcvMsg):        
 
         for member in PLTEManager.plteMembers:
             if member.getCliReqId() == reqId:
@@ -32,7 +32,7 @@ class PLTEManager(Manager):
                 source = member.getSource()
                 
                 # Service setComplete 
-                source.setComplete(rspCode, reqId, rcvMsg)
+                source.setComplete(rspCode, reqId, httpRcvMsg)
                 PLTEManager.plteMembers.remove(member)
     
 

@@ -95,7 +95,7 @@ class ResReceiver(Receiver):
 
                 
                 #if msgType == PLTEMANAGER_TYPE: 
-                PLTEManager.getInstance().receiveHandling(resMsg.nResult, resMsg.msgId, resMsg.jsonBody )
+                PLTEManager.getInstance().receiveHandling(resMsg.nResult, resMsg.msgId, resMsg )
         
         except Exception as e :
             self.logger.error("Msgrcv Failed..  %s" %e)
