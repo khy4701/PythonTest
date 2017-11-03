@@ -31,10 +31,10 @@ class PLTEConnector(Connector):
         self.plteQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))
         try :                
                 maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
-                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId , max_message_size = int(maxQSize))
+                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId)
                     
         except Exception as e:
-                self.logger.error("msgQueue Connection Failed.. PLTE QUEUE_ID[%d]" % self.plteQueId)
+                self.logger.error("msgQueue Connection Failed.. PLTE QUEUE_ID[%d] SIZE[%s]" % (self.plteQueId, maxQSize))
 
 
     def sendMessage(self, apiName, httpReqMsg):
