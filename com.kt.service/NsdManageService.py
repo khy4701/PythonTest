@@ -1,6 +1,6 @@
 import time
 
-from flask import request
+from flask import request, json
 import flask
 from flask.json import jsonify
 from flask_restful import Resource
@@ -26,19 +26,21 @@ class NsdOnboarding(Resource, ServiceManager):
 #         for keys in content.keys():
 #             data[keys] = content[keys]
 
+        data = json.dumps(content)
+
         # [WEB->RESTIF] RECEIVE LOGGING       
         if ConfManager.getInstance().getLogFlag():
                 self.logger.info("===============================================");
                 self.logger.info("[WEB] -> RESTIF")
                 self.logger.info("===============================================");
                 self.logger.info("REQUEST URL : " + request.url)
-                self.logger.info("BODY : "  + str(content))
+                self.logger.info("BODY : "  + data)
                 self.logger.info("===============================================");
                         
         # [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
         #resMsg = 'temp'
-        reqMsg = self.setReqMessage(content, self.clientId)
+        reqMsg = self.setReqMessage(data, self.clientId)
         
         # [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         
@@ -52,7 +54,6 @@ class NsdOnboarding(Resource, ServiceManager):
             except Exception as e:
                 self.logger.error(e)
         
-        
         # [RESTIF->WEB] SEND LOGGING
         if ConfManager.getInstance().getLogFlag():
                 self.logger.info("===============================================");
@@ -60,16 +61,11 @@ class NsdOnboarding(Resource, ServiceManager):
                 self.logger.info("===============================================");
                 self.logger.info("TID : " + str(self.receiveReqId))
                 self.logger.info("RESCODE : " + str(self.rspCode))
-                self.logger.info("BODY : "  + str(self.body))
+                self.logger.info("BODY : "  + self.resMsg.jsonBody)
                 self.logger.info("===============================================");
-        
         
         # [RESTIF->WEB] SEND RESPONSE
         
-        #name = content['name']
-        #age = content['age']
-
-        #return jsonify( name=name , age = age)
         return flask.Response(
             self.resMsg.jsonBody,
            # mimetype=content_type,
