@@ -62,7 +62,10 @@ class NsIdCreation(Resource, ServiceManager):
 class NsInstantiation(Resource, ServiceManager):
     pass
     
-    
+class NsIdTermination(Resource, ServiceManager):
+    pass
+class NsScale(Resource, ServiceManager):
+    pass
 
 #api.add_resource(NsIdTermination, Service.NS_TERMINATION )
 #api.add_resource(NsScale, Service.NS_SCALE )

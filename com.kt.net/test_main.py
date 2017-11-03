@@ -1,7 +1,8 @@
 from flask import Flask
 from flask_restful import Api
 
-from NsLifeCycleMService import NsIdCreation
+from NsLifeCycleMService import NsIdCreation, NsInstantiation, NsIdTermination, \
+    NsScale
 from NsdManageService import NsdOnboarding
 from PLTEConnector import PLTEConnector
 from ReqReceiver import ReqReceiver
