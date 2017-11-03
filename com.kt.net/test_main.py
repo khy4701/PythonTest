@@ -3,6 +3,7 @@ from flask_restful import Api
 
 from NsLifeCycleMService import NsIdCreation, NsInstantiation, NsIdTermination, \
     NsScale
+from NsPerformanceMService import CreatePmJobs, QueryPmJob
 from NsdManageService import NsdOnboarding
 from PLTEConnector import PLTEConnector
 from ReqReceiver import ReqReceiver
@@ -32,9 +33,9 @@ api.add_resource(NsInstantiation, Service.NS_INSTANTIATION )
 api.add_resource(NsIdTermination, Service.NS_TERMINATION )
 api.add_resource(NsScale, Service.NS_SCALE )
 
-
-
-
+api.add_resource(CreatePmJobs, Service.CREATE_PM_JOB )
+api.add_resource(QueryPmJob, Service.QUERY_PM_JOB )
+ 
 
 #api.add_resource(ttt, Service.NSD_ON_BOARDING )
 
