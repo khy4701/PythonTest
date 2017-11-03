@@ -6,7 +6,7 @@ if [ $# -lt 1 ]; then
     exit 0
 fi
 
-result= `/bin/git add --all`
+/bin/git add --all 2>&1
 echo $result
 echo "Add finish.."
 
