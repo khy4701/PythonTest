@@ -38,13 +38,13 @@ class PLTEConnector(Connector):
     def sendMessage(self, apiName, httpReqMsg):
         
         self.logger.info("Send Message..!")
-
         
         pData = ctypes.cast(ctypes.byref(httpReqMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpReqMsg)))
 
         try:
             if self.plteQueue is not None :
-                    self.plteQueue.send( pData.contents.raw, True, HttpReq.MTYPE_RESTIF_TO_APP_REQ )
+                    maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
+                    self.plteQueue.send( pData.contents.raw, True, HttpReq.MTYPE_RESTIF_TO_APP_REQ , max_message_size = int(maxQSize))
 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
