@@ -30,7 +30,9 @@ class PLTEConnector(Connector):
 
         self.plteQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))
         try :                
-                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId )
+                maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
+                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId , max_message_size = int(maxQSize))
+                    
         except Exception as e:
                 self.logger.error("msgQueue Connection Failed.. PLTE QUEUE_ID[%d]" % self.plteQueId)
 
@@ -43,8 +45,8 @@ class PLTEConnector(Connector):
 
         try:
             if self.plteQueue is not None :
-                    maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
-                    self.plteQueue.send( pData.contents.raw, True, HttpReq.MTYPE_RESTIF_TO_APP_REQ , max_message_size = int(maxQSize))
+                    
+                self.plteQueue.send( pData.contents.raw, True, HttpReq.MTYPE_RESTIF_TO_APP_REQ )
 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
