@@ -50,7 +50,6 @@ class NsIdCreation(Resource, ServiceManager):
                        # mimetype=content_type,
             status=self.rspCode
         )
-
     
     # overide method
     def setComplete(self, rspCode, reqId, rcvMsg):

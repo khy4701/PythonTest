@@ -48,7 +48,7 @@ class ResReceiver(Receiver):
                     self.resReceiver.start()
             
         except Exception as e:
-                ResReceiver.logger.error("msgQueue Connection Failed.. RESTIF_S QUEUE_ID[%d] %s" % (myQueId, e))
+                ResReceiver.logger.error("msgQueue Connection Failed.. RESTIF_S QUEUE_ID[%d] SIZE[%s] %s" % (myQueId, maxQSize, e))
 
         return None
 
@@ -69,9 +69,7 @@ class ResReceiver(Receiver):
 
                 # Server Mode( Handling Response Message )
                 ctypes.memmove(ctypes.pointer(resMsg), mydata ,ctypes.sizeof(resMsg))
-        
-                time.sleep(1)
-        
+                
                 headerMsg = resMsg.http_hdr
         
                 # Receive Message Logging
