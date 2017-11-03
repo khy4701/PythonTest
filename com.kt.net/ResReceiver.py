@@ -42,7 +42,7 @@ class ResReceiver(Receiver):
                     myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF_S" ))
                     maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
     
-                    ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777, max_message_size = maxQSize )
+                    ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777, max_message_size = int(maxQSize) )
                     
                     self.resReceiver = self
                     self.resReceiver.start()
