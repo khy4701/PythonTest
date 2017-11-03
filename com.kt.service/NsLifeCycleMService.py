@@ -1,6 +1,7 @@
 import time
 
 from flask import request
+import flask
 from flask.json import jsonify
 from flask_restful import Resource
 
@@ -63,10 +64,11 @@ class NsIdCreation(Resource, ServiceManager):
         
         # [RESTIF->WEB] SEND RESPONSE
         
-        name = content['name']
-        age = content['age']
-
-        return jsonify( name=name , age = age)
+        return flask.Response(
+            self.resMsg.jsonBody,
+                       # mimetype=content_type,
+            status=self.rspCode
+        )
 
     
     # overide method
