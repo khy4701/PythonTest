@@ -31,7 +31,7 @@ class PLTEConnector(Connector):
         self.plteQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))
         try :                
                 maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
-                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId)
+                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId, max_message_size = int(maxQSize) )
                     
         except Exception as e:
                 self.logger.error("msgQueue Connection Failed.. PLTE QUEUE_ID[%d] SIZE[%s]" % (self.plteQueId, maxQSize))
