@@ -34,9 +34,12 @@ class NsIdCreation(Resource, ServiceManager):
                 self.logger.info("BODY : "  + str(content))
                 self.logger.info("===============================================");
                         
+
+        self.logger.info("MAKE SEND STRUCT");
         # [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
         #resMsg = 'temp'
+        self.logger.info("[RESTIF->APP] SEND QUEUE MESSAGE(RELAY)");
         reqMsg = self.setReqMessage(content, self.clientId)
         
         # [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
