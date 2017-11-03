@@ -51,7 +51,7 @@ class ServiceManager:
             logger.info("RESTIF -> [WEB]")
             logger.info("===============================================");
             logger.info("TID : " + str(resMsg.msgId))
-            logger.info("RESCODE : " + str(resMsg.resMsg))
+            logger.info("RESCODE : " + str(resMsg.nResult))
             logger.info("BODY : "  + str(resMsg.jsonBody))
             logger.info("===============================================");
 
