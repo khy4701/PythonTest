@@ -20,10 +20,10 @@ class NsIdCreation(Resource, ServiceManager):
 
         # [WEB->RESTIF] RECEIVE PROCESS
         content = request.get_json(force=True)
-#         data = dict()
-#         
-#         for keys in content.keys():
-#             data[keys] = content[keys]
+        data = dict()
+         
+        for keys in content.keys():
+            data[keys] = content[keys]
 
         # [WEB->RESTIF] RECEIVE LOGGING       
         if ConfManager.getInstance().getLogFlag():
@@ -40,7 +40,7 @@ class NsIdCreation(Resource, ServiceManager):
         self.clientId = PLTEManager.getInstance().getClientReqId()
         #resMsg = 'temp'
         self.logger.info("[RESTIF->APP] SEND QUEUE MESSAGE(RELAY)");
-        reqMsg = self.setReqMessage(content, self.clientId)
+        reqMsg = self.setReqMessage(data, self.clientId)
         
         # [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         self.logger.info("[RESTIF->APP] SEND QUEUE MESSAGE(RELAY)");
