@@ -10,3 +10,5 @@ class ApiDefine():
     NS_INSTANTIATION = "ns-instantiation"
     NS_TERMINATION   = "ns-termination"
     NS_SCALE        = "ns-scale"
+    CREATE_PM_JOB = "crt-pm-job"
+    QUERY_PM_JOB = "query-pm-job"

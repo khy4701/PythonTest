@@ -15,6 +15,10 @@ class Service:
     NS_INSTANTIATION = "/nslcm/v1/ns_instances/<string:nsInstanceId>/instantiate"
     NS_TERMINATION   = "/nslcm/v1/ns_instances/<string:nsInstanceId>/terminate"
     NS_SCALE        = "/nslcm/v1/ns_instances/<string:nsInstanceId>/scale"
+    
+    CREATE_PM_JOB    = "/nspm/v1/pm_jobs"
+    QUERY_PM_JOB     = "/nspm/v1/pm_jobs/<string:pmJobId>/reports/<string:reportId>"
+
 
     def __init__(self):
             pass
