@@ -20,8 +20,11 @@ class CreatePmJobs(Resource, ServiceManager):
     def post(self):
 
         # 1. [WEB->RESTIF] RECEIVE PROCESS
-        content = request.get_json(force=True)
-        data = json.dumps(content)
+        try:
+            content = request.get_json(force=True)
+            data = json.dumps(content)
+        except Exception as e:
+            data = ''        
    
         # 2. [WEB->RESTIF] RECEIVE LOGGING       
         ServiceManager.RecvLogging(self.logger, data, request)
@@ -65,8 +68,11 @@ class QueryPmJob(Resource, ServiceManager):
     def post(self,pmJobId,reportId):
 
         # 1. [WEB->RESTIF] RECEIVE PROCESS
-        content = request.get_json(force=True)
-        data = json.dumps(content)
+        try:
+            content = request.get_json(force=True)
+            data = json.dumps(content)
+        except Exception as e:
+            data = ''       
    
         # 2. [WEB->RESTIF] RECEIVE LOGGING       
         ServiceManager.RecvLogging(self.logger, data, request)
