@@ -45,7 +45,7 @@ class ServiceManager:
             logger.info("===============================================");
             
     @staticmethod
-    def SendLogging(logger, data, resMsg):
+    def SendLogging(logger, resMsg):
         if ConfManager.getInstance().getLogFlag():
             logger.info("===============================================");
             logger.info("RESTIF -> [WEB]")
