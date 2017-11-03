@@ -39,8 +39,10 @@ class ResReceiver(Receiver):
                     #IPC_CREAT : create or return key if it is allocated.
                     #IPC_CREX  : IPC_CREAT | IPC_EXCL 
                     #IPC_EXCL  : return -1 if there is already allocated.
-                    myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF_S" ))    
-                    ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777 )
+                    myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF_S" ))
+                    maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
+    
+                    ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777, max_message_size = maxQSize )
                     
                     self.resReceiver = self
                     self.resReceiver.start()

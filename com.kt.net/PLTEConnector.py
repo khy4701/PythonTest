@@ -29,8 +29,8 @@ class PLTEConnector(Connector):
         Connector.__init__(self, PLTEManager.getInstance())
 
         self.plteQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "PLTEIB" ))
-        try :
-                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId)
+        try :                
+                self.plteQueue = sysv_ipc.MessageQueue(self.plteQueId )
         except Exception as e:
                 self.logger.error("msgQueue Connection Failed.. PLTE QUEUE_ID[%d]" % self.plteQueId)
 

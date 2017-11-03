@@ -40,7 +40,9 @@ class ReqReceiver(Receiver):
                     #IPC_CREX  : IPC_CREAT | IPC_EXCL 
                     #IPC_EXCL  : return -1 if there is already allocated.
                     myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF_C" ))    
-                    ReqReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777 )
+                    maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
+
+                    ReqReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777 , max_message_size = maxQSize )
                     
                     self.reqReceiver = self
                     self.reqReceiver.start()

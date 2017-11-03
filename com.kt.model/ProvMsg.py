@@ -2,7 +2,7 @@
 from _ctypes import Structure
 from ctypes import c_int, c_ubyte, c_char, c_short, c_long
 
-HTTPF_MSG_BUFSIZE = 1024
+HTTPF_MSG_BUFSIZE = 2048
 
 MTYPE_CLIENT_MODE = 500
 MTYPE_SERVER_MODE = 600
