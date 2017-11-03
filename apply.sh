@@ -6,12 +6,12 @@ if [ $# -lt 1 ]; then
     exit 0
 fi
 
-result= git add --all | echo
+result= `git add --all | echo`
 echo $result
 echo "Add finish.."
 
 sleep 1
-res= git commit -m $1 | echo
+res= `git commit -m $1 | echo`
 
 echo $res
 
