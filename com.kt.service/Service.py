@@ -12,9 +12,9 @@ class Service:
     # NS Lifecycle management
     NS_ID_CREATE     = "/nslcm/v1/ns_instances"
     # NS_ID_DELETE     = "/ns_descriptors/{nsdInfoId}"
-    NS_INSTANTIATION = "/nslcm/v1/ns_instances/{nsInstanceId}/instantiate"
-    NS_TERMINATION   = "/nslcm/v1/ns_instances/{nsInstanceId}/terminate"
-    NS_SCALE        = "/nslcm/v1/ns_instances/{nsInstanceId}/scale"
+    NS_INSTANTIATION = "/nslcm/v1/ns_instances/nsInstanceId/instantiate"
+    NS_TERMINATION   = "/nslcm/v1/ns_instances/nsInstanceId/terminate"
+    NS_SCALE        = "/nslcm/v1/ns_instances/nsInstanceId/scale"
 
     def __init__(self):
             pass
