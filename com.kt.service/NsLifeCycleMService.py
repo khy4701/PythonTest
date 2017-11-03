@@ -1,7 +1,6 @@
 import time
 
 from flask import request
-import flask
 from flask.json import jsonify
 from flask_restful import Resource
 
@@ -13,7 +12,7 @@ from ProvMsg import HttpRes, HttpReq, HttpHeader
 from ServiceManager import ServiceManager
 
 
-class NsdOnboarding(Resource, ServiceManager):
+class NsIdCreation(Resource, ServiceManager):
 
     logger = LogManager.getInstance().get_logger()
     
@@ -52,7 +51,6 @@ class NsdOnboarding(Resource, ServiceManager):
             except Exception as e:
                 self.logger.error(e)
         
-        
         # [RESTIF->WEB] SEND LOGGING
         if ConfManager.getInstance().getLogFlag():
                 self.logger.info("===============================================");
@@ -60,25 +58,21 @@ class NsdOnboarding(Resource, ServiceManager):
                 self.logger.info("===============================================");
                 self.logger.info("TID : " + str(self.receiveReqId))
                 self.logger.info("RESCODE : " + str(self.rspCode))
-                self.logger.info("BODY : "  + str(self.body))
+#                self.logger.info("BODY : "  + str(self.body))
                 self.logger.info("===============================================");
         
         
         # [RESTIF->WEB] SEND RESPONSE
         
-        #name = content['name']
-        #age = content['age']
+        name = content['name']
+        age = content['age']
 
-        #return jsonify( name=name , age = age)
-        return flask.Response(
-            self.resMsg.jsonBody,
-           # mimetype=content_type,
-            status=self.rspCode
-        )
-        
+        return jsonify( name=name , age = age)
+
+    
     # overide method
     def setComplete(self, rspCode, reqId, rcvMsg):
-        self.resMsg = rcvMsg
+        self.msg = rcvMsg
         self.rspCode = rspCode
         self.receiveReqId = reqId
     
@@ -91,8 +85,8 @@ class NsdOnboarding(Resource, ServiceManager):
         header.method = 1
         header.api_type = 2
         header.op_type = 3
-        header.encoding = '5'
-        header.length = 4        
+        header.length = 4
+        header.encoding = '5'        
                  
         httpMsg.msgId = reqId
         httpMsg.ehttpf_idx = 71

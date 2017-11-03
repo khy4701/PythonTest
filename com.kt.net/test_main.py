@@ -25,6 +25,9 @@ api.add_resource(Departments_Meta2,'/departments/')
 
 
 api.add_resource(NsdOnboarding, Service.NSD_ON_BOARDING )
+
+
+
 #api.add_resource(ttt, Service.NSD_ON_BOARDING )
 
 # def http_error_handler(error):

@@ -35,26 +35,9 @@ class PLTEConnector(Connector):
                 self.logger.error("msgQueue Connection Failed.. PLTE QUEUE_ID[%d]" % self.plteQueId)
 
 
-    def sendMessage(self, apiName, reqId, receiveMsg):
+    def sendMessage(self, apiName, httpReqMsg):
         
-        httpMsg =  HttpReq()
-        header = HttpHeader()
-         
-        header.method = 1
-        header.api_type = 2
-        header.op_type = 3
-        header.length = 4
-        header.encoding = '5'        
-                 
-        httpMsg.tot_len = 100
-        httpMsg.msgId = reqId
-        httpMsg.ehttpf_idx = 71
-        httpMsg.srcQid = 300
-        httpMsg.srcSysId = '1'
-        httpMsg.http_hdr = header
-        httpMsg.jsonBody = receiveMsg
-
-        pData = ctypes.cast(ctypes.byref(httpMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpMsg)))
+        pData = ctypes.cast(ctypes.byref(httpReqMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpReqMsg)))
 
         try:
             if self.plteQueue is not None :
@@ -69,8 +52,8 @@ class PLTEConnector(Connector):
             self.logger.info("RESTIF -> PLTEIB")
             self.logger.info("===============================================")
             self.logger.info("API_NAME : " + str(apiName))
-            self.logger.info("PID   : "+ str(reqId))
-            self.logger.info("BODY   : " + str(receiveMsg))
+            self.logger.info("PID   : "+ str(httpReqMsg.msgId))
+            self.logger.info("BODY   : " + str(httpReqMsg.jsonBody))
             self.logger.info("===============================================")
             
         return True

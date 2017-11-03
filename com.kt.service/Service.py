@@ -10,13 +10,11 @@ class Service:
     NSD_QUERY       = "/ns_descriptors/{nsdInfoId}"
     
     # NS Lifecycle management
-    NS_ID_CREATE     = "/ns_instances"
-    NS_ID_DELETE     = "/ns_descriptors/{nsdInfoId}"
-    NS_INSTANTIATION = "/ns_instances/{nsInstanceId}/instantiate"
-    NS_TERMINATION   = "/ns_instances/{nsInstanceId}/terminate"
-    NS_UPDATE        = "/ns_instances/{nsInstanceId}/update"
-    NS_SCALE_OUT     = "/ns_lcm_op_ops/{nsLcmOpOccId}/<<Task>>"
-    NS_SCALE_IN      = "/ns_lcm_op_ops/{nsLcmOpOccId}/<<Task>>"
+    NS_ID_CREATE     = "/nslcm/v1/ns_instances"
+    # NS_ID_DELETE     = "/ns_descriptors/{nsdInfoId}"
+    NS_INSTANTIATION = "/nslcm/v1/ns_instances/{nsInstanceId}/instantiate"
+    NS_TERMINATION   = "/nslcm/v1/ns_instances/{nsInstanceId}/terminate"
+    NS_SCALE        = "/nslcm/v1/ns_instances/{nsInstanceId}/scale"
 
     def __init__(self):
             pass

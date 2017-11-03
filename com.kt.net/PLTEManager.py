@@ -45,18 +45,18 @@ class PLTEManager(Manager):
         return self.clientReqId
     
     @staticmethod
-    def sendCommand(command, source, reqId, msg):
+    def sendCommand(command, source, httpReqMsg):
         # To avoid circular dependencies --> import under Function.
         from PLTEConnector import PLTEConnector
         
-        senderInfo = SenderInfo(source, reqId)
+        senderInfo = SenderInfo(source, httpReqMsg.msgId)
         
         # Transcation List Add
         
         PLTEManager.plteMembers.append(senderInfo)
 
                 
-        if not PLTEConnector.getInstance().sendMessage(command, reqId, msg):
+        if not PLTEConnector.getInstance().sendMessage(command, httpReqMsg):
             # Transcation List Remove
             PLTEManager.plteMembers.remove(senderInfo)
         
