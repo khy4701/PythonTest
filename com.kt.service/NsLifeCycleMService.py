@@ -62,7 +62,7 @@ class NsIdCreation(Resource, ServiceManager):
 class NsInstantiation(Resource, ServiceManager):
     logger = LogManager.getInstance().get_logger()
     
-    def post(self):
+    def post(self,nsInstanceId ):
 
         # 1. [WEB->RESTIF] RECEIVE PROCESS
         content = request.get_json(force=True)
@@ -107,7 +107,7 @@ class NsInstantiation(Resource, ServiceManager):
 class NsIdTermination(Resource, ServiceManager):
     logger = LogManager.getInstance().get_logger()
     
-    def post(self):
+    def post(self,nsInstanceId):
 
         # 1. [WEB->RESTIF] RECEIVE PROCESS
         content = request.get_json(force=True)
@@ -152,7 +152,7 @@ class NsIdTermination(Resource, ServiceManager):
 class NsScale(Resource, ServiceManager):
     logger = LogManager.getInstance().get_logger()
     
-    def post(self):
+    def post(self,nsInstanceId):
 
         # 1. [WEB->RESTIF] RECEIVE PROCESS
         content = request.get_json(force=True)
