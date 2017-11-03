@@ -41,7 +41,7 @@ class NsIdCreation(Resource, ServiceManager):
         
         # [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         
-        PLTEManager.getInstance().sendCommand(ApiDefine.NSD_ON_BOARDING, self, reqMsg)
+        PLTEManager.getInstance().sendCommand(ApiDefine.NS_ID_CREATE, self, reqMsg)
                                         
         # WAIT                
         self.receiveReqId = -1

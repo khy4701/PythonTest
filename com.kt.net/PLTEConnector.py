@@ -37,7 +37,10 @@ class PLTEConnector(Connector):
 
     def sendMessage(self, apiName, httpReqMsg):
         
-        pData = ctypes.cast(ctypes.byref(httpReqMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpReqMsg)))
+        self.logger.info("Send Message..!")
+
+        
+        pData = ctypes.cast(ctypes.byref(HttpReq), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(HttpReq)))
 
         try:
             if self.plteQueue is not None :

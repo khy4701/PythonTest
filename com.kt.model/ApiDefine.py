@@ -6,4 +6,5 @@ class ApiDefine():
     
     
     NSD_ON_BOARDING = "nsd-on-boarding"
+    NS_ID_CREATE = "ns-identifier-create"
 
