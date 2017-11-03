@@ -27,6 +27,11 @@ api.add_resource(Departments_Meta2,'/departments/')
 
 api.add_resource(NsdOnboarding, Service.NSD_ON_BOARDING )
 api.add_resource(NsIdCreation, Service.NS_ID_CREATE )
+api.add_resource(NsInstantiation, Service.NS_INSTANTIATION )
+api.add_resource(NsIdTermination, Service.NS_TERMINATION )
+api.add_resource(NsScale, Service.NS_SCALE )
+
+
 
 
 

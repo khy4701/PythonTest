@@ -19,33 +19,21 @@ class NsIdCreation(Resource, ServiceManager):
     
     def post(self):
 
-        # [WEB->RESTIF] RECEIVE PROCESS
+        # 1. [WEB->RESTIF] RECEIVE PROCESS
         content = request.get_json(force=True)
-   
         data = json.dumps(content)
    
-        # [WEB->RESTIF] RECEIVE LOGGING       
-        if ConfManager.getInstance().getLogFlag():
-                self.logger.info("===============================================");
-                self.logger.info("[WEB] -> RESTIF")
-                self.logger.info("===============================================");
-                self.logger.info("REQUEST URL : " + request.url)
-                self.logger.info("BODY : "  + data)
-                self.logger.info("===============================================");
+        # 2. [WEB->RESTIF] RECEIVE LOGGING       
+        ServiceManager.RecvLogging(self.logger, data, request)
                         
-
-        self.logger.info("MAKE SEND STRUCT");
-        # [RESTIF->APP] MAKE SEND STRUCT
+        # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        #resMsg = 'temp'
-        self.logger.info("[RESTIF->APP] SEND QUEUE MESSAGE(RELAY)");
-        reqMsg = self.setReqMessage(data, self.clientId)
-        
-        # [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
-        self.logger.info("[RESTIF->APP] SEND QUEUE MESSAGE(RELAY)");
+        reqMsg = ServiceManager.setApiToStructMsg(data, self.clientId)
+                
+        # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_ID_CREATE, self, reqMsg)
                                         
-        # WAIT                
+        # 5. WAIT                
         self.receiveReqId = -1
         while self.clientId != self.receiveReqId:
             try:
@@ -53,19 +41,10 @@ class NsIdCreation(Resource, ServiceManager):
             except Exception as e:
                 self.logger.error(e)
         
-        # [RESTIF->WEB] SEND LOGGING
-        if ConfManager.getInstance().getLogFlag():
-                self.logger.info("===============================================");
-                self.logger.info("RESTIF -> [WEB]")
-                self.logger.info("===============================================");
-                self.logger.info("TID : " + str(self.receiveReqId))
-                self.logger.info("RESCODE : " + str(self.rspCode))
-                self.logger.info("BODY : "  + str(self.resMsg.jsonBody))
-                self.logger.info("===============================================");
-        
-        
-        # [RESTIF->WEB] SEND RESPONSE
-        
+        # 6. [RESTIF->WEB] SEND LOGGING
+        ServiceManager.SendLogging(self.logger, self.resMsg)
+
+        # 7. [RESTIF->WEB] SEND RESPONSE        
         return flask.Response(
             self.resMsg.jsonBody,
                        # mimetype=content_type,
@@ -79,26 +58,11 @@ class NsIdCreation(Resource, ServiceManager):
         self.rspCode = rspCode
         self.receiveReqId = reqId
     
-    # overide method    
-    def setReqMessage(self, receiveMsg, reqId):
 
-        httpMsg =  HttpReq()
-        header = HttpHeader()
-         
-        header.method = 1
-        header.api_type = 2
-        header.op_type = 3
-        header.length = 4
-        header.encoding = '5'        
-                 
-        httpMsg.msgId = reqId
-        httpMsg.ehttpf_idx = 71
-        httpMsg.srcQid = 300
-        httpMsg.srcSysId = '1'
-        httpMsg.http_hdr = header
-        httpMsg.jsonBody = receiveMsg
-        
-        httpMsg.tot_len = 100
+class NsInstantiation(Resource, ServiceManager):
+    pass
+    
+    
 
-        
-        return httpMsg
+#api.add_resource(NsIdTermination, Service.NS_TERMINATION )
+#api.add_resource(NsScale, Service.NS_SCALE )
