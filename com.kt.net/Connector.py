@@ -26,36 +26,10 @@ class Connector():
         self.manager = manager
         
 #       signal.signal(signal.SIGINT, self.signal_handler)
-#        try :
-#                #IPC_CREAT : create or return key if it is allocated.
-#                #IPC_CREX  : IPC_CREAT | IPC_EXCL 
-#                #IPC_EXCL  : return -1 if there is already allocated.
-#                self.myQueue = sysv_ipc.MessageQueue(self.myQueId, sysv_ipc.IPC_CREAT, mode=0666 )
-#        except Exception as e:
-#                self.logger.error("msgQueue Connection Failed.. RESTIF QUEUE_ID[%d]" % self.myQueId)
 
-#         self.reader = self
-#         self.reader.start()
-        
         return 
         
     @abstractmethod    
     def sendMessage(self):
         pass
     
-#    @abstractmethod    
-#    def readMessage(self):
-#        pass
-        
-#     def run(self):      
-# 
-#         try:                                
-#             while self.reader == self:
-#                 usleep(100)
-#                 #self.readMessage()
-#                 
-#         except Exception as e:
-#             self.logger.error(e)
-# #       self.readMessage()
-                           
-                            
