@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 
+from NsLifeCycleMService import NsIdCreation
 from NsdManageService import NsdOnboarding
 from PLTEConnector import PLTEConnector
 from ReqReceiver import ReqReceiver
@@ -25,6 +26,7 @@ api.add_resource(Departments_Meta2,'/departments/')
 
 
 api.add_resource(NsdOnboarding, Service.NSD_ON_BOARDING )
+api.add_resource(NsIdCreation, Service.NS_ID_CREATE )
 
 
 
