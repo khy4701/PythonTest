@@ -73,7 +73,7 @@ class NsIdCreation(Resource, ServiceManager):
     
     # overide method
     def setComplete(self, rspCode, reqId, rcvMsg):
-        self.msg = rcvMsg
+        self.resMsg = rcvMsg
         self.rspCode = rspCode
         self.receiveReqId = reqId
     
