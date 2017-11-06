@@ -52,17 +52,24 @@ class HttpRes(Structure):
                 ("tot_len", c_int),      # 4
                 ("msgId", c_int),        # 4
                 ("ehttpf_idx", c_short), # 2
+                ("tid", c_uint8),
                 ("srcQid", c_int),       # 4
                 ("srcSysId", c_char ),   # 1
                 ("nResult", c_int),       # 4
                 ("http_hdr", HttpHeader),  # 17
                 ("jsonBody", c_char * HTTPF_MSG_BUFSIZE ) ]  # 1024
     
-class GeneralQMsgType(Structure):   
+class GeneralQReqMsg(Structure):   
     MTYPE_APP_TO_RESTIF_REQ = 100   
     MTYPE_RESTIF_TO_APP_REQ = 101
+
+    _fields_ = [("body", HttpReq)]
+    
+class GeneralQResMsg(Structure):   
     MTYPE_APP_TO_RESTIF_RES = 102
     MTYPE_RESTIF_TO_APP_RES = 103
 
-    _fields_ = [("body", MAX_GEN_QMSG_LEN)]
+    _fields_ = [("body", HttpRes)]    
+    
+
     

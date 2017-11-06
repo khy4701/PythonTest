@@ -4,7 +4,7 @@ import time
 from ClientService import ClientService
 from ConfigManager import ConfManager
 from LogManager import LogManager
-from ProvMsg import GeneralQMsgType, MTYPE_SERVER_MODE
+from ProvMsg import GeneralQReqMsg, MTYPE_SERVER_MODE
 from Receiver import Receiver
 import sysv_ipc
 
@@ -57,7 +57,7 @@ class ReqReceiver(Receiver):
                 self.logger.error("msgQueue[RESTIF_RECV] Get Failed...")
                 return
             
-            GenQMsg = GeneralQMsgType()        
+            GenQMsg = GeneralQReqMsg()        
             (message, msgType) = ReqReceiver.myQueue.receive(ctypes.sizeof(GenQMsg))
             mydata = ctypes.create_string_buffer( message )
             

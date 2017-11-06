@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 import ctypes
+
+from ConfigManager import ConfManager
+from Connector import Connector
+from LogManager import LogManager
 import PLTEConnector
 from PLTEManager import PLTEManager
-from ProvMsg import GeneralQMsgType
+from ProvMsg import GeneralQResMsg, GeneralQReqMsg
 import sysv_ipc
 
 
@@ -36,7 +40,7 @@ class PLTEConnector(Connector):
         
         self.logger.info("Send Message..!")
         
-        GenQMsg = GeneralQMsgType()        
+        GenQMsg = GeneralQReqMsg()        
         GenQMsg.body = httpReqMsg
         
         pData = ctypes.cast(ctypes.byref(GenQMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(GenQMsg)))
@@ -44,7 +48,7 @@ class PLTEConnector(Connector):
         try:
             if self.plteQueue is not None :
                     
-                self.plteQueue.send( pData.contents.raw, True, GeneralQMsgType.MTYPE_RESTIF_TO_APP_REQ )
+                self.plteQueue.send( pData.contents.raw, True, GeneralQReqMsg.MTYPE_RESTIF_TO_APP_REQ )
 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
@@ -64,7 +68,7 @@ class PLTEConnector(Connector):
 
     def sendResMessage(self, command, resMsg):
                 
-        GenQMsg = GeneralQMsgType()        
+        GenQMsg = GeneralQResMsg()        
         GenQMsg.body = resMsg
         
         pData = ctypes.cast(ctypes.byref(GenQMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(GenQMsg)))
@@ -72,7 +76,7 @@ class PLTEConnector(Connector):
             if self.plteQueue is not None :
                 
                 # MSG TYPE Check!
-                self.plteQueue.send( pData.contents.raw, True, GeneralQMsgType.MTYPE_RESTIF_TO_APP_RES )
+                self.plteQueue.send( pData.contents.raw, True, GeneralQResMsg.MTYPE_RESTIF_TO_APP_RES )
                 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
