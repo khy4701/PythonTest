@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 
+from NotiOfLcm import NotiOfLcm
 from NsLifeCycleMService import NsIdCreation, NsInstantiation, NsIdTermination, \
     NsScale
 from NsPerformanceMService import CreatePmJobs, QueryPmJob
@@ -36,6 +37,7 @@ api.add_resource(NsScale, Service.NS_SCALE )
 api.add_resource(CreatePmJobs, Service.CREATE_PM_JOB )
 api.add_resource(QueryPmJob, Service.QUERY_PM_JOB )
  
+api.add_resource(NotiOfLcm,Service.NOTI_OF_LCM)
 
 #api.add_resource(ttt, Service.NSD_ON_BOARDING )
 

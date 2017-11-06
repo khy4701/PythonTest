@@ -12,3 +12,5 @@ class ApiDefine():
     NS_SCALE        = "ns-scale"
     CREATE_PM_JOB = "crt-pm-job"
     QUERY_PM_JOB = "query-pm-job"
+    
+    NOTI_OF_LCM  = "noti-of-lcm"
