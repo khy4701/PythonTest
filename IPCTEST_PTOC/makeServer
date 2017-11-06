@@ -1,0 +1,18 @@
+#!/bin/sh
+
+INCLUDES	= http_app.h
+
+SRCS        = sclient.c
+PROG1       = sclient
+
+OBJS        = $(SRCS:.c=.o)
+
+%.o : %.c
+	$(CC) $(iNCLUDES) -c $<
+
+$(PROG1): $(OBJS)
+	$(CC) $(INCLUDES) -o sclient $(OBJS)
+
+clean:
+	/bin/rm -f *.o $(PROG1) core*
+
