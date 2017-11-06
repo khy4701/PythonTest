@@ -2,14 +2,11 @@ import time
 
 from flask import request, json
 import flask
-from flask.json import jsonify
 from flask_restful import Resource
 
 from ApiDefine import ApiDefine
-from ConfigManager import ConfManager
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import HttpRes, HttpReq, HttpHeader
 from ServiceManager import ServiceManager
 
 

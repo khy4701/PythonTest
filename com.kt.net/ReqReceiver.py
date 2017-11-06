@@ -1,13 +1,10 @@
 import ctypes
-import threading
 import time
 
 from ClientService import ClientService
 from ConfigManager import ConfManager
-from Connector import Connector
 from LogManager import LogManager
-from PLTEManager import PLTEManager
-from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE
+from ProvMsg import GeneralQMsgType, MTYPE_SERVER_MODE
 from Receiver import Receiver
 import sysv_ipc
 
@@ -60,11 +57,14 @@ class ReqReceiver(Receiver):
                 self.logger.error("msgQueue[RESTIF_RECV] Get Failed...")
                 return
             
-            reqMsg = HttpReq()
-            (message, msgType) = ReqReceiver.myQueue.receive(ctypes.sizeof(reqMsg))
+            GenQMsg = GeneralQMsgType()        
+            (message, msgType) = ReqReceiver.myQueue.receive(ctypes.sizeof(GenQMsg))
             mydata = ctypes.create_string_buffer( message )
             
-            if msgType == MTYPE_CLIENT_MODE:    
+            reqMsg = GenQMsg.body
+
+            
+            if msgType == MTYPE_SERVER_MODE:    
                 # Client Mode ( Handling Request Message )
                 
                 ctypes.memmove(ctypes.pointer(reqMsg), mydata ,ctypes.sizeof(reqMsg))

@@ -1,7 +1,10 @@
 
 from _ctypes import Structure
-from ctypes import c_int, c_ubyte, c_char, c_short, c_long
+from ctypes import c_int, c_ubyte, c_char, c_short, c_long, c_uint8
+import ctypes
 
+
+MAX_GEN_QMSG_LEN  = 32768 - ctypes.sizeof(ctypes.c_long)
 HTTPF_MSG_BUFSIZE = 2048
 
 MTYPE_CLIENT_MODE = 500
@@ -13,9 +16,7 @@ class provMsg(Structure):
          ("ce", c_char * 64),
          ("syms", c_int)]
         # ("ce", c_ubyte * 4),
-                  # ("syms", c_ubyte * 4)]
-
-
+      # ("syms", c_ubyte * 4)]
 
 # 4 * 5 = 20 (char -- 4bytes) 
 class HttpHeader(Structure):
@@ -31,13 +32,13 @@ class HttpHeader(Structure):
 # 1024 + 8 + 4*5 + 20 =  1072
 class HttpReq(Structure):
 
-    MTYPE_APP_TO_RESTIF_REQ = 100   
-    MTYPE_RESTIF_TO_APP_REQ = 101
     # Serialization ( if don't put this field, it'll calculate 4 byte each other )
 #    _pack_ = 1
-    _fields_ = [("tot_len", c_int),      # 4
+    _fields_ = [("mtype", c_long),
+                ("tot_len", c_int),      # 4
                 ("msgId", c_int),        # 4
                 ("ehttpf_idx", c_short), # 2
+                ("tid", c_uint8),
                 ("srcQid", c_int),       # 4
                 ("srcSysId", c_char ),   # 1
                 ("http_hdr", HttpHeader),  # 17
@@ -45,11 +46,10 @@ class HttpReq(Structure):
 
 class HttpRes(Structure):
 
-    MTYPE_APP_TO_RESTIF_RES = 102
-    MTYPE_RESTIF_TO_APP_RES = 103
     # Serialization ( if don't put this field, it'll calculate 4 byte each other )
 #    _pack_ = 1
-    _fields_ = [("tot_len", c_int),      # 4
+    _fields_ = [("mtype", c_long),
+                ("tot_len", c_int),      # 4
                 ("msgId", c_int),        # 4
                 ("ehttpf_idx", c_short), # 2
                 ("srcQid", c_int),       # 4
@@ -57,4 +57,12 @@ class HttpRes(Structure):
                 ("nResult", c_int),       # 4
                 ("http_hdr", HttpHeader),  # 17
                 ("jsonBody", c_char * HTTPF_MSG_BUFSIZE ) ]  # 1024
+    
+class GeneralQMsgType(Structure):   
+    MTYPE_APP_TO_RESTIF_REQ = 100   
+    MTYPE_RESTIF_TO_APP_REQ = 101
+    MTYPE_APP_TO_RESTIF_RES = 102
+    MTYPE_RESTIF_TO_APP_RES = 103
 
+    _fields_ = [("body", MAX_GEN_QMSG_LEN)]
+    

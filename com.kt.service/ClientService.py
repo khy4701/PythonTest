@@ -29,6 +29,7 @@ class ClientService(threading.Thread):
         head = {'Content-type':'application/x-www-form-urlencoded', 'Accept':'application/json'} 
 
         # 1. [RESTIF->EXT] INPUT REQUSET MESSAGE ( httpReq -> REST API )
+        
         payload = self.reqMsg.jsonBody
         
         # 2. [RESTIF->EXT] CLIENT SEND LOGGING        

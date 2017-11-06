@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
-import Connector
-import PLTEConnector
 import ctypes
-import sys
-
-from ConfigManager import ConfManager
-from Connector import *
+import PLTEConnector
 from PLTEManager import PLTEManager
-from ProvMsg import HttpReq, HttpRes, HttpHeader
-import sysv_ipc, time, signal
+from ProvMsg import GeneralQMsgType
+import sysv_ipc
 
 
 class PLTEConnector(Connector):
@@ -41,12 +36,15 @@ class PLTEConnector(Connector):
         
         self.logger.info("Send Message..!")
         
-        pData = ctypes.cast(ctypes.byref(httpReqMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpReqMsg)))
+        GenQMsg = GeneralQMsgType()        
+        GenQMsg.body = httpReqMsg
+        
+        pData = ctypes.cast(ctypes.byref(GenQMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(GenQMsg)))
 
         try:
             if self.plteQueue is not None :
                     
-                self.plteQueue.send( pData.contents.raw, True, HttpReq.MTYPE_RESTIF_TO_APP_REQ )
+                self.plteQueue.send( pData.contents.raw, True, GeneralQMsgType.MTYPE_RESTIF_TO_APP_REQ )
 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
@@ -66,12 +64,15 @@ class PLTEConnector(Connector):
 
     def sendResMessage(self, command, resMsg):
                 
-        pData = ctypes.cast(ctypes.byref(resMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(resMsg)))
+        GenQMsg = GeneralQMsgType()        
+        GenQMsg.body = resMsg
+        
+        pData = ctypes.cast(ctypes.byref(GenQMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(GenQMsg)))
         try:
             if self.plteQueue is not None :
                 
                 # MSG TYPE Check!
-                self.plteQueue.send( pData.contents.raw, True, HttpRes.MTYPE_RESTIF_TO_APP_RES )
+                self.plteQueue.send( pData.contents.raw, True, GeneralQMsgType.MTYPE_RESTIF_TO_APP_RES )
                 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)

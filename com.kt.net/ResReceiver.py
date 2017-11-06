@@ -6,7 +6,8 @@ from ConfigManager import ConfManager
 from Connector import Connector
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE
+from ProvMsg import MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE, \
+    GeneralQMsgType
 from Receiver import Receiver
 import sysv_ipc
 
@@ -59,13 +60,14 @@ class ResReceiver(Receiver):
             if ResReceiver.myQueue is None:
                 self.logger.error("msgQueue[MYQUEUE] Get Failed...")
                 return
-            
-            resMsg = HttpRes()
-            
-            (message, msgType) = ResReceiver.myQueue.receive(ctypes.sizeof(resMsg))
+                                   
+            GenQMsg = GeneralQMsgType()        
+            (message, msgType) = ResReceiver.myQueue.receive(ctypes.sizeof(GenQMsg))
             mydata = ctypes.create_string_buffer( message )
-                        
-            if msgType == MTYPE_SERVER_MODE:    
+            
+            resMsg = GenQMsg.body
+
+            if msgType == MTYPE_CLIENT_MODE:    
 
                 # Server Mode( Handling Response Message )
                 ctypes.memmove(ctypes.pointer(resMsg), mydata ,ctypes.sizeof(resMsg))
