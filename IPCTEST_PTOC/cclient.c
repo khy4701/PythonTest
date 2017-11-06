@@ -8,16 +8,13 @@
 #include <time.h>
 #include "http_app.h"
 //#include <pthread.h>
-
-#define MAXSIZE 1100
+//
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/msg.h>
 
 int QueueKey = 12345;
 int RestKey = 54322;
-
-typedef struct msgbuf {
-	long mtype;       /* message type, must be > 0 */
-	char body[MAXSIZE];
-}QUEUE;
 
 //pthread_t threads[5];
 
@@ -34,9 +31,16 @@ int main(){
 	int seqNum = 0, msgId;
 	
 	int myQid, restQid;
-   
+  
+    struct msqid_ds qDs;
+
+//    qDs.msg_perm = Vd 
+//    qDs.msg_qbytes = 4096;
+
 	myQid	= msgget(QueueKey, IPC_CREAT | 0777 );
 	restQid = msgget(RestKey, IPC_CREAT | 0777);
+
+//    msgctl(myQid, IPC_SET, &qDs);
 
 //	memset(&queBuf, 0x00, sizeof(QUEUE));
 	memset(&reqMsg, 0x00, sizeof(httpReq));
@@ -91,7 +95,6 @@ int main(){
 		printf(" RET [%d] %d\n", ret, errno);
 		sleep(1);
 
-		return -1;
 	}
 
 }

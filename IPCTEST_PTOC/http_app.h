@@ -1,7 +1,7 @@
 #ifndef __HTTPF_APP_H__
 #define __HTTPF_APP_H__
 
-#define HTTPF_MSG_BUFSIZE                   	1100
+#define HTTPF_MSG_BUFSIZE                   	4096
 
 
 #define MTYPE_CLIENT_MODE  500

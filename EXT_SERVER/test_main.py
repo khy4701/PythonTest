@@ -8,8 +8,9 @@ from ServiceClass import Departments_Meta
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(Departments_Meta, '/departments/<string:department_name>/<int:abc>')
+#api.add_resource(Departments_Meta, '/departments/<string:department_name>/<int:abc>')
+api.add_resource(Departments_Meta, '/departments/<department_name>/<int:abc>')
 
 if __name__ == '__main__':
-    #app.run(threaded=True, host='0.0.0.0', port = 8500)
-    app.run(threaded=True, host='0.0.0.0', port = 5555)
+    app.run(threaded=True, host='0.0.0.0', port = 8500)
+#    app.run(threaded=True, host='0.0.0.0', port = 5555)
