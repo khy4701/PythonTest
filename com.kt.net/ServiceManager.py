@@ -29,7 +29,6 @@ class ServiceManager:
         header.length = len(receiveMsg)
         header.encoding = '0' #ContentEncoding.PLAIN
                  
-        httpMsg.mtype = 123    # 
         httpMsg.msgId = 111
         httpMsg.tid   = reqId
         httpMsg.ehttpf_idx = 71

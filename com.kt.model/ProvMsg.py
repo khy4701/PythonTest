@@ -51,8 +51,7 @@ class HttpReq(Structure):
 
     # Serialization ( if don't put this field, it'll calculate 4 byte each other )
 #    _pack_ = 1
-    _fields_ = [("mtype", c_long),
-                ("tot_len", c_int),      # 4
+    _fields_ = [("tot_len", c_int),      # 4
                 ("msgId", c_int),        # 4
                 ("ehttpf_idx", c_short), # 2
                 ("tid", c_uint32),
@@ -66,8 +65,7 @@ class HttpRes(Structure):
 
     # Serialization ( if don't put this field, it'll calculate 4 byte each other )
 #    _pack_ = 1
-    _fields_ = [("mtype", c_long),
-                ("tot_len", c_int),      # 4
+    _fields_ = [("tot_len", c_int),      # 4
                 ("msgId", c_int),        # 4
                 ("ehttpf_idx", c_short), # 2
                 ("tid", c_uint32),

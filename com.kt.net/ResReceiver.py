@@ -82,7 +82,6 @@ class ResReceiver(Receiver):
                     self.logger.info("SLEE -> NBRESTIF")
                     self.logger.info("===============================================");
                     self.logger.info("QmsgType: %d" %msgType )
-                    self.logger.info("ResmsgType: %d" %resMsg.mtype )
                     self.logger.info("tot_len : %s" %resMsg.tot_len )
                     self.logger.info("tid : %d" %resMsg.tid )
                     self.logger.info("msgId : %d" %resMsg.msgId )
