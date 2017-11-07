@@ -6,7 +6,7 @@ from ConfigManager import ConfManager
 from Connector import Connector
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE, GeneralQResMsg, httpRes 
+from ProvMsg import MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE, GeneralQResMsg, HttpRes 
 from Receiver import Receiver
 import sysv_ipc
 
@@ -65,7 +65,7 @@ class ResReceiver(Receiver):
             (message, msgType) = ResReceiver.myQueue.receive(ctypes.sizeof(GenQMsg))
             mydata = ctypes.create_string_buffer( message )
             
-            resMsg = httpRes()
+            resMsg = HttpRes()
             self.logger.info("MSG RECEIVE..");
 
             if msgType == MTYPE_SERVER_MODE:    
