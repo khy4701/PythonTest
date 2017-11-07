@@ -4,8 +4,7 @@ import time
 from ClientService import ClientService
 from ConfigManager import ConfManager
 from LogManager import LogManager
-from ProvMsg import GeneralQReqMsg, MTYPE_CLIENT_MODE, \
-    MTYPE_SLEE_TO_SBRESTIF_REQ
+from ProvMsg import GeneralQReqMsg, MTYPE_SLEE_TO_SBRESTIF_REQ
 from Receiver import Receiver
 import sysv_ipc
 
@@ -40,7 +39,8 @@ class ReqReceiver(Receiver):
                     myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF_C" ))    
                     maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
 
-                    ReqReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777 , max_message_size = int(maxQSize) )
+                    #ReqReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777 , max_message_size = int(maxQSize) )
+                    ReqReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT)
                     
                     self.reqReceiver = self
                     self.reqReceiver.start()

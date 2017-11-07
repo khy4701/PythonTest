@@ -54,13 +54,26 @@ class PLTEConnector(Connector):
             self.logger.error("sendMessage Error! %s" % e)
             return False
 
+        info = httpReqMsg.info
+        header = httpReqMsg.http_hdr
+
         if ConfManager.getInstance().getLogFlag():
             self.logger.info("===============================================")
             self.logger.info("NBRESTIF -> SLEE")
             self.logger.info("===============================================")
+            self.logger.info("MTYPE : " + str(MTYPE_NBRESTIF_TO_SLEE_REQ))
             self.logger.info("API_NAME : " + str(apiName))
             self.logger.info("PID   : "+ str(httpReqMsg.tid))
-            self.logger.info("BODY   : " + str(httpReqMsg.jsonBody))
+            self.logger.info("totlen  : "+ str(httpReqMsg.tot_len))
+            self.logger.info("msgId   : "+ str(httpReqMsg.msgId))
+            self.logger.info("srcQid  : "+ str(httpReqMsg.srcQid))
+            self.logger.info("srcSysId: "+ str(httpReqMsg.srcSysId))
+            self.logger.info("header.method   : "+ str(header.method))
+            self.logger.info("header.api_type : "+ str(header.api_type))
+            self.logger.info("header.op_type  : "+ str(header.op_type))
+            self.logger.info("header.resource_type : "+ str(header.resource_type))
+            self.logger.info("header.length : "+ str(header.length))
+            self.logger.info("header.encoding : "+ str(header.encoding))
             self.logger.info("===============================================")
             
         return True

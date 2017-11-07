@@ -6,9 +6,7 @@ from ConfigManager import ConfManager
 from Connector import Connector
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE, GeneralQResMsg, HttpRes , \
-    MTYPE_SLEE_TO_SBRESTID_RES, MTYPE_SLEE_TO_SBRESTIF_RES, \
-    MTYPE_SLEE_TO_NBRESTIF_RES
+from ProvMsg import GeneralQResMsg, HttpRes , MTYPE_SLEE_TO_SBRESTIF_RES, MTYPE_SLEE_TO_NBRESTIF_RES
 from Receiver import Receiver
 import sysv_ipc
 
@@ -44,8 +42,8 @@ class ResReceiver(Receiver):
                     myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF_S" ))
                     maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
     
-                    ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777, max_message_size = int(maxQSize) )
-                    
+                    #ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777, max_message_size = int(maxQSize) )
+                    ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT )                    
                     self.resReceiver = self
                     self.resReceiver.start()
             

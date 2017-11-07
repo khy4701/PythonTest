@@ -22,12 +22,12 @@ class ServiceManager:
         httpInfo.nfvo_ip = "None"
         httpInfo.nfvo_port = 0
 
-        header.method = MethodType.POST_METHOD_TYPE
-        header.api_type = ApiType.NSLCM_API_TYPE
-        header.op_type = OPType.Create_NS_Identifier_OP_TYPE
-        header.resource_type = ResourceType.NSLCM_NS_INSTANCES
+        header.method = 1 #MethodType.POST_METHOD_TYPE
+        header.api_type = 2 #ApiType.NSLCM_API_TYPE
+        header.op_type = 15 #OPType.Create_NS_Identifier_OP_TYPE
+        header.resource_type = 10 #ResourceType.NSLCM_NS_INSTANCES
         header.length = len(receiveMsg)
-        header.encoding = ContentEncoding.PLAIN
+        header.encoding = '0' #ContentEncoding.PLAIN
                  
         httpMsg.mtype = 123    # 
         httpMsg.msgId = 111
@@ -39,7 +39,7 @@ class ServiceManager:
         httpMsg.http_hdr = header
         httpMsg.jsonBody = receiveMsg
         
-        httpMsg.tot_len = ctypes.sizeof(httpMsg) # need..
+        httpMsg.tot_len = 200 #ctypes.sizeof(httpMsg) # need..
         
         return httpMsg
 
