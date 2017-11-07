@@ -57,12 +57,13 @@ class ReqReceiver(Receiver):
                 self.logger.error("msgQueue[RESTIF_RECV] Get Failed...")
                 return
             
-            GenQMsg = GeneralQReqMsg()        
-            (message, msgType) = ReqReceiver.myQueue.receive(ctypes.sizeof(GenQMsg))
+            #GenQMsg = GeneralQReqMsg()
+            reqMsg = HttpReq()
+        
+            (message, msgType) = ReqReceiver.myQueue.receive(ctypes.sizeof(reqMsg))
             mydata = ctypes.create_string_buffer( message )
             
             #reqMsg = GenQMsg.body
-            reqMsg = HttpReq()
 
             if msgType == MTYPE_SLEE_TO_SBRESTIF_REQ:    
                 # Client Mode ( Handling Request Message )

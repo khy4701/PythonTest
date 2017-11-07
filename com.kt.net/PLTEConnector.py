@@ -43,9 +43,7 @@ class PLTEConnector(Connector):
         
         #GenQMsg = GeneralQReqMsg()        
         #GenQMsg.body = httpReqMsg
-        
-        httpReqMsg = HttpReq()
-        
+                
         pData = ctypes.cast(ctypes.byref(httpReqMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpReqMsg)))
 
         try:
@@ -86,8 +84,7 @@ class PLTEConnector(Connector):
                 
         #GenQMsg = GeneralQResMsg()        
         #GenQMsg.body = resMsg
-        
-        resMsg = HttpRes()
+    
         
         pData = ctypes.cast(ctypes.byref(resMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(resMsg)))
         try:
