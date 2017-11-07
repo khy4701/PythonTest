@@ -59,7 +59,7 @@ class PLTEConnector(Connector):
             self.logger.info("RESTIF -> PLTEIB")
             self.logger.info("===============================================")
             self.logger.info("API_NAME : " + str(apiName))
-            self.logger.info("PID   : "+ str(httpReqMsg.msgId))
+            self.logger.info("PID   : "+ str(httpReqMsg.tid))
             self.logger.info("BODY   : " + str(httpReqMsg.jsonBody))
             self.logger.info("===============================================")
             
@@ -87,7 +87,7 @@ class PLTEConnector(Connector):
             self.logger.info("RESTIF -> [APP]")
             self.logger.info("===============================================")
             self.logger.info("API_NAME : " + str(command))
-            self.logger.info("PID   : "+ str(resMsg.msgId))
+            self.logger.info("PID   : "+ str(resMsg.tid))
             self.logger.info("RESTCODE : " + str(resMsg.nResult) )
             self.logger.info("BODY   : " + resMsg.jsonBody)
             self.logger.info("===============================================")

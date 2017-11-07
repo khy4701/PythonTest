@@ -23,8 +23,9 @@ int RestKey = 54322;
 int main(){
 
 //	QUEUE 	queBuf;
-	httpReq reqMsg;
-	httpRes resMsg;
+    GeneralQMsgType genQMsg;
+	httpReq *reqMsg;
+	httpRes *resMsg;
 	http_header *header;
 
 //	pthread_t tid;
@@ -43,22 +44,26 @@ int main(){
 //    msgctl(myQid, IPC_SET, &qDs);
 
 //	memset(&queBuf, 0x00, sizeof(QUEUE));
-	memset(&reqMsg, 0x00, sizeof(httpReq));
-	memset(&resMsg, 0x00, sizeof(httpRes));
+//	memset( resMsg, 0x00, sizeof(httpRes));
+    memset( &genQMsg, 0x00, sizeof(GeneralQMsgType));
 
 	assert(myQid != -1);
 
 	while( 1 )
 	{
 		//if ( -1 == msgrcv( myQid, (QUEUE *)&queBuf, sizeof(QUEUE), 0, 0))
-		if ( -1 == msgrcv( myQid, (httpReq *)&reqMsg, sizeof(httpReq), 0, 0))
+
+		//if ( -1 == msgrcv( myQid, (httpReq *)&reqMsg, sizeof(httpReq), 0, 0))
+		if ( -1 == msgrcv( myQid, (GeneralQMsgType *)&genQMsg, sizeof(GeneralQMsgType), 0, 0))
 		{
 			perror( "msgrcv()" );
 			exit( 1);
 		}
 		printf("Message Recv Success \n");
 
-		header = &reqMsg.http_hdr;
+        reqMsg = (httpReq *)genQMsg.body;
+
+		header = &reqMsg->http_hdr;
 
 		printf("HEADER=========================\n");
 		printf("method: %d\n", header->method);
@@ -67,46 +72,50 @@ int main(){
 		printf("length : %d\n", header->length);
 		printf("encoding : %c\n", header->encoding);
 		printf("BODY===========================\n");
-		printf("mtype : %d\n", reqMsg.mtype);
-		printf("tot_len : %d\n", reqMsg.tot_len);
-		printf("msgId : %d\n", reqMsg.msgId);
-		printf("ehttpf_idx : %d\n", reqMsg.ehttpf_idx);
-		printf("srcQid : %d\n", reqMsg.srcQid);
-		printf("srcSysId : %d\n", reqMsg.srcSysId);
-		printf("jsonBody : %s\n", reqMsg.jsonBody);
+		printf("Qtype : %d\n", genQMsg.mtype);
+		printf("mtype : %d\n", reqMsg->mtype);
+		printf("tot_len : %d\n", reqMsg->tot_len);
+		printf("msgId : %d\n", reqMsg->msgId);
+		printf("ehttpf_idx : %d\n", reqMsg->ehttpf_idx);
+		printf("tid : %d\n", reqMsg->tid);
+		printf("srcQid : %d\n", reqMsg->srcQid);
+		printf("srcSysId : %d\n", reqMsg->srcSysId);
+		printf("jsonBody : %s\n", reqMsg->jsonBody);
 		printf("===============================\n");
 
 		//sprintf( queBuf.body, "%s" , "12345678901234567890");
 
-		resMsg.mtype = MTYPE_SERVER_MODE;
-		memcpy(&resMsg.http_hdr, &reqMsg.http_hdr, sizeof(http_header));
+        memset(&genQMsg, 0x00, sizeof(GeneralQMsgType));
 
-		resMsg.tot_len = reqMsg.tot_len;
-		resMsg.msgId = reqMsg.msgId;
-		resMsg.ehttpf_idx = reqMsg.ehttpf_idx;
-		resMsg.srcQid = reqMsg.srcQid;
-		resMsg.srcSysId = reqMsg.srcSysId;
-		resMsg.nResult = 200;
+		genQMsg.mtype = MTYPE_SERVER_MODE;
 
-		strcpy(resMsg.jsonBody,reqMsg.jsonBody);
+        resMsg= (httpRes *)genQMsg.body;
+
+		resMsg->mtype = 10;
+		memcpy(&resMsg->http_hdr, &reqMsg->http_hdr, sizeof(http_header));
+
+		resMsg->tot_len = reqMsg->tot_len;
+		resMsg->msgId = reqMsg->msgId;
+		resMsg->tid = reqMsg->tid;
+		resMsg->ehttpf_idx = reqMsg->ehttpf_idx;
+		resMsg->srcQid = reqMsg->srcQid;
+		resMsg->srcSysId = reqMsg->srcSysId;
+		resMsg->nResult = 200;
+
+		strcpy(resMsg->jsonBody,reqMsg->jsonBody);
 
 
-		int ret = msgsnd(restQid, &resMsg, sizeof(httpRes)-1, 1);
-		printf(" RET [%d] %d\n", ret, errno);
-		sleep(1);
+        httpRes *tBody = (httpRes *) genQMsg.body;
+        printf("genQMsg,body, jsonBody [%s]\n", tBody->jsonBody);
+        printf("genQMsg Type, jsonBody [%d]\n", genQMsg.mtype);
+        printf("genQMsg Type, jsonBody [%d]\n", tBody->mtype);
+        printf("genQMsg Type, jsonBody [%d]\n", tBody->http_hdr.method);
 
-	}
+        int ret = msgsnd(restQid, (void *)&genQMsg, sizeof(GeneralQMsgType) , 1);
+        printf(" RET [%d] %d\n", ret, errno);
+        sleep(1);
+
+    }
 
 }
-
-//void *myThreadFun(void *vargp)
-//{
-//	sleep(1);
-//	printf("Printing GeeksQuiz from Thread \n");
-//	return NULL;
-//
-//}
-
-
-
 

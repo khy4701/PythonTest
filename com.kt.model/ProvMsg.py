@@ -1,8 +1,7 @@
 
 from _ctypes import Structure
-from ctypes import c_int, c_ubyte, c_char, c_short, c_long, c_uint8
+from ctypes import c_int, c_ubyte, c_char, c_short, c_long, c_uint32
 import ctypes
-
 
 MAX_GEN_QMSG_LEN  = 32768 - ctypes.sizeof(ctypes.c_long)
 HTTPF_MSG_BUFSIZE = 2048
@@ -38,7 +37,7 @@ class HttpReq(Structure):
                 ("tot_len", c_int),      # 4
                 ("msgId", c_int),        # 4
                 ("ehttpf_idx", c_short), # 2
-                ("tid", c_uint8),
+                ("tid", c_uint32),
                 ("srcQid", c_int),       # 4
                 ("srcSysId", c_char ),   # 1
                 ("http_hdr", HttpHeader),  # 17
@@ -52,7 +51,7 @@ class HttpRes(Structure):
                 ("tot_len", c_int),      # 4
                 ("msgId", c_int),        # 4
                 ("ehttpf_idx", c_short), # 2
-                ("tid", c_uint8),
+                ("tid", c_uint32),
                 ("srcQid", c_int),       # 4
                 ("srcSysId", c_char ),   # 1
                 ("nResult", c_int),       # 4
@@ -70,6 +69,3 @@ class GeneralQResMsg(Structure):
     MTYPE_RESTIF_TO_APP_RES = 103
 
     _fields_ = [("body", HttpRes)]    
-    
-
-    

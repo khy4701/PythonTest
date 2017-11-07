@@ -89,7 +89,8 @@ class NsdOnboarding(Resource, ServiceManager):
         header.encoding = '5'
         header.length = 4        
                  
-        httpMsg.msgId = reqId
+        httpMsg.tid = reqId
+        httpMsg.msgId = 6
         httpMsg.ehttpf_idx = 71
         httpMsg.srcQid = 300
         httpMsg.srcSysId = '1'

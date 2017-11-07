@@ -22,7 +22,9 @@ class ServiceManager:
         header.length = 4
         header.encoding = '5'        
                  
-        httpMsg.msgId = reqId
+        httpMsg.mtype = 9
+        httpMsg.msgId = 6
+        httpMsg.tid   = reqId
         httpMsg.ehttpf_idx = 71
         httpMsg.srcQid = 300
         httpMsg.srcSysId = '1'
@@ -50,7 +52,7 @@ class ServiceManager:
             logger.info("===============================================");
             logger.info("RESTIF -> [WEB]")
             logger.info("===============================================");
-            logger.info("TID : " + str(resMsg.msgId))
+            logger.info("TID : " + str(resMsg.tid))
             logger.info("RESCODE : " + str(resMsg.nResult))
             logger.info("BODY : "  + str(resMsg.jsonBody))
             logger.info("===============================================");

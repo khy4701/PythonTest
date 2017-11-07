@@ -1,9 +1,9 @@
 
 make clean
-make -f makeServer clean
+#make -f makeServer clean
 
 make
-make -f makeServer
+#make -f makeServer
 
 ps -ef | grep uwsgi | awk 'BEGIN {
 

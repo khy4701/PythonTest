@@ -78,6 +78,7 @@ class ReqReceiver(Receiver):
                     self.logger.info("msgType: %d" %msgType )
                     self.logger.info("tot_len : %s" %reqMsg.tot_len )
                     self.logger.info("msgId : %d" %reqMsg.msgId )
+                    self.logger.info("tid : %d" %reqMsg.tid )
                     self.logger.info("ehttp_idx : %d" %reqMsg.ehttpf_idx )
                     self.logger.info("srcQid : %d" %reqMsg.srcQid )
                     self.logger.info("srcSysId : %c" %reqMsg.srcSysId )

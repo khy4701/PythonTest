@@ -6,8 +6,7 @@ from ConfigManager import ConfManager
 from Connector import Connector
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE, GeneralQResMsg 
-
+from ProvMsg import MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE, GeneralQResMsg, httpRes 
 from Receiver import Receiver
 import sysv_ipc
 
@@ -61,13 +60,15 @@ class ResReceiver(Receiver):
                 self.logger.error("msgQueue[MYQUEUE] Get Failed...")
                 return
                                    
+            self.logger.info("MSG RECEIVE..1");
             GenQMsg = GeneralQResMsg()        
             (message, msgType) = ResReceiver.myQueue.receive(ctypes.sizeof(GenQMsg))
             mydata = ctypes.create_string_buffer( message )
             
-            resMsg = GenQMsg.body
+            resMsg = httpRes()
+            self.logger.info("MSG RECEIVE..");
 
-            if msgType == MTYPE_CLIENT_MODE:    
+            if msgType == MTYPE_SERVER_MODE:    
 
                 # Server Mode( Handling Response Message )
                 ctypes.memmove(ctypes.pointer(resMsg), mydata ,ctypes.sizeof(resMsg))
@@ -79,8 +80,10 @@ class ResReceiver(Receiver):
                     self.logger.info("===============================================");
                     self.logger.info("[APP] -> RESTIF")
                     self.logger.info("===============================================");
-                    self.logger.info("msgType: %d" %msgType )
+                    self.logger.info("QmsgType: %d" %msgType )
+                    self.logger.info("ResmsgType: %d" %resMsg.msgType )
                     self.logger.info("tot_len : %s" %resMsg.tot_len )
+                    self.logger.info("tid : %d" %resMsg.tid )
                     self.logger.info("msgId : %d" %resMsg.msgId )
                     self.logger.info("ehttp_idx : %d" %resMsg.ehttpf_idx )
                     self.logger.info("srcQid : %d" %resMsg.srcQid )
@@ -97,7 +100,7 @@ class ResReceiver(Receiver):
 
                 
                 #if msgType == PLTEMANAGER_TYPE: 
-                PLTEManager.getInstance().receiveHandling(resMsg.nResult, resMsg.msgId, resMsg )
+                PLTEManager.getInstance().receiveHandling(resMsg.nResult, resMsg.tid, resMsg )
         
         except Exception as e :
             self.logger.error("Msgrcv Failed..  %s" %e)

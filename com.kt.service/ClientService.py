@@ -20,7 +20,7 @@ class ClientService(threading.Thread):
     
     def run(self):
         
-        self.tid =  self.reqMsg.msgId
+        self.tid =  self.reqMsg.tid
         # payload = httpMsg.body....
         
         url='http://localhost:5555/departments/abc/123'
@@ -69,7 +69,8 @@ class ClientService(threading.Thread):
             # 5. [RESTIF->APP] INPUT RESPONSE MESSAGE ( REST API -> httpRes )
             resMsg = HttpRes()
             resMsg.tot_len = 1
-            resMsg.msgId = self.tid
+            resMsg.msgId = 5
+            resMsg.tid = self.tid
             resMsg.ehttpf_idx = 1
             resMsg.srcQid = 1
             resMsg.srcSysId = '1'

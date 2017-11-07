@@ -4037,3 +4037,758 @@
 [2017-11-03 18:23:05,147|ServiceManager.py:54][INFO] > RESCODE : 200
 [2017-11-03 18:23:05,147|ServiceManager.py:55][INFO] > BODY : 
 [2017-11-03 18:23:05,147|ServiceManager.py:56][INFO] > ===============================================
+[2017-11-06 19:43:07,599|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 19:43:07,601|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 19:43:07,601|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 19:43:07,601|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 19:43:07,601|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 19:53:25,516|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 19:53:25,517|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 19:53:25,517|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 19:53:25,517|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 19:53:25,518|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 19:53:33,227|ServiceManager.py:40][INFO] > ===============================================
+[2017-11-06 19:53:33,227|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 19:53:33,228|ServiceManager.py:41][INFO] > [WEB] -> RESTIF
+[2017-11-06 19:53:33,229|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 19:53:33,235|ServiceManager.py:43][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 19:53:33,235|ServiceManager.py:44][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 19:53:33,235|ServiceManager.py:45][INFO] > ===============================================
+[2017-11-06 19:53:33,236|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 19:53:33,238|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 19:53:33,239|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 19:53:33,239|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 19:53:33,239|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 19:53:33,239|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 19:53:33,239|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 19:53:33,239|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 19:59:47,977|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 19:59:47,978|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 19:59:47,978|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 19:59:47,979|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 19:59:47,979|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 19:59:58,556|ServiceManager.py:40][INFO] > ===============================================
+[2017-11-06 19:59:58,556|ServiceManager.py:41][INFO] > [WEB] -> RESTIF
+[2017-11-06 19:59:58,556|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 19:59:58,561|ServiceManager.py:43][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 19:59:58,562|ServiceManager.py:44][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 19:59:58,562|ServiceManager.py:45][INFO] > ===============================================
+[2017-11-06 19:59:58,562|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 19:59:58,565|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 19:59:58,565|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 19:59:58,565|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 19:59:58,566|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 19:59:58,566|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 19:59:58,566|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 19:59:58,566|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:00:17,694|ServiceManager.py:40][INFO] > ===============================================
+[2017-11-06 20:00:17,694|ServiceManager.py:41][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:00:17,694|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:00:17,695|ServiceManager.py:43][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:00:17,695|ServiceManager.py:44][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:00:17,695|ServiceManager.py:45][INFO] > ===============================================
+[2017-11-06 20:00:17,695|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:00:17,696|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:00:17,696|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:00:17,696|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:00:17,696|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:00:17,697|PLTEConnector.py:62][INFO] > PID   : 2
+[2017-11-06 20:00:17,697|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:00:17,697|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:05:30,648|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:05:30,649|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:05:30,649|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:05:30,650|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:05:30,650|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:05:54,374|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:05:54,375|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:05:54,375|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:05:54,375|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:05:54,375|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:05:59,290|ServiceManager.py:40][INFO] > ===============================================
+[2017-11-06 20:05:59,290|ServiceManager.py:41][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:05:59,290|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:05:59,295|ServiceManager.py:43][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:05:59,295|ServiceManager.py:44][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:05:59,296|ServiceManager.py:45][INFO] > ===============================================
+[2017-11-06 20:05:59,296|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:05:59,299|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:05:59,299|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:05:59,299|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:05:59,300|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:05:59,300|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 20:05:59,300|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:05:59,300|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:07:39,636|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:07:39,637|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:07:39,637|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:07:39,637|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:07:39,637|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:07:42,020|ServiceManager.py:40][INFO] > ===============================================
+[2017-11-06 20:07:42,020|ServiceManager.py:41][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:07:42,020|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:07:42,025|ServiceManager.py:43][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:07:42,026|ServiceManager.py:44][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:07:42,026|ServiceManager.py:45][INFO] > ===============================================
+[2017-11-06 20:07:42,026|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:07:42,026|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:07:42,026|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:07:42,026|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:07:42,027|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:07:42,027|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 20:07:42,027|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:07:42,027|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:09:33,252|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:09:33,253|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:09:33,254|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:09:33,254|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:09:33,254|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:09:35,179|ServiceManager.py:40][INFO] > ===============================================
+[2017-11-06 20:09:35,179|ServiceManager.py:41][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:09:35,180|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:09:35,184|ServiceManager.py:43][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:09:35,185|ServiceManager.py:44][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:09:35,185|ServiceManager.py:45][INFO] > ===============================================
+[2017-11-06 20:09:35,185|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:09:35,185|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:09:35,185|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:09:35,185|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:09:35,185|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:09:35,185|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 20:09:35,186|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:09:35,186|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:10:33,151|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:10:33,152|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:10:33,152|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:10:33,153|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:10:33,153|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:10:34,792|ServiceManager.py:40][INFO] > ===============================================
+[2017-11-06 20:10:34,792|ServiceManager.py:41][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:10:34,792|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:10:34,797|ServiceManager.py:43][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:10:34,797|ServiceManager.py:44][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:10:34,797|ServiceManager.py:45][INFO] > ===============================================
+[2017-11-06 20:10:34,798|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:10:34,801|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:10:34,801|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:10:34,801|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:10:34,801|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:10:34,802|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 20:10:34,802|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:10:34,802|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:11:32,464|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:11:32,465|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:11:32,465|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:11:32,465|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:11:32,465|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:11:33,964|ServiceManager.py:40][INFO] > ===============================================
+[2017-11-06 20:11:33,964|ServiceManager.py:41][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:11:33,964|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:11:33,970|ServiceManager.py:43][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:11:33,970|ServiceManager.py:44][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:11:33,970|ServiceManager.py:45][INFO] > ===============================================
+[2017-11-06 20:11:33,970|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:11:33,970|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:11:33,971|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:11:33,971|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:11:33,971|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:11:33,971|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 20:11:33,971|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:11:33,971|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:15:37,050|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:15:37,050|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:15:37,051|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:15:37,051|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:15:37,051|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:15:39,105|ServiceManager.py:41][INFO] > ===============================================
+[2017-11-06 20:15:39,105|ServiceManager.py:42][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:15:39,105|ServiceManager.py:43][INFO] > ===============================================
+[2017-11-06 20:15:39,111|ServiceManager.py:44][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:15:39,111|ServiceManager.py:45][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:15:39,111|ServiceManager.py:46][INFO] > ===============================================
+[2017-11-06 20:15:39,111|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:15:39,115|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:15:39,115|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:15:39,115|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:15:39,115|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:15:39,116|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:15:39,116|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:15:39,116|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:17:43,595|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:17:43,596|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:17:43,597|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:17:43,597|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:17:43,597|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:17:45,618|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:17:45,619|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:17:45,619|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:17:45,624|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:17:45,624|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:17:45,624|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:17:45,625|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:17:45,625|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:17:45,625|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:17:45,625|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:17:45,625|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:17:45,625|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:17:45,625|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:17:45,625|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:19:14,058|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:19:14,059|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:19:14,059|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:19:14,060|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:19:14,060|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:19:16,256|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:19:16,256|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:19:16,256|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:19:16,262|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:19:16,262|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:19:16,262|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:19:16,262|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:19:16,264|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:19:16,264|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:19:16,264|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:19:16,264|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:19:16,264|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:19:16,264|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:19:16,265|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:19:26,636|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:19:26,637|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:19:26,637|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:19:26,637|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:19:26,637|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:19:26,637|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:19:26,637|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:19:26,639|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:19:26,639|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:19:26,639|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:19:26,639|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:19:26,640|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:19:26,640|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:19:26,640|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:22:43,774|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:22:43,775|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:22:43,775|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:22:43,776|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:22:43,776|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:22:48,204|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:22:48,204|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:22:48,204|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:22:48,209|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:22:48,209|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:22:48,209|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:22:48,210|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:22:48,213|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:22:48,213|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:22:48,213|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:22:48,213|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:22:48,213|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:22:48,214|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:22:48,214|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:25:15,602|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:25:15,602|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:25:15,603|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:25:15,603|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:25:15,603|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:25:17,942|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:25:17,942|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:25:17,942|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:25:17,947|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:25:17,948|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:25:17,948|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:25:17,948|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:25:17,950|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:25:17,950|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:25:17,950|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:25:17,950|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:25:17,950|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:25:17,950|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:25:17,950|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:26:45,859|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:26:45,860|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:26:45,860|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:26:45,860|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:26:45,860|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:26:51,632|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:26:51,633|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:26:51,633|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:26:51,638|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:26:51,638|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:26:51,638|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:26:51,639|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:26:51,639|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:26:51,639|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:26:51,639|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:26:51,639|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:26:51,639|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:26:51,639|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:26:51,639|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:29:00,080|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:29:00,081|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:29:00,081|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:29:00,081|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:29:00,082|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:29:01,643|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:29:01,644|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:29:01,644|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:29:01,649|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:29:01,649|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:29:01,649|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:29:01,650|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:29:01,653|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:29:01,653|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:29:01,653|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:29:01,654|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:29:01,654|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:29:01,654|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:29:01,654|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:30:04,966|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:30:04,966|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:30:04,967|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:30:04,967|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:30:04,967|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:30:07,256|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:30:07,256|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:30:07,256|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:30:07,261|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:30:07,261|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:30:07,262|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:30:07,262|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:30:07,264|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:30:07,264|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:30:07,264|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:30:07,264|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:30:07,264|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:30:07,264|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:30:07,264|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:30:50,638|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:30:50,639|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:30:50,639|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:30:50,639|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:30:50,639|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:30:52,346|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:30:52,346|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:30:52,346|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:30:52,350|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:30:52,351|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:30:52,351|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:30:52,351|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:30:52,351|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:30:52,351|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:30:52,351|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:30:52,351|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:30:52,351|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:30:52,351|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:30:52,351|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:33:07,368|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:33:07,369|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:33:07,370|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:33:07,370|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:33:07,370|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:33:07,370|PLTEConnector.py:36][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345] SIZE[8192]
+[2017-11-06 20:33:09,384|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:33:09,384|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:33:09,384|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:33:09,389|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:33:09,390|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:33:09,390|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:33:09,390|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:33:09,390|PLTEConnector.py:54][ERROR] > sendMessage Error! 'PLTEConnector' object has no attribute 'plteQueue'
+[2017-11-06 20:33:20,406|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:33:20,406|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:33:20,407|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:33:20,407|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:33:20,407|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:33:22,010|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:33:22,010|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:33:22,010|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:33:22,016|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:33:22,016|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:33:22,016|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:33:22,016|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:33:22,016|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:33:22,017|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:33:22,017|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:33:22,017|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:33:22,017|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:33:22,017|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:33:22,017|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:34:43,145|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:34:43,146|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:34:43,146|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:34:43,146|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:34:43,146|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:34:46,201|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:34:46,202|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:34:46,202|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:34:46,207|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:34:46,207|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:34:46,207|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:34:46,207|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:34:46,208|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:34:46,208|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:34:46,208|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:34:46,208|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:34:46,208|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:34:46,208|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:34:46,208|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:38:32,244|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:38:32,245|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:38:32,245|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:38:32,245|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:38:32,245|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:38:35,141|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:38:35,141|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:38:35,142|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:38:35,147|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:38:35,147|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:38:35,147|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:38:35,147|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:38:35,148|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:38:35,148|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:38:35,148|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:38:35,148|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:38:35,148|PLTEConnector.py:62][INFO] > PID   : 6
+[2017-11-06 20:38:35,148|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:38:35,148|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:43:17,304|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:43:17,305|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:43:17,305|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:43:17,306|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:43:17,306|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:43:19,543|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:43:19,544|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:43:19,544|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:43:19,549|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:43:19,549|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:43:19,549|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:43:19,550|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:43:19,553|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:43:19,553|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:43:19,553|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:43:19,553|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:43:19,553|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 20:43:19,553|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:43:19,554|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:45:05,579|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:45:05,579|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:45:05,580|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:45:05,580|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:45:05,580|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:45:07,644|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:45:07,644|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:45:07,644|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:45:07,649|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:45:07,650|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:45:07,650|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:45:07,650|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:45:07,650|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:45:07,650|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:45:07,650|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:45:07,651|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:45:07,651|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 20:45:07,651|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:45:07,651|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 20:59:19,285|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 20:59:19,285|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 20:59:19,286|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 20:59:19,286|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 20:59:19,286|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 20:59:21,389|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 20:59:21,389|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 20:59:21,389|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 20:59:21,395|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 20:59:21,395|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:59:21,396|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 20:59:21,396|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 20:59:21,398|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 20:59:21,398|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 20:59:21,398|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 20:59:21,398|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 20:59:21,399|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 20:59:21,399|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 20:59:21,399|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-06 21:00:30,909|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-06 21:00:30,909|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-06 21:00:30,910|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-06 21:00:30,910|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-06 21:00:30,910|Connector.py:25][DEBUG] > Connector Init
+[2017-11-06 21:00:33,011|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-06 21:00:33,011|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-06 21:00:33,011|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-06 21:00:33,016|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-06 21:00:33,016|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 21:00:33,017|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-06 21:00:33,017|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-06 21:00:33,020|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-06 21:00:33,020|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-06 21:00:33,020|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-06 21:00:33,020|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-06 21:00:33,021|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-06 21:00:33,021|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-06 21:00:33,021|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 09:57:59,683|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 09:57:59,684|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 09:57:59,684|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 09:57:59,685|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 09:57:59,685|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:03:44,175|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:03:44,175|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:03:44,175|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:03:44,182|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:03:44,182|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:03:44,182|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:03:44,182|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:03:44,184|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:03:44,184|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:03:44,185|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:03:44,185|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:03:44,185|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:03:44,185|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:03:44,185|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:16:36,653|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:16:36,653|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:16:36,654|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:16:36,654|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:16:36,654|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:16:39,328|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:16:39,328|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:16:39,328|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:16:39,334|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:16:39,334|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:16:39,334|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:16:39,335|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:16:39,336|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:16:39,337|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:16:39,337|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:16:39,337|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:16:39,337|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:16:39,337|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:16:39,337|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:27:57,675|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:27:57,676|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:27:57,676|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:27:57,676|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:27:57,677|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:28:00,612|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:28:00,613|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:28:00,613|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:28:00,618|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:28:00,618|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:28:00,618|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:28:00,618|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:28:00,622|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:28:00,622|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:28:00,622|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:28:00,622|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:28:00,622|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:28:00,623|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:28:00,623|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:29:14,767|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:29:14,767|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:29:14,768|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:29:14,768|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:29:14,768|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:41:09,805|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:41:09,806|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:41:09,807|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:41:09,807|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:41:09,807|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:41:12,911|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:41:12,911|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:41:12,912|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:41:12,917|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:41:12,917|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:41:12,917|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:41:12,917|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:41:12,920|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:41:12,920|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:41:12,921|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:41:12,921|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:41:12,921|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:41:12,921|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:41:12,921|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:48:10,106|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:48:10,107|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:48:10,107|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:48:10,107|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:48:10,107|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:48:12,993|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:48:12,993|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:48:12,993|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:48:12,999|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:48:12,999|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:48:12,999|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:48:12,999|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:48:13,001|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:48:13,001|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:48:13,001|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:48:13,001|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:48:13,002|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:48:13,002|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:48:13,002|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:51:04,009|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:51:04,010|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:51:04,010|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:51:04,010|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:51:04,010|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:51:06,198|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:51:06,199|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:51:06,199|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:51:06,204|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:51:06,204|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:51:06,204|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:51:06,204|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:51:06,208|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:51:06,208|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:51:06,208|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:51:06,208|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:51:06,208|ResReceiver.py:106][ERROR] > Msgrcv Failed..  [Errno 7] Argument list too long
+[2017-11-07 10:51:06,208|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:51:06,209|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:51:06,209|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:51:07,210|ResReceiver.py:106][ERROR] > Msgrcv Failed..  [Errno 7] Argument list too long
+[2017-11-07 10:51:08,211|ResReceiver.py:106][ERROR] > Msgrcv Failed..  [Errno 7] Argument list too long
+[2017-11-07 10:51:09,213|ResReceiver.py:106][ERROR] > Msgrcv Failed..  [Errno 7] Argument list too long
+[2017-11-07 10:51:10,214|ResReceiver.py:106][ERROR] > Msgrcv Failed..  [Errno 7] Argument list too long
+[2017-11-07 10:51:11,216|ResReceiver.py:106][ERROR] > Msgrcv Failed..  [Errno 7] Argument list too long
+[2017-11-07 10:51:12,217|ResReceiver.py:106][ERROR] > Msgrcv Failed..  [Errno 7] Argument list too long
+[2017-11-07 10:52:38,528|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:52:38,528|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:52:38,529|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:52:38,529|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:52:38,529|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:52:41,638|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:52:41,638|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:52:41,638|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:52:41,644|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:52:41,644|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:52:41,644|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:52:41,644|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:52:41,644|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:52:41,645|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:52:41,645|ResReceiver.py:69][INFO] > MSG RECEIVE..
+[2017-11-07 10:52:41,645|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:52:41,646|ResReceiver.py:80][INFO] > ===============================================
+[2017-11-07 10:52:41,646|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:52:41,646|ResReceiver.py:81][INFO] > [APP] -> RESTIF
+[2017-11-07 10:52:41,646|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:52:41,646|ResReceiver.py:82][INFO] > ===============================================
+[2017-11-07 10:52:41,647|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:52:41,647|ResReceiver.py:83][INFO] > QmsgType: 600
+[2017-11-07 10:52:41,647|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:52:41,647|ResReceiver.py:106][ERROR] > Msgrcv Failed..  'HttpRes' object has no attribute 'msgType'
+[2017-11-07 10:56:39,948|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:56:39,949|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:56:39,949|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:56:39,949|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:56:39,950|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:56:41,997|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:56:41,997|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:56:41,997|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:56:42,002|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:56:42,002|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:56:42,003|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:56:42,003|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:56:42,006|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:56:42,006|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:56:42,006|ResReceiver.py:70][INFO] > MSG RECEIVE..
+[2017-11-07 10:56:42,007|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:56:42,007|ResReceiver.py:107][ERROR] > Msgrcv Failed..  _type_ must have storage info
+[2017-11-07 10:56:42,007|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:56:42,008|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:56:42,008|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:56:42,008|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:57:16,026|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:57:16,026|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:57:16,027|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:57:16,027|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:57:16,027|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:57:18,102|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:57:18,103|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:57:18,103|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:57:18,108|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:57:18,108|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:57:18,109|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:57:18,109|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:57:18,109|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:57:18,109|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:57:18,109|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:57:18,109|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:57:18,109|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:57:18,109|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:57:18,110|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:57:18,110|ResReceiver.py:69][INFO] > MSG RECEIVE..
+[2017-11-07 10:57:18,110|ResReceiver.py:80][INFO] > ===============================================
+[2017-11-07 10:57:18,110|ResReceiver.py:81][INFO] > [APP] -> RESTIF
+[2017-11-07 10:57:18,111|ResReceiver.py:82][INFO] > ===============================================
+[2017-11-07 10:57:18,111|ResReceiver.py:83][INFO] > QmsgType: 600
+[2017-11-07 10:57:18,111|ResReceiver.py:106][ERROR] > Msgrcv Failed..  'HttpRes' object has no attribute 'msgType'
+[2017-11-07 10:58:11,924|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:58:11,925|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:58:11,925|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:58:11,925|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:58:11,925|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:58:14,175|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:58:14,175|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:58:14,175|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:58:14,180|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:58:14,180|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:58:14,180|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:58:14,181|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:58:14,181|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:58:14,181|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:58:14,181|ResReceiver.py:106][ERROR] > Msgrcv Failed..  global name 'httpRes' is not defined
+[2017-11-07 10:58:14,181|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:58:14,182|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:58:14,182|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:58:14,182|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:58:14,182|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:58:22,365|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:58:22,366|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:58:22,366|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:58:22,367|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:58:22,367|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:58:22,367|PLTEConnector.py:36][ERROR] > msgQueue Connection Failed.. PLTE QUEUE_ID[12345] SIZE[3276800]
+[2017-11-07 10:58:30,204|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:58:30,204|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:58:30,205|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:58:30,205|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:58:30,205|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:58:31,816|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:58:31,816|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:58:31,816|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:58:31,821|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:58:31,821|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:58:31,821|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:58:31,822|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:58:31,822|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:58:31,822|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:58:31,822|ResReceiver.py:106][ERROR] > Msgrcv Failed..  global name 'httpRes' is not defined
+[2017-11-07 10:58:31,822|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:58:31,823|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:58:31,823|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:58:31,823|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:58:31,823|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:59:10,337|ReqReceiver.py:31][ERROR] > ReqReceiver Init
+[2017-11-07 10:59:10,338|ResReceiver.py:34][INFO] > ResReceiver Init
+[2017-11-07 10:59:10,338|PLTEConnector.py:27][DEBUG] > PLTEConnector Init
+[2017-11-07 10:59:10,338|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 10:59:10,338|ResReceiver.py:64][INFO] > MSG RECEIVE..1
+[2017-11-07 10:59:10,338|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 10:59:14,784|ServiceManager.py:42][INFO] > ===============================================
+[2017-11-07 10:59:14,784|ServiceManager.py:43][INFO] > [WEB] -> RESTIF
+[2017-11-07 10:59:14,784|ServiceManager.py:44][INFO] > ===============================================
+[2017-11-07 10:59:14,789|ServiceManager.py:45][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 10:59:14,790|ServiceManager.py:46][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:59:14,790|ServiceManager.py:47][INFO] > ===============================================
+[2017-11-07 10:59:14,790|PLTEConnector.py:41][INFO] > Send Message..!
+[2017-11-07 10:59:14,793|PLTEConnector.py:58][INFO] > ===============================================
+[2017-11-07 10:59:14,793|PLTEConnector.py:59][INFO] > RESTIF -> PLTEIB
+[2017-11-07 10:59:14,794|PLTEConnector.py:60][INFO] > ===============================================
+[2017-11-07 10:59:14,794|ResReceiver.py:107][ERROR] > Msgrcv Failed..  global name 'httpRes' is not defined
+[2017-11-07 10:59:14,794|PLTEConnector.py:61][INFO] > API_NAME : ns-identifier-create
+[2017-11-07 10:59:14,794|PLTEConnector.py:62][INFO] > PID   : 1
+[2017-11-07 10:59:14,794|PLTEConnector.py:63][INFO] > BODY   : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 10:59:14,794|PLTEConnector.py:64][INFO] > ===============================================
+[2017-11-07 10:59:15,795|ResReceiver.py:64][INFO] > MSG RECEIVE..1
