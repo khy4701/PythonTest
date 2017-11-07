@@ -1,5 +1,7 @@
 from abc import abstractmethod
+import ctypes
 
+from ApiDefine import MethodType, ApiType, OPType, ContentEncoding, ResourceType
 from ConfigManager import ConfManager
 from ProvMsg import HttpReq, HttpHeader, HttpInfo
 
@@ -20,23 +22,24 @@ class ServiceManager:
         httpInfo.nfvo_ip = "None"
         httpInfo.nfvo_port = 0
 
-        header.method = 1       
-        header.api_type = 2
-        header.op_type = 3
-        header.length = 4
-        header.encoding = '5'        
+        header.method = MethodType.POST_METHOD_TYPE
+        header.api_type = ApiType.NSLCM_API_TYPE
+        header.op_type = OPType.Create_NS_Identifier_OP_TYPE
+        header.resource_type = ResourceType.NSLCM_NS_INSTANCES
+        header.length = len(receiveMsg)
+        header.encoding = ContentEncoding.PLAIN
                  
-        httpMsg.mtype = 9    # 
-        httpMsg.msgId = 6
+        httpMsg.mtype = 123    # 
+        httpMsg.msgId = 111
         httpMsg.tid   = reqId
         httpMsg.ehttpf_idx = 71
-        httpMsg.srcQid = 300
+        httpMsg.srcQid = 111
         httpMsg.srcSysId = '1'
         httpMsg.info = httpInfo
         httpMsg.http_hdr = header
         httpMsg.jsonBody = receiveMsg
         
-        httpMsg.tot_len = 100
+        httpMsg.tot_len = ctypes.sizeof(httpMsg) # need..
         
         return httpMsg
 

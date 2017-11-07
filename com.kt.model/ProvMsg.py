@@ -6,11 +6,19 @@ import ctypes
 MAX_GEN_QMSG_LEN  = 32768 - ctypes.sizeof(ctypes.c_long)
 HTTPF_MSG_BUFSIZE = 4096
 
-MTYPE_CLIENT_MODE = 500
-MTYPE_SERVER_MODE = 600
+#MTYPE_CLIENT_MODE = 500
+#MTYPE_SERVER_MODE = 600
 
-
-
+# SERVER MODE
+# CLIENT MODE
+MTYPE_NBRESTIF_TO_SLEE_REQ = 450
+MTYPE_SLEE_TO_NBRESTIF_REQ = 451
+MTYPE_NBRESTIF_TO_SLEE_RES = 452
+MTYPE_SLEE_TO_NBRESTIF_RES = 453
+MTYPE_SBRESTIF_TO_SLEE_REQ = 454
+MTYPE_SLEE_TO_SBRESTIF_REQ = 455
+MTYPE_SBRESTIF_TO_SLEE_RES = 456
+MTYPE_SLEE_TO_SBRESTIF_RES = 457
 
 class provMsg(Structure):
     
@@ -34,6 +42,7 @@ class HttpHeader(Structure):
     _fields_ = [("method", c_int),   # POST_METHOD_TYPE - ENUM
                ("api_type", c_int),  # 
                ("op_type", c_int),
+               ("resource_type", c_int),
                ("length", c_int),
                ("encoding", c_char ) ]
 

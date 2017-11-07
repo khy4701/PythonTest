@@ -69,7 +69,7 @@ class ClientService(threading.Thread):
             
             # 5. [RESTIF->APP] INPUT RESPONSE MESSAGE ( REST API -> httpRes )
             resMsg = HttpRes()
-            resMsg.tot_len = 1
+            resMsg.tot_len = resMsg.jsonBody.length
             resMsg.msgId = 5
             resMsg.tid = self.tid
             resMsg.ehttpf_idx = 1

@@ -6,7 +6,8 @@ from Connector import Connector
 from LogManager import LogManager
 import PLTEConnector
 from PLTEManager import PLTEManager
-from ProvMsg import GeneralQResMsg, GeneralQReqMsg
+from ProvMsg import GeneralQResMsg, GeneralQReqMsg, MTYPE_NBRESTIF_TO_SLEE_REQ, \
+    MTYPE_NBRESTIF_TO_SLEE_RES, MTYPE_SBRESTIF_TO_SLEE_RES
 import sysv_ipc
 
 
@@ -47,7 +48,7 @@ class PLTEConnector(Connector):
 
         try:
             if self.plteQueue is not None :
-                self.plteQueue.send( pData.contents.raw, True, GeneralQReqMsg.MTYPE_RESTIF_TO_APP_REQ )
+                self.plteQueue.send( pData.contents.raw, True, MTYPE_NBRESTIF_TO_SLEE_REQ )
 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
@@ -55,7 +56,7 @@ class PLTEConnector(Connector):
 
         if ConfManager.getInstance().getLogFlag():
             self.logger.info("===============================================")
-            self.logger.info("RESTIF -> PLTEIB")
+            self.logger.info("NBRESTIF -> SLEE")
             self.logger.info("===============================================")
             self.logger.info("API_NAME : " + str(apiName))
             self.logger.info("PID   : "+ str(httpReqMsg.tid))
@@ -75,7 +76,7 @@ class PLTEConnector(Connector):
             if self.plteQueue is not None :
                 
                 # MSG TYPE Check!
-                self.plteQueue.send( pData.contents.raw, True, GeneralQResMsg.MTYPE_RESTIF_TO_APP_RES )
+                self.plteQueue.send( pData.contents.raw, True, MTYPE_SBRESTIF_TO_SLEE_RES )
                 
         except Exception as e:
             self.logger.error("sendMessage Error! %s" % e)
@@ -83,7 +84,7 @@ class PLTEConnector(Connector):
 
         if ConfManager.getInstance().getLogFlag():
             self.logger.info("===============================================")
-            self.logger.info("RESTIF -> [APP]")
+            self.logger.info("SBRESTIF -> SLEE")
             self.logger.info("===============================================")
             self.logger.info("API_NAME : " + str(command))
             self.logger.info("PID   : "+ str(resMsg.tid))

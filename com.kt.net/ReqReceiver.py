@@ -4,7 +4,8 @@ import time
 from ClientService import ClientService
 from ConfigManager import ConfManager
 from LogManager import LogManager
-from ProvMsg import GeneralQReqMsg, MTYPE_CLIENT_MODE
+from ProvMsg import GeneralQReqMsg, MTYPE_CLIENT_MODE, \
+    MTYPE_SLEE_TO_SBRESTIF_REQ
 from Receiver import Receiver
 import sysv_ipc
 
@@ -63,8 +64,8 @@ class ReqReceiver(Receiver):
             
             reqMsg = GenQMsg.body
 
-            
-            if msgType == MTYPE_CLIENT_MODE:    
+
+            if msgType == MTYPE_SLEE_TO_SBRESTIF_REQ:    
                 # Client Mode ( Handling Request Message )
                 
                 ctypes.memmove(ctypes.pointer(reqMsg), mydata ,ctypes.sizeof(reqMsg))
@@ -73,7 +74,7 @@ class ReqReceiver(Receiver):
                 if ConfManager.getInstance().getLogFlag():
                     headerMsg = reqMsg.http_hdr                    
                     self.logger.info("===============================================")
-                    self.logger.info("[APP] -> RESTIF")
+                    self.logger.info("SLEE -> SBRESTIF")
                     self.logger.info("===============================================")
                     self.logger.info("msgType: %d" %msgType )
                     self.logger.info("tot_len : %s" %reqMsg.tot_len )
@@ -87,6 +88,7 @@ class ReqReceiver(Receiver):
                     self.logger.info("method: %d" %headerMsg.method )
                     self.logger.info("api_type: %d" %headerMsg.api_type )
                     self.logger.info("op_type: %d" %headerMsg.op_type )
+                    self.logger.info("resource_type: %d" %headerMsg.resource_type )
                     self.logger.info("length: %d" %headerMsg.length )
                     self.logger.info("encoding: %c" %headerMsg.encoding )
                     self.logger.info("===============================================")

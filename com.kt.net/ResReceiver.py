@@ -6,7 +6,9 @@ from ConfigManager import ConfManager
 from Connector import Connector
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE, GeneralQResMsg, HttpRes 
+from ProvMsg import MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE, GeneralQResMsg, HttpRes , \
+    MTYPE_SLEE_TO_SBRESTID_RES, MTYPE_SLEE_TO_SBRESTIF_RES, \
+    MTYPE_SLEE_TO_NBRESTIF_RES
 from Receiver import Receiver
 import sysv_ipc
 
@@ -66,7 +68,7 @@ class ResReceiver(Receiver):
             
             self.logger.info("MSG RECEIVE..");
 
-            if msgType == MTYPE_SERVER_MODE:    
+            if msgType == MTYPE_SLEE_TO_NBRESTIF_RES :    
 
                 # Server Mode( Handling Response Message )
                 ctypes.memmove(ctypes.pointer(GenQMsg), mydata ,ctypes.sizeof(GenQMsg))
@@ -77,7 +79,7 @@ class ResReceiver(Receiver):
                 # Receive Message Logging
                 if ConfManager.getInstance().getLogFlag():
                     self.logger.info("===============================================");
-                    self.logger.info("[APP] -> RESTIF")
+                    self.logger.info("SLEE -> NBRESTIF")
                     self.logger.info("===============================================");
                     self.logger.info("QmsgType: %d" %msgType )
                     self.logger.info("ResmsgType: %d" %resMsg.mtype )
@@ -93,6 +95,7 @@ class ResReceiver(Receiver):
                     self.logger.info("method: %d" %headerMsg.method )
                     self.logger.info("api_type: %d" %headerMsg.api_type )
                     self.logger.info("op_type: %d" %headerMsg.op_type )
+                    self.logger.info("resource_type: %d" %headerMsg.resource_type )
                     self.logger.info("length: %d" %headerMsg.length )
                     self.logger.info("encoding: %c" %headerMsg.encoding )
                     self.logger.info("===============================================");
