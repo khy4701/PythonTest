@@ -39,7 +39,7 @@ class ServiceManager:
         httpMsg.http_hdr = header
         httpMsg.jsonBody = receiveMsg
         
-        httpMsg.tot_len = 200 #ctypes.sizeof(httpMsg) # need..
+        httpMsg.tot_len = 300 #ctypes.sizeof(httpMsg) # need..
         
         return httpMsg
 
