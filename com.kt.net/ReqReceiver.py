@@ -4,7 +4,7 @@ import time
 from ClientService import ClientService
 from ConfigManager import ConfManager
 from LogManager import LogManager
-from ProvMsg import GeneralQReqMsg, MTYPE_SLEE_TO_SBRESTIF_REQ
+from ProvMsg import GeneralQReqMsg, MTYPE_SLEE_TO_SBRESTIF_REQ, HttpReq
 from Receiver import Receiver
 import sysv_ipc
 
@@ -61,8 +61,8 @@ class ReqReceiver(Receiver):
             (message, msgType) = ReqReceiver.myQueue.receive(ctypes.sizeof(GenQMsg))
             mydata = ctypes.create_string_buffer( message )
             
-            reqMsg = GenQMsg.body
-
+            #reqMsg = GenQMsg.body
+            reqMsg = HttpReq()
 
             if msgType == MTYPE_SLEE_TO_SBRESTIF_REQ:    
                 # Client Mode ( Handling Request Message )

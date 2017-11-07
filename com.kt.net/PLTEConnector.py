@@ -7,7 +7,7 @@ from LogManager import LogManager
 import PLTEConnector
 from PLTEManager import PLTEManager
 from ProvMsg import GeneralQResMsg, GeneralQReqMsg, MTYPE_NBRESTIF_TO_SLEE_REQ, \
-    MTYPE_NBRESTIF_TO_SLEE_RES, MTYPE_SBRESTIF_TO_SLEE_RES
+    MTYPE_NBRESTIF_TO_SLEE_RES, MTYPE_SBRESTIF_TO_SLEE_RES, HttpReq, HttpRes
 import sysv_ipc
 
 
@@ -41,10 +41,12 @@ class PLTEConnector(Connector):
         
         self.logger.info("Send Message..!")
         
-        GenQMsg = GeneralQReqMsg()        
-        GenQMsg.body = httpReqMsg
+        #GenQMsg = GeneralQReqMsg()        
+        #GenQMsg.body = httpReqMsg
         
-        pData = ctypes.cast(ctypes.byref(GenQMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(GenQMsg)))
+        httpReqMsg = HttpReq()
+        
+        pData = ctypes.cast(ctypes.byref(httpReqMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(httpReqMsg)))
 
         try:
             if self.plteQueue is not None :
@@ -83,10 +85,12 @@ class PLTEConnector(Connector):
 
     def sendResMessage(self, command, resMsg):
                 
-        GenQMsg = GeneralQResMsg()        
-        GenQMsg.body = resMsg
+        #GenQMsg = GeneralQResMsg()        
+        #GenQMsg.body = resMsg
         
-        pData = ctypes.cast(ctypes.byref(GenQMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(GenQMsg)))
+        resMsg = HttpRes()
+        
+        pData = ctypes.cast(ctypes.byref(resMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(resMsg)))
         try:
             if self.plteQueue is not None :
                 
