@@ -3,7 +3,7 @@ import ctypes
 
 from ApiDefine import MethodType, ApiType, OPType, ContentEncoding, ResourceType
 from ConfigManager import ConfManager
-from ProvMsg import HttpReq, HttpHeader, HttpInfo
+from ProvMsg import HttpReq, HttpHeader, HttpInfo, HTTPF_MSG_BUFSIZE
 
 
 class ServiceManager:
@@ -39,7 +39,7 @@ class ServiceManager:
         httpMsg.http_hdr = header
         httpMsg.jsonBody = receiveMsg
         
-        httpMsg.tot_len = 300 #ctypes.sizeof(httpMsg) # need..
+        httpMsg.tot_len = ctypes.sizeof(HttpReq) - HTTPF_MSG_BUFSIZE +header.length #ctypes.sizeof(httpMsg) # need..
         
         return httpMsg
 
@@ -64,5 +64,7 @@ class ServiceManager:
             logger.info("RESCODE : " + str(resMsg.nResult))
             logger.info("BODY : "  + str(resMsg.jsonBody))
             logger.info("===============================================");
+            
+    
 
 
