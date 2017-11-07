@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
 from ConfigManager import ConfManager
-from ProvMsg import HttpReq, HttpHeader
+from ProvMsg import HttpReq, HttpHeader, HttpInfo
 
 
 class ServiceManager:
@@ -11,24 +11,28 @@ class ServiceManager:
         pass
         
     @staticmethod
-    def setApiToStructMsg(receiveMsg, reqId):
+    def setApiToStructMsg(reqAPI, receiveMsg, reqId):
 
         httpInfo = HttpInfo()
         httpMsg =  HttpReq()
         header = HttpHeader()
 
-        header.method = 1
+        httpInfo.nfvo_ip = "None"
+        httpInfo.nfvo_port = 0
+
+        header.method = 1       
         header.api_type = 2
         header.op_type = 3
         header.length = 4
         header.encoding = '5'        
                  
-        httpMsg.mtype = 9
+        httpMsg.mtype = 9    # 
         httpMsg.msgId = 6
         httpMsg.tid   = reqId
         httpMsg.ehttpf_idx = 71
         httpMsg.srcQid = 300
         httpMsg.srcSysId = '1'
+        httpMsg.info = httpInfo
         httpMsg.http_hdr = header
         httpMsg.jsonBody = receiveMsg
         

@@ -4,7 +4,7 @@ import time
 from ClientService import ClientService
 from ConfigManager import ConfManager
 from LogManager import LogManager
-from ProvMsg import GeneralQReqMsg, MTYPE_SERVER_MODE
+from ProvMsg import GeneralQReqMsg, MTYPE_CLIENT_MODE
 from Receiver import Receiver
 import sysv_ipc
 
@@ -64,7 +64,7 @@ class ReqReceiver(Receiver):
             reqMsg = GenQMsg.body
 
             
-            if msgType == MTYPE_SERVER_MODE:    
+            if msgType == MTYPE_CLIENT_MODE:    
                 # Client Mode ( Handling Request Message )
                 
                 ctypes.memmove(ctypes.pointer(reqMsg), mydata ,ctypes.sizeof(reqMsg))

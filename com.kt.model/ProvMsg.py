@@ -9,6 +9,9 @@ HTTPF_MSG_BUFSIZE = 4096
 MTYPE_CLIENT_MODE = 500
 MTYPE_SERVER_MODE = 600
 
+
+
+
 class provMsg(Structure):
     
     _fields_ =  [("id", c_int),
@@ -28,8 +31,8 @@ class HttpHeader(Structure):
     # Serialization ( if don't put this field, it'll calculate 4 byte each other )
     # But, this is not nessary under communication with C Messaage queue.
     #_pack_ = 1
-    _fields_ = [("method", c_int),
-               ("api_type", c_int),
+    _fields_ = [("method", c_int),   # POST_METHOD_TYPE - ENUM
+               ("api_type", c_int),  # 
                ("op_type", c_int),
                ("length", c_int),
                ("encoding", c_char ) ]
@@ -44,7 +47,7 @@ class HttpReq(Structure):
                 ("msgId", c_int),        # 4
                 ("ehttpf_idx", c_short), # 2
                 ("tid", c_uint32),
-                ("srcQid", c_int),       # 4
+                ("srcQid", c_int),       # 4     # REST Q ID
                 ("srcSysId", c_char ),   # 1
                 ("info", HttpInfo),
                 ("http_hdr", HttpHeader),  # 17

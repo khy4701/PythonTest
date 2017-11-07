@@ -28,7 +28,7 @@ class NotiOfLcm(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId)
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine, self, reqMsg)
