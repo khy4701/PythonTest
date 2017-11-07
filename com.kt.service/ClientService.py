@@ -24,7 +24,7 @@ class ClientService(threading.Thread):
         # payload = httpMsg.body....
         
         #url='http://localhost:5555/departments/abc/123'
-        url='http://183.98.152.72:8081/departments/abc/123'
+        url='http://175.213.170.13:8081/departments/abc/123'
         #head = {'Content-type':'application/json', 'Accept':'application/json'} 
         #head = {'Content-type':'application/json'} 
         head = {'Content-type':'application/x-www-form-urlencoded', 'Accept':'application/json'} 
