@@ -20,7 +20,11 @@ class ServiceManager:
         httpInfo.nfvo_ip = "None"
         httpInfo.nfvo_port = 0
 
+<<<<<<< HEAD
         header.method = 1       
+=======
+        header.method = 1
+>>>>>>> 9c34311fb542ac992f51827a769f28f2be9b51e2
         header.api_type = 2
         header.op_type = 3
         header.length = 4
