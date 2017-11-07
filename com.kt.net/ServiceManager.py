@@ -13,6 +13,7 @@ class ServiceManager:
     @staticmethod
     def setApiToStructMsg(receiveMsg, reqId):
 
+        httpInfo = HttpInfo()
         httpMsg =  HttpReq()
         header = HttpHeader()
 

@@ -4,7 +4,7 @@ from ctypes import c_int, c_ubyte, c_char, c_short, c_long, c_uint32
 import ctypes
 
 MAX_GEN_QMSG_LEN  = 32768 - ctypes.sizeof(ctypes.c_long)
-HTTPF_MSG_BUFSIZE = 2048
+HTTPF_MSG_BUFSIZE = 4096
 
 MTYPE_CLIENT_MODE = 500
 MTYPE_SERVER_MODE = 600
@@ -16,6 +16,12 @@ class provMsg(Structure):
          ("syms", c_int)]
         # ("ce", c_ubyte * 4),
       # ("syms", c_ubyte * 4)]
+
+MAX_IP_LEN = 48
+class HttpInfo(Structure):
+    _fields_ = [("nfvo_ip", c_char * MAX_IP_LEN ),
+                ("nfvo_port", c_int)
+            ]
 
 # 4 * 5 = 20 (char -- 4bytes) 
 class HttpHeader(Structure):
@@ -40,6 +46,7 @@ class HttpReq(Structure):
                 ("tid", c_uint32),
                 ("srcQid", c_int),       # 4
                 ("srcSysId", c_char ),   # 1
+                ("info", HttpInfo),
                 ("http_hdr", HttpHeader),  # 17
                 ("jsonBody", c_char * HTTPF_MSG_BUFSIZE ) ]  # 1024
 

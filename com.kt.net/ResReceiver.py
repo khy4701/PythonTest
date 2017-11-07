@@ -60,19 +60,18 @@ class ResReceiver(Receiver):
                 self.logger.error("msgQueue[MYQUEUE] Get Failed...")
                 return
                                    
-            self.logger.info("MSG RECEIVE..1");
             GenQMsg = GeneralQResMsg()        
             (message, msgType) = ResReceiver.myQueue.receive(ctypes.sizeof(GenQMsg))
             mydata = ctypes.create_string_buffer( message )
             
-            resMsg = HttpRes()
             self.logger.info("MSG RECEIVE..");
 
             if msgType == MTYPE_SERVER_MODE:    
 
                 # Server Mode( Handling Response Message )
-                ctypes.memmove(ctypes.pointer(resMsg), mydata ,ctypes.sizeof(resMsg))
+                ctypes.memmove(ctypes.pointer(GenQMsg), mydata ,ctypes.sizeof(GenQMsg))
                 
+                resMsg = GenQMsg.body
                 headerMsg = resMsg.http_hdr
         
                 # Receive Message Logging
@@ -81,7 +80,7 @@ class ResReceiver(Receiver):
                     self.logger.info("[APP] -> RESTIF")
                     self.logger.info("===============================================");
                     self.logger.info("QmsgType: %d" %msgType )
-                    self.logger.info("ResmsgType: %d" %resMsg.msgType )
+                    self.logger.info("ResmsgType: %d" %resMsg.mtype )
                     self.logger.info("tot_len : %s" %resMsg.tot_len )
                     self.logger.info("tid : %d" %resMsg.tid )
                     self.logger.info("msgId : %d" %resMsg.msgId )

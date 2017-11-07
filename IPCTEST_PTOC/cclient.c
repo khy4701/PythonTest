@@ -24,6 +24,7 @@ int main(){
 
 //	QUEUE 	queBuf;
     GeneralQMsgType genQMsg;
+    GeneralQMsgType genQResMsg;
 	httpReq *reqMsg;
 	httpRes *resMsg;
 	http_header *header;
@@ -85,11 +86,12 @@ int main(){
 
 		//sprintf( queBuf.body, "%s" , "12345678901234567890");
 
-        memset(&genQMsg, 0x00, sizeof(GeneralQMsgType));
+        sleep(1);
+        memset(&genQResMsg, 0x00, sizeof(GeneralQMsgType));
 
-		genQMsg.mtype = MTYPE_SERVER_MODE;
+		genQResMsg.mtype = MTYPE_SERVER_MODE;
 
-        resMsg= (httpRes *)genQMsg.body;
+        resMsg= (httpRes *)genQResMsg.body;
 
 		resMsg->mtype = 10;
 		memcpy(&resMsg->http_hdr, &reqMsg->http_hdr, sizeof(http_header));
@@ -105,13 +107,13 @@ int main(){
 		strcpy(resMsg->jsonBody,reqMsg->jsonBody);
 
 
-        httpRes *tBody = (httpRes *) genQMsg.body;
-        printf("genQMsg,body, jsonBody [%s]\n", tBody->jsonBody);
-        printf("genQMsg Type, jsonBody [%d]\n", genQMsg.mtype);
-        printf("genQMsg Type, jsonBody [%d]\n", tBody->mtype);
-        printf("genQMsg Type, jsonBody [%d]\n", tBody->http_hdr.method);
+        httpRes *tBody = (httpRes *) genQResMsg.body;
+        printf("genQResMsg,body, jsonBody [%s]\n", tBody->jsonBody);
+        printf("genQResMsg Type, jsonBody [%d]\n", genQResMsg.mtype);
+        printf("genQResMsg Type, jsonBody [%d]\n", tBody->mtype);
+        printf("genQResMsg Type, jsonBody [%d]\n", tBody->http_hdr.method);
 
-        int ret = msgsnd(restQid, (void *)&genQMsg, sizeof(GeneralQMsgType) , 1);
+        int ret = msgsnd(restQid, (void *)&genQResMsg, sizeof(GeneralQMsgType) , 1);
         printf(" RET [%d] %d\n", ret, errno);
         sleep(1);
 

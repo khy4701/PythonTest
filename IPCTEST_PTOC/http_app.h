@@ -16,13 +16,26 @@ typedef struct general_qmsg{
 } GeneralQMsgType;
 #define GEN_QMSG_LEN(length)    (sizeof (genq_mtype_t) + length + 1)
 
+typedef struct _http_info {
+    /*added .2016.12.16 */
+#if 0
+    char    req_url[MAX_HTTP_REQUEST_URL_SIZE];
+    char    ref_id[MAX_HTTP_USERNAME_SIZE];
+    char    extern_id[MAX_HTTP_USERNAME_SIZE];
+    char    scs_id[MAX_HTTP_USERNAME_SIZE];
+#endif
+#define MAX_IP_LEN  48
+    char    nfvo_ip[MAX_IP_LEN];
+    int     nfvo_port;
+} http_info;
+
 
 typedef struct _http_header {
-	int         method;
-	int         api_type;
-	int         op_type;
-	int         length;
-	char        encoding;
+    int         method;
+    int         api_type;
+    int         op_type;
+    int         length;
+    char        encoding;
 } http_header;
 
 
@@ -30,13 +43,14 @@ typedef struct _http_header {
 typedef struct {
 #define MTYPE_APP_TO_RESTIF_REQ                100
 #define MTYPE_RESTIF_TO_APP_REQ                101
-	long        mtype;
-	int         tot_len;
-	int         msgId;          /* httpf상에서 사용하는 fd table index */
+    long        mtype;
+    int         tot_len;
+    int         msgId;          /* httpf상에서 사용하는 fd table index */
     short       ehttpf_idx;     /* 2011.08.17: ehttpf_thread_index */
     uint32_t    tid;            /* transaction ID 2017.11.06 */
     int         srcQid;         /* slee Qid */
     char        srcSysId;       /* 1 ~ 8 */
+    http_info   info;
     http_header http_hdr;       //http_hdr.length 가 jsonBody의 길이
     char        jsonBody[HTTPF_MSG_BUFSIZE];
 } httpReq;

@@ -47,7 +47,6 @@ class PLTEConnector(Connector):
 
         try:
             if self.plteQueue is not None :
-                    
                 self.plteQueue.send( pData.contents.raw, True, GeneralQReqMsg.MTYPE_RESTIF_TO_APP_REQ )
 
         except Exception as e:
