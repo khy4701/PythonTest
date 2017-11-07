@@ -24,7 +24,6 @@ class ReqReceiver(Receiver):
         if ReqReceiver.__instance == None:
             ReqReceiver.__instance = ReqReceiver()
         return ReqReceiver.__instance 
-        
     
     def __init__(self):
         Receiver.__init__(self)
