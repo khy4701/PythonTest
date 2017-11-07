@@ -28,7 +28,7 @@ class NsIdCreation(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId)
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_ID_CREATE, self, reqMsg)
@@ -75,7 +75,7 @@ class NsInstantiation(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request,data, self.clientId)
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_INSTANTIATION, self, reqMsg)
@@ -123,7 +123,7 @@ class NsIdTermination(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request,data, self.clientId)
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_TERMINATION, self, reqMsg)
@@ -171,7 +171,7 @@ class NsScale(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId)
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_SCALE, self, reqMsg)
