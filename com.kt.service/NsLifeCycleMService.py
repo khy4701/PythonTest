@@ -4,7 +4,7 @@ from flask import request, json
 import flask
 from flask_restful import Resource
 
-from ApiDefine import ApiDefine, MethodType
+from ApiDefine import ApiDefine, MethodType, ApiType, OPType, ResourceType
 from LogManager import LogManager
 from PLTEManager import PLTEManager
 from ServiceManager import ServiceManager
@@ -13,9 +13,13 @@ from ServiceManager import ServiceManager
 class NsIdCreation(Resource, ServiceManager):
 
     logger = LogManager.getInstance().get_logger()
-    
+    apiType = ApiType.NSLCM_API_TYPE
+    resourceType = ResourceType.NSLCM_NS_INSTANCES
+        
     def post(self):
-
+        opType = OPType.Create_NS_Identifier_OP_TYPE
+        methodType = ServiceManager.getMethodType(request.method)
+        
         # 1. [WEB->RESTIF] RECEIVE PROCESS
         try:    
             content = request.get_json(force=True)
@@ -29,7 +33,7 @@ class NsIdCreation(Resource, ServiceManager):
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.logger.info(type(MethodType.POST_METHOD_TYPE))
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId, methodType, self.apiType, self.resourceType, opType )
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_ID_CREATE, self, reqMsg)
@@ -61,8 +65,12 @@ class NsIdCreation(Resource, ServiceManager):
 
 class NsInstantiation(Resource, ServiceManager):
     logger = LogManager.getInstance().get_logger()
-    
+    apiType = ApiType.NSLCM_API_TYPE
+    resourceType = ResourceType.NSLCM_INSTANTIATE_NS_TASK
+
     def post(self,nsInstanceId ):
+        opType = OPType.Instantiate_NS_OP_TYPE
+        methodType = ServiceManager.getMethodType(request.method)
 
         # 1. [WEB->RESTIF] RECEIVE PROCESS
         try:        
@@ -76,7 +84,7 @@ class NsInstantiation(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(request,data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId, methodType, self.apiType, self.resourceType, opType )
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_INSTANTIATION, self, reqMsg)
@@ -109,8 +117,12 @@ class NsInstantiation(Resource, ServiceManager):
         
 class NsIdTermination(Resource, ServiceManager):
     logger = LogManager.getInstance().get_logger()
-    
+    apiType = ApiType.NSLCM_API_TYPE
+    resourceType = ResourceType.NSLCM_TERMINATE_NS_TASK
+
     def post(self,nsInstanceId):
+        opType = OPType.Terminate_NS_OP_TYPE
+        methodType = ServiceManager.getMethodType(request.method)
 
         # 1. [WEB->RESTIF] RECEIVE PROCESS
         try:
@@ -124,7 +136,7 @@ class NsIdTermination(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(request,data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId, methodType, self.apiType, self.resourceType, opType )
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_TERMINATION, self, reqMsg)
@@ -157,8 +169,12 @@ class NsIdTermination(Resource, ServiceManager):
         
 class NsScale(Resource, ServiceManager):
     logger = LogManager.getInstance().get_logger()
-    
+    apiType = ApiType.NSLCM_API_TYPE
+    resourceType = ResourceType.NSLCM_SCALE_NS_TASK
+
     def post(self,nsInstanceId):
+        opType = OPType.Scale_NS_OP_TYPE
+        methodType = ServiceManager.getMethodType(request.method)
 
         # 1. [WEB->RESTIF] RECEIVE PROCESS
         try:
@@ -172,7 +188,7 @@ class NsScale(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId, methodType, self.apiType, self.resourceType, opType )
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.NS_SCALE, self, reqMsg)

@@ -11,9 +11,26 @@ class ServiceManager:
     @abstractmethod    
     def setComplete(self, reqId, rcvMsg):
         pass
+    
+    @staticmethod
+    def getMethodType(reqMethod):
+        
+        if reqMethod == "POST":
+            return MethodType.POST_METHOD_TYPE
+        elif reqMethod == "GET":
+            return MethodType.GET_METHOD_TYPE
+        elif reqMethod == "PUT":
+            return MethodType.PUT_METHOD_TYPE
+        elif reqMethod == "PATCH":
+            return MethodType.PATCH_METHOD_TYPE        
+        elif reqMethod == "DELETE":
+            return MethodType.DELETE_METHOD_TYPE
+        else:
+            return MethodType.UNKNOWN_METHOD_TYPE
+            
         
     @staticmethod
-    def setApiToStructMsg(reqAPI, rcvJsonBody, reqId):
+    def setApiToStructMsg(reqAPI, rcvJsonBody, reqId, methodType, apiType, resourceType, opType ):
 
         httpInfo = HttpInfo()
         httpMsg =  HttpReq()
@@ -22,10 +39,10 @@ class ServiceManager:
         httpInfo.nfvo_ip = "None"
         httpInfo.nfvo_port = 0
 
-        header.method = MethodType.POST_METHOD_TYPE
-        header.api_type = ApiType.NSLCM_API_TYPE
-        header.op_type =  OPType.Create_NS_Identifier_OP_TYPE
-        header.resource_type =  ResourceType.NSLCM_NS_INSTANCES
+        header.method = methodType
+        header.api_type = apiType
+        header.op_type =  opType
+        header.resource_type =  resourceType
         header.length = len(rcvJsonBody)
         header.encoding = ContentEncoding.PLAIN
                  
