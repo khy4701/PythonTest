@@ -71,7 +71,7 @@ class NfvoService(threading.Thread):
             
         except Exception as e:
             # Error Exception -> if External Server is not connected..
-            self.logger.error("RESTIF->NFVO Not Connected.. : " + e)
+            self.logger.info("RESTIF->NFVO Not Connected.. : " + e)
             return 
             
             
@@ -94,7 +94,7 @@ class NfvoService(threading.Thread):
         except Exception as e :
             resMsg.nResult = 400
             resMsg.jsonBody = "{Internal Server Error}"
-            self.logger.error("RESTIF->SLEE Structure Error" + e)
+            self.logger.info("RESTIF->SLEE Structure Error" + e)
 
             # 6. [RESTIF->APP] SEND AND LOGGING
         PLTEManager.getInstance().sendResCommand( ApiDefine.NOTI_OF_LCM , resMsg )
