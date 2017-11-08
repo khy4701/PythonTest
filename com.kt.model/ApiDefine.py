@@ -1,6 +1,5 @@
-from enum import Enum
 
-class ApiDefine(Enum):
+class ApiDefine():
 
     # NBI - SERVER MODE
     API_NUM1 = "departmentAPI"
@@ -23,13 +22,13 @@ class ApiDefine(Enum):
 
 
 # httpReq.http_hdr.encoding
-class ContentEncoding(Enum):
+class ContentEncoding():
     PLAIN   = '0'
     DEFLATE = '1'
     GZIP    = '2'
 
 # httpReq.http_hdr.api_type
-class ApiType(Enum):
+class ApiType():
     NSD_API_TYPE = 1
     NSLCM_API_TYPE = 2
     NSPM_API_TYPE = 3
@@ -39,7 +38,7 @@ class ApiType(Enum):
 
 
 # httpReq.http_hdr.method
-class MethodType(Enum):
+class MethodType():
     
     POST_METHOD_TYPE = 1
     GET_METHOD_TYPE = 2
@@ -49,7 +48,7 @@ class MethodType(Enum):
     UNKNOWN_METHOD_TYPE = 6
     
 # httpReq.http_hdr.op_type
-class OPType(Enum):
+class OPType():
     Create_NSD_Info_OP_TYPE = 1
     Upload_NSD_OP_TYPE = 2
     Fetch_NSD_OP_TYPE = 3
@@ -101,7 +100,7 @@ class OPType(Enum):
     Fetch_Onboarded_VNF_Package_Artifacts_OP_TYPE = 39
     
     
-class ResourceType(Enum):
+class ResourceType():
     # defines all the resource for provided by the NSD management interface.
     NSD_NS_DESCRIPTORS = 1
     NSD_INDIVIDUAL_NS_DESCRIPTOR = 2

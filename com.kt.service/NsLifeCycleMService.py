@@ -4,7 +4,7 @@ from flask import request, json
 import flask
 from flask_restful import Resource
 
-from ApiDefine import ApiDefine
+from ApiDefine import ApiDefine, MethodType
 from LogManager import LogManager
 from PLTEManager import PLTEManager
 from ServiceManager import ServiceManager
@@ -27,6 +27,7 @@ class NsIdCreation(Resource, ServiceManager):
         ServiceManager.RecvLogging(self.logger, data, request)
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
+        self.logger.info(type(MethodType.POST_METHOD_TYPE))
         self.clientId = PLTEManager.getInstance().getClientReqId()
         reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId)
                 
