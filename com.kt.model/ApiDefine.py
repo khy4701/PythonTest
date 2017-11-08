@@ -1,5 +1,6 @@
 class ApiDefine():
 
+    # NBI - SERVER MODE
     API_NUM1 = "departmentAPI"
     
     NSD_ON_BOARDING = "nsd-on-boarding"
@@ -10,6 +11,11 @@ class ApiDefine():
     CREATE_PM_JOB = "crt-pm-job"
     QUERY_PM_JOB = "query-pm-job"
     
+    
+    # SBI - CLIENT MODE    
+    
+    
+    # SBI - SERVER MODE
     NOTI_OF_LCM  = "noti-of-lcm"
 
 

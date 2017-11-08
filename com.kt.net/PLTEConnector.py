@@ -84,8 +84,7 @@ class PLTEConnector(Connector):
                 
         #GenQMsg = GeneralQResMsg()        
         #GenQMsg.body = resMsg
-    
-        
+            
         pData = ctypes.cast(ctypes.byref(resMsg), ctypes.POINTER(ctypes.c_char * ctypes.sizeof(resMsg)))
         try:
             if self.plteQueue is not None :

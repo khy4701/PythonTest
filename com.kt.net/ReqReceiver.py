@@ -1,7 +1,7 @@
 import ctypes
 import time
 
-from ClientService import ClientService
+from ClientService import NfvoService
 from ConfigManager import ConfManager
 from LogManager import LogManager
 from ProvMsg import GeneralQReqMsg, MTYPE_SLEE_TO_SBRESTIF_REQ, HttpReq
@@ -98,7 +98,7 @@ class ReqReceiver(Receiver):
                     self.logger.info("NFVO_PORT: %d" %info.nfvo_port )                   
                     self.logger.info("===============================================")
 
-                clientReq = ClientService(reqMsg)
+                clientReq = NfvoService(reqMsg)
                 clientReq.start()
                 return 
         
