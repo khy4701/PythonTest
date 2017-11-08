@@ -92,7 +92,7 @@ class NfvoService(threading.Thread):
             resMsg.tot_len = ctypes.sizeof(HttpRes) - HTTPF_MSG_BUFSIZE + resMsg.http_hdr.length
                     
         except Exception as e :
-            resMsg.nResult = 400
+            resMsg.nResult = 400 
             resMsg.jsonBody = "{Internal Server Error}"
             self.logger.info("RESTIF->SLEE Structure Error" + e)
 
