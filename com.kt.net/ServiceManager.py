@@ -1,4 +1,5 @@
 from abc import abstractmethod
+import copy
 import ctypes
 
 from ApiDefine import MethodType, ApiType, OPType, ContentEncoding, ResourceType
@@ -30,32 +31,22 @@ class ServiceManager:
             
         
     @staticmethod
-    def setApiToStructMsg(reqAPI, rcvJsonBody, reqId, methodType, apiType, resourceType, opType ):
+    def setApiToStructMsg(reqAPI, rcvJsonBody, reqId, header, info ):
 
-        httpInfo = HttpInfo()
         httpMsg =  HttpReq()
-        header = HttpHeader()
 
-        httpInfo.nfvo_ip = "None"
-        httpInfo.nfvo_port = 0
-
-        header.method = methodType
-        header.api_type = apiType
-        header.op_type =  opType
-        header.resource_type =  resourceType
         header.length = len(rcvJsonBody)
-        header.encoding = ContentEncoding.PLAIN
-                 
+        
         httpMsg.msgId = 111
         httpMsg.tid   = reqId
         httpMsg.ehttpf_idx = 71
         httpMsg.srcQid = 111
         httpMsg.srcSysId = '1'
-        httpMsg.info = httpInfo
-        httpMsg.http_hdr = header
-        httpMsg.jsonBody = rcvJsonBody
+        httpMsg.info = copy.deepcopy(info)                 
+        httpMsg.http_hdr = copy.deepcopy(header)
+        httpMsg.jsonBody = copy.deepcopy(rcvJsonBody)
         
-        httpMsg.tot_len = ctypes.sizeof(HttpReq) - HTTPF_MSG_BUFSIZE +header.length #ctypes.sizeof(httpMsg) # need..
+        httpMsg.tot_len = ctypes.sizeof(HttpReq) - HTTPF_MSG_BUFSIZE +header.length  #ctypes.sizeof(httpMsg) # need..
         
         return httpMsg
 
@@ -81,6 +72,13 @@ class ServiceManager:
             logger.info("BODY : "  + str(resMsg.jsonBody))
             logger.info("===============================================");
             
-    
-
+    @staticmethod
+    def getHttpInfo(ns_instance="None", nfvo_ip ="None", nfvo_port = 0):
+        
+        Info = HttpInfo()
+        Info.ns_instance = ns_instance
+        Info.nfvo_ip = nfvo_ip
+        Info.nfvo_port = nfvo_port
+        
+        return Info
 
