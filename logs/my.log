@@ -6011,3 +6011,120 @@
 [2017-11-07 21:21:41,283|PLTEConnector.py:75][INFO] > header.length : 80
 [2017-11-07 21:21:41,283|PLTEConnector.py:76][INFO] > header.encoding : 0
 [2017-11-07 21:21:41,284|PLTEConnector.py:77][INFO] > ===============================================
+[2017-11-07 21:44:03,556|ReqReceiver.py:30][ERROR] > ReqReceiver Init
+[2017-11-07 21:44:03,556|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-07 21:44:03,557|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-07 21:44:03,557|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 21:44:03,557|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 21:44:07,684|ServiceManager.py:49][INFO] > ===============================================
+[2017-11-07 21:44:07,684|ServiceManager.py:50][INFO] > [WEB] -> RESTIF
+[2017-11-07 21:44:07,684|ServiceManager.py:51][INFO] > ===============================================
+[2017-11-07 21:44:07,689|ServiceManager.py:52][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 21:44:07,689|ServiceManager.py:53][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 21:44:07,689|ServiceManager.py:54][INFO] > ===============================================
+[2017-11-07 21:44:07,689|PLTEConnector.py:42][INFO] > Send Message..!
+[2017-11-07 21:44:07,693|PLTEConnector.py:63][INFO] > ===============================================
+[2017-11-07 21:44:07,693|PLTEConnector.py:64][INFO] > NBRESTIF -> SLEE
+[2017-11-07 21:44:07,693|PLTEConnector.py:65][INFO] > ===============================================
+[2017-11-07 21:44:07,693|PLTEConnector.py:66][INFO] > gen_mType : 450
+[2017-11-07 21:44:07,693|PLTEConnector.py:67][INFO] > totlen  : 0
+[2017-11-07 21:44:07,693|PLTEConnector.py:68][INFO] > msgId   : 0
+[2017-11-07 21:44:07,693|PLTEConnector.py:69][INFO] > ehttp_idex   : 0
+[2017-11-07 21:44:07,693|PLTEConnector.py:70][INFO] > tid   : 0
+[2017-11-07 21:44:07,693|PLTEConnector.py:71][INFO] > srcQid  : 0
+[2017-11-07 21:44:07,694|PLTEConnector.py:72][INFO] > srcSysId:  
+[2017-11-07 21:44:07,694|PLTEConnector.py:73][INFO] > HEADER----------------------------------------
+[2017-11-07 21:44:07,694|PLTEConnector.py:74][INFO] > header.method   : 0
+[2017-11-07 21:44:07,694|PLTEConnector.py:75][INFO] > header.api_type : 0
+[2017-11-07 21:44:07,694|PLTEConnector.py:76][INFO] > header.op_type  : 0
+[2017-11-07 21:44:07,694|PLTEConnector.py:77][INFO] > header.resource_type : 0
+[2017-11-07 21:44:07,694|PLTEConnector.py:78][INFO] > header.length : 0
+[2017-11-07 21:44:07,694|PLTEConnector.py:79][INFO] > header.encoding :  
+[2017-11-07 21:44:07,694|PLTEConnector.py:80][INFO] > ===============================================
+[2017-11-07 21:50:40,718|ReqReceiver.py:30][ERROR] > ReqReceiver Init
+[2017-11-07 21:50:40,719|ResReceiver.py:33][INFO] > ResReceiver Init
+[2017-11-07 21:50:40,720|PLTEConnector.py:28][DEBUG] > PLTEConnector Init
+[2017-11-07 21:50:40,720|PLTEManager.py:22][DEBUG] > PLTE Manager Init
+[2017-11-07 21:50:40,720|Connector.py:25][DEBUG] > Connector Init
+[2017-11-07 21:50:45,103|ServiceManager.py:49][INFO] > ===============================================
+[2017-11-07 21:50:45,103|ServiceManager.py:50][INFO] > [WEB] -> RESTIF
+[2017-11-07 21:50:45,103|ServiceManager.py:51][INFO] > ===============================================
+[2017-11-07 21:50:45,108|ServiceManager.py:52][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 21:50:45,108|ServiceManager.py:53][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 21:50:45,108|ServiceManager.py:54][INFO] > ===============================================
+[2017-11-07 21:50:45,108|PLTEConnector.py:42][INFO] > Send Message..!
+[2017-11-07 21:50:45,109|PLTEConnector.py:61][INFO] > ===============================================
+[2017-11-07 21:50:45,109|PLTEConnector.py:62][INFO] > NBRESTIF -> SLEE
+[2017-11-07 21:50:45,109|PLTEConnector.py:63][INFO] > ===============================================
+[2017-11-07 21:50:45,109|PLTEConnector.py:64][INFO] > gen_mType : 450
+[2017-11-07 21:50:45,109|PLTEConnector.py:65][INFO] > totlen  : 180
+[2017-11-07 21:50:45,109|PLTEConnector.py:66][INFO] > msgId   : 111
+[2017-11-07 21:50:45,109|PLTEConnector.py:67][INFO] > ehttp_idex   : 71
+[2017-11-07 21:50:45,109|PLTEConnector.py:68][INFO] > tid   : 1
+[2017-11-07 21:50:45,109|PLTEConnector.py:69][INFO] > srcQid  : 111
+[2017-11-07 21:50:45,110|PLTEConnector.py:70][INFO] > srcSysId: 1
+[2017-11-07 21:50:45,110|PLTEConnector.py:71][INFO] > HEADER----------------------------------------
+[2017-11-07 21:50:45,110|PLTEConnector.py:72][INFO] > header.method   : 1
+[2017-11-07 21:50:45,110|PLTEConnector.py:73][INFO] > header.api_type : 2
+[2017-11-07 21:50:45,110|PLTEConnector.py:74][INFO] > header.op_type  : 15
+[2017-11-07 21:50:45,110|PLTEConnector.py:75][INFO] > header.resource_type : 10
+[2017-11-07 21:50:45,110|PLTEConnector.py:76][INFO] > header.length : 80
+[2017-11-07 21:50:45,110|PLTEConnector.py:77][INFO] > header.encoding : 0
+[2017-11-07 21:50:45,110|PLTEConnector.py:78][INFO] > ===============================================
+[2017-11-07 22:00:44,048|ServiceManager.py:49][INFO] > ===============================================
+[2017-11-07 22:00:44,048|ServiceManager.py:50][INFO] > [WEB] -> RESTIF
+[2017-11-07 22:00:44,048|ServiceManager.py:51][INFO] > ===============================================
+[2017-11-07 22:00:44,049|ServiceManager.py:52][INFO] > REQUEST URL : http://175.213.170.13:8500/nslcm/v1/ns_instances
+[2017-11-07 22:00:44,049|ServiceManager.py:53][INFO] > BODY : {"nsName": "NS-5G-PYEONGCHANG", "nsdId": "26bb4cc5-b04b-4b6d-8fad-f15a39db97ce"}
+[2017-11-07 22:00:44,049|ServiceManager.py:54][INFO] > ===============================================
+[2017-11-07 22:00:44,049|PLTEConnector.py:42][INFO] > Send Message..!
+[2017-11-07 22:00:44,049|PLTEConnector.py:61][INFO] > ===============================================
+[2017-11-07 22:00:44,049|PLTEConnector.py:62][INFO] > NBRESTIF -> SLEE
+[2017-11-07 22:00:44,049|PLTEConnector.py:63][INFO] > ===============================================
+[2017-11-07 22:00:44,049|PLTEConnector.py:64][INFO] > gen_mType : 450
+[2017-11-07 22:00:44,049|PLTEConnector.py:65][INFO] > totlen  : 180
+[2017-11-07 22:00:44,050|PLTEConnector.py:66][INFO] > msgId   : 111
+[2017-11-07 22:00:44,050|PLTEConnector.py:67][INFO] > ehttp_idex   : 71
+[2017-11-07 22:00:44,050|PLTEConnector.py:68][INFO] > tid   : 2
+[2017-11-07 22:00:44,050|PLTEConnector.py:69][INFO] > srcQid  : 111
+[2017-11-07 22:00:44,050|PLTEConnector.py:70][INFO] > srcSysId: 1
+[2017-11-07 22:00:44,050|PLTEConnector.py:71][INFO] > HEADER----------------------------------------
+[2017-11-07 22:00:44,050|PLTEConnector.py:72][INFO] > header.method   : 1
+[2017-11-07 22:00:44,050|PLTEConnector.py:73][INFO] > header.api_type : 2
+[2017-11-07 22:00:44,050|PLTEConnector.py:74][INFO] > header.op_type  : 15
+[2017-11-07 22:00:44,050|PLTEConnector.py:75][INFO] > header.resource_type : 10
+[2017-11-07 22:00:44,050|PLTEConnector.py:76][INFO] > header.length : 80
+[2017-11-07 22:00:44,051|PLTEConnector.py:77][INFO] > header.encoding : 0
+[2017-11-07 22:00:44,051|PLTEConnector.py:78][INFO] > ===============================================
+[2017-11-07 22:00:44,052|ReqReceiver.py:76][INFO] > ===============================================
+[2017-11-07 22:00:44,053|ReqReceiver.py:77][INFO] > SLEE -> SBRESTIF
+[2017-11-07 22:00:44,053|ReqReceiver.py:78][INFO] > ===============================================
+[2017-11-07 22:00:44,053|ReqReceiver.py:79][INFO] > msgType: 455
+[2017-11-07 22:00:44,053|ReqReceiver.py:80][INFO] > tot_len : 112
+[2017-11-07 22:00:44,053|ReqReceiver.py:81][INFO] > msgId : 111
+[2017-11-07 22:00:44,053|ReqReceiver.py:82][INFO] > tid : 1
+[2017-11-07 22:00:44,053|ReqReceiver.py:83][INFO] > ehttp_idx : 71
+[2017-11-07 22:00:44,053|ReqReceiver.py:84][INFO] > srcQid : 8454150
+[2017-11-07 22:00:44,053|ReqReceiver.py:85][INFO] > srcSysId : 1
+[2017-11-07 22:00:44,053|ReqReceiver.py:86][INFO] > jsonBody: 
+[2017-11-07 22:00:44,054|ReqReceiver.py:87][INFO] > ===============================================
+[2017-11-07 22:00:44,054|ReqReceiver.py:88][INFO] > method: 1
+[2017-11-07 22:00:44,054|ReqReceiver.py:89][INFO] > api_type: 2
+[2017-11-07 22:00:44,054|ReqReceiver.py:90][INFO] > op_type: 15
+[2017-11-07 22:00:44,054|ReqReceiver.py:91][INFO] > resource_type: 10
+[2017-11-07 22:00:44,054|ReqReceiver.py:92][INFO] > length: 0
+[2017-11-07 22:00:44,054|ReqReceiver.py:93][INFO] > encoding: 0
+[2017-11-07 22:00:44,054|ReqReceiver.py:94][INFO] > ===============================================
+[2017-11-07 22:00:44,055|ClientService.py:38][INFO] > ===============================================
+[2017-11-07 22:00:44,055|ClientService.py:39][INFO] > RESTIF -> [EXT]
+[2017-11-07 22:00:44,055|ClientService.py:40][INFO] > ===============================================
+[2017-11-07 22:00:44,055|ClientService.py:41][INFO] > URL : http://175.213.170.12:8081/departments/abc/123
+[2017-11-07 22:00:44,056|ClientService.py:42][INFO] > HEADER : {'Content-type': 'application/x-www-form-urlencoded', 'Accept': 'application/json'}
+[2017-11-07 22:00:44,056|ClientService.py:43][INFO] > TID : 1
+[2017-11-07 22:00:44,056|ClientService.py:44][INFO] > BODY : 
+[2017-11-07 22:00:44,056|ClientService.py:45][INFO] > ===============================================
+[2017-11-07 22:00:44,071|ClientService.py:54][INFO] > ('Connection aborted.', error(111, 'Connection refused'))
+[2017-11-07 22:00:44,072|ClientService.py:59][INFO] > ===============================================
+[2017-11-07 22:00:44,072|ClientService.py:60][INFO] > [EXT] -> RESTIF
+[2017-11-07 22:00:44,072|ClientService.py:61][INFO] > ===============================================
+[2017-11-07 22:00:44,072|ClientService.py:85][INFO] > local variable 'restAPI' referenced before assignment
