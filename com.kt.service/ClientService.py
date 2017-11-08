@@ -30,7 +30,7 @@ class NfvoService(threading.Thread):
         port = info.nfvo_port
                 
         #url='http://localhost:5555/departments/abc/123'
-        url="http://"+str(ip)+":"+str(port)+"/e2e/nslcm/v1/ns_instances/{ns_instance_id}/notofication"
+        url="http://"+str(ip)+":"+str(port)+"/e2e/nslcm/v1/ns_instances"
         #head = {'Content-type':'application/json', 'Accept':'application/json'} 
         #head = {'Content-type':'application/json'} 
         head = {'Content-type':'application/x-www-form-urlencoded', 'Accept':'application/json'} 

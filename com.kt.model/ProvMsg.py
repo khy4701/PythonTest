@@ -29,8 +29,10 @@ class provMsg(Structure):
       # ("syms", c_ubyte * 4)]
 
 MAX_IP_LEN = 48
+MAX_NS_INSTANCE_ID_LEN = 50
 class HttpInfo(Structure):
-    _fields_ = [("nfvo_ip", c_char * MAX_IP_LEN ),
+    _fields_ = [("ns_instance_id", c_char * MAX_NS_INSTANCE_ID_LEN),
+                ("nfvo_ip", c_char * MAX_IP_LEN ),
                 ("nfvo_port", c_int)
             ]
 

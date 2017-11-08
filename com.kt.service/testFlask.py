@@ -14,6 +14,8 @@ class ttt(Resource):
         content = request.get_json(force=True)
         
         print request.remote_addr
+        
+        print request.method
 
         return "true"
 
