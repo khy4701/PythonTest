@@ -72,7 +72,9 @@ class ReqReceiver(Receiver):
                             
                 # Receive Message Logging
                 if ConfManager.getInstance().getLogFlag():
-                    headerMsg = reqMsg.http_hdr                    
+                    headerMsg = reqMsg.http_hdr      
+                    info = reqMsg.info
+                                  
                     self.logger.info("===============================================")
                     self.logger.info("SLEE -> SBRESTIF")
                     self.logger.info("===============================================")
@@ -84,13 +86,16 @@ class ReqReceiver(Receiver):
                     self.logger.info("srcQid : %d" %reqMsg.srcQid )
                     self.logger.info("srcSysId : %c" %reqMsg.srcSysId )
                     self.logger.info("jsonBody: %s" %reqMsg.jsonBody )
-                    self.logger.info("===============================================")
+                    self.logger.info("HEADER-----------------------------------------")
                     self.logger.info("method: %d" %headerMsg.method )
                     self.logger.info("api_type: %d" %headerMsg.api_type )
                     self.logger.info("op_type: %d" %headerMsg.op_type )
                     self.logger.info("resource_type: %d" %headerMsg.resource_type )
                     self.logger.info("length: %d" %headerMsg.length )
                     self.logger.info("encoding: %c" %headerMsg.encoding )
+                    self.logger.info("INFO  -----------------------------------------")
+                    self.logger.info("NFVO_IP: %s" %info.nfvo_ip )
+                    self.logger.info("NFVO_PORT: %d" %info.nfvo_port )                   
                     self.logger.info("===============================================")
 
                 clientReq = ClientService(reqMsg)
