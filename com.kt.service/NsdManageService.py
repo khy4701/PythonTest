@@ -2,20 +2,26 @@ import time
 
 from flask import request, json
 import flask
-from flask.json import jsonify
 from flask_restful import Resource
 
 from ApiDefine import ApiDefine
 from ConfigManager import ConfManager
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import HttpRes, HttpReq, HttpHeader
+from ProvMsg import HttpReq, HttpHeader
 from ServiceManager import ServiceManager
+
+##############################################
+# NEED CHANGE 
+##############################################
 
 
 class NsdOnboarding(Resource, ServiceManager):
 
     logger = LogManager.getInstance().get_logger()
+    
+    
+    
     
     def post(self):
 
@@ -90,7 +96,8 @@ class NsdOnboarding(Resource, ServiceManager):
         header.encoding = '5'
         header.length = 4        
                  
-        httpMsg.msgId = reqId
+        httpMsg.tid = reqId
+        httpMsg.msgId = 6
         httpMsg.ehttpf_idx = 71
         httpMsg.srcQid = 300
         httpMsg.srcSysId = '1'

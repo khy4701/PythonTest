@@ -2,14 +2,11 @@ import time
 
 from flask import request, json
 import flask
-from flask.json import jsonify
 from flask_restful import Resource
 
 from ApiDefine import ApiDefine
-from ConfigManager import ConfManager
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import HttpRes, HttpReq, HttpHeader
 from ServiceManager import ServiceManager
 
 
@@ -31,7 +28,7 @@ class CreatePmJobs(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId)
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.CREATE_PM_JOB, self, reqMsg)
@@ -79,7 +76,7 @@ class QueryPmJob(Resource, ServiceManager):
                         
         # 3. [RESTIF->APP] MAKE SEND STRUCT
         self.clientId = PLTEManager.getInstance().getClientReqId()
-        reqMsg = ServiceManager.setApiToStructMsg(data, self.clientId)
+        reqMsg = ServiceManager.setApiToStructMsg(request, data, self.clientId)
                 
         # 4. [RESTIF->APP] SEND QUEUE MESSAGE(RELAY)
         PLTEManager.getInstance().sendCommand(ApiDefine.QUERY_PM_JOB, self, reqMsg)

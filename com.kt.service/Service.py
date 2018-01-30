@@ -20,6 +20,11 @@ class Service:
     QUERY_PM_JOB     = "/nspm/v1/pm_jobs/<string:pmJobId>/reports/<string:reportId>"
 
 
+    
+    # NFVO NBI
+    NOTI_OF_LCM     = "/e2e/nslcm/v1/ns_instances/<string:ns_instance_id>/notofication"
+
+
     def __init__(self):
             pass
 

@@ -1,0 +1,20 @@
+info
+warning
+error
+critical
+[INFO|logModule.py:24] 2017-10-16 18:00:32,374 > info
+[WARNING|logModule.py:25] 2017-10-16 18:00:32,374 > warning
+[ERROR|logModule.py:26] 2017-10-16 18:00:32,374 > error
+[CRITICAL|logModule.py:27] 2017-10-16 18:00:32,374 > critical
+[2017-10-16 18:01:10,788|logModule.py:24]INFO > info
+[2017-10-16 18:01:10,788|logModule.py:25]WARNING > warning
+[2017-10-16 18:01:10,788|logModule.py:26]ERROR > error
+[2017-10-16 18:01:10,788|logModule.py:27]CRITICAL > critical
+[2017-10-16 18:01:26,776|logModule.py:24][INFO] > info
+[2017-10-16 18:01:26,776|logModule.py:25][WARNING] > warning
+[2017-10-16 18:01:26,776|logModule.py:26][ERROR] > error
+[2017-10-16 18:01:26,776|logModule.py:27][CRITICAL] > critical
+[2017-10-16 18:02:30,993|logModule.py:26][INFO] > Handling
+[2017-10-16 18:02:30,993|logModule.py:27][WARNING] > warning
+[2017-10-16 18:02:30,993|logModule.py:28][ERROR] > error
+[2017-10-16 18:02:30,993|logModule.py:29][CRITICAL] > critical

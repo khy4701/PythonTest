@@ -6,7 +6,7 @@ from ConfigManager import ConfManager
 from Connector import Connector
 from LogManager import LogManager
 from PLTEManager import PLTEManager
-from ProvMsg import HttpRes, HttpReq, MTYPE_CLIENT_MODE, MTYPE_SERVER_MODE
+from ProvMsg import GeneralQResMsg, HttpRes , MTYPE_SLEE_TO_SBRESTIF_RES, MTYPE_SLEE_TO_NBRESTIF_RES
 from Receiver import Receiver
 import sysv_ipc
 
@@ -42,8 +42,8 @@ class ResReceiver(Receiver):
                     myQueId = int(ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "RESTIF_S" ))
                     maxQSize = ConfManager.getInstance().getConfigData( ConfManager.MSGQUEUE_INFO , "MAX_QUEUE_SIZE" )
     
-                    ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777, max_message_size = int(maxQSize) )
-                    
+                    #ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT, mode=0777, max_message_size = int(maxQSize) )
+                    ResReceiver.myQueue = sysv_ipc.MessageQueue(myQueId, sysv_ipc.IPC_CREAT )                    
                     self.resReceiver = self
                     self.resReceiver.start()
             
@@ -59,26 +59,31 @@ class ResReceiver(Receiver):
             if ResReceiver.myQueue is None:
                 self.logger.error("msgQueue[MYQUEUE] Get Failed...")
                 return
-            
+                                   
+            #GenQMsg = GeneralQResMsg()      
             resMsg = HttpRes()
-            
+              
             (message, msgType) = ResReceiver.myQueue.receive(ctypes.sizeof(resMsg))
             mydata = ctypes.create_string_buffer( message )
-                        
-            if msgType == MTYPE_SERVER_MODE:    
+            
+            self.logger.info("MSG RECEIVE..");
+
+            if msgType == MTYPE_SLEE_TO_NBRESTIF_RES :    
 
                 # Server Mode( Handling Response Message )
                 ctypes.memmove(ctypes.pointer(resMsg), mydata ,ctypes.sizeof(resMsg))
                 
+                #resMsg = GenQMsg.body
                 headerMsg = resMsg.http_hdr
         
                 # Receive Message Logging
                 if ConfManager.getInstance().getLogFlag():
                     self.logger.info("===============================================");
-                    self.logger.info("[APP] -> RESTIF")
+                    self.logger.info("SLEE -> NBRESTIF")
                     self.logger.info("===============================================");
-                    self.logger.info("msgType: %d" %msgType )
+                    self.logger.info("QmsgType: %d" %msgType )
                     self.logger.info("tot_len : %s" %resMsg.tot_len )
+                    self.logger.info("tid : %d" %resMsg.tid )
                     self.logger.info("msgId : %d" %resMsg.msgId )
                     self.logger.info("ehttp_idx : %d" %resMsg.ehttpf_idx )
                     self.logger.info("srcQid : %d" %resMsg.srcQid )
@@ -89,13 +94,14 @@ class ResReceiver(Receiver):
                     self.logger.info("method: %d" %headerMsg.method )
                     self.logger.info("api_type: %d" %headerMsg.api_type )
                     self.logger.info("op_type: %d" %headerMsg.op_type )
+                    self.logger.info("resource_type: %d" %headerMsg.resource_type )
                     self.logger.info("length: %d" %headerMsg.length )
                     self.logger.info("encoding: %c" %headerMsg.encoding )
                     self.logger.info("===============================================");
 
                 
                 #if msgType == PLTEMANAGER_TYPE: 
-                PLTEManager.getInstance().receiveHandling(resMsg.nResult, resMsg.msgId, resMsg )
+                PLTEManager.getInstance().receiveHandling(resMsg.nResult, resMsg.tid, resMsg )
         
         except Exception as e :
             self.logger.error("Msgrcv Failed..  %s" %e)

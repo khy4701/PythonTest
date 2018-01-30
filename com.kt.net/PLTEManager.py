@@ -49,7 +49,7 @@ class PLTEManager(Manager):
         # To avoid circular dependencies --> import under Function.
         from PLTEConnector import PLTEConnector
         
-        senderInfo = SenderInfo(source, httpReqMsg.msgId)
+        senderInfo = SenderInfo(source, httpReqMsg.tid)
         
         # Transcation List Add
         
