@@ -11,7 +11,7 @@ def reddit_callback():
     error = request.args.get('error', '')
     if error:
         return "Error: " + error
-    state = request.args.get('state', '')
+    state = request.args.get('state', '') 
     if not is_valid_state(state):
         # Uh-oh, this request wasn't started by us!
         abort(403)
