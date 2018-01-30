@@ -18,7 +18,7 @@ def reddit_callback():
     code = request.args.get('code')
     # We'll change this next line in just a moment
     return "got a code! %s" % code
-
+ 
 
 @app.route('/')
 def homepage():
